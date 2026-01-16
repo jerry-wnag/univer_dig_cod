@@ -1,0 +1,858 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"ClearAll","[","\"Global`*\"","]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"SeedRandom","[","777","]"}],";"}]," "}],RowBox[{"\n","\n"}],StyleBox[
+RowBox[{RowBox[{"(*"," ",RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"1."," ","\:7cbe\:786e\:573a\:666f\:6784\:5efa"}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n",RowBox[
+{RowBox[{"Print","[",RowBox[{"Style","[",RowBox[{"\"1. \:521d\:59cb\:5316\:91cf\:5b50\:96a7\:7a7f\:573a\:666f (\:8868\:9762\:6001\:4fee\:6b63\:7248)...\"",","," ","Blue",","," ","Bold"}],"]"}],"]"}],";"}]}]],RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"len"," ","="," ","20"}],";"," ",RowBox[{"wid"," ","="," ","4"}],";"}],"\n",RowBox[
+{RowBox[{"vertexCount"," ","="," ",RowBox[{"len"," ","*"," ","wid"}]}],";"}],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ","\:624b\:52a8\:5750\:6807"," ","*)"}],"\n",RowBox[
+{RowBox[{"coords"," ","="," ",RowBox[{"Flatten","[",RowBox[{RowBox[{"Table","[",RowBox[
+{RowBox[{"{",RowBox[{"x",","," ","y"}],"}"}],","," ",RowBox[{"{",RowBox[{"y",","," ","1",","," ","wid"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"x",","," ","1",","," ","len"}],"}"}]}],"]"}],","," ","1"}],"]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[{"\:7c92\:5b50",":"," ","x"}]," ","="," ","7"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"particleNodes"," ","="," ",RowBox[{"Flatten","[",RowBox[{"Table","[",RowBox[
+{RowBox[{RowBox[{RowBox[{"(",RowBox[{"y"," ","-"," ","1"}],")"}],"*","len"}]," ","+"," ","7"}],","," ",RowBox[
+{"{",RowBox[{"y",","," ","1",","," ","wid"}],"}"}]}],"]"}],"]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{RowBox[{"particle"," ","="," ",RowBox[{"particleNodes","[",RowBox[{"[","2","]"}],"]"}]}],";"}]," ",RowBox[
+{"(*"," ","\:9009\:4e2d\:95f4\:4e00\:4e2a"," ","*)"}]}],RowBox[{"\n","\n"}],StyleBox[
+RowBox[{RowBox[{"(*"," ","\:57fa\:7840\:51e0\:4f55\:8fb9"," ","*)"}],"\n",RowBox[
+{RowBox[{"realBaseEdges"," ","="," ",RowBox[{"Select","[","\n","   ",RowBox[{RowBox[
+{"Subsets","[",RowBox[{RowBox[{"Range","[","vertexCount","]"}],","," ",RowBox[{"{","2","}"}]}],"]"}],",","\n","   ",RowBox[
+{RowBox[{RowBox[{"EuclideanDistance","[",RowBox[{RowBox[{"coords","[",RowBox[{"[",RowBox[
+{"#","[",RowBox[{"[","1","]"}],"]"}],"]"}],"]"}],","," ",RowBox[{"coords","[",RowBox[
+{"[",RowBox[{"#","[",RowBox[{"[","2","]"}],"]"}],"]"}],"]"}]}],"]"}]," ","=="," ","1"}]," ","&"}]}],"\n","   ","]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{"realBaseEdges"," ","="," ",RowBox[{"UndirectedEdge"," ","@@@"," ","realBaseEdges"}]}],";"}],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[{"--",RowBox[{"-",RowBox[
+{RowBox[{"\:3010","\:6838\:5fc3\:4fee\:590d","\:3011"}],"--"}]}]}],"-"}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"\:5b9a\:4e49\:4ea4\:754c\:5c42"," ",RowBox[{"(",RowBox[{"Interface",","," ",RowBox[
+{"x","=","8"}]}],")"}]," ","\:548c"," ","\:6df1\:5c42"," ",RowBox[{"(",RowBox[{"Deep",","," ",RowBox[
+{"x","=","12"}]}],")"}]}]," ","*)"}],"\n",RowBox[{RowBox[{"interfaceNodes"," ","="," ",RowBox[
+{"Flatten","[",RowBox[{"Table","[",RowBox[{RowBox[{RowBox[{RowBox[{"(",RowBox[{"y"," ","-"," ","1"}],")"}],"*","len"}]," ","+"," ","8"}],","," ",RowBox[
+{"{",RowBox[{"y",","," ","1",","," ","wid"}],"}"}]}],"]"}],"]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{"deepNodes","      ","="," ",RowBox[{"Flatten","[",RowBox[{"Table","[",RowBox[
+{RowBox[{RowBox[{RowBox[{"(",RowBox[{"y"," ","-"," ","1"}],")"}],"*","len"}]," ","+"," ","12"}],","," ",RowBox[
+{"{",RowBox[{"y",","," ","1",","," ","wid"}],"}"}]}],"]"}],"]"}]}],";"}],RowBox[{"\n","\n"}],StyleBox[
+RowBox[{RowBox[{"(*"," ",RowBox[{"\:624b\:52a8\:690d\:5165",RowBox[{"\[OpenCurlyDoubleQuote]","\:8c10\:632f\:901a\:9053","\[CloseCurlyDoubleQuote]"}]," ",RowBox[
+{"(",RowBox[{"Resonant"," ","Channels"}],")"}]}]," ","*)"}],"\n",RowBox[{"(*"," ","\:8ba9\:4ea4\:754c\:5c42\:7684\:8282\:70b9\:76f4\:63a5\:8fde\:63a5\:5230\:6df1\:5c42\:8282\:70b9"," ","*)"}],"\n",RowBox[
+{"(*"," ","\:8fd9\:6a21\:62df\:4e86\:6ce2\:51fd\:6570\:5728\:8fb9\:754c\:4e0a\:7684\:76f8\:4f4d\:5171\:632f"," ","*)"}],"\n",RowBox[
+{RowBox[{"resonantEdges"," ","="," ",RowBox[{"Table","[","\n","   ",RowBox[{RowBox[
+{"UndirectedEdge","[",RowBox[{RowBox[{"RandomChoice","[","interfaceNodes","]"}],","," ",RowBox[
+{"RandomChoice","[","deepNodes","]"}]}],"]"}],",","\n","   ",RowBox[{"{","10","}"}]}]," ",RowBox[
+{"(*"," ","\:5efa\:7acb10\:6761\:76f4\:901a\:96a7\:9053"," ","*)"}],"\n","   ","]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ","\:52bf\:5792\:5185\:90e8\:539f\:672c\:7684\:968f\:673a\:7ea0\:7f20\:4e5f\:4fdd\:7559\:4e00\:4e9b"," ","*)"}],"\n",RowBox[
+{RowBox[{"barrierInnerNodes"," ","="," ",RowBox[{"Flatten","[",RowBox[{"Table","[",RowBox[
+{RowBox[{RowBox[{RowBox[{"(",RowBox[{"y"," ","-"," ","1"}],")"}],"*","len"}]," ","+"," ","x"}],","," ",RowBox[
+{"{",RowBox[{"y",","," ","1",","," ","wid"}],"}"}],","," ",RowBox[{"{",RowBox[{"x",","," ","9",","," ","13"}],"}"}]}],"]"}],"]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{"randomNoise"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"UndirectedEdge"," ","@@"," ",RowBox[
+{"RandomSample","[",RowBox[{"barrierInnerNodes",","," ","2"}],"]"}]}],","," ",RowBox[
+{"{","50","}"}]}],"]"}]}],";"}],RowBox[{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ","\:5408\:5e76\:6240\:6709\:8fb9"," ","*)"}],"\n",RowBox[
+{RowBox[{"allEdges"," ","="," ",RowBox[{"Join","[",RowBox[{"realBaseEdges",","," ","resonantEdges",","," ","randomNoise"}],"]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{"gExperiment"," ","="," ",RowBox[{"Graph","[",RowBox[{RowBox[{"Range","[","vertexCount","]"}],","," ","allEdges",","," ",RowBox[
+{"VertexCoordinates"," ","\[Rule]"," ","coords"}]}],"]"}]}],";"}],RowBox[{"\n","\n"}],RowBox[
+{RowBox[{"Print","[","\"   >> \:573a\:666f\:6784\:5efa\:6210\:529f\:3002\:5df2\:624b\:52a8\:690d\:5165\:8868\:9762-\:6df1\:5c42\:5171\:632f\:901a\:9053\:3002\"","]"}],";"}],"\n",RowBox[
+{RowBox[{"Print","[","\"   >> \:7c92\:5b50\:4f4d\:7f6e: x=7 | \:63a5\:89e6\:9762: x=8 | \:76ee\:6807: x=12\"","]"}],";"}],RowBox[
+{"\n","\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"2."," ","\:626b\:63cf\:96a7\:7a7f"}]," ","*)"}],"\n",RowBox[{"(*"," ",RowBox[
+{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n",RowBox[
+{RowBox[{"tunnelFound"," ","="," ","False"}],";"}]}]],"\n",RowBox[{RowBox[{"bestPath"," ","="," ",RowBox[
+{"{","}"}]}],";"}],RowBox[{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"\:7c92\:5b50"," ","P",RowBox[
+{"(",RowBox[{"x","=","7"}],")"}]," ","\:649e\:51fb"," ","Y",RowBox[{"(",RowBox[{"x","=","8"}],")"}]}]," ","*)"}],"\n",RowBox[
+{RowBox[{"nb"," ","="," ",RowBox[{"AdjacencyList","[",RowBox[{"gExperiment",","," ","particle"}],"]"}]}],";"}]," "}]],RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"Do","[","\n","  ",RowBox[{RowBox[{RowBox[{"y"," ","="," ",RowBox[
+{"nb","[",RowBox[{"[","i","]"}],"]"}]}],";","\n","  ",RowBox[{"(*"," ",RowBox[{"\:68c0\:67e5"," ","Y"," ","\:662f\:5426\:6709\:76f4\:901a"," ","Z",RowBox[
+{"(",RowBox[{"x",">=","12"}],")"}]," ","\:7684\:8fde\:63a5"}]," ","*)"}],"\n","  ",RowBox[
+{"zList"," ","="," ",RowBox[{"AdjacencyList","[",RowBox[{"gExperiment",","," ","y"}],"]"}]}],";","\n","  ",RowBox[
+{"Do","[","\n","   ",RowBox[{RowBox[{RowBox[{"z"," ","="," ",RowBox[{"zList","[",RowBox[
+{"[","j","]"}],"]"}]}],";","\n","   ",RowBox[{"zPosX"," ","="," ",RowBox[{RowBox[
+{"coords","[",RowBox[{"[","z","]"}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],";","\n","   ","\n","   ",RowBox[
+{"If","[",RowBox[{RowBox[{"zPosX"," ","\[GreaterEqual]"," ","12"}],","," ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:53ea\:8981\:8df3\:5230\:4e86"," ","x"}],"=",RowBox[{"12"," ","\:6216\:66f4\:8fdc"}]}]," ","*)"}],"\n","    ",RowBox[
+{RowBox[{"tunnelFound"," ","="," ","True"}],";","\n","    ",RowBox[{"bestPath"," ","="," ",RowBox[
+{"{",RowBox[{"particle",","," ","y",","," ","z"}],"}"}]}],";","\n","    ",RowBox[
+{"Break","[","]"}],";"}]}]," ","\n","   ","]"}]}],",","\n","   ",RowBox[{"{",RowBox[
+{"j",","," ","1",","," ",RowBox[{"Length","[","zList","]"}]}],"}"}]}],"\n","  ","]"}],";","\n","  ",RowBox[
+{"If","[",RowBox[{"tunnelFound",","," ",RowBox[{"Break","[","]"}]}],"]"}],";"}],"\n"," ",","," ",RowBox[
+{"{",RowBox[{"i",","," ","1",","," ",RowBox[{"Length","[","nb","]"}]}],"}"}]}],"\n","]"}],";"}],RowBox[
+{"\n","\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"3."," ","\:7ed3\:679c\:53ef\:89c6\:5316"}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","=="}]," ","*)"}],"\n","\n",RowBox[
+{RowBox[{"If","[",RowBox[{"tunnelFound",",","\n","  ",RowBox[{RowBox[{RowBox[{"{",RowBox[
+{"p",","," ","y",","," ","z"}],"}"}]," ","="," ","bestPath"}],";","\n","  ",RowBox[
+{"tunnelEdge"," ","="," ",RowBox[{"UndirectedEdge","[",RowBox[{"p",","," ","z"}],"]"}]}],";","\n","  ","\n","  ",RowBox[
+{"Print","[",RowBox[{"Style","[",RowBox[{"\"SUCCESS! \:96a7\:7a7f\:53d1\:751f!\"",","," ","Red",","," ","Bold",","," ","20"}],"]"}],"]"}],";","\n","  ",RowBox[
+{"Print","[","\"------------------------------------------------\"","]"}],";","\n","  ",RowBox[
+{"Print","[","\"[\:7c92\:5b50 P] (x=7) \:63a5\:89e6 -> [\:4ecb\:8d28 Y] (x=8)\"","]"}],";","\n","  ",RowBox[
+{"Print","[","\"\:7531\:4e8e Y \:4e0e [\:6df1\:5904 Z] (x=12) \:5b58\:5728\:91cf\:5b50\:7ea0\:7f20\:8fde\:63a5...\"","]"}],";","\n","  ",RowBox[
+{"Print","[",RowBox[{"Style","[",RowBox[{"\"\:89c4\:5219\:77ac\:95f4\:751f\:6210\:4e86 P -> Z \:7684\:6377\:5f84\:ff01\"",","," ","Red"}],"]"}],"]"}],";","\n","  ",RowBox[
+{"Print","[","\"------------------------------------------------\"","]"}],";","\n","  ","\n","  ",RowBox[
+{"finalG"," ","="," ",RowBox[{"EdgeAdd","[",RowBox[{"gExperiment",","," ","tunnelEdge"}],"]"}]}],";","\n","  ","\n","  ",RowBox[
+{"viz"," ","="," ",RowBox[{"HighlightGraph","[",RowBox[{"finalG",",","\n","    ",RowBox[
+{"{","\n","     ",RowBox[{RowBox[{"Style","[",RowBox[{"tunnelEdge",","," ","Red",","," ","Thick",","," ","Dashed"}],"]"}],","," ",RowBox[
+{"(*"," ","\:96a7\:7a7f\:8def\:5f84"," ","*)"}],"\n","     ",RowBox[{"Style","[",RowBox[
+{"p",","," ","Green",","," ",RowBox[{"PointSize","[","0.025","]"}]}],"]"}],",","     ",RowBox[
+{"(*"," ","\:7c92\:5b50"," ","*)"}],"\n","     ",RowBox[{"Style","[",RowBox[{"z",","," ","Red",","," ",RowBox[
+{"PointSize","[","0.025","]"}]}],"]"}],",","       ",RowBox[{"(*"," ","\:76ee\:7684\:5730"," ","*)"}],"\n","     ",RowBox[
+{"Style","[",RowBox[{"y",","," ","Orange",","," ",RowBox[{"PointSize","[","0.02","]"}]}],"]"}],",","     ",RowBox[
+{"(*"," ","\:5899\:58c1\:8868\:9762"," ","*)"}],"\n","     ","\n","     ",RowBox[
+{"(*"," ","\:7ed8\:5236\:52bf\:5792\:533a\:57df\:80cc\:666f\:8272"," ","*)"}],"\n","     ",RowBox[
+{"Style","[",RowBox[{"barrierInnerNodes",","," ",RowBox[{"RGBColor","[",RowBox[{"0.8",","," ","0.8",","," ","1"}],"]"}]}],"]"}],",","\n","     ",RowBox[
+{"Style","[",RowBox[{"interfaceNodes",","," ",RowBox[{"RGBColor","[",RowBox[{"0.6",","," ","0.6",","," ","0.9"}],"]"}]}],"]"}]}],"\n","    ","}"}],",","\n","    ",RowBox[
+{"GraphHighlightStyle"," ","\[Rule]"," ","\"DehighlightHide\""}],",","\n","    ",RowBox[
+{"ImageSize"," ","\[Rule]"," ","600"}],",","\n","    ",RowBox[{"PlotLabel"," ","\[Rule]"," ",RowBox[
+{"Style","[",RowBox[{"\"Quantum Tunneling Verification\\nParticle jumps from x=7 to x=12\"",","," ","16"}],"]"}]}]}],"\n","  ","]"}]}],";","\n","  ",RowBox[
+{"Print","[","viz","]"}]}],",","\n","  ","\n","  ",RowBox[{"Print","[","\"Error: \:4f9d\:7136\:672a\:68c0\:6d4b\:5230\:3002\:8fd9\:5728\:903b\:8f91\:4e0a\:4e0d\:53ef\:80fd\:ff0c\:8bf7\:68c0\:67e5\:4ee3\:7801\:5b8c\:6574\:6027\:3002\"","]"}]}],"\n","]"}],";"}]}]]}],
+"Input",CellLabel -> "In[314]:= ",ExpressionUUID -> "a4a17810-4913-4f62-b32f-80b6e363aabb"],Cell[
+BoxData[
+StyleBox["\"1. \:521d\:59cb\:5316\:91cf\:5b50\:96a7\:7a7f\:573a\:666f (\:8868\:9762\:6001\:4fee\:6b63\:7248)...\"",
+RGBColor[0,0,1],Bold,StripOnInput -> False],StandardForm],"Print",ExpressionUUID -> "6b316398-fd95-4ccd-9485-a1cb03b684ee"],Cell[
+BoxData[
+"\"   >> \:573a\:666f\:6784\:5efa\:6210\:529f\:3002\:5df2\:624b\:52a8\:690d\:5165\:8868\:9762-\:6df1\:5c42\:5171\:632f\:901a\:9053\:3002\"",
+StandardForm],"Print",ExpressionUUID -> "4382590a-0545-4852-a944-ea8ee1c951c6"],Cell[
+BoxData[
+"\"   >> \:7c92\:5b50\:4f4d\:7f6e: x=7 | \:63a5\:89e6\:9762: x=8 | \:76ee\:6807: x=12\"",
+StandardForm],"Print",ExpressionUUID -> "be6d6833-e2a0-4a28-91bd-607932993448"],Cell[
+BoxData[
+StyleBox["\"SUCCESS! \:96a7\:7a7f\:53d1\:751f!\"",RGBColor[1,0,0],Bold,20,StripOnInput -> False],
+StandardForm],"Print",ExpressionUUID -> "ca9ba2ff-139c-49f5-a767-46b81d148e2a"],Cell[
+BoxData[
+"\"------------------------------------------------\"",StandardForm],"Print",ExpressionUUID -> "f9e24f16-8ba9-4c83-a722-7d785f51b6ce"],Cell[
+BoxData[
+"\"[\:7c92\:5b50 P] (x=7) \:63a5\:89e6 -> [\:4ecb\:8d28 Y] (x=8)\"",StandardForm],
+"Print",ExpressionUUID -> "7cc289ce-1085-4c23-8932-906a46de15db"],Cell[
+BoxData["\"\:7531\:4e8e Y \:4e0e [\:6df1\:5904 Z] (x=12) \:5b58\:5728\:91cf\:5b50\:7ea0\:7f20\:8fde\:63a5...\"",
+StandardForm],"Print",ExpressionUUID -> "e5ca98a4-d437-43d5-a114-a98284af407e"],Cell[
+BoxData[
+StyleBox["\"\:89c4\:5219\:77ac\:95f4\:751f\:6210\:4e86 P -> Z \:7684\:6377\:5f84\:ff01\"",
+RGBColor[1,0,0],StripOnInput -> False],StandardForm],"Print",ExpressionUUID -> "2031ed9b-8cd9-4fb1-be03-090ed1fcae4f"],Cell[
+BoxData[
+"\"------------------------------------------------\"",StandardForm],"Print",ExpressionUUID -> "8617e0f1-1041-4660-bff8-630a869d288d"],Cell[
+BoxData[
+GraphicsBox[NamespaceBox["NetworkGraphics",DynamicModuleBox[{Set[Typeset`graph,HoldComplete[
+Graph[{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80},
+{Null,{{1,2},{1,21},{2,3},{2,22},{3,4},{3,23},{4,5},{4,24},{5,6},{5,25},{6,7},{6,26},{7,8},{7,27},{8,9},{8,28},{9,10},{9,29},{10,11},{10,30},{11,12},{11,31},{12,13},{12,32},{13,14},{13,33},{14,15},{14,34},{15,16},{15,35},{16,17},{16,36},{17,18},{17,37},{18,19},{18,38},{19,20},{19,39},{20,40},{21,22},{21,41},{22,23},{22,42},{23,24},{23,43},{24,25},{24,44},{25,26},{25,45},{26,27},{26,46},{27,28},{27,47},{28,29},{28,48},{29,30},{29,49},{30,31},{30,50},{31,32},{31,51},{32,33},{32,52},{33,34},{33,53},{34,35},{34,54},{35,36},{35,55},{36,37},{36,56},{37,38},{37,57},{38,39},{38,58},{39,40},{39,59},{40,60},{41,42},{41,61},{42,43},{42,62},{43,44},{43,63},{44,45},{44,64},{45,46},{45,65},{46,47},{46,66},{47,48},{47,67},{48,49},{48,68},{49,50},{49,69},{50,51},{50,70},{51,52},{51,71},{52,53},{52,72},{53,54},{53,73},{54,55},{54,74},{55,56},{55,75},{56,57},{56,76},{57,58},{57,77},{58,59},{58,78},{59,60},{59,79},{60,80},{61,62},{62,63},{63,64},{64,65},{65,66},{66,67},{67,68},{68,69},{69,70},{70,71},{71,72},{72,73},{73,74},{74,75},{75,76},{76,77},{77,78},{78,79},{79,80},{8,52},{68,52},{68,72},{68,12},{68,12},{48,12},{28,72},{68,12},{8,72},{28,32},{73,52},{31,32},{30,32},{49,32},{71,73},{70,29},{12,70},{9,70},{73,50},{69,50},{69,73},{53,51},{31,32},{13,32},{71,73},{53,71},{71,51},{71,73},{72,51},{11,12},{13,72},{10,73},{29,53},{12,13},{12,30},{11,10},{9,10},{9,49},{13,72},{13,69},{50,29},{12,30},{10,53},{10,70},{71,13},{50,31},{51,32},{31,32},{71,53},{31,11},{53,70},{29,51},{12,49},{32,72},{71,50},{10,13},{13,71},{69,71},{29,72},{29,30},{27,32}}},
+{GraphHighlight -> {29,72,27,33,9,32,30,11,49,31,73,28,71,53,UndirectedEdge[27,32],8,12,51,48,13,69,70,68,10,52,50},GraphHighlightStyle -> {"DehighlightHide",49 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},70 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},51 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},73 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},30 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},33 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},72 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},9 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},53 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},12 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},27 -> {VertexStyle -> {RGBColor[
+0,1,0],PointSize[0.025`]}},UndirectedEdge[27,32] -> {EdgeStyle -> {RGBColor[1,0,0],Thickness[
+Large],Dashing[{Small,Small}]}},69 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},52 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},31 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},29 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},8 -> {VertexStyle -> {RGBColor[0.6`,0.6`,0.9`]}},48 -> {VertexStyle -> {RGBColor[
+0.6`,0.6`,0.9`]}},13 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},11 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},50 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}},10 -> {VertexStyle -> {RGBColor[
+0.8`,0.8`,1]}},28 -> {VertexStyle -> Directive[PointSize[0.02`],RGBColor[0.6`,0.6`,
+0.9`]]},32 -> {VertexStyle -> Directive[PointSize[0.025`],RGBColor[0.8`,0.8`,1]]},68 -> {VertexStyle -> {RGBColor[
+0.6`,0.6`,0.9`]}},71 -> {VertexStyle -> {RGBColor[0.8`,0.8`,1]}}},ImageSize -> 600,PlotLabel -> Style[
+"Quantum Tunneling Verification\nParticle jumps from x=7 to x=12",16],VertexCoordinates -> {{1,1},{2,1},{3,1},{4,1},{5,1},{6,1},{7,1},{8,1},{9,1},{10,1},{11,1},{12,1},{13,1},{14,1},{15,1},{16,1},{17,1},{18,1},{19,1},{20,1},{1,2},{2,2},{3,2},{4,2},{5,2},{6,2},{7,2},{8,2},{9,2},{10,2},{11,2},{12,2},{13,2},{14,2},{15,2},{16,2},{17,2},{18,2},{19,2},{20,2},{1,3},{2,3},{3,3},{4,3},{5,3},{6,3},{7,3},{8,3},{9,3},{10,3},{11,3},{12,3},{13,3},{14,3},{15,3},{16,3},{17,3},{18,3},{19,3},{20,3},{1,4},{2,4},{3,4},{4,4},{5,4},{6,4},{7,4},{8,4},{9,4},{10,4},{11,4},{12,4},{13,4},{14,4},{15,4},{16,4},{17,4},{18,4},{19,4},{20,4}}}]]]},
+TagBox[GraphicsGroupBox[{{Directive[Opacity[0.7`],Hue[0.6`,0.7`,0.7`],CapForm["Round"]],{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{1.`,1.`},{2.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{1.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{1.`,1.`},{1.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{1.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{2.`,1.`},{3.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{2.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{2.`,1.`},{2.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{2.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{3.`,1.`},{4.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{3.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{3.`,1.`},{3.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{3.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{4.`,1.`},{5.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{4.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{4.`,1.`},{4.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{4.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{5.`,1.`},{6.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{5.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{5.`,1.`},{5.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{5.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{6.`,1.`},{7.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{6.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{6.`,1.`},{6.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{6.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{7.`,1.`},{8.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{7.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{7.`,1.`},{7.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{7.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,1.`},{9.`,1.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{8.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,1.`},{8.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{8.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,1.`},{12.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,1.`},{12.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{9.`,1.`},{9.500000000000043`,1.1644407471830935`},{10.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.5`,1.07`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{9.`,1.`},{9.500000000000062`,0.8355592528168735`},{10.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.5`,0.9299999999999999`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,1.`},{9.`,2.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.`,1.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,1.`},{9.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,1.`},{10.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.5`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{10.`,1.`},{10.500000000000094`,1.1644407471831266`},{11.`,1.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,1.07`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+BezierCurveBox[{{10.`,1.`},{10.500000000000023`,0.835559252816873`},{11.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.5`,0.9299999999999999`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,1.`},{13.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,1.`},{10.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,1.`},{13.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.5`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,1.`},{10.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,1.`},{13.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.5`,2.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+BezierCurveBox[{{11.`,1.`},{11.500000000000043`,1.1644407471831266`},{12.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,1.07`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,1.`},{11.499999999999986`,0.8355592528168733`},{12.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,0.9299999999999999`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,1.`},{10.835559252816875`,1.500000000000035`},{11.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.930000000000001`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,1.`},{11.164440747183134`,1.4999999999999591`},{11.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.07`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{12.`,1.`},{12.499999999999993`,1.1644407471831266`},{13.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.5`,1.0700000000000003`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{12.`,1.`},{12.499999999999947`,0.8355592528168735`},{13.`,1.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.5`,0.9299999999999999`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{12.`,1.`},{10.835559252816926`,1.171118505633755`},{10.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.93`,1.3600000000000005`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{12.`,1.`},{11.164440747183148`,1.8288814943662095`},{10.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.07`,1.6400000000000006`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,1.`},{12.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,1.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{12.`,1.`},{8.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,1.`},{9.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{12.`,1.`},{9.506677758450651`,1.8422370112675266`},{8.`,4.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.79`,2.220000000000001`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{12.`,1.`},{8.`,4.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{10.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{12.`,1.`},{10.493322241549413`,3.157762988732405`},{8.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.21`,2.7800000000000002`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,1.`},{10.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{13.`,1.`},{14.`,1.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{13.5`,1.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,1.`},{12.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.5`,1.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{13.`,1.`},{13.`,2.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{13.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,1.`},{9.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{13.`,1.`},{11.506677758450683`,2.171118505633754`},{11.`,4.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.790000000000003`,2.3600000000000017`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+BezierCurveBox[{{13.`,1.`},{12.493322241549308`,2.8288814943662195`},{11.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.21`,2.6400000000000006`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{13.`,1.`},{12.006677758450662`,2.335559252816841`},{12.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.290000000000003`,2.4300000000000015`},ImageScaled[{0.5`,0.5`}],
+BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{13.`,1.`},{12.993322241549324`,2.6644407471831504`},{12.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.71`,2.57`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{14.`,1.`},{15.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{14.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{14.`,1.`},{14.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{14.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{15.`,1.`},{16.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{15.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{15.`,1.`},{15.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{15.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{16.`,1.`},{17.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{16.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{16.`,1.`},{16.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{16.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{17.`,1.`},{18.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{17.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{17.`,1.`},{17.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{17.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{18.`,1.`},{19.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{18.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{18.`,1.`},{18.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{18.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{19.`,1.`},{20.`,1.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{19.5`,1.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{19.`,1.`},{19.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{19.`,1.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{20.`,1.`},{20.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{20.`,1.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{1.`,2.`},{2.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{1.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{1.`,2.`},{1.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{1.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{2.`,2.`},{3.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{2.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{2.`,2.`},{2.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{2.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{3.`,2.`},{4.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{3.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{3.`,2.`},{3.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{3.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{4.`,2.`},{5.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{4.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{4.`,2.`},{4.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{4.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{5.`,2.`},{6.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{5.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{5.`,2.`},{5.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{5.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{6.`,2.`},{7.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{6.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{6.`,2.`},{6.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{6.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{7.`,2.`},{8.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{7.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},StyleBox[
+{Arrowheads[0.`],ArrowBox[{{7.`,2.`},{12.`,2.`}},0.08883792048929665`]},{{RGBColor[
+1,0,0],Thickness[Large],Dashing[{Small,Small}]}},StripOnInput -> False],{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{7.`,2.`},{7.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{7.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,2.`},{9.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{8.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,2.`},{12.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,2.`},{8.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{8.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,2.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{9.`,2.`},{9.500000000000043`,2.1644407471830935`},{10.`,2.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.5`,2.0700000000000003`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+BezierCurveBox[{{9.`,2.`},{9.500000000000043`,1.8355592528169062`},{10.`,2.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.5`,1.9300000000000002`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{9.`,2.`},{9.`,3.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{9.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,2.`},{10.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.5`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,2.`},{11.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,2.`},{13.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,2.`},{10.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,2.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,2.`},{11.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,2.`},{12.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,2.`},{10.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,2.`},{11.49999999999994`,2.1644407471830935`},{12.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,2.0700000000000003`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,2.`},{11.50000000000047`,2.0549786696472943`},{12.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,2.0233333333333334`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,2.`},{11.50000000000038`,1.9450213303526607`},{12.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,1.9766666666666666`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,2.`},{11.499999999999941`,1.8355592528169062`},{12.`,2.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,1.9300000000000002`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{11.`,2.`},{10.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,2.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{11.`,2.`},{11.`,3.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{11.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,2.`},{13.`,2.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.5`,2.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{12.`,2.`},{9.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.5`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,2.`},{11.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.5`,2.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{12.`,2.`},{12.`,3.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{12.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,2.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{13.`,2.`},{14.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{13.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,2.`},{13.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{13.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{14.`,2.`},{15.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{14.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{14.`,2.`},{14.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{14.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{15.`,2.`},{16.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{15.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{15.`,2.`},{15.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{15.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{16.`,2.`},{17.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{16.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{16.`,2.`},{16.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{16.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{17.`,2.`},{18.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{17.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{17.`,2.`},{17.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{17.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{18.`,2.`},{19.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{18.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{18.`,2.`},{18.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{18.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{19.`,2.`},{20.`,2.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{19.5`,2.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{19.`,2.`},{19.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{19.`,2.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{20.`,2.`},{20.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{20.`,2.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{1.`,3.`},{2.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{1.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{1.`,3.`},{1.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{1.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{2.`,3.`},{3.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{2.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{2.`,3.`},{2.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{2.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{3.`,3.`},{4.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{3.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{3.`,3.`},{3.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{3.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{4.`,3.`},{5.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{4.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{4.`,3.`},{4.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{4.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{5.`,3.`},{6.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{5.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{5.`,3.`},{5.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{5.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{6.`,3.`},{7.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{6.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{6.`,3.`},{6.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{6.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{7.`,3.`},{8.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{7.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{7.`,3.`},{7.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{7.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,3.`},{9.`,3.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{8.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,3.`},{8.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{8.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,3.`},{10.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{9.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,3.`},{9.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,3.`},{11.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,3.`},{9.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.5`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,3.`},{10.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{10.`,3.`},{11.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.5`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,3.`},{13.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.5`,3.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{11.`,3.`},{12.`,3.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{11.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{11.`,3.`},{13.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{11.`,3.`},{10.835559252816786`,3.4999999999998974`},{11.`,4.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.930000000000003`,3.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+BezierCurveBox[{{11.`,3.`},{11.16444074718298`,3.500000000000306`},{11.`,4.`}}],0.08883792048929665`]},
+{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{11.07`,3.5`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{11.`,3.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{11.5`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,3.`},{13.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{12.`,3.`},{8.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{10.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{12.`,3.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{12.`,3.`},{13.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.5`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,3.`},{14.`,3.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{13.5`,3.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{13.`,3.`},{10.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{13.`,3.`},{11.835559252816921`,3.1711185056337223`},{11.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.93`,3.3600000000000003`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{13.`,3.`},{12.164440747183129`,3.8288814943662697`},{11.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.07`,3.6400000000000015`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,3.`},{13.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{13.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{14.`,3.`},{15.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{14.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{14.`,3.`},{14.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{14.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{15.`,3.`},{16.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{15.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{15.`,3.`},{15.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{15.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{16.`,3.`},{17.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{16.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{16.`,3.`},{16.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{16.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{17.`,3.`},{18.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{17.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{17.`,3.`},{17.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{17.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{18.`,3.`},{19.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{18.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{18.`,3.`},{18.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{18.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{19.`,3.`},{20.`,3.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{19.5`,3.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{19.`,3.`},{19.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{19.`,3.5`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{20.`,3.`},{20.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{20.`,3.5`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{1.`,4.`},{2.`,4.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{1.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{2.`,4.`},{3.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{2.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{3.`,4.`},{4.`,4.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{3.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{4.`,4.`},{5.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{4.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{5.`,4.`},{6.`,4.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{5.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{6.`,4.`},{7.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{6.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{7.`,4.`},{8.`,4.`}},0.08883792048929665`]},{Opacity[0]},
+StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{7.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{8.`,4.`},{9.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{8.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{8.`,4.`},{12.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,4.`},{10.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{9.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{9.`,4.`},{11.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{9.`,4.`},{13.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{10.`,4.`},{11.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{10.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{11.`,4.`},{12.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{11.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[BezierCurveBox[{{11.`,4.`},{12.000000000000002`,4.328881494366254`},{13.`,4.`}}],
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{12.`,4.140000000000001`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{11.`,4.`},{13.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[BezierCurveBox[
+{{11.`,4.`},{12.`,3.6711185056337468`},{13.`,4.`}}],0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{12.`,3.8600000000000003`},
+ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[
+{{12.`,4.`},{13.`,4.`}},0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],{12.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{13.`,4.`},{14.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{13.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{14.`,4.`},{15.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{14.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{15.`,4.`},{16.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{15.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{16.`,4.`},{17.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{16.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{17.`,4.`},{18.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{17.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[{Arrowheads[0.`],ArrowBox[{{18.`,4.`},{19.`,4.`}},
+0.08883792048929665`]},{Opacity[0]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],{18.5`,4.`},ImageScaled[{0.5`,0.5`}],BaseStyle -> "Graphics"]},{StyleBox[
+{Arrowheads[0.`],ArrowBox[{{19.`,4.`},{20.`,4.`}},0.08883792048929665`]},{Opacity[
+0]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],{19.5`,4.`},ImageScaled[
+{0.5`,0.5`}],BaseStyle -> "Graphics"]}},{Directive[Hue[0.6`,0.5`,1.`],EdgeForm[Directive[
+GrayLevel[0],Opacity[0.7`]]]],{StyleBox[DiskBox[{1.`,1.`},0.08883792048929665`],{Directive[
+Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",TraditionalForm],
+Offset[{2,2},{1.0888379204892966`,1.0888379204892966`}],ImageScaled[{0,0}],BaseStyle -> "Graphics"]},{StyleBox[
+DiskBox[{2.`,1.`},0.08883792048929665`],{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[
+FormBox["\"\"",TraditionalForm],Offset[{2,2},{2.0888379204892966`,1.0888379204892966`}],
+ImageScaled[{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{3.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{3.0888379204892966`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{4.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{4.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{5.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{5.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{6.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{6.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{7.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{7.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},StyleBox[DiskBox[{8.`,1.`},0.08883792048929665`],
+{RGBColor[0.6`,0.6`,0.9`]},StripOnInput -> False],StyleBox[DiskBox[{9.`,1.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{10.`,1.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{11.`,1.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{12.`,1.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{13.`,1.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],{StyleBox[DiskBox[{14.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{14.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{15.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{15.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{16.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{16.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{17.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{17.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{18.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{18.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{19.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{19.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{20.`,1.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{20.088837920489297`,1.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{1.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{1.0888379204892966`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{2.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{2.0888379204892966`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{3.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{3.0888379204892966`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{4.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{4.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{5.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{5.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{6.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{6.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},StyleBox[DiskBox[{7.`,2.`},0.08883792048929665`],
+{{RGBColor[0,1,0],PointSize[0.025`]}},StripOnInput -> False],StyleBox[DiskBox[{8.`,2.`},
+0.08883792048929665`],{Directive[PointSize[0.02`],RGBColor[0.6`,0.6`,0.9`]]},StripOnInput -> False],StyleBox[
+DiskBox[{9.`,2.`},0.08883792048929665`],{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[
+DiskBox[{10.`,2.`},0.08883792048929665`],{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[
+DiskBox[{11.`,2.`},0.08883792048929665`],{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[
+DiskBox[{12.`,2.`},0.08883792048929665`],{Directive[PointSize[0.025`],RGBColor[0.8`,
+0.8`,1]]},StripOnInput -> False],StyleBox[DiskBox[{13.`,2.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],{StyleBox[DiskBox[{14.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{14.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{15.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{15.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{16.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{16.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{17.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{17.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{18.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{18.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{19.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{19.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{20.`,2.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{20.088837920489297`,2.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{1.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{1.0888379204892966`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{2.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{2.0888379204892966`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{3.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{3.0888379204892966`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{4.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{4.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{5.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{5.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{6.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{6.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{7.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{7.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},StyleBox[DiskBox[{8.`,3.`},0.08883792048929665`],
+{RGBColor[0.6`,0.6`,0.9`]},StripOnInput -> False],StyleBox[DiskBox[{9.`,3.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{10.`,3.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{11.`,3.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{12.`,3.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{13.`,3.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],{StyleBox[DiskBox[{14.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{14.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{15.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{15.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{16.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{16.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{17.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{17.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{18.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{18.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{19.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{19.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{20.`,3.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{20.088837920489297`,3.0888379204892966`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{1.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{1.0888379204892966`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{2.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{2.0888379204892966`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{3.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{3.0888379204892966`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{4.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{4.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{5.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{5.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{6.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{6.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{7.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{7.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},StyleBox[DiskBox[{8.`,4.`},0.08883792048929665`],
+{RGBColor[0.6`,0.6`,0.9`]},StripOnInput -> False],StyleBox[DiskBox[{9.`,4.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{10.`,4.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{11.`,4.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{12.`,4.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],StyleBox[DiskBox[{13.`,4.`},0.08883792048929665`],
+{RGBColor[0.8`,0.8`,1]},StripOnInput -> False],{StyleBox[DiskBox[{14.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{14.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{15.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{15.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{16.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{16.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{17.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{17.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{18.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{18.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{19.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{19.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]},{StyleBox[DiskBox[{20.`,4.`},0.08883792048929665`],
+{Directive[Opacity[0],EdgeForm[{}]]},StripOnInput -> False],InsetBox[FormBox["\"\"",
+TraditionalForm],Offset[{2,2},{20.088837920489297`,4.088837920489297`}],ImageScaled[
+{0,0}],BaseStyle -> "Graphics"]}}}],MouseAppearanceTag["NetworkGraphics"]],AllowKernelInitialization -> False]],
+{FormatType -> TraditionalForm,FrameTicks -> None,ImageSize -> 600,PlotLabel -> FormBox[
+StyleBox["\"Quantum Tunneling Verification\\nParticle jumps from x=7 to x=12\"",16,
+StripOnInput -> False],TraditionalForm],DefaultBaseStyle -> "NetworkGraphics"},ExpressionUUID -> "c6aadab0-e32f-4dfe-8532-3f52c78d885d"],
+StandardForm],"Print",ExpressionUUID -> "66cf70bb-e651-41de-b6f5-a82dc1c08292"]},
+Open],ExpressionUUID -> "a626465d-0d58-43b0-a944-48d42efdd958"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.3 for Wolfram Cloud 1.75 (December 9, 2025)"]

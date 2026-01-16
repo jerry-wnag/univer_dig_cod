@@ -1,0 +1,182 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[
+{RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","==="}],"="}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"COMPUTATIONAL"," ",RowBox[{"UNIVERSE",":"," ",RowBox[{"BLACK"," ","HOLE"," ","HOLOGRAPHY"}]}]}],"     ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"\:4efb\:52a1","\:ff1a",RowBox[{RowBox[{"\:9a8c\:8bc1"," ","AdS"," ","\:795e\:7ecf\:5143\:65f6\:7a7a\:7684\:9762\:79ef"}],"-",RowBox[
+{"\:4fe1\:606f\:5173\:7cfb"," ",RowBox[{"(",RowBox[{"S"," ","~"," ","A"}],")"}]}]}]}],"      ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{"\:673a\:5236","\:ff1a",RowBox[{"\:4e25\:683c\:6267\:884c"," ","\:6d3b\:6027",RowBox[
+{"(","\:8868\:9762",")"}]," ","vs"," ","\:51bb\:7ed3",RowBox[{"(","\:5185\:90e8",")"}]," ","\:5206\:79bb"}]}],"         ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{RowBox[{"===","===","===","===","===","===","===","===","===","===","===","===","===","===","===","==="}],"="}]," ","*)"}],"\n","\n",RowBox[
+{RowBox[{"ClearAll","[","\"Global`*\"","]"}],";"}]}]],"\n",RowBox[{RowBox[{"SeedRandom","[","]"}],";"}],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"1."," ","\:4e25\:683c\:6f14\:5316\:5f15\:64ce"," ",RowBox[
+{"(",RowBox[{"Strict"," ","Evolution"," ","Engine"}],")"}]}]," ","*)"}],"\n",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:53ea\:6709\:65e0\:5411\:8fb9",RowBox[{"(","Active",")"}],"\:80fd\:53cd\:5e94"}],"\:ff0c",RowBox[
+{"\:53cd\:5e94\:540e\:53d8\:4e3a\:6709\:5411\:8fb9",RowBox[{"(","Inert",")"}]}]}]," ","*)"}],"\n",RowBox[
+{RowBox[{RowBox[{"StepEvolution","[","g_Graph","]"}]," ",":="," ",RowBox[{"Module","[",RowBox[
+{RowBox[{"{","\n","    ",RowBox[{"allEdges",","," ","activeEdges",","," ","candidates",","," ","e1",","," ","e2",","," ","\n","    ","x",","," ","y",","," ","z",","," ","w",","," ","maxNode",","," ","\n","    ","newActive",","," ","newInert",","," ","remainingEdges"}],"\n","}"}],",","\n","    ",RowBox[
+{RowBox[{"allEdges"," ","="," ",RowBox[{"EdgeList","[","g","]"}]}],";","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:63d0\:53d6\:6d3b\:6027\:8fb9\:754c",":"," ","\:53ea\:6709\:65e0\:5411\:8fb9\:662f\:6d3b\:7684"}]," ","*)"}],"\n","    ",RowBox[
+{"activeEdges"," ","="," ",RowBox[{"Cases","[",RowBox[{"allEdges",","," ","_UndirectedEdge"}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"Length","[","activeEdges","]"}]," ","<"," ","2"}],","," ",RowBox[
+{"Return","[","g","]"}]}],"]"}],";","\n","    ","\n","    ",RowBox[{"(*"," ",RowBox[
+{"\:968f\:673a\:9009\:62e9\:53cd\:5e94\:5bf9",":"," ","\:6a21\:62df\:91cf\:5b50\:6da8\:843d"}]," ","*)"}],"\n","    ",RowBox[
+{"candidates"," ","="," ",RowBox[{"RandomSample","[","activeEdges","]"}]}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:5bfb\:627e\:5171\:4eab\:9876\:70b9\:7684\:5bf9"," ",RowBox[{"{",RowBox[
+{RowBox[{"{",RowBox[{"x",",","y"}],"}"}],","," ",RowBox[{"{",RowBox[{"y",",","z"}],"}"}]}],"}"}]}]," ","*)"}],"\n","    ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:8fd9\:91cc\:4e0d\:5f3a\:5236"," ","Window"}],"\:ff0c",RowBox[
+{"\:4f9d\:9760\:6d3b\:6027\:8fb9\:7684\:8fb9\:7f18\:5206\:5e03\:81ea\:7136\:5f62\:6210"," ","AdS"}]}]," ","*)"}],"\n","    ",RowBox[
+{"Do","[","\n","        ",RowBox[{RowBox[{RowBox[{"e1"," ","="," ",RowBox[{"candidates","[",RowBox[
+{"[","i","]"}],"]"}]}],";","\n","        ",RowBox[{"(*"," ",RowBox[{"\:7b80\:5355\:8d77\:89c1","\:ff0c","\:53ea\:5411\:540e\:641c\:7d22\:5c11\:91cf\:90bb\:5c45","\:ff0c","\:7ef4\:6301\:4e00\:5b9a\:7684\:5c40\:90e8\:6027"}]," ","*)"}],"\n","        ",RowBox[
+{"Do","[","\n","            ",RowBox[{RowBox[{RowBox[{"e2"," ","="," ",RowBox[{"candidates","[",RowBox[
+{"[","j","]"}],"]"}]}],";","\n","            ",RowBox[{"If","[",RowBox[{RowBox[{RowBox[
+{"Length","[",RowBox[{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"List"," ","@@"," ","e2"}]}],"]"}],"]"}]," ","=="," ","1"}],",","\n","                ",RowBox[
+{"Goto","[","\"Found\"","]"}]}],"\n","            ","]"}]}],",","\n","            ",RowBox[
+{"{",RowBox[{"j",","," ",RowBox[{"i"," ","+"," ","1"}],","," ",RowBox[{"Min","[",RowBox[
+{RowBox[{"i"," ","+"," ","10"}],","," ",RowBox[{"Length","[","candidates","]"}]}],"]"}]}],"}"}]}],"\n","        ","]"}]}],",","\n","        ",RowBox[
+{"{",RowBox[{"i",","," ","1",","," ",RowBox[{"Length","[","candidates","]"}]}],"}"}]}],"\n","    ","]"}],";","\n","    ",RowBox[
+{"Return","[","g","]"}],";"," ",RowBox[{"(*"," ","\:672a\:627e\:5230\:5219\:8df3\:8fc7"," ","*)"}],"\n","    ","\n","    ",RowBox[
+{"Label","[","\"Found\"","]"}],";","\n","    ","\n","    ",RowBox[{"(*"," ","\:786e\:5b9a\:62d3\:6251\:4f4d\:7f6e"," ","*)"}],"\n","    ",RowBox[
+{"y"," ","="," ",RowBox[{RowBox[{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"List"," ","@@"," ","e2"}]}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],";","\n","    ",RowBox[
+{"x"," ","="," ",RowBox[{RowBox[{"Complement","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"{","y","}"}]}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],";","\n","    ",RowBox[{"z"," ","="," ",RowBox[
+{RowBox[{"Complement","[",RowBox[{RowBox[{"List"," ","@@"," ","e2"}],","," ",RowBox[
+{"{","y","}"}]}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ","\:521b\:751f\:65b0\:7a7a\:95f4"," ","*)"}],"\n","    ",RowBox[{"maxNode"," ","="," ",RowBox[
+{"Max","[",RowBox[{"VertexList","[","g","]"}],"]"}]}],";","\n","    ",RowBox[{"w"," ","="," ",RowBox[
+{"maxNode"," ","+"," ","1"}]}],";","\n","    ","\n","    ",RowBox[{"(*"," ",RowBox[
+{"\:5173\:952e\:7269\:7406\:8fc7\:7a0b","\:ff1a","\:76f8\:53d8"}]," ","*)"}],"\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:65b0\:7684\:6d3b\:6027\:8868\:9762"," ",RowBox[{"(","Boundary",")"}]}]," ","*)"}],"\n","    ",RowBox[
+{"newActive"," ","="," ",RowBox[{"{",RowBox[{RowBox[{"UndirectedEdge","[",RowBox[
+{"x",","," ","z"}],"]"}],","," ",RowBox[{"UndirectedEdge","[",RowBox[{"x",","," ","w"}],"]"}],","," ",RowBox[
+{"UndirectedEdge","[",RowBox[{"w",","," ","z"}],"]"}]}],"}"}]}],";","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:51bb\:7ed3\:7684\:5386\:53f2\:4f53\:79ef"," ",RowBox[{"(","Bulk",")"}]}]," ","*)"}],"\n","    ",RowBox[
+{"newInert"," ","="," ",RowBox[{"{",RowBox[{RowBox[{"DirectedEdge","[",RowBox[{"x",","," ","y"}],"]"}],","," ",RowBox[
+{"DirectedEdge","[",RowBox[{"y",","," ","z"}],"]"}]}],"}"}]}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:66f4\:65b0\:5168\:56fe",":"," ","\:79fb\:9664\:65e7\:6d3b\:6027\:8fb9"}],"\:ff0c","\:52a0\:5165\:65b0\:8fb9"}]," ","*)"}],"\n","    ",RowBox[
+{"remainingEdges"," ","="," ",RowBox[{"Complement","[",RowBox[{"allEdges",","," ",RowBox[
+{"{",RowBox[{"e1",","," ","e2"}],"}"}]}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"Graph","[",RowBox[{RowBox[{RowBox[{"VertexList","[","g","]"}]," ","~","Join","~"," ",RowBox[
+{"{","w","}"}]}],","," ",RowBox[{"remainingEdges"," ","~","Join","~"," ","newInert"," ","~","Join","~"," ","newActive"}]}],"]"}]}]}],"\n","]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"2."," ","\:5168\:606f\:626b\:63cf\:4eea"," ",RowBox[
+{"(",RowBox[{"Holographic"," ","Scanner"}],")"}]}]," ","*)"}],"\n",RowBox[{"(*"," ",RowBox[
+{"\:4ece\:4e2d\:5fc3\:5947\:70b9\:5411\:5916\:626b\:63cf","\:ff0c","\:6d4b\:91cf\:6bcf\:4e00\:5c42\:89c6\:754c\:7684\:9762\:79ef\:4e0e\:5185\:90e8\:4fe1\:606f\:91cf"}]," ","*)"}],"\n",RowBox[
+{RowBox[{RowBox[{"ScanBlackHole","[","g_Graph","]"}]," ",":="," ",RowBox[{"Module","[",RowBox[
+{RowBox[{"{","\n","    ",RowBox[{"simpleG",","," ","center",","," ","dists",","," ","maxR",","," ","scanData",","," ","\n","    ","nodesInside",","," ","subgraphInside",","," ","\n","    ","AreaA",","," ","InfoS",","," ","activeEdges"}],"\n","}"}],",","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:4e3a\:4e86\:6d4b\:91cf\:8ddd\:79bb","\:ff0c","\:6211\:4eec\:5c06\:5386\:53f2\:4e0e\:5f53\:4e0b\:89c6\:4e3a\:7edf\:4e00\:7684\:65f6\:7a7a\:6d41\:5f62"}]," ","*)"}],"\n","    ",RowBox[
+{RowBox[{"simpleG"," ","="," ",RowBox[{"Graph","[",RowBox[{"UndirectedEdge"," ","@@@"," ",RowBox[
+{"EdgeList","[","g","]"}]}],"]"}]}],";","\n","    ","\n","    ",RowBox[{"(*"," ",RowBox[
+{"\:5bfb\:627e\:4e2d\:5fc3\:5947\:70b9"," ",RowBox[{"(","\:5ea6\:6570\:6700\:5927\:6216\:521d\:59cb\:70b9",")"}]}]," ","*)"}],"\n","    ",RowBox[
+{"center"," ","="," ",RowBox[{"First","[",RowBox[{"SortBy","[",RowBox[{RowBox[{"VertexList","[","simpleG","]"}],","," ",RowBox[
+{RowBox[{"-",RowBox[{"VertexDegree","[",RowBox[{"simpleG",","," ","#"}],"]"}]}]," ","&"}]}],"]"}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:8ba1\:7b97\:65f6\:7a7a\:5ea6\:89c4"," ",RowBox[{"(","\:8ddd\:79bb\:573a",")"}]}]," ","*)"}],"\n","    ",RowBox[
+{"dists"," ","="," ",RowBox[{RowBox[{"GraphDistance","[",RowBox[{"simpleG",","," ","center"}],"]"}]," ","/."," ",RowBox[
+{"Infinity"," ","\[Rule]"," ","0"}]}]}],";","\n","    ",RowBox[{"maxR"," ","="," ",RowBox[
+{"Max","[","dists","]"}]}],";","\n","    ","\n","    ",RowBox[{"scanData"," ","="," ",RowBox[
+{"{","}"}]}],";","\n","    ","\n","    ",RowBox[{"(*"," ",RowBox[{"\:9010\:5c42\:5411\:5916\:626b\:63cf"," ",RowBox[
+{"(","\:4ece\:5947\:70b9\:5230\:89c6\:754c\:8fb9\:7f18",")"}]}]," ","*)"}],"\n","    ",RowBox[
+{"Do","[","\n","        ",RowBox[{"(*"," ",RowBox[{"\:5b9a\:4e49\:89c6\:754c\:5185\:90e8"," ",RowBox[
+{"(",RowBox[{"Bulk"," ","Volume"}],")"}]}]," ","*)"}],"\n","        ",RowBox[{RowBox[
+{RowBox[{"nodesInside"," ","="," ",RowBox[{"Pick","[",RowBox[{RowBox[{"VertexList","[","g","]"}],","," ",RowBox[
+{"UnitStep","[",RowBox[{"r"," ","-"," ","dists"}],"]"}],","," ","1"}],"]"}]}],";","\n","        ","\n","        ",RowBox[
+{"(*"," ",RowBox[{"S",":"," ",RowBox[{"\:4fe1\:606f\:91cf"," ",RowBox[{"(","Information",")"}]}]}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:5b9a\:4e49\:4e3a\:89c6\:754c\:5185\:90e8\:6c89\:79ef\:7684","\"\:51bb\:7ed3\:8fb9\"","\:6570\:91cf"," ",RowBox[
+{"(","\:5386\:53f2\:7684\:91cd\:91cf",")"}]}]," ","*)"}],"\n","        ",RowBox[{"subgraphInside"," ","="," ",RowBox[
+{"Subgraph","[",RowBox[{"g",","," ","nodesInside"}],"]"}]}],";","\n","        ",RowBox[
+{"InfoS"," ","="," ",RowBox[{"Count","[",RowBox[{RowBox[{"EdgeList","[","subgraphInside","]"}],","," ","_DirectedEdge"}],"]"}]}],";","\n","        ","\n","        ",RowBox[
+{"(*"," ",RowBox[{"A",":"," ",RowBox[{"\:9762\:79ef"," ",RowBox[{"(","Area",")"}]}]}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:5b9a\:4e49\:4e3a\:7a7f\:8fc7\:89c6\:754c\:7684","\"\:6d3b\:6027\:8fb9\"","\:6570\:91cf"," ",RowBox[
+{"(","\:6b63\:5728\:53d1\:751f\:7684\:7ea0\:7f20",")"}]}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:6216\:8005\:662f\:89c6\:754c\:7684\:5207\:5272\:8fb9\:6570"," ",RowBox[
+{"(",RowBox[{"Cut"," ","Size"}],")"}]}]," ","*)"}],"\n","        ",RowBox[{"AreaA"," ","="," ","0"}],";","\n","        ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:7edf\:8ba1\:8fde\:63a5"," ","\:5185"}],"->",RowBox[{RowBox[
+{"\:5916"," ","\:6216"," ","\:5916"}],"->",RowBox[{"\:5185"," ","\:7684\:8fb9"}]}]}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:91cd\:70b9\:5173\:6ce8\:6d3b\:6027\:8fb9","\:ff0c","\:56e0\:4e3a\:5b83\:4eec\:6784\:6210\:4e86\:5168\:606f\:5c4f"}]," ","*)"}],"\n","        ",RowBox[
+{"activeEdges"," ","="," ",RowBox[{"Cases","[",RowBox[{RowBox[{"EdgeList","[","g","]"}],","," ","_UndirectedEdge"}],"]"}]}],";","\n","        ","\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:8ba1\:7b97\:7a7f\:8fc7\:534a\:5f84"," ","r"," ","\:7684\:6d3b\:6027\:8fb9\:6570\:91cf"}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{"\:6ce8\:610f","\:ff1a","\:6d3b\:6027\:8fb9\:901a\:5e38\:5728\:6700\:5916\:5c42","\:ff0c",RowBox[
+{"\:6240\:4ee5\:5bf9\:4e8e\:5185\:90e8"," ","r"}],"\:ff0c",RowBox[{"AreaA"," ","\:53ef\:80fd\:8f83\:5c0f"}],"\:ff0c"}]," ","*)"}],"\n","        ",RowBox[
+{"(*"," ",RowBox[{RowBox[{"\:4f46\:5728"," ","AdS"," ","\:4e2d"}],"\:ff0c","\:8868\:9762\:79ef\:968f\:534a\:5f84\:6307\:6570\:589e\:957f","\:ff0c",RowBox[
+{"\:6211\:4eec\:4f1a\:770b\:5230"," ","A"," ","\:548c"," ","S"," ","\:540c\:6b65\:589e\:957f"}]}]," ","*)"}],"\n","        ",RowBox[
+{"AreaA"," ","="," ",RowBox[{"Count","[",RowBox[{"activeEdges",","," ",RowBox[{RowBox[
+{"UndirectedEdge","[",RowBox[{"u_",","," ","v_"}],"]"}]," ","/;"," ","\n","             ",RowBox[
+{"(",RowBox[{RowBox[{"MemberQ","[",RowBox[{"nodesInside",","," ","u"}],"]"}]," ","||"," ",RowBox[
+{"MemberQ","[",RowBox[{"nodesInside",","," ","v"}],"]"}]}],")"}]}]}],"\n","        ","]"}]}],";","\n","        ","\n","        ",RowBox[
+{"(*"," ","\:8fc7\:6ee4\:6389\:592a\:5c0f\:7684\:6570\:636e\:70b9"," ","*)"}],"\n","        ",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"AreaA"," ",">"," ","0"}]," ","&&"," ",RowBox[{"InfoS"," ",">"," ","0"}]}],",","\n","            ",RowBox[
+{"AppendTo","[",RowBox[{"scanData",","," ",RowBox[{"{",RowBox[{"AreaA",","," ","InfoS"}],"}"}]}],"]"}]}],"\n","        ","]"}],";"}],"\n","        ","\n","    ",","," ",RowBox[
+{"{",RowBox[{"r",","," ","1",","," ",RowBox[{"maxR"," ","-"," ","1"}]}],"}"}]}],"]"}],";","\n","    ","\n","    ","scanData"}]}],"\n","]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"3."," ","\:8fd0\:884c\:5b9e\:9a8c"}]," ","*)"}],"\n",RowBox[
+{RowBox[{RowBox[{"RunHolographicTest","[","steps_","]"}]," ",":="," ",RowBox[{"Module","[",RowBox[
+{RowBox[{"{",RowBox[{"universe",","," ","data",","," ","fit",","," ","plot"}],"}"}],",","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:521d\:59cb\:79cd\:5b50",":"," ","\:4e00\:4e2a\:7b80\:5355\:7684\:95ed\:73af"}]," ","*)"}],"\n","    ",RowBox[
+{RowBox[{"universe"," ","="," ",RowBox[{"CycleGraph","[",RowBox[{"4",","," ",RowBox[
+{"DirectedEdges"," ","\[Rule]"," ","False"}]}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"Print","[",RowBox[{"\"\|01f573\:fe0f Generating AdS black hole (neuron bifurcation mode)... Evolution\"",","," ","steps",","," ","\" steps\""}],"]"}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ","\:6f14\:5316"," ","*)"}],"\n","    ",RowBox[{"Monitor","[","\n","        ",RowBox[
+{RowBox[{"Do","[",RowBox[{RowBox[{"universe"," ","="," ",RowBox[{"StepEvolution","[","universe","]"}]}],","," ",RowBox[
+{"{",RowBox[{"i",","," ","steps"}],"}"}]}],"]"}],",","\n","        ",RowBox[{"Row","[",RowBox[
+{"{",RowBox[{"\"Progress: \"",","," ","i",","," ","\"/\"",","," ","steps",","," ","\" | Nodes: \"",","," ",RowBox[
+{"VertexCount","[","universe","]"}]}],"}"}],"]"}]}],"\n","    ","]"}],";","\n","    ","\n","    ",RowBox[
+{"Print","[","\"Evolution completed. Holistic tomography scan in progress....\"","]"}],";","\n","    ",RowBox[
+{"data"," ","="," ",RowBox[{"ScanBlackHole","[","universe","]"}]}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ",RowBox[{"\:6570\:636e\:6e05\:6d17",":"," ","\:6309\:9762\:79ef\:6392\:5e8f"}]," ","*)"}],"\n","    ",RowBox[
+{"data"," ","="," ",RowBox[{"SortBy","[",RowBox[{"data",","," ","First"}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"Length","[","data","]"}]," ","<"," ","5"}],","," ",RowBox[
+{RowBox[{"Print","[","\"Insufficient data. Please increase the number of evolutionary steps.\"","]"}],";"," ",RowBox[
+{"Return","[","]"}]}]}],"]"}],";","\n","    ","\n","    ",RowBox[{"(*"," ",RowBox[
+{RowBox[{"\:7ebf\:6027\:62df\:5408"," ","S"}]," ","="," ",RowBox[{"k"," ","*"," ","A"}]}]," ","*)"}],"\n","    ",RowBox[
+{"fit"," ","="," ",RowBox[{"LinearModelFit","[",RowBox[{"data",","," ","x",","," ","x"}],"]"}]}],";","\n","    ","\n","    ",RowBox[
+{"Print","[","\"\\n\|01f4d0 Holographic coefficient determination(Holographic Coefficient):\"","]"}],";","\n","    ",RowBox[
+{"Print","[",RowBox[{"Style","[",RowBox[{RowBox[{"\"slope = \""," ","<>"," ",RowBox[
+{"ToString","[",RowBox[{"NumberForm","[",RowBox[{RowBox[{RowBox[{"fit","[","\"ParameterTable\"","]"}],"[",RowBox[
+{"[",RowBox[{"1",","," ","1"}],"]"}],"]"}],","," ",RowBox[{"{",RowBox[{"4",","," ","3"}],"}"}]}],"]"}],"]"}]}],","," ","Red",","," ","Bold",","," ","16"}],"]"}],"]"}],";","\n","    ","\n","    ",RowBox[
+{"(*"," ","\:7ed8\:56fe"," ","*)"}],"\n","    ",RowBox[{"Show","[","\n","        ",RowBox[
+{RowBox[{"ListPlot","[",RowBox[{"data",","," ","\n","            ",RowBox[{"PlotStyle"," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{"Blue",","," ",RowBox[{"PointSize","[","0.015","]"}]}],"}"}]}],","," ","\n","            ",RowBox[
+{"AxesLabel"," ","\[Rule]"," ",RowBox[{"{",RowBox[{"\"Area (Horizon Surface)\"",","," ","\"Information (Bulk History)\""}],"}"}]}],","," ","\n","            ",RowBox[
+{"PlotLabel"," ","\[Rule]"," ",RowBox[{"Style","[",RowBox[{"\"Holographic Principle: S vs A\\n(AdS Neuron Topology)\"",","," ","Bold",","," ","14"}],"]"}]}],",","\n","            ",RowBox[
+{"GridLines"," ","\[Rule]"," ","Automatic"}],","," ",RowBox[{"Frame"," ","\[Rule]"," ","True"}]}],"\n","        ","]"}],",","\n","        ",RowBox[
+{"Plot","[",RowBox[{RowBox[{"fit","[","x","]"}],","," ",RowBox[{"{",RowBox[{"x",","," ","0",","," ",RowBox[
+{"Max","[",RowBox[{"data","[",RowBox[{"[",RowBox[{"All",","," ","1"}],"]"}],"]"}],"]"}]}],"}"}],","," ",RowBox[
+{"PlotStyle"," ","\[Rule]"," ",RowBox[{"{",RowBox[{"Red",","," ","Dashed"}],"}"}]}]}],"]"}],",","\n","        ",RowBox[
+{"Epilog"," ","\[Rule]"," ",RowBox[{"{","\n","            ",RowBox[{"Inset","[",RowBox[
+{RowBox[{"Framed","[",RowBox[{RowBox[{"Style","[",RowBox[{"\"Target: S \[Proportional] A\\n(Linear)\"",","," ",RowBox[
+{"Darker","[","Green","]"}],","," ","Bold"}],"]"}],","," ",RowBox[{"Background"," ","\[Rule]"," ","White"}]}],"]"}],","," ",RowBox[
+{"Scaled","[",RowBox[{"{",RowBox[{"0.2",","," ","0.8"}],"}"}],"]"}]}],"]"}],"\n","        ","}"}]}],",","\n","        ",RowBox[
+{"ImageSize"," ","\[Rule]"," ","500"}]}],"\n","    ","]"}]}]}],"\n","]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*"," ",RowBox[{"\:5efa\:8bae\:8fd0\:884c"," ","2000"," ","\:6b65\:4ee5\:4e0a\:4ee5\:83b7\:5f97\:6e05\:6670\:7684"," ","AdS"," ","\:6e10\:8fd1\:884c\:4e3a"}]," ","*)"}],"\n",RowBox[
+{"RunHolographicTest","[","4000","]"}]}]]}],"Input",CellLabel -> "In[42]:= ",ExpressionUUID -> "556b63eb-274d-4fc1-ad00-06ad5142e352"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\|01f573\:fe0f Generating AdS black hole (neuron bifurcation mode)... Evolution\"","\[InvisibleSpace]","4000","\[InvisibleSpace]","\" steps\""}],
+SequenceForm["\|01f573\:fe0f Generating AdS black hole (neuron bifurcation mode)... Evolution",
+4000," steps"],Editable -> False],StandardForm],"Print",ExpressionUUID -> "aa45c17b-fa64-47ef-bec4-1cdff5717fe0"],Cell[
+BoxData[
+"\"Evolution completed. Holistic tomography scan in progress....\"",StandardForm],
+"Print",ExpressionUUID -> "ad5046e5-05fd-471e-b1ff-493e556eebd3"],Cell[
+BoxData["\"\\n\|01f4d0 Holographic coefficient determination(Holographic Coefficient):\"",
+StandardForm],"Print",ExpressionUUID -> "dfc3a225-4a5e-4342-9540-b7e0df0a4bd6"],Cell[
+BoxData[
+StyleBox["\"slope =                                                                                                                                 -8\\n{{, Estimate, Standard Error, t\[Hyphen]Statistic, P\[Hyphen]Value}, {1, -623.600, 351.500, -1.774, 0.110}, {x, 2.414, 0.155, 15.570, 8.179 \[Times] 10  }}\"",
+RGBColor[1,0,0],Bold,16,StripOnInput -> False],StandardForm],"Print",ExpressionUUID -> "41f05834-ee00-4a92-9a00-af85a99cec4c"],Cell[
+BoxData[
+GraphicsBox[{{{},{{TagBox[{Directive[AbsoluteThickness[2],RGBColor[0,0,1],PointSize[
+0.015`]],PointBox[CompressedData["1:eJxTTMoPSmViYGDgBmIQDQH2DhDaAEInJELoA4FQuhJCCxRB6IZuCK0xGUJfmQmh/yyG0H5Qes4GCL1kGYS+sw1Cv1kOoT/tgtBWKyD0qj0Q2gXKN98Lod2g/KS9DgAwgx6U"]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{{{{{},{},TagBox[
+{Directive[Opacity[1.`],AbsoluteThickness[2],RGBColor[1,0,0],Dashing[{Small,Small}]],LineBox[
+CompressedData["1:eJwVxXk01AkAB/Bp5KgN6d52yzEWLesuV/gyLLa0niNWtmLJZqvZxiaSyTEoVI5EkzTMTPPLOe781pofhTTMG2RQOnVteV4n1Tp294/P++hHsPyj6DQazfc//x8U7/DO9fJyV5PmaFX+8TQqZqTuJ4oz5brlo+8Z+5g0iru0fjyJM+/KdLRdOxCcRukYWpeGcbTwczttE90mjRq1fDu/jbMR+d0Xtkf+nUo52fnXMjnmmFXKCkx2plIHHVMzXTkuUMxYGNRZpFBqW3mxzpwdmGK/TuJ2JVGvotnc7O49+FLst6lcFkuJ7yZ29PCi4aczEfLPh0gqNCd55ylTFvS+uX2Unr+Z8r16ZKuDJBaTVawfbm4IR5+mgFfAPYpxNzNeRf9h6CSlSRdVJqL5xCNl0WAiRl571Gq3n0Dr22HNPbdTMWe90JTSlYIJeajHUEwm3rKbjqoOp8FrFXU/NDIHRQ3PdY93pIOTUt5dxs3F8bisandhJhTuL/dEyvJxoz1j40rJKVD2BpUSZiHa1BeOKIuzEaISk1ydV4S1SoVEUHEaOfRydVsdHuqNVg5Q9WdxbdsDhUZ6Ceb/fPHbC1kusvabGZ6RlyJQ/H7vh8E8zN5rPCcX8kEvcOlNvJmPk4d3hZn3lyHCbTMjc7AAEbqfZ/21BHhs+YRFjpyDPftie6mPEK16AxbRskKE13p0dbJEcB+KeVQ8dB5jas+ElTVXwMhwV/O4VQSh99neA6NiGB4b3LC2rRgHLJy0g2YJKC21jVmdF5Bq+eA7ukMFHj4/JUALD5NfZedl7q1ESXidThF1EUJ9C/kAvwrxX+exV3eVILRv2JR5txpVIzXfa167hIhwrjyHVou8oIRlWdJShJ1cLfLVlUA+lOKZ3HQZVsMHVDsaJDjvU2b/YwAf6X94Tnt51uHS0pAePSUfC3q8AKuJOihk1doWfmUQdLKHMuLqETY1pjhxuwyswz1SlzUNWKUj2qbpV46o1Xx5RGUDwgL7pOa95Rj94vNBnnMj5j72VuVvFyBWW5FgO96I3kv7Amx6BLDT+JZw/L0JU4Ix9prtQjC0aEzB8mYIbhHZp+VC5OwLPqRb0wzumzW73bxF0G20blN3a0F7wq6rdn0i3NHKivN/2AJDumtNjNcVSHdHBSw5cg3rKzlVVtQVGCzqpIbUWrG/6RzDiSlGlYTHo4la8UTqE5jylxjhQTPnL9iTiAwd2SGQimFlnCw0cyLx9H2kT1eHGCqfNOqlziSebUp2WdIthqhkff9TdxIvCppN8uRivJxwVrH2JTEZzZjjPxCDzeayboWT+KA9J6IWEUg/q+P9TxaJuIos/mMVAsHhvKAzp0lMe6y7uFiNgLEN4xf9XBIfE2xyvZcSkCltOV6FJD5P7D+mWEFAe2NIY8FlEvMtyh0PGQSKq0r1zBpJcPwjfehGBPZzjM2lzSQWJt8wDU0IOPpJnPxbSdAMNB1+NSMw/q5jZ3w7CXoOk/HaloC+09OcGzdJpBoNbFhhR+DNskO8YBkJlY7d62wdCFy/Py1+2U9i8XSCZrwzgahUjevLh0hwc9U1eK4EtgTmKQTDJFRNC+ltbgTUjdbf3zJKIqPLYO4ek8DYTPmr3jsk1PZKZhY8CVT0mn4Ku0fiX1M0VCM="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{}}}},{Epilog -> CompressedData[
+"1:eJyNUMtuwjAQDC30pUp8QlNO9FiOXFADAiFFqpRwzGVLFrSqsdHaQfAp9I/4FP6i3riUqid8GO2MZ9fjff4w2aIRRZFtekjJusWVsDsPU23RJWYb7m89eDICB8EiwtjwShzXp54xwwpFaZ6U3O2UKPmTJ50Z8BJdP87jot/rvY7it6LQ3ZQ0Ar90znOySTI0yjD5OjpHysCR0aBIFBJ3bajDJ0aVwSksqxTax/p9pvW7nup15WxLIoKy+M/4IP0w/1yyqXQZPnzvYcKwS3GDihq/OS6Ybtu+mjGUFOLKmsLQG+mZg8I/UWXr/LWXcxj8FMfBN3o8YsY="],ImageSize -> 500,DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {FormBox[
+TagBox["\"Area (Horizon Surface)\"",HoldForm],TraditionalForm],FormBox[TagBox["\"Information (Bulk History)\"",
+HoldForm],TraditionalForm]},AxesOrigin -> {0,0},RuleDelayed[DisplayFunction,Identity],Frame -> {{True,True},{True,True}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {Automatic,Automatic},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],Method -> CompressedData["1:eJzlVk1IVEEcX83KUtNUwoIMi0C6dBCEDjb5kavg6rprnjr03J3nTs6+2WbeC9egQ+Ah6JaXIorsEFZ4CA0LunQoyj4stA8/SMtSkdIwgsCgmffctx+ua9GrSwPv8X9vZn7/3/z+/5n5FzQRl5xls9lYCn/VIKbKyaEvl4ahO40bpa2IOSWvFynNcpLoXcdfbo+EoZeeyO22T7R1gJhpudyogLKkYbWMaIpXokG3GsSQbRB4mkr8koo8MZO2hSfZqRTwIQ+rVlRIJY+KiCKvSUBzPTcaIWV8HC3S20IspWxuNHCsFgfRGHQShnTU5EhU3WigGmRruVEpYQbjODooy9CjsoSExDqrULMP80c1VFthpPBEuRoEif8xnZsiYZwEKX+AJShVUBLASIEset1xpJIphDKh/nKNMkIdxAtNceLgBrDkgX6oqAlxBfVWt5CtFOM4fUG3+KwlSqyLrHBmOCDz6alkCLFZgDUxgjUV6vq4URtE65avPgLCiYlqQGQuJ6urhCgPMDoOjRCnCgx7WTnBhNK+/PbZ+r6nYCnN3gN6/pxoM2A5oQaewi1cbBYRjtXwZb19BvTalxeOpqxJQEs2vroSKLlnEf4OQT9/DCw5+gjoRJvYw48swh/s/bb/UPsnQEf3XrqR1/0a0EJ7UueR+1bhfxjYOfL95DtAXXokxkOBmLUI39U7lvK2ZxrQC3Xbr3dcHAF0fuvpgdTiOxbhG9nyBiydnDy+Nr3NW4QfQlsypkMGn28h/xkQXogRiGmL+C92ibznsjx5LNqk1fyr9HTn+WkYQ6H86beI/559uyuyr3JZDgx9rbf3WJ6fJO1yxtGCOUB95YtTpyb5+TM89Cx9+MFNi/DP2I6V3j47BeithR+DrTMvAa0prj3cnzduEX6ns2jX8Nzz0LHDz5/m0Yd3C1tHfhHfPNAzhCNeRyDlN2sT4cG8Kio1Ra8u9JvW7ZcwNrtipqULQ1Ka4UrujA3RFesuhxt1ARX5OaS4eRwSbeGVykq3qRherXiw5oXmxc+9JSycoqqE1essaxjpgvDqgPJb36hM/iWpLcI5IZRHQlIhayAEi9lESVzZZOrZyXi5EgxF3oijyFHzTzRCknn2RA0y/1R7uQJIDYYrMzfnj5KiUtYpUTXOAGSC/zUPcbZOji5eAEFvo4Q1+D8p8RO142mN"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox[StyleBox["\"Holographic Principle: S vs A\\n(AdS Neuron Topology)\"",
+Bold,14,StripOnInput -> False],TraditionalForm],PlotRange -> {{0,3107.`},{0,7522.`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "0b37e433-bb30-49be-816d-580233fc81e4"],
+StandardForm],"Output",CellLabel -> "Out[47]= ",ExpressionUUID -> "d539ed5f-8635-44cf-9eef-b4944a332ec8"]},
+Open],ExpressionUUID -> "a2dc160e-5564-4ca2-9afd-5f26bcc7ef6a"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.3 for Wolfram Cloud 1.75 (December 9, 2025)"]

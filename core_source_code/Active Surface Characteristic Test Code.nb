@@ -1,0 +1,156 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"rccStep","[","g_Graph","]"}]," ",":="," ","\n","  ",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{"edges",","," ","usedEdges",","," ","newEdges",","," ","nextV"}],"}"}],","," ",RowBox[
+{RowBox[{"edges"," ","="," ",RowBox[{"EdgeList","[","g","]"}]}],";","\n","   ",RowBox[
+{"nextV"," ","="," ",RowBox[{RowBox[{"Max","[",RowBox[{"VertexList","[","g","]"}],"]"}]," ","+"," ","1"}]}],";","\n","   ",RowBox[
+{"usedEdges"," ","="," ",RowBox[{"{","}"}]}],";","\n","   ",RowBox[{"newEdges"," ","="," ",RowBox[
+{"{","}"}]}],";","\n","   ",RowBox[{"Do","[",RowBox[{RowBox[{"With","[",RowBox[{RowBox[
+{"{",RowBox[{RowBox[{"e1"," ","="," ",RowBox[{"edges","[",RowBox[{"[","i","]"}],"]"}]}],","," ",RowBox[
+{"e2"," ","="," ",RowBox[{"edges","[",RowBox[{"[","j","]"}],"]"}]}]}],"}"}],","," ","\n","     ",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"Intersection","[",RowBox[{"usedEdges",","," ",RowBox[
+{"{",RowBox[{"e1",","," ","e2"}],"}"}]}],"]"}]," ","=="," ",RowBox[{"{","}"}]}]," ","&&"," ","\n","       ",RowBox[
+{RowBox[{"Length","[",RowBox[{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"List"," ","@@"," ","e2"}]}],"]"}],"]"}]," ","=="," ","1"}]}],","," ","\n","      ",RowBox[
+{"Module","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"y"," ","="," ",RowBox[{RowBox[
+{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[{"List"," ","@@"," ","e2"}]}],"]"}],"[",RowBox[
+{"[","1","]"}],"]"}]}],","," ","\n","        ",RowBox[{"x"," ","="," ",RowBox[{RowBox[
+{"Complement","[","\n","           ",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"List"," ","@@"," ","e2"}]}],"]"}],"[",RowBox[{"[","1","]"}],"]"}],"}"}]}],"]"}],"[",RowBox[
+{"[","\n","          ","1","]"}],"]"}]}],","," ",RowBox[{"z"," ","="," ","\n","         ",RowBox[
+{RowBox[{"Complement","[","\n","           ",RowBox[{RowBox[{"List"," ","@@"," ","e2"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"Intersection","[",RowBox[{RowBox[{"List"," ","@@"," ","e1"}],","," ",RowBox[
+{"List"," ","@@"," ","e2"}]}],"]"}],"[",RowBox[{"[","1","]"}],"]"}],"}"}]}],"]"}],"[",RowBox[
+{"[","\n","          ","1","]"}],"]"}]}],","," ","w"}],"}"}],","," ",RowBox[{RowBox[
+{"w"," ","="," ","nextV"}],";","\n","       ",RowBox[{"nextV","++"}],";","\n","       ",RowBox[
+{"AppendTo","[",RowBox[{"newEdges",","," ",RowBox[{"x"," ","\[UndirectedEdge]"," ","z"}]}],"]"}],";","\n","       ",RowBox[
+{"AppendTo","[",RowBox[{"newEdges",","," ",RowBox[{"x"," ","\[UndirectedEdge]"," ","w"}]}],"]"}],";","\n","       ",RowBox[
+{"AppendTo","[",RowBox[{"newEdges",","," ",RowBox[{"w"," ","\[UndirectedEdge]"," ","z"}]}],"]"}],";","\n","       ",RowBox[
+{"AppendTo","[",RowBox[{"usedEdges",","," ","e1"}],"]"}],";","\n","       ",RowBox[
+{"AppendTo","[",RowBox[{"usedEdges",","," ","e2"}],"]"}],";"}]}],"]"}]}],"]"}]}],"]"}],","," ",RowBox[
+{"{",RowBox[{"i",","," ",RowBox[{"Length","[","edges","]"}]}],"}"}],","," ",RowBox[
+{"{",RowBox[{"j",","," ",RowBox[{"i"," ","+"," ","1"}],","," ","\n","     ",RowBox[
+{"Length","[","edges","]"}]}],"}"}]}],"]"}],";","\n","   ",RowBox[{"Graph","[",RowBox[
+{"Union","[",RowBox[{RowBox[{"Complement","[",RowBox[{"edges",","," ","usedEdges"}],"]"}],","," ","newEdges"}],"]"}],"]"}]}]}],"]"}]}],";"}],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*",RowBox[{RowBox[{"2."," ","\:521d\:59cb\:5b87\:5b99"}],"\:ff1a","\:57fa\:7840\:4e09\:89d2\:5f62"}],"*)"}],"\n",RowBox[
+{RowBox[{"initG"," ","="," ",RowBox[{"CycleGraph","[","3","]"}]}],";"}]}]],"\n",RowBox[
+{RowBox[{"steps"," ","="," ","15"}],";"}],"\n",RowBox[{RowBox[{"results"," ","="," ",RowBox[
+{"NestList","[",RowBox[{"rccStep",","," ","initG",","," ","steps"}],"]"}]}],";"}],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*",RowBox[{"3."," ","\:5168\:91cf\:771f\:7406\:5c5e\:6027\:63d0\:53d6"}],"*)"}],"\n",RowBox[
+{RowBox[{"analysis"," ","="," ","\n","  ",RowBox[{"Table","[",RowBox[{RowBox[{"Module","[",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"g"," ","="," ",RowBox[{"results","[",RowBox[{"[","i","]"}],"]"}]}],","," ","totalM",","," ","residM",","," ","dimension",","," ","\n","     ","clusterCoeff",","," ","entropy"}],"}"}],","," ",RowBox[
+{RowBox[{"totalM"," ","="," ",RowBox[{"EdgeCount","[","g","]"}]}],";","\n","    ",RowBox[
+{"residM"," ","="," ",RowBox[{"Total","[",RowBox[{"Abs","[",RowBox[{RowBox[{"VertexDegree","[","g","]"}]," ","-"," ",RowBox[
+{"Mean","[",RowBox[{"VertexDegree","[","g","]"}],"]"}]}],"]"}],"]"}]}],";","\n","    ",RowBox[
+{"(*",RowBox[{"\:7ef4\:5ea6\:76d1\:6d4b","\:ff1a",RowBox[{"\:770b\:903b\:8f91\:5e73\:9762\:5982\:4f55\:5411"," ","3","D"," ","\:7269\:7406\:7a7a\:95f4\:751f\:957f"}]}],"*)"}],"\n","    ",RowBox[
+{"dimension"," ","="," ",RowBox[{"If","[",RowBox[{RowBox[{"i"," ","<"," ","2"}],","," ","2.0",","," ",RowBox[
+{"N","[",RowBox[{RowBox[{"Log","[",RowBox[{"EdgeCount","[","g","]"}],"]"}],"/",RowBox[
+{"Log","[",RowBox[{"VertexCount","[","g","]"}],"]"}]}],"]"}]}],"]"}]}],";","\n","    ",RowBox[
+{"(*",RowBox[{"\:96c6\:7fa4\:7cfb\:6570","\:ff1a",RowBox[{"\:9a8c\:8bc1\:5404\:5411\:5f02\:6027"," ",RowBox[
+{"(","\:5b87\:5b99\:7f51\:7ed3\:6784",")"}]}]}],"*)"}],"\n","    ",RowBox[{"clusterCoeff"," ","="," ",RowBox[
+{"GlobalClusteringCoefficient","[","g","]"}]}],";","\n","    ",RowBox[{"(*",RowBox[
+{"\:7ed3\:6784\:71b5","\:ff1a",RowBox[{"\:9a8c\:8bc1"," ","0.14"," ","\:4e34\:754c\:70b9\:7684\:76f8\:53d8"}]}],"*)"}],"\n","    ",RowBox[
+{"entropy"," ","="," ","\n","     ",RowBox[{"Module","[",RowBox[{RowBox[{"{",RowBox[
+{"degrees"," ","="," ","\n","        ",RowBox[{"VertexDegree","[","\n","         ","g","]"}]}],"}"}],","," ",RowBox[
+{"-",RowBox[{"Total","[",RowBox[{RowBox[{RowBox[{RowBox[{"(",RowBox[{"#","/",RowBox[
+{"Total","[","degrees","]"}]}],")"}],"*","\n","           ",RowBox[{"Log","[",RowBox[
+{RowBox[{"#","/",RowBox[{"Total","[","degrees","]"}]}]," ","+"," ","1*^-10"}],"]"}]}]," ","&"}]," ","/@"," ","degrees"}],"]"}]}]}],"]"}]}],";","\n","    ",RowBox[
+{"{",RowBox[{RowBox[{"i"," ","-"," ","1"}],","," ",RowBox[{"totalM","/",RowBox[{"(",RowBox[
+{"residM"," ","+"," ","1*^-10"}],")"}]}],","," ","dimension",","," ","clusterCoeff",","," ","\n","     ","entropy"}],"}"}]}]}],"]"}],","," ",RowBox[
+{"{",RowBox[{"i",","," ",RowBox[{"Length","[","results","]"}]}],"}"}]}],"]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*",RowBox[{RowBox[{"4."," ","\:7ed3\:679c\:53ef\:89c6\:5316"}],"\:ff1a","\:771f\:7406\:7684\:4e09\:91cd\:594f"}],"*)"}],"\n",RowBox[
+{"Grid","[",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{RowBox[{"ListLinePlot","[",RowBox[
+{RowBox[{"analysis","[",RowBox[{"[",RowBox[{"All",","," ",RowBox[{"{",RowBox[{"1",","," ","2"}],"}"}]}],"]"}],"]"}],","," ","\n","    ",RowBox[
+{"PlotLabel"," ","\[Rule]"," ","\"1.875 Ratio Pulse\""}],","," ",RowBox[{"GridLines"," ","\[Rule]"," ",RowBox[
+{"{",RowBox[{RowBox[{"{","}"}],","," ",RowBox[{"{","1.875","}"}]}],"}"}]}],","," ","\n","    ",RowBox[
+{"PlotStyle"," ","\[Rule]"," ","Red"}],","," ",RowBox[{"ImageSize"," ","\[Rule]"," ","300"}]}],"]"}],","," ","\n","   ",RowBox[
+{"ListLinePlot","[",RowBox[{RowBox[{"analysis","[",RowBox[{"[",RowBox[{"All",","," ",RowBox[
+{"{",RowBox[{"1",","," ","3"}],"}"}]}],"]"}],"]"}],","," ","\n","    ",RowBox[{"PlotLabel"," ","\[Rule]"," ","\"Dimension Growth (Target ~3)\""}],","," ","\n","    ",RowBox[
+{"GridLines"," ","\[Rule]"," ",RowBox[{"{",RowBox[{RowBox[{"{","}"}],","," ",RowBox[
+{"{","3.14","}"}]}],"}"}]}],","," ",RowBox[{"PlotStyle"," ","\[Rule]"," ","Blue"}],","," ","\n","    ",RowBox[
+{"ImageSize"," ","\[Rule]"," ","300"}]}],"]"}]}],"}"}],","," ",RowBox[{"{",RowBox[
+{RowBox[{"ListLinePlot","[",RowBox[{RowBox[{"analysis","[",RowBox[{"[",RowBox[{"All",","," ",RowBox[
+{"{",RowBox[{"1",","," ","4"}],"}"}]}],"]"}],"]"}],","," ","\n","    ",RowBox[{"PlotLabel"," ","\[Rule]"," ","\"Anisotropy (Clustering)\""}],","," ",RowBox[
+{"PlotStyle"," ","\[Rule]"," ","Orange"}],","," ","\n","    ",RowBox[{"ImageSize"," ","\[Rule]"," ","300"}]}],"]"}],","," ","\n","   ",RowBox[
+{"ListLinePlot","[",RowBox[{RowBox[{"analysis","[",RowBox[{"[",RowBox[{"All",","," ",RowBox[
+{"{",RowBox[{"1",","," ","5"}],"}"}]}],"]"}],"]"}],","," ","\n","    ",RowBox[{"PlotLabel"," ","\[Rule]"," ","\"Causal Entropy (0.14 Point)\""}],","," ",RowBox[
+{"PlotStyle"," ","\[Rule]"," ","Purple"}],","," ","\n","    ",RowBox[{"ImageSize"," ","\[Rule]"," ","300"}]}],"]"}]}],"}"}]}],"}"}],"]"}]}]],"\n",StyleBox[
+RowBox[{RowBox[{"(*",RowBox[{RowBox[{"\:5728\:4e0d\:6539\:52a8"," ","Rule"," ","\:7684\:524d\:63d0\:4e0b"}],"\:ff0c","\:589e\:52a0\:5e7f\:4e49\:76f8\:5bf9\:8bba\:5ea6\:89c4\:76d1\:6d4b"}],"*)"}],"\n",RowBox[
+{RowBox[{"grAnalysis"," ","="," ","\n","  ",RowBox[{"Table","[",RowBox[{RowBox[{"Module","[",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"g"," ","="," ",RowBox[{"results","[",RowBox[{"[","i","]"}],"]"}]}],","," ","ricciK",","," ","\n","     ","massDensity"}],"}"}],",",RowBox[
+{"(*",RowBox[{"\:6d4b\:91cf\:5c40\:90e8\:56e0\:679c\:94fe\:5806\:53e0\:5bc6\:5ea6"," ",RowBox[
+{"(",RowBox[{"\:5bf9\:5e94"," ","T_uv"}],")"}]}],"*)"}],"\n","    ",RowBox[{RowBox[
+{"massDensity"," ","="," ",RowBox[{"Mean","[",RowBox[{"VertexDegree","[","g","]"}],"]"}]}],";","\n","    ",RowBox[
+{"(*",RowBox[{"\:6d4b\:91cf\:79bb\:6563\:66f2\:7387"," ",RowBox[{"(",RowBox[{"\:5bf9\:5e94"," ","G_uv"}],")"}]}],"*)"}],RowBox[
+{"(*",RowBox[{"\:7b80\:5316\:7248","\:ff1a","\:901a\:8fc7\:73af\:7ed3\:6784\:5206\:5e03\:63a2\:6d4b\:62d3\:6251\:66f2\:7387"}],"*)"}],"\n","    ",RowBox[
+{"ricciK"," ","="," ",RowBox[{"N","[",RowBox[{RowBox[{"Total","[",RowBox[{"Length"," ","/@"," ",RowBox[
+{"FindCycle","[",RowBox[{"g",","," ",RowBox[{"{","3","}"}],","," ","All"}],"]"}]}],"]"}],"/",RowBox[
+{"VertexCount","[","g","]"}]}],"]"}]}],";","\n","    ",RowBox[{"{",RowBox[{"massDensity",","," ","ricciK"}],"}"}]}]}],"]"}],","," ",RowBox[
+{"{",RowBox[{"i",","," ",RowBox[{"Length","[","results","]"}]}],"}"}]}],"]"}]}],";"}]}]],RowBox[
+{"\n","\n"}],StyleBox[RowBox[{RowBox[{"(*",RowBox[{"\:7ed8\:5236\:5f15\:529b\:5173\:8054\:56fe","\:ff1a",RowBox[
+{"\:5bc6\:5ea6"," ","vs"," ","\:66f2\:7387"}]}],"*)"}],"\n",RowBox[{"ListLinePlot","[",RowBox[
+{"grAnalysis",","," ","\n"," ",RowBox[{"PlotLabel"," ","\[Rule]"," ","\"Emergence of Einstein Field Equations\""}],","," ","\n"," ",RowBox[
+{"AxesLabel"," ","\[Rule]"," ",RowBox[{"{",RowBox[{"\"Causal Mass Density (T)\"",","," ","\"Topology Curvature (G)\""}],"}"}]}],","," ","\n"," ",RowBox[
+{"PlotStyle"," ","\[Rule]"," ",RowBox[{"{",RowBox[{"Thick",","," ",RowBox[{"Darker","[","Green","]"}]}],"}"}]}]}],"]"}]}]]}],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "699b8f50-98f0-48f8-b4a0-251f51d7cb1f"],Cell[
+BoxData[
+TagBox[GridBox[{{GraphicsBox[{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[
+NCache[Rational[7,360],0.019444444444444445`]],AbsoluteThickness[2],RGBColor[1,0,
+0]],LineBox[CompressedData["1:eJxTTMoPSmViYGDgB2IQHab0+z8Q2Ds4H5ltXi/iwAABDg9dfgCF2aF8DgfTnyB1f+0hfAEHI49/QP53KF/EYa81kG8Pk5dw2DBzxsyZM39B+TIO8dW3tuXe/gflKzhMULseEOf8E8pXcrDPdX7GNxPGV3Gon2FuWCv8G8pXc9iT7793hj+Mr+Fw2Ut/4d47ML6Ww/s7t7Zmh8P06zicLenfzJsPs1/PwaPT6qrzul/2AHNgUYE="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {{},{1.875`}},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],ImageSize -> 300,Method -> CompressedData["1:eJzlVltsTEEY3q0qeqEukZIgJRLx4kEi8cColm2TLts9y5MHp3vm7I6enlkzc2S3Eg8SDxJvvBAh6kGKeJBWkHjxQKh71KWXUIo24hYikZD455y9226J48kku/nPnJnv/+b/vzP/X9tKg/oMj8fDS+GvmXChl6SegpaBlQow6uKEB1RNI2ZE98q3ZfCnhFUDa2z3nHO+4Y5DKG/bHDAasK5ahlhPLVNTWUIRCQPzaRLPErRdFSSct2l+ZpOPqbEoCfMmU2CmhgWhpj6pCM0pYGzFjMM6ttIen/MpzQIjBFhtfmpxHKCc2Kgl2ai2EWIW5pPB2KgaHBdwtEHXcVjwooTkORtJJGrATzhRG2el9MQgGpTI+byX07NhApSYf4ElKTUwGjOIiXnuuQuESmcY65S111uMU+anGk4HpwBuzFDDuB2boiiupB5XZNjqDKPAu4QiHzdRM99FdUYZfsyjtpScQMyUYK2cGpbAdnwU0oFJ2a+nz4IIGFQ4EAWUb0eJMEgw2YWdFE+VGL719dSgjF1cuO9ty8U7KCmzl4gdOSzHGPqVUAgk3AbB5lnpmAhft8d7xE5/euBvrR5BbE3545OxNVddwl8k6S8cQklHrxEb7pDf8E2X8B/2fF27Zd87xAZXHD9bc+4JYst83s7t19zCf3Vv8cC3PS8QC9qZeJ5KxFuX8IM9Q6XPukcRO7p5wZlDxwYQ+zhv/72pqy67hO+o5SlK3pyQX489PrqEn0JLGqMpA/a7yH8MZQ7iJGLUJf7fu6TuISy3b8kx4jb/RlvuoE/H6Evpp9cl/stXL22YdQrCsq7vS4uv23V90ooTVTtqPyAWrf/+Zu8I3D/9fXcr+6+fdwn/gGdn3aWDbxC78PnHw/jYI8SaV23a1lvz3CX8zsDKJf0f7qeuHbh/IoM3riyLD/wmfvpCr5KOoI8g5h/2JpXSUM0IHm+fo+yu/H2zwdgcE6QdKowsIX6VtUHLMV5ZlMubzLBhaThdwcFb0Q4op9xP3DC5w0gph3ko8wzKt4Lza/a/pTRXuqaUQR5UgXmIUkPupmbxBmWGLTIOXUdio2U67aE3JbX0TC6CN32F5CxKzzRpcH4iEpkGSwH+xJujvIDKRIEFJA3+zzwU+AJm28GLEaxtVQ0L/0+R+AktRljn"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox["\"1.875 Ratio Pulse\"",TraditionalForm],PlotRange -> {{0,15.`},{0,5.124235566953587`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "2d32b4ab-b114-4b45-943a-8b53c36331eb"],GraphicsBox[
+{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[NCache[Rational[7,360],
+0.019444444444444445`]],AbsoluteThickness[2],RGBColor[0,0,1]],LineBox[CompressedData[
+"1:eJxTTMoPSmViYGAQAGIQXTHrdmjzuQf2R4yEQvfN+G7PAAYf0GgGBxtT0xmTDb5A+RwOihLhkxkvfITyBRw2/Jp459m8z1C+iEO665+EhrWfoHwJh0ePrMx/3oSpl3F4cU94evAsGF/B4chaa9fiKBhfyWF+aEZ20UQYX8Xhqbsmn3UYjK/m8Kx4kqyTAoyv4TAzb4KbBBOMr+WwWOu5WfgPmPt1HNIj8k2u/YXx9Rzy2Xs7mh9+sAcAz/pK1Q=="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0,0.9736227283314128`},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {{},{3.14`}},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],ImageSize -> 300,Method -> CompressedData["1:eJzlVltsTEEY3q0qeqEukZIgJRLx4kEi8cColm2TLts9y5MHp3vm7I6enlkzc2S3Eg8SDxJvvBAh6kGKeJBWkHjxQKh71KWXUIo24hYikZD455y9226J48kku/nPnJnv/+b/vzP/X9tKg/oMj8fDS+GvmXChl6SegpaBlQow6uKEB1RNI2ZE98q3ZfCnhFUDa2z3nHO+4Y5DKG/bHDAasK5ahlhPLVNTWUIRCQPzaRLPErRdFSSct2l+ZpOPqbEoCfMmU2CmhgWhpj6pCM0pYGzFjMM6ttIen/MpzQIjBFhtfmpxHKCc2Kgl2ai2EWIW5pPB2KgaHBdwtEHXcVjwooTkORtJJGrATzhRG2el9MQgGpTI+byX07NhApSYf4ElKTUwGjOIiXnuuQuESmcY65S111uMU+anGk4HpwBuzFDDuB2boiiupB5XZNjqDKPAu4QiHzdRM99FdUYZfsyjtpScQMyUYK2cGpbAdnwU0oFJ2a+nz4IIGFQ4EAWUb0eJMEgw2YWdFE+VGL719dSgjF1cuO9ty8U7KCmzl4gdOSzHGPqVUAgk3AbB5lnpmAhft8d7xE5/euBvrR5BbE3545OxNVddwl8k6S8cQklHrxEb7pDf8E2X8B/2fF27Zd87xAZXHD9bc+4JYst83s7t19zCf3Vv8cC3PS8QC9qZeJ5KxFuX8IM9Q6XPukcRO7p5wZlDxwYQ+zhv/72pqy67hO+o5SlK3pyQX489PrqEn0JLGqMpA/a7yH8MZQ7iJGLUJf7fu6TuISy3b8kx4jb/RlvuoE/H6Evpp9cl/stXL22YdQrCsq7vS4uv23V90ooTVTtqPyAWrf/+Zu8I3D/9fXcr+6+fdwn/gGdn3aWDbxC78PnHw/jYI8SaV23a1lvz3CX8zsDKJf0f7qeuHbh/IoM3riyLD/wmfvpCr5KOoI8g5h/2JpXSUM0IHm+fo+yu/H2zwdgcE6QdKowsIX6VtUHLMV5ZlMubzLBhaThdwcFb0Q4op9xP3DC5w0gph3ko8wzKt4Lza/a/pTRXuqaUQR5UgXmIUkPupmbxBmWGLTIOXUdio2U67aE3JbX0TC6CN32F5CxKzzRpcH4iEpkGSwH+xJujvIDKRIEFJA3+zzwU+AJm28GLEaxtVQ0L/0+R+AktRljn"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox["\"Dimension Growth (Target ~3)\"",TraditionalForm],PlotRange -> {{0,15.`},{0.9736227283314128`,1.4747908900346127`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.05`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "3ef3ed48-037f-4f0a-b6d3-80e9323deaa2"]},{GraphicsBox[
+{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[NCache[Rational[7,360],
+0.019444444444444445`]],AbsoluteThickness[2],RGBColor[1,0.5`,0]],LineBox[CompressedData[
+"1:eJxTTMoPSmViYGAQAGIQjQo+2GOnGRxQ+RwOxmDwGMoXcJik4glEj6B8EYfb23JBCMqXcPj4AQQeQPkyDrNmgsBTKF/BgW3RpYm2zA+hfCUHl+6c579XwvgqDuEsvOql8fegfDWHN4E75Fpfw+Q1oObB7NdyaJBV/eunCJPXcUg7XqylqQDj6zncX/1MOM7jgT0AFGFAiw=="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],ImageSize -> 300,Method -> CompressedData["1:eJzlVltsTEEY3q0qeqEukZIgJRLx4kEi8cColm2TLts9y5MHp3vm7I6enlkzc2S3Eg8SDxJvvBAh6kGKeJBWkHjxQKh71KWXUIo24hYikZD455y9226J48kku/nPnJnv/+b/vzP/X9tKg/oMj8fDS+GvmXChl6SegpaBlQow6uKEB1RNI2ZE98q3ZfCnhFUDa2z3nHO+4Y5DKG/bHDAasK5ahlhPLVNTWUIRCQPzaRLPErRdFSSct2l+ZpOPqbEoCfMmU2CmhgWhpj6pCM0pYGzFjMM6ttIen/MpzQIjBFhtfmpxHKCc2Kgl2ai2EWIW5pPB2KgaHBdwtEHXcVjwooTkORtJJGrATzhRG2el9MQgGpTI+byX07NhApSYf4ElKTUwGjOIiXnuuQuESmcY65S111uMU+anGk4HpwBuzFDDuB2boiiupB5XZNjqDKPAu4QiHzdRM99FdUYZfsyjtpScQMyUYK2cGpbAdnwU0oFJ2a+nz4IIGFQ4EAWUb0eJMEgw2YWdFE+VGL719dSgjF1cuO9ty8U7KCmzl4gdOSzHGPqVUAgk3AbB5lnpmAhft8d7xE5/euBvrR5BbE3545OxNVddwl8k6S8cQklHrxEb7pDf8E2X8B/2fF27Zd87xAZXHD9bc+4JYst83s7t19zCf3Vv8cC3PS8QC9qZeJ5KxFuX8IM9Q6XPukcRO7p5wZlDxwYQ+zhv/72pqy67hO+o5SlK3pyQX489PrqEn0JLGqMpA/a7yH8MZQ7iJGLUJf7fu6TuISy3b8kx4jb/RlvuoE/H6Evpp9cl/stXL22YdQrCsq7vS4uv23V90ooTVTtqPyAWrf/+Zu8I3D/9fXcr+6+fdwn/gGdn3aWDbxC78PnHw/jYI8SaV23a1lvz3CX8zsDKJf0f7qeuHbh/IoM3riyLD/wmfvpCr5KOoI8g5h/2JpXSUM0IHm+fo+yu/H2zwdgcE6QdKowsIX6VtUHLMV5ZlMubzLBhaThdwcFb0Q4op9xP3DC5w0gph3ko8wzKt4Lza/a/pTRXuqaUQR5UgXmIUkPupmbxBmWGLTIOXUdio2U67aE3JbX0TC6CN32F5CxKzzRpcH4iEpkGSwH+xJujvIDKRIEFJA3+zzwU+AJm28GLEaxtVQ0L/0+R+AktRljn"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox["\"Anisotropy (Clustering)\"",TraditionalForm],PlotRange -> {{0,15.`},{0,1.`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "adf17b3d-1b5e-4312-b967-be8b0565f70a"],GraphicsBox[
+{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[NCache[Rational[7,360],
+0.019444444444444445`]],AbsoluteThickness[2],RGBColor[0.5`,0,0.5`]],LineBox[CompressedData[
+"1:eJxTTMoPSmViYGAQAGIQDQPJqTOqXk3+aA/hfbBH5TM47Fzf6LQmAMbncHibYly1+scPKF/A4TRPx1fhw7+hfBGHoo4YFhMzRgcIX8LhrMaNiqStLFC+jMMWE6/HZUvYoXwFh9zs2oN7j3JB+UoOUx46dGd58EL5Kg7B+68f3GwnAOWrOTxfprjL5KYglK/hcPzhPyGfeGEoX8vhKuc5LrHbIlC+jkPCIlfDJ25iUL6ew5OejTte3BF3AADvK0Uw"]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {None,None},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],ImageSize -> 300,Method -> CompressedData["1:eJzlVltsTEEY3q0qeqEukZIgJRLx4kEi8cColm2TLts9y5MHp3vm7I6enlkzc2S3Eg8SDxJvvBAh6kGKeJBWkHjxQKh71KWXUIo24hYikZD455y9226J48kku/nPnJnv/+b/vzP/X9tKg/oMj8fDS+GvmXChl6SegpaBlQow6uKEB1RNI2ZE98q3ZfCnhFUDa2z3nHO+4Y5DKG/bHDAasK5ahlhPLVNTWUIRCQPzaRLPErRdFSSct2l+ZpOPqbEoCfMmU2CmhgWhpj6pCM0pYGzFjMM6ttIen/MpzQIjBFhtfmpxHKCc2Kgl2ai2EWIW5pPB2KgaHBdwtEHXcVjwooTkORtJJGrATzhRG2el9MQgGpTI+byX07NhApSYf4ElKTUwGjOIiXnuuQuESmcY65S111uMU+anGk4HpwBuzFDDuB2boiiupB5XZNjqDKPAu4QiHzdRM99FdUYZfsyjtpScQMyUYK2cGpbAdnwU0oFJ2a+nz4IIGFQ4EAWUb0eJMEgw2YWdFE+VGL719dSgjF1cuO9ty8U7KCmzl4gdOSzHGPqVUAgk3AbB5lnpmAhft8d7xE5/euBvrR5BbE3545OxNVddwl8k6S8cQklHrxEb7pDf8E2X8B/2fF27Zd87xAZXHD9bc+4JYst83s7t19zCf3Vv8cC3PS8QC9qZeJ5KxFuX8IM9Q6XPukcRO7p5wZlDxwYQ+zhv/72pqy67hO+o5SlK3pyQX489PrqEn0JLGqMpA/a7yH8MZQ7iJGLUJf7fu6TuISy3b8kx4jb/RlvuoE/H6Evpp9cl/stXL22YdQrCsq7vS4uv23V90ooTVTtqPyAWrf/+Zu8I3D/9fXcr+6+fdwn/gGdn3aWDbxC78PnHw/jYI8SaV23a1lvz3CX8zsDKJf0f7qeuHbh/IoM3riyLD/wmfvpCr5KOoI8g5h/2JpXSUM0IHm+fo+yu/H2zwdgcE6QdKowsIX6VtUHLMV5ZlMubzLBhaThdwcFb0Q4op9xP3DC5w0gph3ko8wzKt4Lza/a/pTRXuqaUQR5UgXmIUkPupmbxBmWGLTIOXUdio2U67aE3JbX0TC6CN32F5CxKzzRpcH4iEpkGSwH+xJujvIDKRIEFJA3+zzwU+AJm28GLEaxtVQ0L/0+R+AktRljn"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox["\"Causal Entropy (0.14 Point)\"",TraditionalForm],PlotRange -> {{0,15.`},{0,5.9657315119140755`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "49ecea2c-1b85-4926-ad8c-f15bcc01f6e0"]}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}}],
+"Grid"],StandardForm],"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "917fdaef-2ce5-49b7-81c7-0bff0636abd4"],Cell[
+BoxData[
+GraphicsBox[{{},{{{},{},TagBox[{Hue[0.67`,0.6`,0.6`],Directive[PointSize[NCache[Rational[
+7,360],0.019444444444444445`]],AbsoluteThickness[2],Thickness[Large],RGBColor[0,NCache[
+Rational[2,3],0.6666666666666666`],0]],LineBox[CompressedData["1:eJxTTMoPSmViYGAQAGIQDQUOEOqDPTo/FAxY4XxjMGB2gNCfoeo5HGD6jhfKABG7A0TfV/u829tyb29jdVD1nKTiOemL/ayZIMDqAKG/ws1PA4Nv9mzPkwvs2Ngd3npdWefy9pe9/VFV5w19bA6595bvSOH4Zr8s/tfS+F+sDmVJ6kD0zT4lZkKh4zFWB5Y0/hm2Cd/s9+345ejOyuYgEW7/YsWB7/arV4EAmwN35AknsU0/7D3utT3J9WBzqBJblp5Y9c0eALejWvQ="]]},
+Function[Annotation[Slot[1],"Charting`Private`Tag#1"]]]}},{{},{}}},{DisplayFunction -> Identity,AspectRatio -> NCache[
+Power[GoldenRatio,-1],0.6180339887498948`],Axes -> {True,True},AxesLabel -> {FormBox[
+TagBox["\"Causal Mass Density (T)\"",HoldForm],TraditionalForm],FormBox[TagBox["\"Topology Curvature (G)\"",
+HoldForm],TraditionalForm]},AxesOrigin -> {1.9791666666666714`,0},RuleDelayed[DisplayFunction,
+Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},GridLinesStyle -> Directive[
+GrayLevel[0.5`,0.4`]],Method -> CompressedData["1:eJzlVltsTEEY3q0qeqEukZIgJRLx4kEi8cColm2TLts9y5MHp3vm7I6enlkzc2S3Eg8SDxJvvBAh6kGKeJBWkHjxQKh71KWXUIo24hYikZD455y9226J48kku/nPnJnv/+b/vzP/X9tKg/oMj8fDS+GvmXChl6SegpaBlQow6uKEB1RNI2ZE98q3ZfCnhFUDa2z3nHO+4Y5DKG/bHDAasK5ahlhPLVNTWUIRCQPzaRLPErRdFSSct2l+ZpOPqbEoCfMmU2CmhgWhpj6pCM0pYGzFjMM6ttIen/MpzQIjBFhtfmpxHKCc2Kgl2ai2EWIW5pPB2KgaHBdwtEHXcVjwooTkORtJJGrATzhRG2el9MQgGpTI+byX07NhApSYf4ElKTUwGjOIiXnuuQuESmcY65S111uMU+anGk4HpwBuzFDDuB2boiiupB5XZNjqDKPAu4QiHzdRM99FdUYZfsyjtpScQMyUYK2cGpbAdnwU0oFJ2a+nz4IIGFQ4EAWUb0eJMEgw2YWdFE+VGL719dSgjF1cuO9ty8U7KCmzl4gdOSzHGPqVUAgk3AbB5lnpmAhft8d7xE5/euBvrR5BbE3545OxNVddwl8k6S8cQklHrxEb7pDf8E2X8B/2fF27Zd87xAZXHD9bc+4JYst83s7t19zCf3Vv8cC3PS8QC9qZeJ5KxFuX8IM9Q6XPukcRO7p5wZlDxwYQ+zhv/72pqy67hO+o5SlK3pyQX489PrqEn0JLGqMpA/a7yH8MZQ7iJGLUJf7fu6TuISy3b8kx4jb/RlvuoE/H6Evpp9cl/stXL22YdQrCsq7vS4uv23V90ooTVTtqPyAWrf/+Zu8I3D/9fXcr+6+fdwn/gGdn3aWDbxC78PnHw/jYI8SaV23a1lvz3CX8zsDKJf0f7qeuHbh/IoM3riyLD/wmfvpCr5KOoI8g5h/2JpXSUM0IHm+fo+yu/H2zwdgcE6QdKowsIX6VtUHLMV5ZlMubzLBhaThdwcFb0Q4op9xP3DC5w0gph3ko8wzKt4Lza/a/pTRXuqaUQR5UgXmIUkPupmbxBmWGLTIOXUdio2U67aE3JbX0TC6CN32F5CxKzzRpcH4iEpkGSwH+xJujvIDKRIEFJA3+zzwU+AJm28GLEaxtVQ0L/0+R+AktRljn"],RuleDelayed[
+PlotInteractivity,True],PlotLabel -> FormBox["\"Emergence of Einstein Field Equations\"",
+TraditionalForm],PlotRange -> {{1.9791666666666714`,3.`},{0,2.`}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02`],Scaled[0.02`]},{Scaled[0.02`],Scaled[0.05`]}},Ticks -> {Automatic,Automatic},RuleDelayed[
+PlotInteractivity,True]},ExpressionUUID -> "a69ab716-fe8c-441d-9f6d-8352d709a65f"],
+StandardForm],"Output",CellLabel -> "Out[8]= ",ExpressionUUID -> "67ffc69d-0eea-4e17-b185-aed134fdb138"]},
+Open],ExpressionUUID -> "ca0cfa70-b170-45e8-a99f-55b0699cd6bc"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.3 for Wolfram Cloud 1.75 (December 9, 2025)"]
