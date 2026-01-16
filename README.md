@@ -1,4 +1,3 @@
-# univer_dig_cod
 # 🌌 Tri-Chord Causal Theory (TCCT): Emergent Physics from Minimalist Graph Rewriting
 # 三弦因果论：基于极简图重写规则的涌现物理
 
@@ -42,8 +41,8 @@ Without manual fine-tuning, the long-term evolution of the graph exhibits statis
 ### 1. Fundamental Constants Convergence
 The system's topological ratios and coupling strengths tend to stabilize around values perilously close to known physical constants:
 * **Fine-Structure Constant**: $\alpha \approx 1/137$
-* **The Golden Ratio**: $\phi \approx 1.618$ (pulse)
-* **Euler's Number**: $e \approx 2.71$ (Average dimension)
+* **The Golden Ratio**: $\phi \approx 1.618$ (Observed in pulse dynamics)
+* **Euler's Number**: $e \approx 2.71$ (Average dimensional scaling)
 
 ### 2. Holographic Thermodynamics (The Page Curve)
 In simulations tracking the "evaporation" of high-density topological clusters (black hole analogues):
@@ -65,8 +64,10 @@ In simulations tracking the "evaporation" of high-density topological clusters (
 
 All logic is contained within the Wolfram Language notebooks. The raw data plots and simulation logs are available for independent verification.
 
-* `core_evolution.nb`: The primary algorithm implementing the Tri-Chord rule and Freezing mechanism.
-* `/results`: **(Must See!)** Visualizations of the Page Curve and Gravitational Wave propagation.
+
+
+* **`core_source_code/`**: Contains the primary algorithms implementing the Tri-Chord rule and Freezing mechanism.
+* **`Result_PDF_or_snapshot/`**: **(Must See!)** Contains visualizations of the Page Curve, Gravitational Wave propagation, and detailed PDF derivations.
 
 ---
 
@@ -76,7 +77,11 @@ I am a Computer Science student, not a theoretical physicist. This model was bor
 
 The results—specifically the spontaneous emergence of the Page Curve and the "1/137" ratio—are either a testament to the power of the **Law of Large Numbers** or a hint that **the universe fundamentally computes**.
 
-I am sharing this in hopes of finding answers. If you find this interesting, absurd, or potentially revolutionary, please start a discussion in the **Issues** tab.
+For more details or discussions, please refer to my post on the **Wolfram Community**:  
+👉 **[Tri-Chord Causal Theory Discussion](https://community.wolfram.com/groups/-/m/t/3589391)**
+
+**Disclaimer:** Due to my limited personal level, errors are inevitable. I warmly welcome everyone to correct me or provide feedback in the comments or Issues tab.
+(由于我个人水平有限，难免会有错误，欢迎大家指正。)
 
 ---
 
