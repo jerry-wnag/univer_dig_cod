@@ -88,3 +88,6 @@ For more details or discussions, please refer to my post on the **Wolfram Commun
 ## 📜 License
 
 Distributed under the MIT License.
+MIT License
+
+Copyright (c) 2026 Wang Xin
