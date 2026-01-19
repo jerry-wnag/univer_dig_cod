@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or model, please cite it as below."
+authors:
+- family-names: "Wang"
+  given-names: "Xin"
+title: "A Minimal model for causal invariance: path merging via DP-like optimization"
+version: 1.0.0
+date-released: 2026-01-19
+url: "https://github.com/jerry-wnag/univer_dig_cod"
+keywords:
+  - "AdS/CFT"
+  - "Quantum Gravity"
+  - "Graph Theory"
+  - "Fine Structure Constant"
+  - "Chirality"
+license: "MIT"
+abstract: "A graph rewriting algorithm that simulates topological path merging. Experimental results demonstrate the spontaneous emergence of fundamental physical properties, including holographic entropy scaling and geometric coupling constants from discrete rules."
