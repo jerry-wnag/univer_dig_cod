@@ -82,6 +82,7 @@ For more details or discussions, please refer to my post on the **Wolfram Commun
 
 **Disclaimer:** Due to my limited personal level, errors are inevitable. I warmly welcome everyone to correct me or provide feedback in the comments or Issues tab.
 (由于我个人水平有限，难免会有错误，欢迎大家指正。)
+Email:xinw12424@gmail.com
 
 ---
 
