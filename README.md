@@ -88,7 +88,7 @@ Email:xinw12424@gmail.com
 
 ## 📜 License
 
-Distributed under the MIT License.
-MIT License
+Distributed under the AGPL-3.0 License.
+AGPL-3.0 License
 
 Copyright (c) 2026 Wang Xin
