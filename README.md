@@ -59,6 +59,14 @@ In simulations tracking the "evaporation" of high-density topological clusters (
 * **Orbital Mechanics**: Test nodes exhibit emergent **elliptical** and **helical** trajectories around central clusters.
 
 ---
+### 🧩 Interdisciplinary Mathematical Isomorphisms 
+
+While primarily a cosmological model, the **discrete causal dynamics** demonstrated here share deep mathematical isomorphism with several complex systems. These theoretical mappings constitute **prior art** for applied algorithms in:
+
+1.  **Chemical Reaction Networks (CRN):** Modeling molecular recombination events as graph rewriting rules.
+2.  **Artificial Intelligence:** Gradient-free topology evolution (Dynamic Neural Architecture).
+3.  **Financial Microstructure (Theoretical):** The emergent non-Gaussian fluctuations in the causal graph serve as a candidate model for **stochastic volatility in discrete order flows** (High-Frequency Trading dynamics).
+4.  **Distributed Consensus (Theoretical):** The strict partial ordering of the causal set provides a mathematical framework for conflict-free ordering in **DAG-based Blockchains** without global clocks.
 
 ## 📂 Source Code & Data
 
