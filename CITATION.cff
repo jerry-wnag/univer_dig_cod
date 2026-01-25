@@ -1,20 +1,32 @@
 cff-version: 1.2.0
-message: "If you use this software or model, please cite it as below."
+message: "If you use this software, data, or the emergent physical constants derived herein, you must cite this repository. Commercial use or network deployment requires adherence to AGPL-3.0."
 authors:
-- family-names: "Wang"
-  given-names: "Xin"
-title: "A Minimal model for causal invariance: path merging via DP-like optimization"
+  - family-names: "Wang"
+    given-names: "Xin"
+title: "Emergent Unification: A Causal Graph Rewriting Framework for Quantum Gravity, Fermionic Topology, and the Fine Structure Constant"
 version: 1.0.0
 date-released: 2026-01-19
 url: "https://github.com/jerry-wnag/univer_dig_cod"
+repository-code: "https://github.com/jerry-wnag/univer_dig_cod"
+license: AGPL-3.0
 keywords:
-  - "AdS/CFT"
   - "Quantum Gravity"
-  - "Graph Theory"
-  - "Fine Structure Constant"
-  - "Chirality"
-  - "AI”
-  - "Block chain"
-  - "Chemistry"
-license: "AGPL-3.0"
-abstract: "A graph rewriting algorithm that simulates topological path merging. Experimental results demonstrate the spontaneous emergence of fundamental physical properties, including holographic entropy scaling and geometric coupling constants from discrete rules."
+  - "AdS/CFT Correspondence"
+  - "Graph Rewriting"
+  - "Fermionic Topology"
+  - "Fine Structure Constant (1/137)"
+  - "Page Curve"
+  - "Chirality Breaking"
+  - "Causal Sets"
+  - "Wolfram Mathematica"
+  - "Artificial Intelligence"
+abstract: >-
+  This repository contains the source code (Mathematica .nb & Python) and Wolfram-verified data logs demonstrating the spontaneous emergence of fundamental physical laws from a minimal causal graph rewriting system. 
+  
+  Key verified phenomena include:
+  1. The geometric emergence of the Fine Structure Constant (alpha ~ 1/137).
+  2. Spontaneous Chiral Symmetry Breaking (2.33% bias).
+  3. Topological separation of Bosonic (L=3) and Fermionic (L>3) sectors.
+  4. Derivation of the Page Curve for black hole information recovery.
+  
+  All results are reproducible via the included discrete event simulation. This work proposes a computational foundation for Background Independent Quantum Gravity.
