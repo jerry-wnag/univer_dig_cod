@@ -29,7 +29,7 @@ $$\{x, y\} + \{y, z\} \xrightarrow{\text{Optimization}} \{x, z\} + \{x, w\} + \{
 #### 2. The Freezing Mechanism (Time)
 * **Active Interaction ($x \leftrightarrow y$)**: Edges capable of rewriting (The Quantum "Now").
 * **Causal Fixation ($x \Rightarrow y$)**: Once a path is optimized, it freezes into an inert state. This phase transition generates an irreversible **Arrow of Time** and forms the stable backbone of spacetime.
-
+* **union or the other relevant deduplication function**:Pauli exclusion principle
 ---
 
 ## 🤯 Emergent Phenomena (The "Coincidences")
