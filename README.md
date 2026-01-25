@@ -1,7 +1,7 @@
 # 🌌 Tri-Chord Causal Theory (TCCT): Emergent Physics from Minimalist Graph Rewriting
 # 三弦因果论：基于极简图重写规则的涌现物理
 [![DOI](https://zenodo.org/badge/1135499017.svg)](https://doi.org/10.5281/zenodo.18296245)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL-3.0-blue.svg)](https://opensource.org/licenses/MIT)
 [![Language: Wolfram](https://img.shields.io/badge/Language-Wolfram%20Language-red)](https://www.wolfram.com/language/)
 [![Status: Discovery](https://img.shields.io/badge/Status-Scientific%20Discovery%20%2F%20Open%20Data-purple)](https://github.com/)
 
