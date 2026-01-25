@@ -58,7 +58,30 @@ In simulations tracking the "evaporation" of high-density topological clusters (
 * **Gravity Wells**: The grid naturally curves and contracts around high-connectivity nodes.
 * **Gravitational Waves**: Movement of dense clusters generates ripple-like disturbances that propagate through the causal fabric.
 * **Orbital Mechanics**: Test nodes exhibit emergent **elliptical** and **helical** trajectories around central clusters.
+* **Quantum & Topological Constraints**：
 
+Pauli Exclusion Principle: No two nodes can share identical topological neighborhoods; any "address collision" triggers an automatic State-Merge (Conflict Resolution) to maintain graph uniqueness.
+
+Topological Uniqueness: The system enforces a fundamental distinguishability where duplicate informational states are compressed, manifesting as the emergent "repulsion" between fermions.
+
+
+State Compression: The use of Union logic in graph updates ensures that redundant connectivity is pruned, effectively preventing identical quantum states from occupying the same causal coordinate.
+
+Fermionic Pressure: High-connectivity clusters generate a "topological pressure" to maintain distinct connectivity signatures, ensuring the structural stability of emergent matter.
+
+Deductive Predictions
+
+1. Gravity as Path Optimization: Gravity is the pressure of the graph seeking the shortest computational path. G is the ratio between Node Expansion (Birth of w) and Path Collapse (Degree Reduction).
+
+Prediction: G scales with the average degree of the graph.
+
+2. Proton-Electron Ratio (1836.15): This is the stable ratio between High-Degree Clusters (Protons) and Low-Degree Chiral Chains (Electrons).
+
+Prediction: At N→∞, the sum of degrees in stable 3D-clusters vs. 1D-chains converges to 1836.15.
+
+3. Dark Matter: Dark Matter is Redundant Connectivity. Nodes that contribute to the Sum of Degrees (Gravity) but fail to synchronize into Chiral Loops (Electromagnetism).
+
+4. Time as State-Commit: Time is the discrete count of graph-rewrite operations. The "Arrow of Time" is the irreversible trend of path merging in a finite-resource system.
 ---
 ### 🧩 Interdisciplinary Mathematical Isomorphisms 
 
