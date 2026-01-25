@@ -14,7 +14,7 @@ keywords:
   - "Fine Structure Constant"
   - "Chirality"
   - "AI”
-  -“block chain”
-  -"chemistry"
+  - "Block chain"
+  - "Chemistry"
 license: "AGPL-3.0"
 abstract: "A graph rewriting algorithm that simulates topological path merging. Experimental results demonstrate the spontaneous emergence of fundamental physical properties, including holographic entropy scaling and geometric coupling constants from discrete rules."
