@@ -4,8 +4,8 @@ authors:
   - family-names: "Wang"
     given-names: "Xin"
 title: "Emergent Unification: A Causal Graph Rewriting Framework for Quantum Gravity, Fermionic Topology, and the Fine Structure Constant"
-version: 2.1.0
-doi: "10.5281/zenodo.18429972"
+version: 2.2.0
+doi: "10.5281/zenodo.18446447"
 date-released: 2026-01-19
 url: "https://github.com/jerry-wnag/univer_dig_cod"
 repository-code: "https://github.com/jerry-wnag/univer_dig_cod"
@@ -21,13 +21,7 @@ keywords:
   - "Causal Sets"
   - "Wolfram Mathematica"
   - "Artificial Intelligence"
+  
 abstract: >-
   This repository contains the source code (Mathematica .nb & Python) and Wolfram-verified data logs demonstrating the spontaneous emergence of fundamental physical laws from a minimal causal graph rewriting system. 
-  
-  Key verified phenomena include:
-  1. The geometric emergence of the Fine Structure Constant (alpha ~ 1/137).
-  2. Spontaneous Chiral Symmetry Breaking (2.33% bias).
-  3. Topological separation of Bosonic (L=3) and Fermionic (L>3) sectors.
-  4. Derivation of the Page Curve for black hole information recovery.
-  
   All results are reproducible via the included discrete event simulation. This work proposes a computational foundation for Background Independent Quantum Gravity.
