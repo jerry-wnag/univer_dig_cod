@@ -7,9 +7,9 @@
 [![Status: Discovery](https://img.shields.io/badge/Status-Scientific%20Discovery%20%2F%20Open%20Data-purple)](https://github.com/)
 
 > **Abstract / 摘要**
-> This repository documents a "computational accident" discovered by a Computer Science undergraduate. By modeling the universe purely as a path-optimization problem on a causal graph, the system spontaneously generates macroscopic behaviors strikingly analogous to **General Relativity**, **Quantum Mechanics**, and **Holographic Thermodynamics**.
+> This repository documents a "computational accident" discovered by a Computer Science undergraduate. By modeling the universe purely as a path-optimization problem on a causal graph, the system spontaneously generates macroscopic behaviors strikingly analogous to **General Relativity**, **Quantum Mechanics**, **Electromagnetism** and **Holographic Thermodynamics**.
 >
-> 本项目记录了一名计算机专业本科生的“计算意外”。通过将宇宙建模为因果图上的路径优化问题，系统自发涌现出了与**广义相对论**、**量子力学**和**全息热力学**惊人相似的宏观行为。
+> 本项目记录了一名计算机专业本科生的“计算意外”。通过将宇宙建模为因果图上的路径优化问题，系统自发涌现出了与**广义相对论**、**量子力学**、**电磁学**和**全息热力学**惊人相似的宏观行为。
 
 ---
 
@@ -83,6 +83,7 @@ Prediction: At N→∞, the sum of degrees in stable 3D-clusters vs. 1D-chains c
 
 4. Time as State-Commit: Time is the discrete count of graph-rewrite operations. The "Arrow of Time" is the irreversible trend of path merging in a finite-resource system.
 ---
+Calculate redshift and wave packets
 ### 🧩 Interdisciplinary Mathematical Isomorphisms 
 
 While primarily a cosmological model, the **discrete causal dynamics** demonstrated here share deep mathematical isomorphism with several complex systems. These theoretical mappings constitute **prior art** for applied algorithms in:
