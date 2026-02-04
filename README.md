@@ -117,6 +117,8 @@ For more details or discussions, please refer to my post on the **Wolfram Commun
 (由于我个人水平有限，难免会有错误，欢迎大家指正。)
 
 As I am approaching graduation, I am officially designating this repository and its underlying logic as core research material for my further education applications.
+
+At the same time, I also hope that everyone can communicate with me, because my understanding of physics is also very limited and there might be some errors in expression or even logical errors in some aspects. I sincerely hope that everyone can point them out. I would be very grateful.
 Email:xinw12424@gmail.com
 
 ---
