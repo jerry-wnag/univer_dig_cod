@@ -3,9 +3,9 @@ message: "If you use this software, data, or the emergent physical constants der
 authors:
   - family-names: "Wang"
     given-names: "Xin"
-title: "Emergent Unification: A Causal Graph Rewriting Framework for Quantum Gravity, Fermionic Topology, and the Fine Structure Constant"
-version: 2.2.0
-doi: "10.5281/zenodo.18446447"
+title: "A Minimal model for causal invariance: path merging via DP-like optimization"
+version: 3.0.0
+doi: "10.5281/zenodo.18476215"
 date-released: 2026-01-19
 url: "https://github.com/jerry-wnag/univer_dig_cod"
 repository-code: "https://github.com/jerry-wnag/univer_dig_cod"
