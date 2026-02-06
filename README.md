@@ -119,7 +119,10 @@ For more details or discussions, please refer to my post on the **Wolfram Commun
 As I am approaching graduation, I am officially designating this repository and its underlying logic as core research material for my further education applications.
 
 At the same time, I also hope that everyone can communicate with me, because my understanding of physics is also very limited and there might be some errors in expression or even logical errors in some aspects. I sincerely hope that everyone can point them out. I would be very grateful.
+However, the "Continuum Limit" of this graph-rewriting rule remains an open question for me. > I would be deeply grateful if researchers with access to higher computational bandwidth could test this rule at a larger scale . I am eager to learn if the topological properties I've observed hold true as the system scales.
+Any insights, corrections, or data sharing from the community would be an invaluable part of my learning journey
 Email:xinw12424@gmail.com
+
 
 ---
 
