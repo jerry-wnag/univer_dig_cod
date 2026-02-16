@@ -104,6 +104,21 @@ All logic is contained within the Wolfram Language notebooks. The raw data plots
 
 ---
 
+## 📚 References | 参考文献
+*   **Cook, Charles Rodbourn. (2026).**
+    *Coherence Calculus: Finite Observability via Horizon Projections and Projection-Induced Defects* (Version 0.4).
+    *   **Source:** [Zenodo Archive](https://zenodo.org/records/18168311)
+    *   **Note:** This theoretical framework provides the mathematical derivation for the "Projection Defects" that spontaneously emerge in our TCCT simulations.
+
+## 🙏 Acknowledgments | 致谢
+Special thanks to **Charles Rodbourn Cook**.
+
+During our exchange regarding my TCCT model, he brought his work *Coherence Calculus* to my attention. I am grateful for this recommendation, as it provided a rigorous theoretical language to describe the phenomena that had already emerged in my independent simulations (specifically the relativistic time dilation corrections).
+
+The convergence of my computational results with his theoretical predictions serves as a robust cross-validation for both frameworks.
+
+
+
 ## ✉️ A Note from the Author
 
 I am a Computer Science student, not a theoretical physicist. This model was born from a desire to apply **Dynamic Programming** principles to the structure of reality.
