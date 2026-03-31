@@ -4,7 +4,7 @@ authors:
   - family-names: "Wang"
     given-names: "Xin"
 title: "A Minimal model for causal invariance: path merging via DP-like optimization"
-version: 4.1.0
+version: 4.2.0
 doi: " 10.5281/zenodo.18296245"
 date-released: 2026-01-19
 url: "https://github.com/jerry-wnag/univer_dig_cod"
