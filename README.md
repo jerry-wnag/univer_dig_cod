@@ -59,7 +59,13 @@ In simulations tracking the "evaporation" of high-density topological clusters (
 * **Gravitational Waves**: Movement of dense clusters generates ripple-like disturbances that propagate through the causal fabric.
 * **Orbital Mechanics**: Test nodes exhibit emergent **elliptical** and **helical** trajectories around central clusters.
 * **Quantum & Topological Constraints**：
-
+### 5. Scale-Free Topology & Power-Law Distribution
+### 6.Closed $S^3$ Sphere
+* **Finite but Unbounded**: Macroscopic measurements of the causal graph's topological invariants suggest the emergence of a closed spherical manifold ($S^3$).
+### 7. Neuron-like Features
+### 8. NAND Gates
+* **Emergent Classical Computation**: 100% deterministic classical logic spontaneously emerges from the underlying probabilistic wavefronts through macroscopic boundary conditions.
+* **Topological Rupture**: The system executes a flawless NAND gate via spatial rupture and destructive interference
 Pauli Exclusion Principle: No two nodes can share identical topological neighborhoods; any "address collision" triggers an automatic State-Merge (Conflict Resolution) to maintain graph uniqueness.
 
 Topological Uniqueness: The system enforces a fundamental distinguishability where duplicate informational states are compressed, manifesting as the emergent "repulsion" between fermions.
