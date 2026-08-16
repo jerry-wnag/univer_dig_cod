@@ -1,0 +1,31 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S83B_FreezeK19OuterCandidate_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-eb44601d-3795-4d40-bc41-54c9f87aa768.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S83B, Name -> FreezeK19OuterCandidate, \n \n>     BaseCandidateHash -> \n \n>      1aeac2dc1aa0ec4f6e187e25ec054e3e8188c75ab1058b74f620500b826a587a, \n \n>     Representation -> KExactRole, K -> 19, DevelopmentRows -> 264, \n \n>     DevelopmentScore -> 264, PolicyLength -> 26, SelectionUsesS83Labels -> True, \n \n>     S83BIsBlindTest -> False, CoreMayChange -> False, \n \n>     Deduplication -> DeleteDuplicatesUnchanged, FrozenBeforeS84 -> True, \n \n>     ProtocolHash -> f6dc7b5d8e969ef9d2db9074213d58b50df81432a53684a861da76b6a0631231|>}\n \n>    , TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, BaseCandidateHash, \n \n>      Representation, K, DevelopmentRows, DevelopmentScore, PolicyLength, \n \n>      SelectionUsesS83Labels, S83BIsBlindTest, CoreMayChange, Deduplication, \n \n>      FrozenBeforeS84, ProtocolHash}, \n \n>     {TypeSystem`Atom[String], TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String]}], 1], <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S83B, Name -> FreezeK19OuterCandidate, Representation -> KExactRole, \n \n>     K -> 19, PolicyLength -> 26, DevelopmentScore -> 264, DevelopmentCases -> 264, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateFile -> E:/engine_wolf/TCCT_S83B_FrozenCandidate.wl, \n \n>     CandidateFileExported -> True, OriginalFrozenModelChanged -> False, \n \n>     S82CFrozenCandidateChanged -> False, CoreChanged -> False, \n \n>     DeduplicationMechanismChanged -> False, S83BIsBlindTest -> False, \n \n>     FrozenBeforeS84 -> True, FreezeValidityPassed -> True, \n \n>     Outcome -> K19_OUTER_CANDIDATE_FROZEN|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 18], \n \n>    1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|\"Stage\" -> \"S83B\", \"Name\" -> \"FreezeK19OuterCandidate\", \"Representation\" ->\\\n \n>   \"KExactRole\", \"K\" -> 19, \"PolicyLength\" -> 26, \"DevelopmentScore\" -> 264,\\\n \n>   \"DevelopmentCases\" -> 264, \"CandidateHash\" ->\\\n \n>   \"a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f\", \"CandidateFile\"\\\n \n>   -> \"E:/engine_wolf/TCCT_S83B_FrozenCandidate.wl\", \"CandidateFileExported\" -> True,\\\n \n>   \"OriginalFrozenModelChanged\" -> False, \"S82CFrozenCandidateChanged\" -> False,\\\n \n>   \"CoreChanged\" -> False, \"DeduplicationMechanismChanged\" -> False, \"S83BIsBlindTest\"\\\n \n>   -> False, \"FrozenBeforeS84\" -> True, \"FreezeValidityPassed\" -> True, \"Outcome\" ->\\\n \n>   \"K19_OUTER_CANDIDATE_FROZEN\"|>"
+    }
+  ],
+  "completed": true
+}
