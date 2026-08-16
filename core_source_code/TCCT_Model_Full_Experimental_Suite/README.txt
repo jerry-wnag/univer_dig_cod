@@ -20,3 +20,4 @@ Later experiments further extended the same state-discovery direction:
 The current prototype is best described as a **deterministic, partially observable, active, factorized structured world-model research prototype**.
 
 It is not presented as AGI. Current experiments are primarily finite, discrete and synthetic, and the next major directions include stochastic belief states, multiple hidden factors, multimodal grounding, continual learning and planning.
+NOTE:In **TCCT_S95_Strict_Blind_Research_Release_2026-08-12**, the `experiments` folder, which contains the atomic files, was accidentally moved by me to the same directory level as `TCCT_S95_Strict_Blind_Research_Release_2026-08-12` due to an oversight.
