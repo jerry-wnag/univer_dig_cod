@@ -1,0 +1,40 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S82C_FrozenCandidateRecovery.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-eb44601d-3795-4d40-bc41-54c9f87aa768.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S82C-Recovery, Name -> FrozenCandidateDeterministicRecovery, \n \n>     OriginalFrozenModelChanged -> False, CoreChanged -> False, \n \n>     CandidateSearchRun -> False, S83RowsLoaded -> False, S83LabelsLoaded -> False, \n \n>     PreflightPassed -> True|>}, TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, \n \n>      OriginalFrozenModelChanged, CoreChanged, CandidateSearchRun, S83RowsLoaded, \n \n>      S83LabelsLoaded, PreflightPassed}, \n \n>     {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S82C-Recovery, Name -> FrozenCandidateDeterministicRecovery, \n \n>     Purpose -> RecoverLostInMemoryCandidateFromLockedDevelopmentProtocol, \n \n>     ExpectedCandidateHash -> \n \n>      1aeac2dc1aa0ec4f6e187e25ec054e3e8188c75ab1058b74f620500b826a587a, \n \n>     FixedRepresentation -> KExactRole, FixedK -> 10, \n \n>     GrammarOrder -> \n \n>      {S59, ChainIn, SharedMerge, ParallelIn, ParallelOut, DiamondIn, SharedParallelIn}\\\n \n>      , Depths -> {2, 5, 9, 15}, StressDepths -> {2, 5}, \n \n>     StopAsSoonAsExpectedCandidateHashMatches -> True, CandidateSearchRun -> False, \n \n>     HyperparameterSearchRun -> False, PolicyEditApplied -> False, \n \n>     S82BlindRowsLoaded -> False, S82BlindLabelsLoaded -> False, \n \n>     S83RowsLoaded -> False, S83LabelsLoaded -> False, \n \n>     ProtocolHash -> 87ffc0987da74744d3cc988d6873d7329205821f8e15d4888c3ec02d78f7be1d, \n \n>     NoRecoveryRowEvaluatedBeforeProtocolHash -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 19], \n \n>    1], <||>]"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|GrammarAdded -> S59, GrammarsUsed -> 1, LegacyRowsUsed -> 32, \n \n>     StressRowsUsed -> 8, PolicyLength -> 2, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> ChainIn, GrammarsUsed -> 2, LegacyRowsUsed -> 64, \n \n>     StressRowsUsed -> 8, PolicyLength -> 3, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> SharedMerge, GrammarsUsed -> 3, LegacyRowsUsed -> 96, \n \n>     StressRowsUsed -> 8, PolicyLength -> 4, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> ParallelIn, GrammarsUsed -> 4, LegacyRowsUsed -> 128, \n \n>     StressRowsUsed -> 8, PolicyLength -> 5, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> ParallelOut, GrammarsUsed -> 5, LegacyRowsUsed -> 160, \n \n>     StressRowsUsed -> 8, PolicyLength -> 7, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> DiamondIn, GrammarsUsed -> 6, LegacyRowsUsed -> 192, \n \n>     StressRowsUsed -> 8, PolicyLength -> 7, CandidateHashMatched -> False|>, \n \n>    <|GrammarAdded -> SharedParallelIn, GrammarsUsed -> 7, LegacyRowsUsed -> 224, \n \n>     StressRowsUsed -> 8, PolicyLength -> 8, CandidateHashMatched -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{GrammarAdded, GrammarsUsed, LegacyRowsUsed, \n \n>      StressRowsUsed, PolicyLength, CandidateHashMatched}, \n \n>     {TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean]}], 7], <||>]\nDataset[{<|Stage -> S82C-Recovery, Name -> FrozenCandidateDeterministicRecovery, \n \n>     GrammarsNeeded -> \n \n>      {S59, ChainIn, SharedMerge, ParallelIn, ParallelOut, DiamondIn, SharedParallelIn}\\\n \n>      , LegacyRowsRecomputed -> 224, StressRowsRecomputed -> 8, RowsCorrect -> 232, \n \n>     RowsChecked -> 232, RecoveredPolicyLength -> 8, \n \n>     ExpectedCandidateHash -> \n \n>      1aeac2dc1aa0ec4f6e187e25ec054e3e8188c75ab1058b74f620500b826a587a, \n \n>     RecoveredCandidateHash -> \n \n>      1aeac2dc1aa0ec4f6e187e25ec054e3e8188c75ab1058b74f620500b826a587a, \n \n>     CandidateHashMatched -> True, CandidateFileExported -> True, \n \n>     CandidateFile -> E:/engine_wolf/TCCT_S82C_FrozenCandidate.wl, \n \n>     OriginalFrozenModelChanged -> False, CoreChanged -> False, \n \n>     CanonicalizerChanged -> False, InterventionChanged -> False, \n \n>     CandidateSearchRun -> False, HyperparameterSearchRun -> False, \n \n>     PolicyEditApplied -> False, S82BlindRowsLoaded -> False, S83RowsLoaded -> False, \n \n>     IntegrityPassed -> True, RecoverySucceeded -> True, \n \n>     Outcome -> FROZEN_CANDIDATE_RECOVERED|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 25], \n \n>    1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<||>"
+    }
+  ],
+  "completed": true
+}
