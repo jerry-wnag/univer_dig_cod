@@ -1,0 +1,40 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S86B_CombinedPolicyDevelopmentAndFreeze_Preflight_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-831c5ae7-09ea-440b-8a9c-457c615913d2.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, Candidate -> S83B-K19ExactRole, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     Depths -> {43, 71}, Topologies -> {DoubleDiamondIn, HierarchicalDiamondIn}, \n \n>     PatchedBranchPairs -> {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {1, 6}}, \n \n>     BranchCount -> 6, ExpectedScenarios -> 24, ExpectedWorldPairs -> 144, \n \n>     ExpectedWorlds -> 288, ExternalGrammar -> IndependentSixBranchT86, \n \n>     Intervention -> TwoSimultaneousBranchStopPatches, \n \n>     QueryGrid -> AllSixQueriesBeforeAndAfterIntervention, \n \n>     ExpectedPatchedQueryPairs -> 48, ExpectedUnpatchedQueryPairs -> 96, \n \n>     TokenDeduplication -> DeleteDuplicatesAfterExactRoleCodePairing, \n \n>     CandidateFrozenBeforeProtocol -> True, CandidateSearchRun -> False, \n \n>     TrainingRun -> False, HistoricalRegressionRerun -> False, S83BlindRerun -> False, \n \n>     S84BlindRerun -> False, S85BlindRerun -> False, S83BDevelopmentRowsRerun -> False, \n \n>     S86LabelsUsedForSelection -> False, NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 340bd60ac6e1938ca523c0fa78ba98463cf0e34900744001ef2d6ed9731d5fd8|>}\n \n>    , TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, \n \n>     28], 1], <||>]"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86B, Name -> CombinedPolicyDevelopmentAndFreeze, \n \n>     DevelopmentOnly -> True, S86AR1CertificateHashAcknowledged -> \n \n>      2f2e1e4ed0321ac078c9df360e25d119e3108ac19720267fad8378527a234569, \n \n>     S86AR1ProtocolHashAcknowledged -> \n \n>      c869f4eeddecf521cccd6ad3b04faa7fd202e588d0ef8eb21d2c9f77733c4486, \n \n>     BaseCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     Representation -> KExactRole, K -> 19, HistoricalDevelopmentRows -> 264, \n \n>     S86DevelopmentWorlds -> 288, CombinedDevelopmentRows -> 552, \n \n>     PolicyRule -> AllContinueTokensAbsentFromEveryStopRow, \n \n>     S86LabelsUsedForDevelopment -> True, S87DataUsed -> False, KSearchRun -> False, \n \n>     CoreMayChange -> False, DeduplicationMayChange -> False, \n \n>     NoDevelopmentRowEvaluatedBeforeProtocolHash -> True, \n \n>     FreezeOnlyIfCombinedPerfect -> True, \n \n>     ProtocolHash -> b92bb188dccab9a379df295d87b066f59942ba55beb4010c75820254c1138c13, \n \n>     PreflightPassed -> True|>}, TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[\n \n>      String], TypeSystem`AnyType, 21], 1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|PreflightPassed -> True, ProtocolHash -> \n\n \n>     \"b92bb188dccab9a379df295d87b066f59942ba55beb4010c75820254c1138c13\", \n\n \n>    BaseCandidateHash -> \n\n \n>     \"a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f\"|>"
+    }
+  ],
+  "completed": true
+}

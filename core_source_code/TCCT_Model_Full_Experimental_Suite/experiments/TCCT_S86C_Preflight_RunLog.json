@@ -1,0 +1,40 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S86C_MinimalCrossArityConflictAudit_Preflight_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-ea5622c9-2b72-4d50-a88b-d1c47ac546a0.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, Candidate -> S83B-K19ExactRole, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     Depths -> {43, 71}, Topologies -> {DoubleDiamondIn, HierarchicalDiamondIn}, \n \n>     PatchedBranchPairs -> {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {1, 6}}, \n \n>     BranchCount -> 6, ExpectedScenarios -> 24, ExpectedWorldPairs -> 144, \n \n>     ExpectedWorlds -> 288, ExternalGrammar -> IndependentSixBranchT86, \n \n>     Intervention -> TwoSimultaneousBranchStopPatches, \n \n>     QueryGrid -> AllSixQueriesBeforeAndAfterIntervention, \n \n>     ExpectedPatchedQueryPairs -> 48, ExpectedUnpatchedQueryPairs -> 96, \n \n>     TokenDeduplication -> DeleteDuplicatesAfterExactRoleCodePairing, \n \n>     CandidateFrozenBeforeProtocol -> True, CandidateSearchRun -> False, \n \n>     TrainingRun -> False, HistoricalRegressionRerun -> False, S83BlindRerun -> False, \n \n>     S84BlindRerun -> False, S85BlindRerun -> False, S83BDevelopmentRowsRerun -> False, \n \n>     S86LabelsUsedForSelection -> False, NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 340bd60ac6e1938ca523c0fa78ba98463cf0e34900744001ef2d6ed9731d5fd8|>}\n \n>    , TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, \n \n>     28], 1], <||>]"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86C, Name -> MinimalCrossArityConflictAudit, AuditOnly -> True, \n \n>     S86BValidNonSeparableResultAccepted -> True, \n \n>     S86BProtocolHashAcknowledged -> \n \n>      b92bb188dccab9a379df295d87b066f59942ba55beb4010c75820254c1138c13, \n \n>     BaseCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ConflictTokens -> \n \n>      {{QueriedCorrectDestination, {8, 5}}, {QueriedDecision, {13, 13}}, \n \n>       {QueriedDecision, {14, 11}}}, HistoricalConflictRows -> 16, \n \n>     SixBranchConflictRows -> 8, ExpectedConflictRows -> 24, \n \n>     ExpectedConflictMicroObservations -> 28, \n \n>     KRangeAudited -> \n \n>      {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, \n \n>       30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, \n \n>       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, \n \n>       70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, \n \n>       90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, \n \n>       108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, \n \n>       124, 125, 126, 127, 128}, RawExactRoleAudited -> True, \n \n>     PolicyAppliedToFrozenCandidate -> False, NewCandidateSelected -> False, \n \n>     CandidateExportAllowed -> False, CoreMayChange -> False, \n \n>     DeduplicationMayChange -> False, NoConflictRowEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 2da68ba2a69f44f2fc367441a7bd1bfadce2801350323cdc3397d4466966636f, \n \n>     PreflightPassed -> True|>}, TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[\n \n>      String], TypeSystem`AnyType, 21], 1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|PreflightPassed -> True, ProtocolHash -> \n\n \n>     \"2da68ba2a69f44f2fc367441a7bd1bfadce2801350323cdc3397d4466966636f\", \n\n \n>    CandidateHash ->\\\n \n>    \"a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f\"|>"
+    }
+  ],
+  "completed": true
+}
