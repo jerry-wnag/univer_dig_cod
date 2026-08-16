@@ -1,0 +1,22 @@
+{
+  "Stage": "S94H",
+  "HarnessRevision": 3,
+  "CorrectionScope": "ExecutionLayerOnly",
+  "Reason": "Monolithic protocol-equivalent run exceeded the 30-minute execution channel limit",
+  "SemanticProtocolChanged": false,
+  "ExpectedScenarios": 24,
+  "ExpectedPairs": 312,
+  "ExpectedWorlds": 624,
+  "PassAccuracy": 0.95,
+  "PassWorstAxisGroupAccuracy": 0.8,
+  "WorkerCount": 6,
+  "CheckpointCount": 24,
+  "CandidateSearchAllowed": false,
+  "CandidateReexportAllowed": false,
+  "CoreChangeAllowed": false,
+  "FrozenCandidateObjectSHA256": "5ec0e4eb89e9bb447a1e103537c7b4a82eab0c807023cd5862048372efdb418b",
+  "FrozenCandidateFileSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "Revision2SHA256": "b82d2ca1a35d503645554d9c07a77434605e00ff674c95c383268415874532e9",
+  "WorkerSourceSHA256": "957f9c35082bdd1c310584e86622efea1537f83aa8f97210bd1041240fd9d6fa",
+  "MergeSourceSHA256": "36a8ff902c1cff9f08264853a7f370fec75e739c3125ed303160a3b45dc641b6"
+}

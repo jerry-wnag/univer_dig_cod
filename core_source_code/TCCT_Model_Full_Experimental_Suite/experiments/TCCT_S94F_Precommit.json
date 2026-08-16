@@ -1,0 +1,13 @@
+{
+  "Stage": "S94F",
+  "Name": "DualChannelInformationAudit",
+  "AuditOnly": true,
+  "BlindTest": false,
+  "ExpectedPairs": 8,
+  "CandidateFrozen": false,
+  "CoreMechanismChanged": false,
+  "WolframSourceSHA256": "b201b59a113441ed46277abf2afe262d52b54ebf74bd309116195f375b34eac4",
+  "NotebookSHA256": "569941526a43039a08ff3d851858c3174a16ff7bef9ad10f9d98f5ec3096818b",
+  "PreflightSourceSHA256": "fb321be6fba864ac664d4ac43bcfc077e686c033d407f2a3d4a7915837813685",
+  "PreflightNotebookSHA256": "02f2abc9be4de7bac4fce9c113d734f8e691e5074ab5e37e0a2c97cc4160b023"
+}

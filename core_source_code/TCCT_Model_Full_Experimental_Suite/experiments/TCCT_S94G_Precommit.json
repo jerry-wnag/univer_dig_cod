@@ -1,0 +1,18 @@
+{
+  "Stage": "S94G",
+  "Name": "FullQueryScopeDevelopment",
+  "DevelopmentOnly": true,
+  "BlindTest": false,
+  "ExpectedPairs": 416,
+  "ExpectedWorlds": 832,
+  "ExpectedFolds": 55,
+  "ExpectedCandidates": 24,
+  "PassAccuracy": 0.95,
+  "PassWorstFoldAccuracy": 0.8,
+  "CandidateFrozen": false,
+  "CoreMechanismChanged": false,
+  "WolframSourceSHA256": "8e7ae290ff3c63ab39493c8beeb3ea40a368d892a78cdfb244d937f8d527f284",
+  "NotebookSHA256": "92f262e6382c459fcf5e9cae211fea814bca35071f5911edca7587580e1549ce",
+  "PreflightSourceSHA256": "04b68720a0b8daef970a402952502eabd24449ee6704b67938ecf6e16fc1595e",
+  "PreflightNotebookSHA256": "e603ccfa3e9551de67cb512455e31fed171a784546f4d924090d3b7057c9ea4d"
+}

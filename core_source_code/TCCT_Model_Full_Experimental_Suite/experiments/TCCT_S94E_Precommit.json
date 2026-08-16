@@ -1,0 +1,15 @@
+{
+  "Stage": "S94E",
+  "Name": "RelationBindingFeasibilityAudit",
+  "AuditOnly": true,
+  "BlindTest": false,
+  "ExpectedPairs": 8,
+  "ExpectedFolds": 6,
+  "ExpectedCandidateSpecifications": 21,
+  "CandidateFrozen": false,
+  "CoreMechanismChanged": false,
+  "WolframSourceSHA256": "db1a9c6604ab655c1fc6ce4360158745270334007fceb10b63a6753201f0fe28",
+  "NotebookSHA256": "9edf176fb6fc57f367e5b7a9677aa18cf687613fe14f469cc52f730abc38b05c",
+  "PreflightSourceSHA256": "1d8481d33bdf1f22c9174bebba9df26591e97da3c04c92e03936cb518fb80ebd",
+  "PreflightNotebookSHA256": "400f031c40523d8c87e0ce22cc01a590387864b23860eb310325df42ed5c579c"
+}

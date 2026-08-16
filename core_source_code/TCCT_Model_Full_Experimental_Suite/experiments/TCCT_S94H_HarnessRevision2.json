@@ -1,0 +1,19 @@
+{
+  "Stage": "S94H",
+  "HarnessRevision": 2,
+  "CorrectionScope": "TestHarnessOnly",
+  "ObservedError": "AssociationMap::invrlf",
+  "RootCause": "AssociationMap passed complete key-value rules to a list-only encoder",
+  "Correction": "Encode Values explicitly and rebuild the Association with unchanged Keys",
+  "StructuralGateAdded": true,
+  "SingleWorldSmokeRequiredBeforeFullRun": true,
+  "CandidateSearchAllowed": false,
+  "CandidateReexportAllowed": false,
+  "FrozenCandidateObjectSHA256": "5ec0e4eb89e9bb447a1e103537c7b4a82eab0c807023cd5862048372efdb418b",
+  "FrozenCandidateFileSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "CoreChangeAllowed": false,
+  "Revision1SHA256": "ce0b660086765f4a967dbaed40701e868c64c3cd51bdc8f83de62350a911bdbc",
+  "RevisedWolframSourceSHA256": "4305cb9b6383e19505c5ba4bab358f1e65304d7c7c0d9f212a90d3a4edfc70d1",
+  "RecoveryR2NotebookSHA256": "5a063da2901d503d81dc9718437d479f362cbfb6f96a828ecdbff9c45f78632d",
+  "SmokeR2SourceSHA256": "97bb2afb472c5fd3883cc8837f574a2826ba9b3fc32c8f772e2b19291c5f27fd"
+}

@@ -1,0 +1,18 @@
+{
+  "Stage": "S94H",
+  "HarnessRevision": 1,
+  "CorrectionScope": "TestHarnessOnly",
+  "ObservedError": "Table::iterb",
+  "RootCause": "Scenario enumeration was flattened one level too little",
+  "Correction": "Use four explicit iterators and Flatten[...,3] with a 24-association gate",
+  "CandidateSearchAllowed": false,
+  "CandidateReexportAllowed": false,
+  "FrozenCandidateObjectSHA256": "5ec0e4eb89e9bb447a1e103537c7b4a82eab0c807023cd5862048372efdb418b",
+  "FrozenCandidateFileSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "CoreChangeAllowed": false,
+  "OriginalPrecommitSHA256": "10913b9435476a694eb8bb4c78c017b121aaf6d4d7c87cba0287da57b3d085a3",
+  "OriginalWolframSourceSHA256": "179278ed537438f890f4b7af32cb160475045122f3d5768246d962915b26d4ec",
+  "OriginalNotebookSHA256": "5aec9bbb72bad72a80ae33cf369f4cf362611ddaeed7762b638748e82f24fd14",
+  "RevisedWolframSourceSHA256": "8b193a0fab0823c7331c44362388182864ebc2746bab40db8377d48e32c96278",
+  "RevisedNotebookSHA256": "716b5b0261b8b36ae447100b65c9dcdb3c407761216ac5c2beac74e7112ba94a"
+}
