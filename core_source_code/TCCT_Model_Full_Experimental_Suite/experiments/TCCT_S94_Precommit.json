@@ -1,0 +1,38 @@
+{
+  "Stage": "S94",
+  "Name": "MixedContextRobustnessBlind",
+  "BlindTest": true,
+  "CandidateFrozenBeforeS94": true,
+  "FrozenCandidateHash": "540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c",
+  "S93CertificateSHA256": "d0c863119cf03e93e27e0db175163cd91ca4c980197a5fd1f6688f3ddc94c072",
+  "BranchCount": 13,
+  "Depths": [
+    131,
+    193
+  ],
+  "Topologies": [
+    "DiamondAfterDoubleAfterHierarchical",
+    "HierarchicalAfterDiamondAfterDouble"
+  ],
+  "ExpectedScenarios": 4,
+  "ExpectedPairs": 52,
+  "ExpectedWorlds": 104,
+  "ExpectedOrientedDecisions": 104,
+  "NonQueryActionRegime": "AlternatingContinueStopWithTwoPhases",
+  "ProtocolHash": "4e0e41ef24649fde483e2e362e6bf83ffdc589da8ee3ae72f5e4caa6b5b91fd1",
+  "TestDefinitionHash": "5045ca99a3ba7f0133c917435e716c4cd7d78e3ba44c77729f63ff0e20e9c2ad",
+  "TopologySpecHash": "04daa5000cf3aa28d20ebdfeadefab5867ee51b853fd1cfd1f86fe1d82dc11e5",
+  "DynamicPreflightPassed": true,
+  "FullSourceParsePassed": true,
+  "BlindCasesGeneratedDuringPreflight": false,
+  "ResultCertificateCreatedDuringPreflight": false,
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "RetuningApplied": false,
+  "NoBlindCasesGeneratedDuringBuild": true,
+  "RealS94CertificateCreatedDuringBuild": false,
+  "WolframSourceSHA256": "943c998ac115864276c1991ff40bd2e00eabd5899fd9e1a3b57fd9bdc714a250",
+  "NotebookSHA256": "33b1af4dfeb21760bbe2cf174f7c4ba0daaadc4623bea2056bcf1183120115a2",
+  "PreflightSourceSHA256": "1321d6b5903d5b1db2d49ec8e6461112f251036e5397995fcdee8df5dbee4f50",
+  "PreflightNotebookSHA256": "f98c187d0df995ce69b99804eafeea74e1f4e3826ba23df4c4a1a67086b401bf"
+}

@@ -1,0 +1,14 @@
+{
+  "Stage": "S94D",
+  "Name": "RepresentationSufficiencyAudit",
+  "AuditOnly": true,
+  "BlindTest": false,
+  "ExpectedSelectedPairs": 8,
+  "CandidateFrozen": false,
+  "CoreMechanismChanged": false,
+  "CorrectedS94BCertificateSHA256": "6b3c44566c80c88495f2a322a0763b7a188383445b554eefc30e7fa90b4e461f",
+  "WolframSourceSHA256": "a7f3de1414ae6af9387f5a3cbb248ec3b792d05c5b75dc750b88c62f0f968d17",
+  "NotebookSHA256": "97bd5577cb93dab6a64b6d25d5eaa58a3b00a902f19556681f3fc5a8c250e70e",
+  "PreflightSourceSHA256": "9c9731ad6538f47df6cfa6980100fa563a4d0d05214549dc5f79bfebb2310430",
+  "PreflightNotebookSHA256": "2bc60c69c5e0f35cc21173717842cc8d9bc2854acb474ecba55d5ad473a2c4c0"
+}

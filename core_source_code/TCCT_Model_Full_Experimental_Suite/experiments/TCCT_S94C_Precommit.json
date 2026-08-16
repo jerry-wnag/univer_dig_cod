@@ -1,0 +1,19 @@
+{
+  "Stage": "S94C",
+  "Name": "ExpandedRoleAwareReadoutDevelopment",
+  "DevelopmentOnly": true,
+  "BlindTest": false,
+  "CandidateFrozen": false,
+  "CoreMechanismChanged": false,
+  "ExpectedScenarios": 32,
+  "ExpectedPairs": 416,
+  "ExpectedWorlds": 832,
+  "ExpectedFolds": 55,
+  "ExpectedCandidateSpecifications": 34,
+  "DevelopmentPassAccuracy": 0.95,
+  "DevelopmentPassWorstFoldAccuracy": 0.8,
+  "WolframSourceSHA256": "81b5ac491f1ba01ec7f481de83376742942935ad2a3bcd5b5bb7203eec17d033",
+  "NotebookSHA256": "5757d3b5ef419acb87a91774de61877cfa0edb0668989152872f86d3a4220a72",
+  "PreflightSourceSHA256": "8559585c3a2212f4a24c3a04bbddd936faa80e843a65340251ed75127dccff36",
+  "PreflightNotebookSHA256": "838951a3f9ffaa6899be510f2f881da42d84779b5533478d6ac66a111833c53e"
+}

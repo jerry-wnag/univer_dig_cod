@@ -1,0 +1,39 @@
+{
+  "stage": "S93-PREFLIGHT",
+  "passed": true,
+  "blind_cases_generated": false,
+  "result_certificate_created": false,
+  "used_existing_licensed_kernel": true,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "probe_text": "<|\"PreflightPassed\" -> True, \"ProtocolHash\" -> \n\n \n>     \"2ea5fc7dbe7bd6f9f28e147f22e1fe9cd0406e4ea9bbc3d94a77a8a8f5e09efe\", \n\n \n>    \"TestDefinitionHash\" -> \n\n \n>     \"c06578879fc7bbc806f5bec9228351d043daf2b95341c6a08db4194b6e125629\", \n\n \n>    \"TopologySpecHash\" -> \n\n \n>     \"f881f9dffb05ea666de0184e5e4e4d059771878b89c701fda77359b427be189e\", \n\n \n>    \"CandidateHash\" ->\\\n \n>    \"540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c\", \n\\\n \n>    \"NoCasesBeforeProtocolHash\" -> True, \"BlindScenariosDefined\" -> False, \n\\\n \n>    \"BlindWorldsDefined\" -> False, \"BlindPairsDefined\" -> False, \n\\\n \n>    \"S93ResultCertificateExists\" -> False|>",
+  "parse_text": "<|\"FullSourceParseSucceeded\" -> True|>",
+  "results": [
+    {
+      "elapsed_seconds": 0.9289256999909412,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+      ],
+      "errors": [],
+      "cell": 1
+    },
+    {
+      "elapsed_seconds": 0.8483221999777015,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S93, Name -> PairedCounterfactualBlind, PreflightPassed -> True, \n \n>     PairCandidateFrozenBeforeS93 -> True, \n \n>     PairCandidateHash -> \n \n>      540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c, \n \n>     PairCandidateFileHash -> \n \n>      aecbe544a4af3a8ad0ba0494bb11312dd4a4b71f1a1c7ae42489a5300c7078ff, \n \n>     PairRuntimeFileHash -> \n \n>      74a926b8efccaddbd1dd07373ac35a93bc53e9fb08cc456ce1adb6a006d333c6, \n \n>     BaseCandidateHash -> \n \n>      703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     BranchCount -> 12, Depths -> {113, 181}, TrainingRun -> False, \n \n>     CandidateSearchRun -> False, DecoderEditApplied -> False, \n \n>     RetuningApplied -> False, S93ResultAlreadyPresent -> False|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, PreflightPassed, \n \n>      PairCandidateFrozenBeforeS93, PairCandidateHash, PairCandidateFileHash, \n \n>      PairRuntimeFileHash, BaseCandidateHash, BranchCount, Depths, TrainingRun, \n \n>      CandidateSearchRun, DecoderEditApplied, RetuningApplied, S93ResultAlreadyPresent}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Vector[TypeSystem`Atom[Integer], 2], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean]}], 1], <||>]"
+      ],
+      "errors": [],
+      "cell": 2
+    },
+    {
+      "elapsed_seconds": 0.723100599978352,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S93, Name -> PairedCounterfactualBlind, \n \n>     Candidate -> S92B-FrozenPairedContrastDecoder, \n \n>     CandidateHash -> 540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c, \n \n>     CandidateFileHash -> \n \n>      aecbe544a4af3a8ad0ba0494bb11312dd4a4b71f1a1c7ae42489a5300c7078ff, \n \n>     PairRuntimeFileHash -> \n \n>      74a926b8efccaddbd1dd07373ac35a93bc53e9fb08cc456ce1adb6a006d333c6, \n \n>     BaseCandidateHash -> \n \n>      703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     S92BCheckpointFileHash -> \n \n>      85247775ef008a5ddf2378c54585d645dbf6b910d2b6085c1f8c29a98a9c2eb4, \n \n>     BranchCount -> 12, Depths -> {113, 181}, \n \n>     Topologies -> {HierarchicalThenDoubleIn, DoubleThenHierarchicalIn}, \n \n>     TopologySpecHash -> \n \n>      f881f9dffb05ea666de0184e5e4e4d059771878b89c701fda77359b427be189e, \n \n>     ExpectedScenarios -> 4, ExpectedPairs -> 48, ExpectedWorlds -> 96, \n \n>     ExpectedOrientedDecisions -> 96, ExternalGrammar -> IndependentTwelveBranchT93, \n \n>     ActionRegime -> UniformAllBranchesContinueVersusUniformAllBranchesStop, \n \n>     Pairing -> SameTopologyDepthAnswerOppositeActionBothInputOrders, \n \n>     CardinalityConstraint -> EveryPairedWorldHasObservationDistinctPairCounts_1_1_0, \n \n>     CandidateReads -> OnlyFrozenPosition3Modulo33PairContrast, \n \n>     ForbiddenCandidateInputs -> \n \n>      {Cardinality, Topology, Depth, Answer, Target, GraphCondition}, \n \n>     SuccessCriterion -> ValidHarnessAndAll48PairsCorrectInBothInputOrders, \n \n>     CandidateFrozenBeforeProtocol -> True, S93GrammarAbsentDuringS92BFreeze -> True, \n \n>     TrainingRun -> False, CandidateSearchRun -> False, DecoderEditApplied -> False, \n \n>     RetuningApplied -> False, HistoricalBlindTestsRerun -> False, \n \n>     NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 2ea5fc7dbe7bd6f9f28e147f22e1fe9cd0406e4ea9bbc3d94a77a8a8f5e09efe, \n \n>     TestDefinitionHash -> \n \n>      c06578879fc7bbc806f5bec9228351d043daf2b95341c6a08db4194b6e125629|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 33], \n \n>    1], <||>]"
+      ],
+      "errors": [],
+      "cell": 3
+    }
+  ]
+}

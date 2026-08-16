@@ -1,0 +1,38 @@
+{
+  "Stage": "S93",
+  "Name": "PairedCounterfactualBlind",
+  "BlindTest": true,
+  "CandidateFrozenBeforeS93": true,
+  "FrozenCandidateHash": "540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c",
+  "FrozenCandidateSHA256": "aecbe544a4af3a8ad0ba0494bb11312dd4a4b71f1a1c7ae42489a5300c7078ff",
+  "PairRuntimeSHA256": "74a926b8efccaddbd1dd07373ac35a93bc53e9fb08cc456ce1adb6a006d333c6",
+  "S92BCertificateSHA256": "85247775ef008a5ddf2378c54585d645dbf6b910d2b6085c1f8c29a98a9c2eb4",
+  "BranchCount": 12,
+  "Depths": [
+    113,
+    181
+  ],
+  "Topologies": [
+    "HierarchicalThenDoubleIn",
+    "DoubleThenHierarchicalIn"
+  ],
+  "ExpectedScenarios": 4,
+  "ExpectedPairs": 48,
+  "ExpectedWorlds": 96,
+  "ExpectedOrientedDecisions": 96,
+  "ProtocolHash": "2ea5fc7dbe7bd6f9f28e147f22e1fe9cd0406e4ea9bbc3d94a77a8a8f5e09efe",
+  "TestDefinitionHash": "c06578879fc7bbc806f5bec9228351d043daf2b95341c6a08db4194b6e125629",
+  "TopologySpecHash": "f881f9dffb05ea666de0184e5e4e4d059771878b89c701fda77359b427be189e",
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "RetuningApplied": false,
+  "CoreEditApplied": false,
+  "NoBlindCasesGeneratedDuringBuild": true,
+  "DynamicPreflightPassed": true,
+  "FullSourceParsePassed": true,
+  "RealS93CertificateCreatedDuringBuild": false,
+  "WolframSourceSHA256": "0a492c8bb75050125ef9b2939daae957666f6e99038c51372cd2eced93137746",
+  "NotebookSHA256": "368a6ea022dfe58c0e81543af574ddbba0ce124f9f3f86455e24b0ae75b215e4",
+  "PreflightSourceSHA256": "5037f2b2187b31510a83bb0b87a95f471039685abe795dd547ec269dde34c4b3",
+  "PreflightNotebookSHA256": "ddf65b5be94362071e326f3444038b76f561be025a8aeb93442289fe2f2f4de1"
+}
