@@ -1,0 +1,20 @@
+{
+  "stage": "S87D",
+  "repair_only": true,
+  "candidate_modified": false,
+  "certificate_exported": true,
+  "certificate_bytes": 1453,
+  "certificate_sha256": "7c83717fc5bf50b1bde853401da8d0fc5931d6b1b23663d75777e1e45516fb8e",
+  "candidate_bytes": 46058,
+  "candidate_sha256": "82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91",
+  "candidate_hash": "703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe",
+  "outcome": "S87D_DECODER_FROZEN_AND_LOCKED_READY_FOR_S88",
+  "wolfram_result": {
+    "elapsed_seconds": 0.3162366999895312,
+    "status": "ok",
+    "outputs": [
+      "<|\"ExportResult\" -> \"E:\\\\engine_wolf\\\\TCCT_S87D_FreezeCertificate.json\", \n\n \n>    \"FreezeValidityPassed\" -> True, \"ReadyForS88\" -> True, \n\n \n>    \"Outcome\" -> \"S87D_DECODER_FROZEN_AND_LOCKED_READY_FOR_S88\", \"CoreChanged\" ->\\\n \n>    False, \n \"CandidateHash\" ->\\\n \n>    \"703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe\"|>"
+    ],
+    "errors": []
+  }
+}

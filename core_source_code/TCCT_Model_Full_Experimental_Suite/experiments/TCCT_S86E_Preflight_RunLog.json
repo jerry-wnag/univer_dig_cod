@@ -1,0 +1,31 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S86E_FreezeK33Candidate_Preflight_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-7960e608-f3a3-49f8-ad0f-1036667dc90a.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86E, Name -> FreezeK33Candidate, \n \n>     SelectionCertificateHash -> \n \n>      974c588337fbd9c3f51e9ea6847ba360dfc9dcf6fced751104f028987900ac5a, \n \n>     SelectionProtocolHash -> \n \n>      3faafbe4eef88369c32637b2b6b0825e288f6c40d7286db47e8739f083c3d309, \n \n>     SelectedResultHash -> \n \n>      cf6809b1fee65997fe95bdb28e6e3886e2a09f00ed9815ef0f6edff1117fe5ce, \n \n>     BaseCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, K -> 33, \n \n>     PolicyLength -> 39, HistoricalDevelopmentScore -> 264, \n \n>     SixBranchDevelopmentScore -> 288, CombinedDevelopmentScore -> 552, \n \n>     SelectionRerun -> False, S86LabelsRead -> False, S87DataUsed -> False, \n \n>     CoreMayChange -> False, DeduplicationMayChange -> False, \n \n>     SingleModulusFutureCollisionRiskAcknowledged -> True, \n \n>     CollisionSafeEncoderImplemented -> False, \n \n>     ProvisionalUntilRevealedRegression -> True, FrozenBeforeS87 -> True, \n \n>     ProtocolHash -> 2a5d7225555b1ce9510ebe9b99b182ce4040526b3e43d1da50198945927a4184, \n \n>     SelectionArtifactHash -> \n \n>      cf6809b1fee65997fe95bdb28e6e3886e2a09f00ed9815ef0f6edff1117fe5ce, \n \n>     PreflightPassed -> True|>}, TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[\n \n>      String], TypeSystem`AnyType, 23], 1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|\"PreflightPassed\" -> True, \"K\" -> 33, \"PolicyLength\" -> 39|>"
+    }
+  ],
+  "completed": true
+}
