@@ -1,0 +1,45 @@
+{
+  "Stage": "S95",
+  "Name": "PreRegisteredStrictBlindHeterogeneousTopologyTest",
+  "PreRegistered": true,
+  "BlindTest": true,
+  "CandidateFrozenBeforeProtocol": true,
+  "CandidateSearchAllowed": false,
+  "CandidateReexportAllowed": false,
+  "TrainingAllowed": false,
+  "CoreChangeAllowed": false,
+  "RuleChangeAllowed": false,
+  "DeduplicationChangeAllowed": false,
+  "UndirectedFreezeChangeAllowed": false,
+  "Topologies": [
+    "HeterogeneousSerialDiamondIn",
+    "UnilateralNestedDiamondIn"
+  ],
+  "Contexts": [
+    "BinaryWeightOdd",
+    "AlternatingBlocksFour",
+    "EndpointOrSquare"
+  ],
+  "Scales": [
+    {
+      "Depth": 29,
+      "BranchCount": 11
+    },
+    {
+      "Depth": 61,
+      "BranchCount": 19
+    }
+  ],
+  "ExpectedScenarios": 12,
+  "ExpectedPairs": 180,
+  "ExpectedWorlds": 360,
+  "PassAccuracy": 0.95,
+  "PassWorstAxisGroupAccuracy": 0.8,
+  "CheckpointCount": 12,
+  "FrozenCandidateObjectSHA256": "5ec0e4eb89e9bb447a1e103537c7b4a82eab0c807023cd5862048372efdb418b",
+  "FrozenCandidateFileSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "LockedS94HR3ResultHash": "bfeeb9c4696135be4cb8f918758cb133bc27aade8c04336f829a17d6224a044d",
+  "LockedS94HR3CertificateFileSHA256": "ee8bedbe7570025cd495d6ccf5c899173897a6c0b2521c2d45c4144ed4f4cc5e",
+  "TestDefinitionFile": "TCCT_S95_TestDefinitions.wl",
+  "TestDefinitionFileSHA256": "065b83626f841c822fa22356b67d33f9f36efc26f0d8b2cecc177d7d7c5dcc12"
+}

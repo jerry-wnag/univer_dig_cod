@@ -1,0 +1,15 @@
+{
+  "Stage": "S94H",
+  "HarnessRevision": 3,
+  "Interface": "ResumableJupyterGUI",
+  "SemanticProtocolChanged": false,
+  "ExpectedScenarios": 24,
+  "ExpectedPairs": 312,
+  "ExpectedWorlds": 624,
+  "CheckpointReuseAllowedOnlyAfterFullValidation": true,
+  "CandidateSearchAllowed": false,
+  "CandidateReexportAllowed": false,
+  "CoreChangeAllowed": false,
+  "FrozenCandidateFileSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "NotebookSHA256": "80871e5d08ce32228f2bf98e7c719642a9eeec9cf719ce0170b64ec7fbba9794"
+}

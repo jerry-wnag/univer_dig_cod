@@ -1,0 +1,32 @@
+{
+  "Stage": "S94H",
+  "Name": "IndependentFullQueryConfirmation",
+  "IndependentConfirmation": true,
+  "BlindTest": false,
+  "SelectedCandidate": "SlotRaw12_Centroid",
+  "CandidateSearchAllowed": false,
+  "ExpectedScenarios": 24,
+  "ExpectedPairs": 312,
+  "ExpectedWorlds": 624,
+  "PassAccuracy": 0.95,
+  "PassWorstAxisGroupAccuracy": 0.8,
+  "NewTopologies": [
+    "HierarchicalAfterDoubleAfterDiamond",
+    "DoubleAfterDiamondAfterHierarchical"
+  ],
+  "NewContexts": [
+    "CyclicTwoOfFive",
+    "OuterThird",
+    "PrimeIndex"
+  ],
+  "NewDepths": [
+    21,
+    43
+  ],
+  "NewBranchCounts": [
+    9,
+    17
+  ],
+  "WolframSourceSHA256": "179278ed537438f890f4b7af32cb160475045122f3d5768246d962915b26d4ec",
+  "NotebookSHA256": "5aec9bbb72bad72a80ae33cf369f4cf362611ddaeed7762b638748e82f24fd14"
+}

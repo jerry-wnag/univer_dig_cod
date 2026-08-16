@@ -1,0 +1,12 @@
+{
+  "Stage": "S95",
+  "PrecommitSHA256": "9b2f2a71fd23607f2c523fddf1f57f8204d5696f81782bb16cd27915bc721e03",
+  "TestDefinitionSHA256": "065b83626f841c822fa22356b67d33f9f36efc26f0d8b2cecc177d7d7c5dcc12",
+  "NotebookSHA256": "3b1bc8a79c55e75b94345779242f7fe2d27331abb55aedad3faeff63438ffeed",
+  "SourceSHA256": "222c81d0696425806ff13f3950b18d21922dc4f9dc26745957683ba562b1df42",
+  "PreflightSourceSHA256": "9b2bd7455047698dd9981fbcbc0bedd7d7f42eb6aaa8dc520bb3d38ec061d3a5",
+  "LauncherSHA256": "ee9b41879d008a2db68ab7d98048345dfa1246fa51008c10dc59a8bb1ac63591",
+  "S94HR3CertificateSHA256": "ee8bedbe7570025cd495d6ccf5c899173897a6c0b2521c2d45c4144ed4f4cc5e",
+  "FrozenCandidateSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e",
+  "S95WorldsExecutedDuringBuild": 0
+}
