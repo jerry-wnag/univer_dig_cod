@@ -1,0 +1,55 @@
+{
+  "Release": "TCCT_S95_Strict_Blind_Research_Release_2026-08-12",
+  "SnapshotDate": "2026-08-12",
+  "Purpose": "GitHub-ready external technical review archive",
+  "ParentProject": {
+    "Repository": "https://github.com/jerry-wnag/univer_dig_cod",
+    "ArchivedVersion": "v9.2.0",
+    "ArchivedPublicationDate": "2026-06-10",
+    "ArchivedDOI": "10.5281/zenodo.20619538",
+    "ArchivedRecordContainsS95": false
+  },
+  "License": "AGPL-3.0",
+  "LicenseFile": "LICENSE",
+  "LicenseSHA256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+  "CitationFile": "CITATION.cff",
+  "CitationSHA256": "f4300dd453f762fdef7318b5089e76833b0af77417ae16002841027341a3ff2c",
+  "FilesBeforeManifest": 480,
+  "Experiments": 390,
+  "Certificates": 19,
+  "FrozenModelArtifacts": 9,
+  "DevelopmentArtifacts": 3,
+  "S94HR3Checkpoints": 24,
+  "S95Checkpoints": 12,
+  "CredentialScanPassed": true,
+  "PersonalPathScanPassed": true,
+  "S95": {
+    "Outcome": "S95_STRICT_BLIND_PASS",
+    "Pairs": 180,
+    "Worlds": 360,
+    "CorrectPairs": 180,
+    "Accuracy": 1.0,
+    "WorstAxisGroupAccuracy": 1.0,
+    "MinimumMargin": 1.8515601232347252,
+    "CertificateSHA256": "0ad4e0b742bcd06f47dfabb13b485d5962de5d4db8e286a9a1f3c4a447acab84",
+    "PrecommitSHA256": "9b2f2a71fd23607f2c523fddf1f57f8204d5696f81782bb16cd27915bc721e03",
+    "TestDefinitionSHA256": "065b83626f841c822fa22356b67d33f9f36efc26f0d8b2cecc177d7d7c5dcc12",
+    "FrozenCandidateSHA256": "8cbf7184200c6a04072f9b375af3137534dc3764bff7a32bf57db4a320187e1e"
+  },
+  "S94HR3": {
+    "Outcome": "S94H_INDEPENDENT_CONFIRMATION_PASS",
+    "Pairs": 312,
+    "Worlds": 624,
+    "CorrectPairs": 312,
+    "Accuracy": 1.0,
+    "WorstAxisGroupAccuracy": 1.0,
+    "MinimumMargin": 2.667185596361886,
+    "CertificateSHA256": "ee8bedbe7570025cd495d6ccf5c899173897a6c0b2521c2d45c4144ed4f4cc5e"
+  },
+  "IntegrityNotes": [
+    "The S95 precommit and test-definition hashes match the final S95 certificate.",
+    "Runtime tokens, Wolfram activation and license credential files, password files, PID files, caches, and local logs were excluded; the public AGPL-3.0 LICENSE is included.",
+    "The zero-byte S94 certificate was excluded and is explicitly documented as invalid.",
+    "Historical source and result files were copied; the original experiment workspace was not modified."
+  ]
+}
