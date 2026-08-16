@@ -1,0 +1,9 @@
+{
+  "stage": "S91-AUDIT-VALIDATION",
+  "passed": true,
+  "real_certificate_created": false,
+  "temporary_certificate_removed": true,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "probe_text": "<|\"BenchmarkValidityPassed\" -> True, \n\n \n>    \"Outcome\" -> \"S91_VALID_POSTHOC_BASELINE_ABLATION_COMPLETE\", \"FullScore\" -> 1296, \n\n \n>    \"LegacyScore\" -> 128, \"DegradedAblations\" -> 2, \"CertificateExported\" -> True, \n\n \n>    \"TemporaryCertificateExists\" -> True|>",
+  "cleanup_text": "<|\"TemporaryCertificateRemoved\" -> True|>"
+}

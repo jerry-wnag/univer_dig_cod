@@ -1,0 +1,38 @@
+{
+  "Stage": "S88",
+  "Name": "EightBranchFrozenDecoderBlind",
+  "PrecommitDate": "2026-08-11",
+  "BlindCasesGeneratedAtPrecommit": false,
+  "BlindResultCertificatePresentAtPrecommit": false,
+  "CandidateFrozenBeforeProtocol": true,
+  "CandidateHash": "703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe",
+  "CandidateFileSHA256": "82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91",
+  "FeatureRuntimeSHA256": "7d45fffdb3e33a0f0759ae9fa93c84429743cbe39fc7f02c38eeef11739740ee",
+  "ProtocolHash": "4b4fb0b0c5c5dc91a4f37631b84658edaa81a8a7bd890e5527eebb040b4e19c7",
+  "TestDefinitionHash": "548ba783e7a60fdd378c51e34f627e7436038cc3b2cca855333ccde0be75c3ea",
+  "NotebookSHA256": "9f6c80c5fcaf4028947ce3ba4a1815843af14c3338a1b9108950d55f48a78223",
+  "WolframSourceSHA256": "a8b685e858a10491c4477ae24fa5ebac96f85e06579979ad89e5580a60c5406d",
+  "BranchCount": 8,
+  "Depths": [61, 109],
+  "Topologies": [
+    "TripleSerialDiamondIn",
+    "HierarchicalTerminalDiamondIn"
+  ],
+  "InterventionPairs": [
+    [1, 4],
+    [2, 5],
+    [3, 6],
+    [4, 7],
+    [5, 8],
+    [6, 1],
+    [7, 2],
+    [8, 3]
+  ],
+  "ExpectedScenarios": 32,
+  "ExpectedWorldPairs": 256,
+  "ExpectedWorlds": 512,
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "DecoderEditApplied": false,
+  "RetuningApplied": false
+}

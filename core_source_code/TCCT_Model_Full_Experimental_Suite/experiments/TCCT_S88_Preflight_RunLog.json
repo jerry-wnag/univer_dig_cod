@@ -1,0 +1,49 @@
+{
+  "stage": "S88-PREFLIGHT",
+  "preflight_passed": true,
+  "used_existing_licensed_kernel": true,
+  "blind_cases_generated": false,
+  "result_certificate_created": false,
+  "protocol_hash": "4b4fb0b0c5c5dc91a4f37631b84658edaa81a8a7bd890e5527eebb040b4e19c7",
+  "test_definition_hash": "548ba783e7a60fdd378c51e34f627e7436038cc3b2cca855333ccde0be75c3ea",
+  "candidate_hash": "703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe",
+  "probe_text": "<|\"PreflightPassed\" -> True, \"ProtocolHash\" -> \n\n \n>     \"4b4fb0b0c5c5dc91a4f37631b84658edaa81a8a7bd890e5527eebb040b4e19c7\", \n\n \n>    \"TestDefinitionHash\" -> \n\n \n>     \"548ba783e7a60fdd378c51e34f627e7436038cc3b2cca855333ccde0be75c3ea\", \n\n \n>    \"CandidateHash\" ->\\\n \n>    \"703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe\", \n\\\n \n>    \"CasesGeneratedBeforeProtocolHash\" -> False, \"BlindScenariosDefined\" -> False, \n\\\n \n>    \"S88ResultCertificateExists\" -> False|>",
+  "results": [
+    {
+      "elapsed_seconds": 1.1795911000226624,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+      ],
+      "errors": [],
+      "label": "S88-preflight-1"
+    },
+    {
+      "elapsed_seconds": 0.8918068000057247,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S88, Name -> EightBranchFrozenDecoderBlind, \n \n>     CandidateFrozenBeforeProtocol -> True, \n \n>     DecoderCandidateHash -> \n \n>      703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     DecoderCandidateFileHash -> \n \n>      82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91, \n \n>     FeatureRuntimeFileHash -> \n \n>      7d45fffdb3e33a0f0759ae9fa93c84429743cbe39fc7f02c38eeef11739740ee, \n \n>     K33CandidateHash -> \n \n>      2eb674929cfe1710231a4f508d13b20fe0f98d84d2c594c6261f46f370066ae4, \n \n>     FeatureFamily -> QueriedGlobalMoments, FeatureDimension -> 27, BranchCount -> 8, \n \n>     Depths -> {61, 109}, TrainingRun -> False, CandidateSearchRun -> False, \n \n>     DecoderEditApplied -> False, RetuningApplied -> False, \n \n>     S88ResultAlreadyPresent -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 17], \n \n>    1], <||>]"
+      ],
+      "errors": [],
+      "label": "S88-preflight-2"
+    },
+    {
+      "elapsed_seconds": 0.7223386000259779,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S88, Name -> EightBranchFrozenDecoderBlind, \n \n>     Candidate -> S87D-FrozenWorldMultisetDecoder, \n \n>     CandidateHash -> 703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     CandidateFileHash -> \n \n>      82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91, \n \n>     FeatureRuntimeFileHash -> \n \n>      7d45fffdb3e33a0f0759ae9fa93c84429743cbe39fc7f02c38eeef11739740ee, \n \n>     K33CandidateHash -> \n \n>      2eb674929cfe1710231a4f508d13b20fe0f98d84d2c594c6261f46f370066ae4, \n \n>     BranchCount -> 8, Depths -> {61, 109}, \n \n>     Topologies -> {TripleSerialDiamondIn, HierarchicalTerminalDiamondIn}, \n \n>     TopologySpecHash -> \n \n>      b0f170713c4594a0b2b51aba5febf1f27e23a26f732149deaf31ec0088ad2b95, \n \n>     InterventionPairs -> \n \n>      {{1, 4}, {2, 5}, {3, 6}, {4, 7}, {5, 8}, {6, 1}, {7, 2}, {8, 3}}, \n \n>     ExpectedScenarios -> 32, ExpectedWorldPairs -> 256, ExpectedWorlds -> 512, \n \n>     ExpectedBaselineWorlds -> 256, ExpectedInterventionContinueWorlds -> 224, \n \n>     ExpectedInterventionStopWorlds -> 32, \n \n>     ExternalGrammar -> IndependentEightBranchT88, \n \n>     Intervention -> OneRedundantPathCutPlusOneBranchStopPatch, \n \n>     QueryGrid -> AllEightQueriesBeforeAndAfterMixedIntervention, \n \n>     FeatureFamily -> QueriedGlobalMoments, FeatureDimension -> 27, \n \n>     ObservationAggregation -> FullQueriedObservationMultisetWithoutCodeDeduplication, \n \n>     LegacyTokenDeduplication -> DeleteDuplicatesAfterExactRoleCodePairing, \n \n>     SuccessCriterion -> ValidHarnessAndAll512WorldsCorrectIncludingBothClasses, \n \n>     CandidateFrozenBeforeProtocol -> True, TrainingRun -> False, \n \n>     CandidateSearchRun -> False, DecoderEditApplied -> False, \n \n>     RetuningApplied -> False, S87LabelsReadByS88 -> False, \n \n>     NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 4b4fb0b0c5c5dc91a4f37631b84658edaa81a8a7bd890e5527eebb040b4e19c7, \n \n>     TestDefinitionHash -> \n \n>      548ba783e7a60fdd378c51e34f627e7436038cc3b2cca855333ccde0be75c3ea|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 35], \n \n>    1], <||>]"
+      ],
+      "errors": [],
+      "label": "S88-preflight-3"
+    },
+    {
+      "elapsed_seconds": 0.16958299998077564,
+      "status": "ok",
+      "outputs": [
+        "<|\"PreflightPassed\" -> True, \"ProtocolHash\" -> \n\n \n>     \"4b4fb0b0c5c5dc91a4f37631b84658edaa81a8a7bd890e5527eebb040b4e19c7\", \n\n \n>    \"TestDefinitionHash\" -> \n\n \n>     \"548ba783e7a60fdd378c51e34f627e7436038cc3b2cca855333ccde0be75c3ea\", \n\n \n>    \"CandidateHash\" ->\\\n \n>    \"703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe\", \n\\\n \n>    \"CasesGeneratedBeforeProtocolHash\" -> False, \"BlindScenariosDefined\" -> False, \n\\\n \n>    \"S88ResultCertificateExists\" -> False|>"
+      ],
+      "errors": [],
+      "label": "S88-preflight-probe"
+    }
+  ]
+}

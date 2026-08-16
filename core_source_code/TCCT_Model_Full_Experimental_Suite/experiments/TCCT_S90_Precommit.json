@@ -1,0 +1,33 @@
+{
+  "Stage": "S90",
+  "Name": "InterventionAlgebraBlind",
+  "BlindCasesGeneratedAtBuild": false,
+  "BlindResultCertificatePresentAtBuild": false,
+  "CandidateFrozenBeforeProtocol": true,
+  "S89CheckpointSHA256": "7d0f543f6f17384ee8969131547b2766aad1fbaed999e5b039c2708d6d89b032",
+  "WolframSourceSHA256": "a022f2ff25f150c1849f040131fdb19ef37c27ed5ed0c126f475fd703a618547",
+  "NotebookSHA256": "535b18534691d0cb0264f035f5cd3d237d3a92f82981abc8bdd433874b876921",
+  "BranchCount": 9,
+  "Depths": [
+    73,
+    121
+  ],
+  "Topologies": [
+    "TripleSerialDiamondIn",
+    "HierarchicalTerminalDiamondIn"
+  ],
+  "ExpectedScenarios": 36,
+  "ExpectedWorlds": 1296,
+  "ExpectedContinueWorlds": 1152,
+  "ExpectedStopWorlds": 144,
+  "ExpectedUnaffectedQueryRelations": 180,
+  "ProtocolHash": "ed241ba2ada54af6e44f9dc009a70f4155767de6994072c7c05e5b75515df518",
+  "TestDefinitionHash": "ef31b96fa3a1ff1b4c7f4aec17456d60ec3381eca4df7f6ee8b9bf25f320539c",
+  "DynamicPreflightPassed": true,
+  "BlindCasesGeneratedAtPreflight": false,
+  "S90ResultCertificatePresentAtPreflight": false,
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "DecoderEditApplied": false,
+  "RetuningApplied": false
+}

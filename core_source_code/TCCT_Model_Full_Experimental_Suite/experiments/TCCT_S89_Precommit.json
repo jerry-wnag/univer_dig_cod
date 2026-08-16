@@ -1,0 +1,67 @@
+{
+  "Stage": "S89",
+  "Name": "StopRelocationCounterfactualBlind",
+  "BlindCasesGeneratedAtBuild": false,
+  "BlindResultCertificatePresentAtBuild": false,
+  "CandidateFrozenBeforeProtocol": true,
+  "S88CheckpointSHA256": "1c56bb0a87eba871f8474a93d4206d6aebbf1d66412a0d3927e62155a81e2fa4",
+  "WolframSourceSHA256": "f89411f77c60e73107f9a7432da51160c38e93b5436cbd827ccc207c5a7b9892",
+  "NotebookSHA256": "ef81486bd76d7e42ac62b2fad03eb906cb2897b34fa3d81f7eccf8a4ab308c5e",
+  "BranchCount": 8,
+  "Depths": [
+    61,
+    109
+  ],
+  "Topologies": [
+    "TripleSerialDiamondIn",
+    "HierarchicalTerminalDiamondIn"
+  ],
+  "RelocationPairs": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      4
+    ]
+  ],
+  "ExpectedScenarios": 32,
+  "ExpectedWorldPairs": 256,
+  "ExpectedWorlds": 512,
+  "ExpectedContinueWorlds": 448,
+  "ExpectedStopWorlds": 64,
+  "ProtocolHash": "32f425daed5c9604a2971de24b763360b14f0c64cddd3e08fc0d1cfa9de9b846",
+  "TestDefinitionHash": "c78b29923c011330697a70e628f5c53410c5c46dcb0cd36908002a008f8fd7f5",
+  "DynamicPreflightPassed": true,
+  "BlindCasesGeneratedAtPreflight": false,
+  "S89ResultCertificatePresentAtPreflight": false,
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "DecoderEditApplied": false,
+  "RetuningApplied": false
+}

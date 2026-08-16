@@ -1,0 +1,39 @@
+{
+  "stage": "S89-PREFLIGHT",
+  "preflight_passed": true,
+  "used_existing_licensed_kernel": true,
+  "blind_cases_generated": false,
+  "result_certificate_created": false,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "probe_text": "<|\"PreflightPassed\" -> True, \"ProtocolHash\" -> \n\n \n>     \"32f425daed5c9604a2971de24b763360b14f0c64cddd3e08fc0d1cfa9de9b846\", \n\n \n>    \"TestDefinitionHash\" -> \n\n \n>     \"c78b29923c011330697a70e628f5c53410c5c46dcb0cd36908002a008f8fd7f5\", \n\n \n>    \"CandidateHash\" ->\\\n \n>    \"703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe\", \n\\\n \n>    \"S88CheckpointHash\" -> \n \\\n \n>    \"1c56bb0a87eba871f8474a93d4206d6aebbf1d66412a0d3927e62155a81e2fa4\", \n\\\n \n>    \"CasesGeneratedBeforeProtocolHash\" -> False, \"BlindScenariosDefined\" -> False, \n\\\n \n>    \"S89ResultCertificateExists\" -> False|>",
+  "parse_probe_text": "<|\"FullSourceParseSucceeded\" -> True|>",
+  "results": [
+    {
+      "elapsed_seconds": 0.9633025999937672,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+      ],
+      "errors": [],
+      "cell": 1
+    },
+    {
+      "elapsed_seconds": 0.7533847999875434,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S89, Name -> StopRelocationCounterfactualBlind, \n \n>     CandidateFrozenBeforeProtocol -> True, \n \n>     DecoderCandidateHash -> \n \n>      703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     DecoderCandidateFileHash -> \n \n>      82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91, \n \n>     FeatureRuntimeFileHash -> \n \n>      7d45fffdb3e33a0f0759ae9fa93c84429743cbe39fc7f02c38eeef11739740ee, \n \n>     K33CandidateHash -> \n \n>      2eb674929cfe1710231a4f508d13b20fe0f98d84d2c594c6261f46f370066ae4, \n \n>     FeatureFamily -> QueriedGlobalMoments, FeatureDimension -> 27, BranchCount -> 8, \n \n>     Depths -> {61, 109}, TrainingRun -> False, CandidateSearchRun -> False, \n \n>     DecoderEditApplied -> False, RetuningApplied -> False, \n \n>     S88CheckpointLocked -> True, S89ResultAlreadyPresent -> False, \n \n>     PreflightPassed -> True|>}, TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[\n \n>      String], TypeSystem`AnyType, 18], 1], <||>]"
+      ],
+      "errors": [],
+      "cell": 2
+    },
+    {
+      "elapsed_seconds": 0.7926961999910418,
+      "status": "ok",
+      "outputs": [
+        "Dataset[{<|Stage -> S89, Name -> StopRelocationCounterfactualBlind, \n \n>     Candidate -> S87D-FrozenWorldMultisetDecoder, \n \n>     CandidateHash -> 703e1365490a0123eac61745876dbcf29066abac4c753bb6ec1f61b790e222fe, \n \n>     CandidateFileHash -> \n \n>      82616c6acde25ecd7bbbc51bc80d03771ec8653bf033167ac9ccd74d7da01d91, \n \n>     FeatureRuntimeFileHash -> \n \n>      7d45fffdb3e33a0f0759ae9fa93c84429743cbe39fc7f02c38eeef11739740ee, \n \n>     K33CandidateHash -> \n \n>      2eb674929cfe1710231a4f508d13b20fe0f98d84d2c594c6261f46f370066ae4, \n \n>     S88CheckpointFileHash -> \n \n>      1c56bb0a87eba871f8474a93d4206d6aebbf1d66412a0d3927e62155a81e2fa4, \n \n>     BranchCount -> 8, Depths -> {61, 109}, \n \n>     Topologies -> {TripleSerialDiamondIn, HierarchicalTerminalDiamondIn}, \n \n>     TopologySpecHash -> \n \n>      0f7a7a0ae0fb0342d64f57a7a4345cac3d296ee00badb494b70af408d265abfe, \n \n>     RelocationPairs -> \n \n>      {{1, 5}, {2, 6}, {3, 7}, {4, 8}, {5, 1}, {6, 2}, {7, 3}, {8, 4}}, \n \n>     ExpectedScenarios -> 32, ExpectedWorldPairs -> 256, ExpectedWorlds -> 512, \n \n>     ExpectedBaselineContinueWorlds -> 224, ExpectedBaselineStopWorlds -> 32, \n \n>     ExpectedCounterfactualContinueWorlds -> 224, \n \n>     ExpectedCounterfactualStopWorlds -> 32, ExpectedRelocatedFromPairs -> 32, \n \n>     ExpectedRelocatedToPairs -> 32, ExpectedUnaffectedPairs -> 192, \n \n>     ExternalGrammar -> IndependentEightBranchT89, \n \n>     Intervention -> ConservedSingleStopRelocation, \n \n>     InterventionSemantics -> \n \n>      RestoreFormerStopBranchAndStopDistinctFormerContinueBranch, \n \n>     ConservationLaw -> ExactlyOneStopBeforeAndAfter, \n \n>     QueryGrid -> AllEightQueriesBeforeAndAfterRelocation, \n \n>     FeatureFamily -> QueriedGlobalMoments, FeatureDimension -> 27, \n \n>     ObservationAggregation -> FullQueriedObservationMultisetWithoutCodeDeduplication, \n \n>     LegacyTokenDeduplication -> DeleteDuplicatesAfterExactRoleCodePairing, \n \n>     SuccessCriterion -> \n \n>      ValidHarnessAndAll512WorldsCorrectIncludingBothDirectionsAndUnaffectedQueries, \n \n>     CandidateFrozenBeforeProtocol -> True, S88CheckpointReadOnlyLock -> True, \n \n>     S88PredictionsUsedForSelection -> False, TrainingRun -> False, \n \n>     CandidateSearchRun -> False, DecoderEditApplied -> False, \n \n>     RetuningApplied -> False, NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 32f425daed5c9604a2971de24b763360b14f0c64cddd3e08fc0d1cfa9de9b846, \n \n>     TestDefinitionHash -> \n \n>      c78b29923c011330697a70e628f5c53410c5c46dcb0cd36908002a008f8fd7f5|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, 43], \n \n>    1], <||>]"
+      ],
+      "errors": [],
+      "cell": 3
+    }
+  ]
+}
