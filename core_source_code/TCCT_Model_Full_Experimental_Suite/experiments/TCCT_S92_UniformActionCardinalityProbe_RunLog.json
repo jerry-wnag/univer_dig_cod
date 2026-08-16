@@ -1,0 +1,7 @@
+{
+  "stage": "S92-REVEALED-S90-UNIFORM-ACTION-CARDINALITY-PROBE",
+  "frozen_model_predictions_run": false,
+  "s92_cases_run": false,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "probe_text": "<|\"Worlds\" -> 18, \"ReferenceActionsCorrect\" -> 18, \"CanonicalCaseExactlyBase\" -> 18, \n\n \n>    \"TerminatedNaturally\" -> 18, \"HitSafetyCap\" -> 0, \"CardinalitiesByTarget\" -> \n\n \n>     <|\"Continue\" -> <|{1, 1, 0} -> 9|>, \"Stop\" -> <|{1, 1, 0} -> 9|>|>, \n\n \n>    \"EveryWorldCardinalityOneOneZero\" -> True, \n\n \n>    \"OppositeTargetsHaveDifferentFullVectorsPerAnswer\" -> True|>"
+}

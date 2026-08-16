@@ -1,0 +1,38 @@
+{
+  "Stage": "S92",
+  "Name": "CardinalityMatchedUniformActionBlind",
+  "BlindCasesGeneratedAtBuild": false,
+  "BlindResultCertificatePresentAtBuild": false,
+  "CandidateFrozenBeforeProtocol": true,
+  "BranchCount": 10,
+  "Depths": [
+    97,
+    149
+  ],
+  "Topologies": [
+    "TripleSerialDiamondIn",
+    "HierarchicalTerminalDiamondIn"
+  ],
+  "ExpectedScenarios": 4,
+  "ExpectedPairs": 40,
+  "ExpectedWorlds": 80,
+  "ExpectedContinueWorlds": 40,
+  "ExpectedStopWorlds": 40,
+  "RequiredCardinality": [
+    1,
+    1,
+    0
+  ],
+  "ProtocolHash": "4e7117970c3e5c4315fb4953364b632404566258a718c7807c8819ba3d30b6bb",
+  "TestDefinitionHash": "3f072d5e37942fd007dd5b6fa73319d47da23e41b61ca05486fccc040f2b4904",
+  "S91CheckpointSHA256": "cf335bda73b8a26eacbf32d8d25dcad737a84d503a6f0849dbcd3afc3f1df8cd",
+  "DynamicPreflightPassed": true,
+  "BlindCasesGeneratedAtPreflight": false,
+  "S92ResultCertificatePresentAtPreflight": false,
+  "TrainingRun": false,
+  "CandidateSearchRun": false,
+  "DecoderEditApplied": false,
+  "RetuningApplied": false,
+  "WolframSourceSHA256": "2051009841c6b57c87fd6f74caf6001084c8e6ee755b32fb6ae80fd63972694d",
+  "NotebookSHA256": "2b5ef91f196003c09d7507b085a560c98cd3e86014ee37a2feebc09780960ef2"
+}

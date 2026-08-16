@@ -1,0 +1,14 @@
+{
+  "stage": "S92B-DEVELOPMENT-PROBE",
+  "blind_test": false,
+  "uses_revealed_s92_labels": true,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "result": {
+    "elapsed_seconds": 25.04804699998931,
+    "status": "ok",
+    "outputs": [
+      "{<|\"Family\" -> \"RelationalCompact5\", \"Method\" -> \"DecisionTree\", \"ValidFolds\" -> 10, \n\n \n>     \"PerfectFolds\" -> 4, \"MeanBalancedAccuracy\" -> 0.6, \"WorstBalancedAccuracy\" -> 0.,\\\n \n>    \n  \"TotalScore\" -> 48, \"TotalCases\" -> 80|>, <|\"Family\" -> \"RelationalCompact5\", \n\n \n>     \"Method\" -> \"NearestNeighbors\", \"ValidFolds\" -> 10, \"PerfectFolds\" -> 3, \n\n \n>     \"MeanBalancedAccuracy\" -> 0.55, \"WorstBalancedAccuracy\" -> 0., \"TotalScore\" -> 44,\\\n \n>    \n  \"TotalCases\" -> 80|>, <|\"Family\" -> \"UnaryRelational15\", \"Method\" ->\\\n \n>    \"DecisionTree\", \n  \"ValidFolds\" -> 10, \"PerfectFolds\" -> 5, \"MeanBalancedAccuracy\"\\\n \n>    -> 0.65, \n  \"WorstBalancedAccuracy\" -> 0., \"TotalScore\" -> 52, \"TotalCases\" ->\\\n \n>    80|>, \n <|\"Family\" -> \"UnaryRelational15\", \"Method\" -> \"NearestNeighbors\",\\\n \n>    \"ValidFolds\" -> 10, \n  \"PerfectFolds\" -> 4, \"MeanBalancedAccuracy\" -> 0.65,\\\n \n>    \"WorstBalancedAccuracy\" -> 0., \n  \"TotalScore\" -> 52, \"TotalCases\" -> 80|>,\\\n \n>    <|\"Family\" -> \"AllNonCardinality24\", \n  \"Method\" -> \"DecisionTree\", \"ValidFolds\" ->\\\n \n>    10, \"PerfectFolds\" -> 6, \n  \"MeanBalancedAccuracy\" -> 0.75, \"WorstBalancedAccuracy\"\\\n \n>    -> 0., \"TotalScore\" -> 60, \n  \"TotalCases\" -> 80|>, <|\"Family\" ->\\\n \n>    \"AllNonCardinality24\", \n  \"Method\" -> \"NearestNeighbors\", \"ValidFolds\" -> 10,\\\n \n>    \"PerfectFolds\" -> 4, \n  \"MeanBalancedAccuracy\" -> 0.65, \"WorstBalancedAccuracy\" ->\\\n \n>    0., \"TotalScore\" -> 52, \n  \"TotalCases\" -> 80|>}"
+    ],
+    "errors": []
+  }
+}

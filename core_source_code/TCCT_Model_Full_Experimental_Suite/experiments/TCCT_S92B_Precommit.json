@@ -1,0 +1,73 @@
+{
+  "Stage": "S92B",
+  "Name": "PairedContrastDecoderTrainingAndFreeze",
+  "EvaluationType": "RevealedS92OuterDecoderDevelopment",
+  "BlindTest": false,
+  "UsesRevealedS92Labels": true,
+  "TrainingRun": true,
+  "CandidateSearchRun": true,
+  "CoreLoaded": false,
+  "CoreEditApplied": false,
+  "BaseFrozenS87DDecoderPreserved": true,
+  "RequiresTwoMatchedAlternativeWorldsAtInference": true,
+  "CandidatePositions": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "ForbiddenCardinalityAndPairPositions": [
+    1,
+    2,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "ExpectedPairs": 40,
+  "ExpectedOrientedExamples": 80,
+  "RequiredAnswerFolds": 10,
+  "RequiredPerfectAnswerFolds": 10,
+  "S92MayNotBeReusedAsBlind": true,
+  "S93DesignedBeforeFreeze": false,
+  "ArchiveSHA256": "dfe57246390b8bef52e2bf2bd98e01ba4fecc88091d269067bfb04f2b1b9d3bd",
+  "S92ACertificateSHA256": "7d21e30f1da322f2a078cc5c0fe9cf44cec5cfac0cc18f0020517a76ad897309",
+  "WorkspacePairRuntimeSHA256": "74a926b8efccaddbd1dd07373ac35a93bc53e9fb08cc456ce1adb6a006d333c6",
+  "ProtocolHash": "decbe5ac7cd99bc31eee33712245f221e8c90d5a046ec3076f0f933e2fde777f",
+  "ValidatedSelectedPosition": 3,
+  "ValidatedSelectedFeature": "FirstCoordinateTotal",
+  "ValidatedPolicyRules": [
+    {
+      "Delta": 6,
+      "Prediction": "FirstStop"
+    },
+    {
+      "Delta": 27,
+      "Prediction": "FirstContinue"
+    }
+  ],
+  "ValidatedFrozenCandidateHash": "540229035af53b2e014592fd7e7d2eab70b374844d9a73000026325c6cd39a1c",
+  "ValidatedCertificateResultHash": "0e3301be5d06af42d7e44ddb0e2b02e377fc378fcfefe98d928db875fc6c7373",
+  "DynamicValidationPassed": true,
+  "FreezeAndRoundTripValidatedWithTemporaryOutputs": true,
+  "RealS92BOutputsCreatedDuringBuild": false,
+  "WolframSourceSHA256": "c3eb28cc8ad9577f352bc31fe597d3fd9e4eda9e1b4130cd20f1c0c6655f3820",
+  "NotebookSHA256": "9246d9032d7cec097fdfbbc34e4256fdbdefb8e4f363fb5222718a086790de3f"
+}

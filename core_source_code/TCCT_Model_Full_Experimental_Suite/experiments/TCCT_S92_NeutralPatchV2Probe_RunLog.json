@@ -1,0 +1,7 @@
+{
+  "stage": "S92-REVEALED-S90-NEUTRAL-PATCH-V2-PROBE",
+  "frozen_model_predictions_run": false,
+  "s92_cases_run": false,
+  "kernel_id": "10c433d3-c11b-44c0-9e85-7efd3dda89bf",
+  "probe_text": "<|\"Worlds\" -> 81, \"ReferenceActionsCorrect\" -> 81, \"CanonicalCaseExactlyBase\" -> 81, \n\n \n>    \"TerminatedNaturally\" -> 81, \"HitSafetyCap\" -> 0, \"CardinalitiesByTarget\" -> \n\n \n>     <|\"Stop\" -> <|{2, 2, 1} -> 9|>, \"Continue\" -> <|{1, 1, 0} -> 9, {2, 2, 1} ->\\\n \n>    63|>|>, \n \"EveryWorldHasMatchedCardinality\" -> False, \"ClassSupportsIdentical\" ->\\\n \n>    False|>"
+}
