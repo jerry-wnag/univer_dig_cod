@@ -1,0 +1,22 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S86A_FailureSnapshot_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-eb44601d-3795-4d40-bc41-54c9f87aa768.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|BaselinePredictionCounts -> <|Stop -> 144|>, \n \n>     InterventionPredictionCounts -> <|Stop -> 140, Continue -> 4|>, \n \n>     ContinueTargetPredictionCounts -> <|Stop -> 240|>, \n \n>     StopTargetPredictionCounts -> <|Stop -> 44, Continue -> 4|>, \n \n>     BaselinePolicyHitCountDistribution -> <|0 -> 144|>, \n \n>     InterventionPolicyHitCountDistribution -> <|0 -> 140, 2 -> 4|>, \n \n>     IncorrectContinueWorlds -> 240, IncorrectStopWorlds -> 4, \n \n>     CandidateHashUnchanged -> True, CoreHashUnchanged -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{BaselinePredictionCounts, \n \n>      InterventionPredictionCounts, ContinueTargetPredictionCounts, \n \n>      StopTargetPredictionCounts, BaselinePolicyHitCountDistribution, \n \n>      InterventionPolicyHitCountDistribution, IncorrectContinueWorlds, \n \n>      IncorrectStopWorlds, CandidateHashUnchanged, CoreHashUnchanged}, \n \n>     {TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`Atom[Integer], 1], \n \n>      TypeSystem`Assoc[TypeSystem`Atom[TypeSystem`Enumeration[Continue, Stop]], \n \n>       TypeSystem`Atom[Integer], 2], \n \n>      TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`Atom[Integer], 1], \n \n>      TypeSystem`Assoc[TypeSystem`Atom[TypeSystem`Enumeration[Continue, Stop]], \n \n>       TypeSystem`Atom[Integer], 2], \n \n>      TypeSystem`Assoc[TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], 1], \n \n>      TypeSystem`Assoc[TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], 2], \n \n>      TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|\"BaselinePredictionCounts\" -> <|\"Stop\" -> 144|>, \"InterventionPredictionCounts\" ->\\\n \n>   <|\"Stop\" -> 140, \"Continue\" -> 4|>, \"ContinueTargetPredictionCounts\" -> <|\"Stop\" ->\\\n \n>   240|>, \"StopTargetPredictionCounts\" -> <|\"Stop\" -> 44, \"Continue\" -> 4|>,\\\n \n>   \"BaselinePolicyHitCountDistribution\" -> <|0 -> 144|>,\\\n \n>   \"InterventionPolicyHitCountDistribution\" -> <|0 -> 140, 2 -> 4|>,\\\n \n>   \"IncorrectContinueWorlds\" -> 240, \"IncorrectStopWorlds\" -> 4,\\\n \n>   \"CandidateHashUnchanged\" -> True, \"CoreHashUnchanged\" -> True|>"
+    }
+  ],
+  "completed": true
+}

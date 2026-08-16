@@ -1,0 +1,39 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S86_ExternalSixBranchBlind_Preflight_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-eb44601d-3795-4d40-bc41-54c9f87aa768.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "stream",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, \r\n \r\n>     CandidateFileLoaded -> True, \r\n \r\n>     CandidateHash -> \r\n \r\n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \r\n \r\n>     ExpectedCandidateHash -> \r\n \r\n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \r\n \r\n>     CandidateK -> 19, CandidatePolicyLength -> 26, \r\n \r\n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \r\n \r\n>     CoreChanged -> False, PreflightPassed -> False|>}, \r\n \r\n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \r\n \r\n>      CandidateHash, ExpectedCandidateHash, CandidateK, \r\n \r\n>      CandidatePolicyLength, OriginalFrozenModelChanged, \r\n \r\n>      FrozenCandidateChanged, CoreChanged, PreflightPassed}, \r\n \r\n>     {TypeSystem`Atom[String], TypeSystem`Atom[String], \r\n \r\n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \r\n \r\n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], \r\n \r\n>      TypeSystem`Atom[Integer], TypeSystem`Atom[TypeSystem`Boolean], \r\n \r\n>      TypeSystem`Atom[TypeSystem`Boolean], \r\n \r\n>      TypeSystem`Atom[TypeSystem`Boolean], \r\n \r\n>      TypeSystem`Atom[TypeSystem`Boolean]}], 1], <||>]\r\n"
+        },
+        {
+          "msg_type": "stream",
+          "text": "S86 aborted: frozen architecture or S83B candidate mismatch.\r\n"
+        },
+        {
+          "msg_type": "execute_result",
+          "text": "$Aborted\nDataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, CandidateFileLoaded -> True, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     ExpectedCandidateHash -> \n \n>      a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     CandidateK -> 19, CandidatePolicyLength -> 26, \n \n>     OriginalFrozenModelChanged -> False, FrozenCandidateChanged -> False, \n \n>     CoreChanged -> False, PreflightPassed -> False|>}, \n \n>   TypeSystem`Vector[TypeSystem`Struct[{Stage, Name, CandidateFileLoaded, \n \n>      CandidateHash, ExpectedCandidateHash, CandidateK, CandidatePolicyLength, \n \n>      OriginalFrozenModelChanged, FrozenCandidateChanged, CoreChanged, PreflightPassed}\\\n \n>      , {TypeSystem`Atom[String], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[String], \n \n>      TypeSystem`Atom[String], TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean], \n \n>      TypeSystem`Atom[TypeSystem`Boolean], TypeSystem`Atom[TypeSystem`Boolean]}], 1], \n \n>   <||>]"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|Stage -> S86, Name -> ExternalSixBranchBlind, Candidate -> S83B-K19ExactRole, \n \n>     CandidateHash -> a51e6a13bdeda37b041eee4b74cfb6e472c7e52107a60f1d5534bb5df44ce44f, \n \n>     Depths -> {43, 71}, Topologies -> {DoubleDiamondIn, HierarchicalDiamondIn}, \n \n>     PatchedBranchPairs -> {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {1, 6}}, \n \n>     BranchCount -> 6, ExpectedScenarios -> 24, ExpectedWorldPairs -> 144, \n \n>     ExpectedWorlds -> 288, ExternalGrammar -> IndependentSixBranchT86, \n \n>     Intervention -> TwoSimultaneousBranchStopPatches, \n \n>     QueryGrid -> AllSixQueriesBeforeAndAfterIntervention, \n \n>     ExpectedPatchedQueryPairs -> 48, ExpectedUnpatchedQueryPairs -> 96, \n \n>     TokenDeduplication -> DeleteDuplicatesAfterExactRoleCodePairing, \n \n>     CandidateFrozenBeforeProtocol -> True, CandidateSearchRun -> False, \n \n>     TrainingRun -> False, HistoricalRegressionRerun -> False, S83BlindRerun -> False, \n \n>     S84BlindRerun -> False, S85BlindRerun -> False, S83BDevelopmentRowsRerun -> False, \n \n>     S86LabelsUsedForSelection -> False, NoCaseEvaluatedBeforeProtocolHash -> True, \n \n>     ProtocolHash -> 340bd60ac6e1938ca523c0fa78ba98463cf0e34900744001ef2d6ed9731d5fd8|>}\n \n>    , TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[String], TypeSystem`AnyType, \n \n>     28], 1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "{\"596b6ecdfa28f7f3e31fe3716eaeb3dd5b1fc1df645eb601af78400df18b7e03\",\\\n \n>   \"45a4f2364a569f5346c9d007c0da716dc1752193fc68abcb2b6acd88c5af54bf\", {\"Stage\" ->\\\n \n>   \"S83B\", \"Name\" -> \"CapacityExpandedQueryRoleCandidate\", \"BaseFrozenModelHash\" ->\\\n \n>   \"d6477c370436d09cf3e8cfc8530decd13ebf8bb79120362146ecb419f9d6a6c4\",\\\n \n>   \"BaseCandidateHash\" ->\\\n \n>   \"1aeac2dc1aa0ec4f6e187e25ec054e3e8188c75ab1058b74f620500b826a587a\", \"EncoderParams\"\\\n \n>   -> {-1, 0, -1, -1, -1, 0, 1, -1}, \"Representation\" -> \"KExactRole\", \"K\" -> 19,\\\n \n>   \"Policy\" -> {{\"QueriedCorrectDestination\", {5, 8}}, {\"QueriedCorrectDestination\",\\\n \n>   {7, 5}}, {\"QueriedCorrectDestination\", {7, 12}}, {\"QueriedCorrectDestination\", {8,\\\n \n>   5}}, {\"QueriedCorrectDestination\", {8, 19}}, {\"QueriedCorrectDestination\", {9, 10}},\\\n \n>   {\"QueriedCorrectDestination\", {11, 6}}, {\"QueriedCorrectDestination\", {11, 17}},\\\n \n>   {\"QueriedCorrectDestination\", {11, 18}}, {\"QueriedCorrectDestination\", {12, 1}},\\\n \n>   {\"QueriedCorrectDestination\", {15, 10}}, {\"QueriedDecision\", {1, 3}},\\\n \n>   {\"QueriedDecision\", {1, 6}}, {\"QueriedDecision\", {1, 7}}, {\"QueriedDecision\", {1,\\\n \n>   9}}, {\"QueriedDecision\", {1, 11}}, {\"QueriedDecision\", {2, 9}}, {\"QueriedDecision\",\\\n \n>   {3, 1}}, {\"QueriedDecision\", {3, 6}}, {\"QueriedDecision\", {3, 14}},\\\n \n>   {\"QueriedDecision\", {4, 10}}, {\"QueriedDecision\", {6, 14}}, {\"QueriedDecision\", {8,\\\n \n>   6}}, {\"QueriedDecision\", {13, 13}}, {\"QueriedDecision\", {16, 2}},\\\n \n>   {\"QueriedDecision\", {18, 3}}}, \"PolicyLength\" -> 26, \"ExactNodeRoleUsed\" -> True,\\\n \n>   \"TokenDeduplication\" -> \"DeleteDuplicates\", \"DevelopmentRows\" -> 264,\\\n \n>   \"DevelopmentScore\" -> 264, \"S83LabelsUsedForDevelopment\" -> True, \"FrozenBeforeS84\"\\\n \n>   -> True}, {\"Stage\" -> \"S75D\", \"Name\" -> \"ValidatedPolicyCompletion\",\\\n \n>   \"Representation\" -> \"PairedRadius2Radius3WithParentChildCardinality\", \"Params\" ->\\\n \n>   {-1, 0, -1, -1, -1, 0, 1, -1}, \"K\" -> 5, \"TrainingPolicy\" -> {{3, 1}, {3, 3}, {4,\\\n \n>   3}}, \"Policy\" -> {{1, 3}, {2, 2}, {3, 1}, {3, 2}, {3, 3}, {4, 3}},\\\n \n>   \"AddedContinueCodes\" -> {{1, 3}, {2, 2}, {3, 2}},\\\n \n>   \"PolicyCompletionUsesValidationLabels\" -> True, \"FrozenBeforeS76\" -> True}}"
+    }
+  ],
+  "completed": true
+}

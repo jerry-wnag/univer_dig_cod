@@ -1,0 +1,22 @@
+{
+  "notebook": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\TCCT_S85_PreflightDiagnostic_AutoRun.ipynb",
+  "connection": "C:\\Users\\王鑫\\.codex\\.chatgpt-projects\\g-p-6a72c38f146c8191a7937f5612db2fd4\\wolfram\\.jupyter_runtime\\kernel-eb44601d-3795-4d40-bc41-54c9f87aa768.json",
+  "cells": [
+    {
+      "number": 1,
+      "outputs": [
+        {
+          "msg_type": "execute_result",
+          "text": "Dataset[{<|ModelHash -> True, MinimalKernelHash -> True, CanonicalizerHash -> True, \n \n>     StableArchitectureHash -> False, InterventionPrimitiveHash -> True, \n \n>     CandidateAssociation -> True, CandidateHash -> True, BaseFrozenModelHash -> True, \n \n>     EncoderParams -> True, Representation -> True, K -> True, PolicyLength -> True, \n \n>     DevelopmentScore -> True, ExactNodeRoleUsed -> True, FrozenBeforeS84 -> True|>}, \n \n>   TypeSystem`Vector[TypeSystem`Assoc[TypeSystem`Atom[TypeSystem`Enumeration[\n \n>       BaseFrozenModelHash, CandidateAssociation, CandidateHash, CanonicalizerHash, \n \n>       DevelopmentScore, EncoderParams, ExactNodeRoleUsed, FrozenBeforeS84, \n \n>       InterventionPrimitiveHash, K, MinimalKernelHash, ModelHash, PolicyLength, \n \n>       Representation, StableArchitectureHash]], TypeSystem`Atom[TypeSystem`Boolean], \n \n>     15], 1], <||>]"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "msg_type": "execute_result",
+      "text": "<|\"ModelHash\" -> True, \"MinimalKernelHash\" -> True, \"CanonicalizerHash\" -> True,\\\n \n>   \"StableArchitectureHash\" -> False, \"InterventionPrimitiveHash\" -> True,\\\n \n>   \"CandidateAssociation\" -> True, \"CandidateHash\" -> True, \"BaseFrozenModelHash\" ->\\\n \n>   True, \"EncoderParams\" -> True, \"Representation\" -> True, \"K\" -> True, \"PolicyLength\"\\\n \n>   -> True, \"DevelopmentScore\" -> True, \"ExactNodeRoleUsed\" -> True, \"FrozenBeforeS84\"\\\n \n>   -> True|>"
+    }
+  ],
+  "completed": true
+}
