@@ -1,0 +1,16 @@
+path=FileNameJoin[{Directory[],
+"TCCT_S94H_R3_DefinitionCompatibilityAudit.json"}];
+obj=Quiet@Check[Import[path,"RawJSON"],$Failed];
+passed=And[
+AssociationQ[obj],
+TrueQ[obj["CompatibilityPassed"]],
+TrueQ[obj["SemanticPairOutputsExactIgnoringTiming"]],
+SameQ[obj["AuditHash"],Hash[Normal@KeyDrop[obj,{"AuditHash"}],
+"SHA256","HexString"]]
+];
+Print[InputForm[<|"CompatibilityAuditFileValid"->passed,
+"SemanticPairOutputsExactIgnoringTiming"->
+If[AssociationQ[obj],obj["SemanticPairOutputsExactIgnoringTiming"],False],
+"AuditHashMatched"->If[AssociationQ[obj],SameQ[obj["AuditHash"],
+Hash[Normal@KeyDrop[obj,{"AuditHash"}],"SHA256","HexString"]],False]|>]];
+Quit[];
