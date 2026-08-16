@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: >-
+  If you use this S95 research snapshot, cite this release and the parent
+  TCCT project. The parent Zenodo DOI below archives version v9.2.0 and
+  predates this S95 snapshot; replace it with the S95 version DOI after a
+  new Zenodo release is published.
+type: software
+title: "TCCT: S95 Strict Blind Research Release"
+version: "S95-2026-08-12"
+date-released: 2026-08-12
+authors:
+  - family-names: "Wang"
+    given-names: "Xin"
+repository-code: "https://github.com/jerry-wnag/univer_dig_cod"
+url: "https://github.com/jerry-wnag/univer_dig_cod"
+license: AGPL-3.0
+keywords:
+  - "symbolic graph reasoning"
+  - "counterfactual reasoning"
+  - "graph rewriting"
+  - "compositional generalization"
+  - "blind evaluation"
+  - "Wolfram Language"
+abstract: >-
+  A hash-locked experimental release of the TCCT symbolic graph-reasoning
+  branch. It contains the S71-S95 research history, frozen artifacts,
+  precommit records, checkpoints, result certificates, and the S95 strict
+  blind evaluation. The release is a specialized research prototype and is
+  not a general-purpose AI foundation model.
+references:
+  - type: software
+    title: "A Minimal model for causal invariance: path merging via DP-like optimization"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xin"
+    version: "v9.2.0"
+    date-released: 2026-06-10
+    doi: "10.5281/zenodo.20619538"
+    url: "https://zenodo.org/records/20619538"
+    repository-code: "https://github.com/jerry-wnag/univer_dig_cod"
