@@ -1,0 +1,15 @@
+SetDirectory[DirectoryName[$InputFileName]];
+source79A=Import[
+"TCCT_S79A_MinimalBlindFailureMechanismAudit.wl",
+"Text"
+];
+parsed79A=Quiet@Check[
+ToExpression[
+"HoldComplete["<>source79A<>"]",
+InputForm,
+HoldComplete
+],
+$Failed
+];
+Print[If[parsed79A===$Failed,"PARSE_FAILED","PARSE_OK"]];
+Quit[If[parsed79A===$Failed,1,0]];

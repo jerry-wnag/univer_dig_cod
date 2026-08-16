@@ -1,0 +1,335 @@
+import json
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+WL_OUTPUT = ROOT / "TCCT_S83B_RepresentationCapacityScan.wl"
+NB_OUTPUT = ROOT / "TCCT_S83B_RepresentationCapacityScan_AutoRun.ipynb"
+MARKER = "(* S83B SCAN CELL *)"
+
+
+cell1 = r'''
+If[
+!ValueQ[cert83A]||!TrueQ[cert83A["AuditValidityPassed"]],
+Print["S83B scan aborted: valid S83A state is required."];
+Abort[]
+];
+
+expectedAuditHash83B=7242166766555324273;
+actualAuditHash83B=Hash[Normal[cert83A]];
+
+ClearAll[
+CandidateToken83B,
+TokenRows83B,
+EvaluateRepresentation83B,
+RepresentationDefinitionBundle83B
+];
+
+CandidateToken83B[
+observation_Association,candidate_Association
+]:=Module[{role,pair,profile,type,k},
+role=observation["Role"];
+pair=observation["RawPair"];
+profile=observation["BagProfile"];
+type=candidate["Type"];
+k=Lookup[candidate,"K",Missing["NotApplicable"]];
+Switch[
+type,
+"KExactRole",{role,EncodePairWithK82C[pair,k]},
+"KPlusBagProfile",{role,EncodePairWithK82C[pair,k],profile},
+"BagProfileOnly",{role,profile},
+"RawPair",{role,pair},
+_,$Failed
+]
+];
+
+TokenRows83B[rows_List,candidate_Association]:=Map[
+Function[row,
+Join[
+KeyTake[row,{"Grammar","Depth","Answer","Target","Topology",
+"PatchedBranch","WorldType"}],
+<|"Tokens"->DeleteDuplicates[
+CandidateToken83B[#1,candidate]&/@row["Observations"]
+]|>
+]
+],
+rows
+];
+
+EvaluateRepresentation83B[candidate_Association]:=Module[
+{legacyTokens,stressTokens,hybridTokens,allTokens,policy},
+legacyTokens=TokenRows83B[legacyRows83A,candidate];
+stressTokens=TokenRows83B[stressRows83A,candidate];
+hybridTokens=TokenRows83B[hybridRows83A,candidate];
+allTokens=Join[legacyTokens,stressTokens,hybridTokens];
+policy=SafePolicy82C[allTokens];
+Join[
+candidate,
+<|
+"Policy"->policy,
+"PolicyLength"->Length[policy],
+"LegacyScore"->ScoreRows82C[legacyTokens,policy],
+"LegacyCases"->Length[legacyTokens],
+"StressScore"->ScoreRows82C[stressTokens,policy],
+"StressCases"->Length[stressTokens],
+"HybridFactualScore"->ScoreRows82C[
+Select[hybridTokens,SameQ[#1["Target"],"Continue"]&],policy
+],
+"HybridFactualCases"->Count[
+hybridTokens,row_/;SameQ[row["Target"],"Continue"]
+],
+"HybridCounterfactualScore"->ScoreRows82C[
+Select[hybridTokens,SameQ[#1["Target"],"Stop"]&],policy
+],
+"HybridCounterfactualCases"->Count[
+hybridTokens,row_/;SameQ[row["Target"],"Stop"]
+],
+"AllDevelopmentScore"->ScoreRows82C[allTokens,policy],
+"AllDevelopmentCases"->Length[allTokens],
+"Perfect"->SameQ[ScoreRows82C[allTokens,policy],Length[allTokens]]
+|>
+]
+];
+
+RepresentationDefinitionBundle83B[]:={
+DownValues[CandidateToken83B],DownValues[TokenRows83B],
+DownValues[EvaluateRepresentation83B]
+};
+
+kValues83B=Range[10,64];
+kCandidates83B=Map[
+Function[k,<|
+"Name"->("K"<>ToString[k]<>"ExactRole"),
+"Type"->"KExactRole","K"->k,
+"ProductionEligible"->True,"Priority"->k
+|>],
+kValues83B
+];
+
+profileCandidates83B={
+<|"Name"->"K10ExactRolePlusBagProfile",
+"Type"->"KPlusBagProfile","K"->10,
+"ProductionEligible"->True,"Priority"->110|>,
+<|"Name"->"K23ExactRolePlusBagProfile",
+"Type"->"KPlusBagProfile","K"->23,
+"ProductionEligible"->True,"Priority"->123|>,
+<|"Name"->"ExactRoleBagProfileOnly",
+"Type"->"BagProfileOnly",
+"ProductionEligible"->True,"Priority"->200|>,
+<|"Name"->"ExactRoleRawPairDiagnostic",
+"Type"->"RawPair",
+"ProductionEligible"->False,"Priority"->1000|>
+};
+
+representationCandidates83B=Join[
+kCandidates83B,profileCandidates83B
+];
+
+protocol83B=<|
+"Stage"->"S83B-Scan",
+"Name"->"RepresentationCapacityScan",
+"S83AAuditHash"->actualAuditHash83B,
+"KScan"->kValues83B,
+"AdditionalRepresentations"->Lookup[profileCandidates83B,"Name"],
+"CandidateCount"->Length[representationCandidates83B],
+"DevelopmentRows"->264,
+"UsesS83LabelsForDevelopment"->True,
+"S83BScanIsBlindTest"->False,
+"FrozenModelMayChange"->False,
+"CoreMayChange"->False,
+"Deduplication"->"DeleteDuplicatesUnchanged",
+"NoRepresentationEvaluatedBeforeProtocolHash"->True
+|>;
+
+protocolHash83B=Hash[Normal[protocol83B],"SHA256","HexString"];
+modelHashBefore83B=Hash[Normal[frozen75D],"SHA256","HexString"];
+candidateHashBefore83B=Hash[
+Normal[frozenCandidate82C],"SHA256","HexString"
+];
+coreHashBefore83B=Hash[CoreDefinitionBundle83[],"SHA256","HexString"];
+representationDefinitionHashBefore83B=Hash[
+RepresentationDefinitionBundle83B[],"SHA256","HexString"
+];
+
+preflight83B=<|
+"Stage"->"S83B-Scan",
+"AuditHashMatched"->SameQ[actualAuditHash83B,expectedAuditHash83B],
+"FrozenCandidateHashMatched"->SameQ[
+candidateHashBefore83B,expectedCandidateHash83
+],
+"CoreChanged"->False,
+"ProtocolHash"->protocolHash83B,
+"PreflightPassed"->And[
+SameQ[actualAuditHash83B,expectedAuditHash83B],
+SameQ[candidateHashBefore83B,expectedCandidateHash83],
+TrueQ[cert83A["AuditValidityPassed"]]
+]
+|>;
+
+If[
+!TrueQ[preflight83B["PreflightPassed"]],
+Print[Dataset[{preflight83B}]];
+Abort[]
+];
+
+Dataset[{preflight83B}]
+'''.strip() + "\n"
+
+cell2 = r'''
+representationResults83B=
+EvaluateRepresentation83B/@representationCandidates83B;
+perfectRepresentations83B=Select[
+representationResults83B,TrueQ[#1["Perfect"]]&
+];
+productionPerfect83B=Select[
+perfectRepresentations83B,TrueQ[#1["ProductionEligible"]]&
+];
+rawPairResult83B=First@Select[
+representationResults83B,SameQ[#1["Type"],"RawPair"]&
+];
+
+selectedRepresentation83B=If[
+Length[productionPerfect83B]>0,
+First@SortBy[
+productionPerfect83B,
+{#1["Priority"],#1["PolicyLength"],#1["Name"]}&
+],
+Missing["NoProductionPerfectRepresentation"]
+];
+
+capacityDiagnosis83B=Which[
+Length[Select[
+productionPerfect83B,SameQ[#1["Type"],"KExactRole"]&
+]]>0,
+"LARGER_MODULO_CODEBOOK_SUFFICIENT",
+Length[productionPerfect83B]>0,
+"STRUCTURAL_PROFILE_AUGMENTATION_REQUIRED",
+TrueQ[rawPairResult83B["Perfect"]],
+"RAW_PAIR_SUFFICIENT_COMPACT_REPRESENTATIONS_INSUFFICIENT",
+True,
+"RAW_PAIR_TOKEN_SET_NOT_SEPARABLE_RELATIONAL_REPRESENTATION_REQUIRED"
+];
+
+modelHashAfter83B=Hash[Normal[frozen75D],"SHA256","HexString"];
+candidateHashAfter83B=Hash[
+Normal[frozenCandidate82C],"SHA256","HexString"
+];
+coreHashAfter83B=Hash[CoreDefinitionBundle83[],"SHA256","HexString"];
+representationDefinitionHashAfter83B=Hash[
+RepresentationDefinitionBundle83B[],"SHA256","HexString"
+];
+protocolHashAfter83B=Hash[Normal[protocol83B],"SHA256","HexString"];
+
+scanValidityPassed83B=And[
+TrueQ[preflight83B["PreflightPassed"]],
+SameQ[modelHashBefore83B,modelHashAfter83B],
+SameQ[candidateHashBefore83B,candidateHashAfter83B],
+SameQ[coreHashBefore83B,coreHashAfter83B],
+SameQ[
+representationDefinitionHashBefore83B,
+representationDefinitionHashAfter83B
+],
+SameQ[protocolHash83B,protocolHashAfter83B],
+SameQ[Length[representationResults83B],Length[representationCandidates83B]]
+];
+
+cert83BScan=<|
+"Stage"->"S83B-Scan",
+"Name"->"RepresentationCapacityScan",
+"CandidatesEvaluated"->Length[representationResults83B],
+"PerfectRepresentationCount"->Length[perfectRepresentations83B],
+"ProductionPerfectCount"->Length[productionPerfect83B],
+"RawPairPerfect"->rawPairResult83B["Perfect"],
+"SelectedRepresentation"->If[
+AssociationQ[selectedRepresentation83B],
+selectedRepresentation83B["Name"],
+selectedRepresentation83B
+],
+"SelectedK"->If[
+AssociationQ[selectedRepresentation83B],
+Lookup[selectedRepresentation83B,"K",Missing["NoK"]],
+Missing["NoSelection"]
+],
+"SelectedPolicyLength"->If[
+AssociationQ[selectedRepresentation83B],
+selectedRepresentation83B["PolicyLength"],
+Missing["NoSelection"]
+],
+"CapacityDiagnosis"->capacityDiagnosis83B,
+"OriginalFrozenModelChanged"->!SameQ[modelHashBefore83B,modelHashAfter83B],
+"FrozenCandidateChanged"->!SameQ[
+candidateHashBefore83B,candidateHashAfter83B
+],
+"CoreChanged"->!SameQ[coreHashBefore83B,coreHashAfter83B],
+"DeduplicationMechanismChanged"->False,
+"S83BScanIsBlindTest"->False,
+"ScanValidityPassed"->scanValidityPassed83B,
+"SuggestedNextStage"->If[
+Length[productionPerfect83B]>0,
+"S83B_FREEZE_SELECTED_OUTER_REPRESENTATION",
+"S83C_QUERY_LOCAL_RELATIONAL_FEATURE_DEVELOPMENT"
+]
+|>;
+
+Column[{
+Dataset[Map[
+KeyDrop[#1,"Policy"]&,
+Take[SortBy[representationResults83B,
+{-#1["AllDevelopmentScore"],#1["Priority"]}&],UpTo[15]]
+]],
+Dataset[{cert83BScan}]
+}]
+'''.strip() + "\n"
+
+cells = [cell1, cell2]
+wl_source = "\n\n".join(f"{MARKER}\n{cell}" for cell in cells)
+WL_OUTPUT.write_text(wl_source, encoding="utf-8")
+
+notebook = {
+    "cells": [
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "# TCCT S83B — Representation Capacity Scan\n",
+                "\n",
+                "在 S83A 已准备的 264 行上扫描外层表示容量；不修改核心、规则或去重。该阶段不是盲测。\n",
+            ],
+        },
+        *[
+            {
+                "cell_type": "code",
+                "execution_count": None,
+                "metadata": {},
+                "outputs": [],
+                "source": cell.splitlines(keepends=True),
+            }
+            for cell in cells
+        ],
+    ],
+    "metadata": {
+        "kernelspec": {
+            "display_name": "Wolfram Language 15",
+            "language": "Wolfram Language",
+            "name": "wolframlanguage15",
+        },
+        "language_info": {
+            "codemirror_mode": "mathematica",
+            "file_extension": ".m",
+            "mimetype": "application/vnd.wolfram.m",
+            "name": "Wolfram Language",
+            "pygments_lexer": "mathematica",
+            "version": "15.0",
+        },
+    },
+    "nbformat": 4,
+    "nbformat_minor": 5,
+}
+
+NB_OUTPUT.write_text(
+    json.dumps(notebook, ensure_ascii=False, indent=1),
+    encoding="utf-8",
+)
+
+print(WL_OUTPUT)
+print(NB_OUTPUT)

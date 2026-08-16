@@ -1,0 +1,15 @@
+SetDirectory[DirectoryName[$InputFileName]];
+source79B=Import[
+"TCCT_S79B_PrivateDiamondCanonicalizationRepairAudit.wl",
+"Text"
+];
+parsed79B=Quiet@Check[
+ToExpression[
+"HoldComplete["<>source79B<>"]",
+InputForm,
+HoldComplete
+],
+$Failed
+];
+Print[If[parsed79B===$Failed,"PARSE_FAILED","PARSE_OK"]];
+Quit[If[parsed79B===$Failed,1,0]];

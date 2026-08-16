@@ -1,0 +1,15 @@
+SetDirectory[DirectoryName[$InputFileName]];
+source77A=Import[
+"TCCT_S77A_PropagationHorizonAudit.wl",
+"Text"
+];
+parsed77A=Quiet@Check[
+ToExpression[
+"HoldComplete["<>source77A<>"]",
+InputForm,
+HoldComplete
+],
+$Failed
+];
+Print[If[parsed77A===$Failed,"PARSE_FAILED","PARSE_OK"]];
+Quit[If[parsed77A===$Failed,1,0]];

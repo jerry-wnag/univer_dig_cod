@@ -1,0 +1,15 @@
+SetDirectory[DirectoryName[$InputFileName]];
+source72=Import["TCCT_S72_FrozenTopologyBattery.wl","Text"];
+parsed72=Quiet@Check[
+ToExpression[
+"HoldComplete["<>source72<>"]",
+InputForm,
+HoldComplete
+],
+$Failed
+];
+Print[<|
+"SyntaxParsed"->(parsed72=!=$Failed),
+"SourceCharacters"->StringLength[source72]
+|>];
+Quit[If[parsed72===$Failed,1,0]];

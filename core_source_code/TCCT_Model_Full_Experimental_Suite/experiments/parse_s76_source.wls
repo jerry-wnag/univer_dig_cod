@@ -1,0 +1,14 @@
+SetDirectory[DirectoryName[$InputFileName]];
+source76=Import[
+"TCCT_S76_NestedBraidedIn_BlindTest.wl",
+"Text"
+];
+parsed76=Quiet@Check[
+ToExpression[
+"HoldComplete["<>source76<>"]",
+InputForm,
+HoldComplete
+],
+$Failed
+];
+Quit[If[parsed76===$Failed,1,0]];
