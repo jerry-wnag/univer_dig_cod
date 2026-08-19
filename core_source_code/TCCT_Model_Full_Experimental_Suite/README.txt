@@ -21,3 +21,13 @@ The current prototype is best described as a **deterministic, partially observab
 
 It is not presented as AGI. Current experiments are primarily finite, discrete and synthetic, and the next major directions include stochastic belief states, multiple hidden factors, multimodal grounding, continual learning and planning.
 NOTE:In **TCCT_S95_Strict_Blind_Research_Release_2026-08-12**, the `experiments` folder, which contains the atomic files, was accidentally moved by me to the same directory level as `TCCT_S95_Strict_Blind_Research_Release_2026-08-12` due to an oversight.
+
+
+S124-T2STANDALONE.pdf
+Standalone validation of the Transformer-perception -> frozen-TCCT-Q interface.
+
+S124-T5RCOMPLETE.pdf
+Development and diagnostic record covering streaming perception, TCCT/neural reasoning attribution, and neural-baseline recovery.
+
+TCCT_S124_T5R1_StrictFreshWorldGeneralizationAttribution.pdf
+Strict prospective fresh-world test of pairwise-to-high-order compositional generalization under shared neural perception, showing exact TCCT generalization to 74/74 unseen states and 592/592 unseen transitions.
