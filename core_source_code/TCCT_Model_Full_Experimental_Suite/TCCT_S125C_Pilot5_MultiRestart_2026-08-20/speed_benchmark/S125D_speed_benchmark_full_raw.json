@@ -1,0 +1,964 @@
+{
+  "BenchmarkVersion": "S125-D-v1",
+  "Protocol": {
+    "FrozenModelsOnly": true,
+    "Retraining": false,
+    "ModelMutation": false,
+    "Runtime": "NumPy CPU architecture-level same-process benchmark",
+    "NotWolframKernelWallClock": true,
+    "TCCTReferenceMeaning": "Literal S125-C per-probe state recomputation",
+    "TCCTCachedMeaning": "One state fold per 14-probe signature; identical outputs",
+    "Workload": {
+      "StateSignatures": 74,
+      "TransitionSignatures": 592,
+      "TotalSignatures": 666,
+      "ProbesPerSignature": 14,
+      "TotalProbePredictions": 9324,
+      "FrozenMaximumSequenceLength": 16,
+      "LongestMeasuredSequenceLength": 11
+    }
+  },
+  "Environment": {
+    "Python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "NumPy": "2.1.3",
+    "H5Py": "3.12.1",
+    "Platform": "Windows-11-10.0.26200-SP0",
+    "Processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "LogicalProcessors": 16,
+    "ThreadPools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 10,
+        "prefix": "mkl_rt",
+        "filepath": "E:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 16,
+        "prefix": "libiomp",
+        "filepath": "E:\\anaconda\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  "QuickMode": false,
+  "ElapsedSeconds": 214.45793399994727,
+  "Worlds": [
+    {
+      "WorldDirectory": "world_01_seed_1258501",
+      "WorldSeed": 1258501,
+      "Audits": {
+        "TCCTCachedEqualsReference": true,
+        "MatchedBatchInvariant": true,
+        "StrongBatchInvariant": true,
+        "WorkloadSignatureCount": 666,
+        "WorkloadProbePredictionCount": 9324,
+        "LongestSequenceLength": 11
+      },
+      "FrozenArtifacts": {
+        "TCCTSHA256": "1070492bd96a659ff2efb25def71caf68f0b5d130177be35e1ad8cbe798a3d11",
+        "MatchedSHA256": "973c2f424aaf6adcd343621855bddc88b29704e2cc7c91a7b0a9659f70fcd419",
+        "StrongSHA256": "84a8c83877cb9b0ec901cebacbdc642aced05ef6853e211376940b02d88f32f2",
+        "SummarySHA256": "790675538f7e2b663a66226ce90ece4b2a95a7db4927a5fcfd8a68bd7e9db445",
+        "TCCTFileBytes": 3398,
+        "MatchedFileBytes": 364096,
+        "StrongFileBytes": 1383112,
+        "TCCTConditionalCells": 42,
+        "MatchedParameters": 85890,
+        "StrongParameters": 339170,
+        "MatchedParameterBytes": 343560,
+        "StrongParameterBytes": 1356680,
+        "MatchedBlocks": 2,
+        "StrongBlocks": 3,
+        "MatchedModelDimension": 64,
+        "StrongModelDimension": 96,
+        "WLNetVersion": "15.0.2"
+      },
+      "LoadSeconds": {
+        "TCCT": 0.0021808999590575695,
+        "Matched": 0.006939399987459183,
+        "Strong": 0.008190000080503523
+      },
+      "SingleSignatureLatency": {
+        "TCCTReference": {
+          "Samples": 25,
+          "InnerLoops": 100,
+          "MedianMilliseconds": 0.111402,
+          "P95Milliseconds": 0.12178439999999997,
+          "MinimumMilliseconds": 0.10379300000000001,
+          "MaximumMilliseconds": 0.124551,
+          "Checksum": 5523633600916577847
+        },
+        "TCCTCached": {
+          "Samples": 25,
+          "InnerLoops": 500,
+          "MedianMilliseconds": 0.009981799999999999,
+          "P95Milliseconds": 0.011205119999999999,
+          "MinimumMilliseconds": 0.0090636,
+          "MaximumMilliseconds": 0.0118594,
+          "Checksum": 5523633600916577847
+        },
+        "MatchedKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.8553,
+          "P95Milliseconds": 5.360339999999999,
+          "MinimumMilliseconds": 4.2241,
+          "MaximumMilliseconds": 5.4676,
+          "Checksum": -3811765411951329163
+        },
+        "MatchedEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.4022,
+          "P95Milliseconds": 5.357119999999998,
+          "MinimumMilliseconds": 4.0789,
+          "MaximumMilliseconds": 5.5817,
+          "Checksum": -3811765411951329163
+        },
+        "StrongKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.0667,
+          "P95Milliseconds": 14.19774,
+          "MinimumMilliseconds": 12.4069,
+          "MaximumMilliseconds": 14.3119,
+          "Checksum": -2920071094182728679
+        },
+        "StrongEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.1195,
+          "P95Milliseconds": 13.56272,
+          "MinimumMilliseconds": 12.2669,
+          "MaximumMilliseconds": 13.64,
+          "Checksum": -2920071094182728679
+        }
+      },
+      "FullWorkloadThroughput": {
+        "TCCTReference": {
+          "Repeats": 3,
+          "MedianSeconds": 0.04730939993169159,
+          "MinimumSeconds": 0.0458238999126479,
+          "MaximumSeconds": 0.055517599917948246,
+          "SignaturesPerSecond": 14077.540635933123,
+          "ProbePredictionsPerSecond": 197085.56890306371
+        },
+        "TCCTCached": {
+          "Repeats": 3,
+          "MedianSeconds": 0.005109700025059283,
+          "MinimumSeconds": 0.004952399991452694,
+          "MaximumSeconds": 0.005456800106912851,
+          "SignaturesPerSecond": 130340.33245273984,
+          "ProbePredictionsPerSecond": 1824764.6543383577
+        },
+        "MatchedBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 3.0575680000474676,
+            "MinimumSeconds": 3.0575680000474676,
+            "MaximumSeconds": 3.0575680000474676,
+            "SignaturesPerSecond": 217.82017603195106,
+            "ProbePredictionsPerSecond": 3049.482464447315
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 3.384746399940923,
+            "MinimumSeconds": 3.384746399940923,
+            "MaximumSeconds": 3.384746399940923,
+            "SignaturesPerSecond": 196.76511067760478,
+            "ProbePredictionsPerSecond": 2754.711549486467
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 3.4812807999551296,
+            "MinimumSeconds": 3.4812807999551296,
+            "MaximumSeconds": 3.4812807999551296,
+            "SignaturesPerSecond": 191.3088998763283,
+            "ProbePredictionsPerSecond": 2678.324598268596
+          }
+        },
+        "StrongBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 9.12006779992953,
+            "MinimumSeconds": 9.12006779992953,
+            "MaximumSeconds": 9.12006779992953,
+            "SignaturesPerSecond": 73.02577290106836,
+            "ProbePredictionsPerSecond": 1022.3608206149571
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 10.194914199993946,
+            "MinimumSeconds": 10.194914199993946,
+            "MaximumSeconds": 10.194914199993946,
+            "SignaturesPerSecond": 65.32669004712129,
+            "ProbePredictionsPerSecond": 914.573660659698
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 10.07552830001805,
+            "MinimumSeconds": 10.07552830001805,
+            "MaximumSeconds": 10.07552830001805,
+            "SignaturesPerSecond": 66.10075225522486,
+            "ProbePredictionsPerSecond": 925.4105315731481
+          }
+        },
+        "BestMatchedBatch": 1,
+        "BestStrongBatch": 1
+      }
+    },
+    {
+      "WorldDirectory": "world_02_seed_1258502",
+      "WorldSeed": 1258502,
+      "Audits": {
+        "TCCTCachedEqualsReference": true,
+        "MatchedBatchInvariant": true,
+        "StrongBatchInvariant": true,
+        "WorkloadSignatureCount": 666,
+        "WorkloadProbePredictionCount": 9324,
+        "LongestSequenceLength": 11
+      },
+      "FrozenArtifacts": {
+        "TCCTSHA256": "141295aa459ee400d8a10c015866d825efd0139bcffbeda40c6098ccc0533a32",
+        "MatchedSHA256": "173746834e9b24da61eea95354e3b4d8571126b3848dd06f5e08b3e3f8276a6a",
+        "StrongSHA256": "b65ac15f06fec4eb0e193c3aa143265aeb19077564e7a272bd382ff33bc61afc",
+        "SummarySHA256": "30836eef5dbe403758c2ab73e5746ff3681dcc7138919f144a180cccc72525a6",
+        "TCCTFileBytes": 3378,
+        "MatchedFileBytes": 364096,
+        "StrongFileBytes": 1383112,
+        "TCCTConditionalCells": 41,
+        "MatchedParameters": 85890,
+        "StrongParameters": 339170,
+        "MatchedParameterBytes": 343560,
+        "StrongParameterBytes": 1356680,
+        "MatchedBlocks": 2,
+        "StrongBlocks": 3,
+        "MatchedModelDimension": 64,
+        "StrongModelDimension": 96,
+        "WLNetVersion": "15.0.2"
+      },
+      "LoadSeconds": {
+        "TCCT": 0.003553900052793324,
+        "Matched": 0.010813699918799102,
+        "Strong": 0.014730100054293871
+      },
+      "SingleSignatureLatency": {
+        "TCCTReference": {
+          "Samples": 25,
+          "InnerLoops": 100,
+          "MedianMilliseconds": 0.09529299999999999,
+          "P95Milliseconds": 0.10593439999999997,
+          "MinimumMilliseconds": 0.08942,
+          "MaximumMilliseconds": 0.11678699999999999,
+          "Checksum": -8251430561053890311
+        },
+        "TCCTCached": {
+          "Samples": 25,
+          "InnerLoops": 500,
+          "MedianMilliseconds": 0.0099046,
+          "P95Milliseconds": 0.012728199999999999,
+          "MinimumMilliseconds": 0.008320600000000001,
+          "MaximumMilliseconds": 0.013208600000000001,
+          "Checksum": -8251430561053890311
+        },
+        "MatchedKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.4961,
+          "P95Milliseconds": 4.8178399999999995,
+          "MinimumMilliseconds": 4.1515,
+          "MaximumMilliseconds": 7.3569,
+          "Checksum": -3472239315770026847
+        },
+        "MatchedEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.4601,
+          "P95Milliseconds": 4.80546,
+          "MinimumMilliseconds": 4.0422,
+          "MaximumMilliseconds": 4.9535,
+          "Checksum": -3472239315770026847
+        },
+        "StrongKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.9017,
+          "P95Milliseconds": 14.6261,
+          "MinimumMilliseconds": 12.7266,
+          "MaximumMilliseconds": 15.039,
+          "Checksum": -5180272925110095841
+        },
+        "StrongEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 14.1137,
+          "P95Milliseconds": 15.9431,
+          "MinimumMilliseconds": 13.3602,
+          "MaximumMilliseconds": 16.1755,
+          "Checksum": -5180272925110095841
+        }
+      },
+      "FullWorkloadThroughput": {
+        "TCCTReference": {
+          "Repeats": 3,
+          "MedianSeconds": 0.04260069993324578,
+          "MinimumSeconds": 0.041653400054201484,
+          "MaximumSeconds": 0.04329810000490397,
+          "SignaturesPerSecond": 15633.545952146449,
+          "ProbePredictionsPerSecond": 218869.64333005028
+        },
+        "TCCTCached": {
+          "Repeats": 3,
+          "MedianSeconds": 0.004764999961480498,
+          "MinimumSeconds": 0.004715600050985813,
+          "MaximumSeconds": 0.004908700007945299,
+          "SignaturesPerSecond": 139769.15118233746,
+          "ProbePredictionsPerSecond": 1956768.1165527245
+        },
+        "MatchedBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 3.125240399967879,
+            "MinimumSeconds": 3.125240399967879,
+            "MaximumSeconds": 3.125240399967879,
+            "SignaturesPerSecond": 213.10360636795974,
+            "ProbePredictionsPerSecond": 2983.4504891514366
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 3.3714592000469565,
+            "MinimumSeconds": 3.3714592000469565,
+            "MaximumSeconds": 3.3714592000469565,
+            "SignaturesPerSecond": 197.5405782726732,
+            "ProbePredictionsPerSecond": 2765.568095817425
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 3.4079469999996945,
+            "MinimumSeconds": 3.4079469999996945,
+            "MaximumSeconds": 3.4079469999996945,
+            "SignaturesPerSecond": 195.4255744000889,
+            "ProbePredictionsPerSecond": 2735.9580416012445
+          }
+        },
+        "StrongBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 9.132015600102022,
+            "MinimumSeconds": 9.132015600102022,
+            "MaximumSeconds": 9.132015600102022,
+            "SignaturesPerSecond": 72.93023021035569,
+            "ProbePredictionsPerSecond": 1021.0232229449797
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 10.144073899951763,
+            "MinimumSeconds": 10.144073899951763,
+            "MaximumSeconds": 10.144073899951763,
+            "SignaturesPerSecond": 65.65409583650282,
+            "ProbePredictionsPerSecond": 919.1573417110395
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 10.079501900007017,
+            "MinimumSeconds": 10.079501900007017,
+            "MaximumSeconds": 10.079501900007017,
+            "SignaturesPerSecond": 66.07469363139228,
+            "ProbePredictionsPerSecond": 925.0457108394919
+          }
+        },
+        "BestMatchedBatch": 1,
+        "BestStrongBatch": 1
+      }
+    },
+    {
+      "WorldDirectory": "world_03_seed_1258503",
+      "WorldSeed": 1258503,
+      "Audits": {
+        "TCCTCachedEqualsReference": true,
+        "MatchedBatchInvariant": true,
+        "StrongBatchInvariant": true,
+        "WorkloadSignatureCount": 666,
+        "WorkloadProbePredictionCount": 9324,
+        "LongestSequenceLength": 11
+      },
+      "FrozenArtifacts": {
+        "TCCTSHA256": "f8a47db0a45b01774bf00fe2f26d1d85082d9052cf8a037f1cda331f44989ef9",
+        "MatchedSHA256": "98494ccfc777c664dee49cceabbe3db8c2309b9b10a107567500c9de217f1380",
+        "StrongSHA256": "29dc1f6ca110c044f3541a81b8c077e4dd9d29772dd13a541863cc4e33dd560d",
+        "SummarySHA256": "f487c0242d2172d643d2f03fefd38f1389069ec8b893db7416687802e01baeff",
+        "TCCTFileBytes": 3379,
+        "MatchedFileBytes": 364096,
+        "StrongFileBytes": 1383112,
+        "TCCTConditionalCells": 41,
+        "MatchedParameters": 85890,
+        "StrongParameters": 339170,
+        "MatchedParameterBytes": 343560,
+        "StrongParameterBytes": 1356680,
+        "MatchedBlocks": 2,
+        "StrongBlocks": 3,
+        "MatchedModelDimension": 64,
+        "StrongModelDimension": 96,
+        "WLNetVersion": "15.0.2"
+      },
+      "LoadSeconds": {
+        "TCCT": 0.0009964000200852752,
+        "Matched": 0.009971700026653707,
+        "Strong": 0.014867599937133491
+      },
+      "SingleSignatureLatency": {
+        "TCCTReference": {
+          "Samples": 25,
+          "InnerLoops": 100,
+          "MedianMilliseconds": 0.107777,
+          "P95Milliseconds": 0.1337614,
+          "MinimumMilliseconds": 0.097591,
+          "MaximumMilliseconds": 0.158845,
+          "Checksum": 8585804265900258770
+        },
+        "TCCTCached": {
+          "Samples": 25,
+          "InnerLoops": 500,
+          "MedianMilliseconds": 0.0098356,
+          "P95Milliseconds": 0.01112948,
+          "MinimumMilliseconds": 0.008774800000000001,
+          "MaximumMilliseconds": 0.0113992,
+          "Checksum": 8585804265900258770
+        },
+        "MatchedKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.6101,
+          "P95Milliseconds": 5.2474,
+          "MinimumMilliseconds": 4.2309,
+          "MaximumMilliseconds": 5.7979,
+          "Checksum": 9004945176256262414
+        },
+        "MatchedEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.5184,
+          "P95Milliseconds": 5.08334,
+          "MinimumMilliseconds": 4.1511,
+          "MaximumMilliseconds": 5.1003,
+          "Checksum": 9004945176256262414
+        },
+        "StrongKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.3205,
+          "P95Milliseconds": 14.363339999999999,
+          "MinimumMilliseconds": 12.6971,
+          "MaximumMilliseconds": 14.5692,
+          "Checksum": 2802014860188108776
+        },
+        "StrongEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.0932,
+          "P95Milliseconds": 14.01394,
+          "MinimumMilliseconds": 12.228,
+          "MaximumMilliseconds": 14.2497,
+          "Checksum": 2802014860188108776
+        }
+      },
+      "FullWorkloadThroughput": {
+        "TCCTReference": {
+          "Repeats": 3,
+          "MedianSeconds": 0.04917989997193217,
+          "MinimumSeconds": 0.04672430001664907,
+          "MaximumSeconds": 0.049585399916395545,
+          "SignaturesPerSecond": 13542.117824153725,
+          "ProbePredictionsPerSecond": 189589.64953815215
+        },
+        "TCCTCached": {
+          "Repeats": 3,
+          "MedianSeconds": 0.00520919996779412,
+          "MinimumSeconds": 0.00487900001462549,
+          "MaximumSeconds": 0.005436400067992508,
+          "SignaturesPerSecond": 127850.72642969077,
+          "ProbePredictionsPerSecond": 1789910.1700156706
+        },
+        "MatchedBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 3.0335742000024766,
+            "MinimumSeconds": 3.0335742000024766,
+            "MaximumSeconds": 3.0335742000024766,
+            "SignaturesPerSecond": 219.54300639801602,
+            "ProbePredictionsPerSecond": 3073.602089572224
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 3.3639304999960586,
+            "MinimumSeconds": 3.3639304999960586,
+            "MaximumSeconds": 3.3639304999960586,
+            "SignaturesPerSecond": 197.9826872168674,
+            "ProbePredictionsPerSecond": 2771.7576210361435
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 3.4209069999633357,
+            "MinimumSeconds": 3.4209069999633357,
+            "MaximumSeconds": 3.4209069999633357,
+            "SignaturesPerSecond": 194.6852106786703,
+            "ProbePredictionsPerSecond": 2725.5929495013843
+          }
+        },
+        "StrongBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 9.153802999993786,
+            "MinimumSeconds": 9.153802999993786,
+            "MaximumSeconds": 9.153802999993786,
+            "SignaturesPerSecond": 72.75664551667236,
+            "ProbePredictionsPerSecond": 1018.5930372334132
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 10.019962499965914,
+            "MinimumSeconds": 10.019962499965914,
+            "MaximumSeconds": 10.019962499965914,
+            "SignaturesPerSecond": 66.46731462340958,
+            "ProbePredictionsPerSecond": 930.5424047277342
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 10.152169899898581,
+            "MinimumSeconds": 10.152169899898581,
+            "MaximumSeconds": 10.152169899898581,
+            "SignaturesPerSecond": 65.60173899440485,
+            "ProbePredictionsPerSecond": 918.424345921668
+          }
+        },
+        "BestMatchedBatch": 1,
+        "BestStrongBatch": 1
+      }
+    },
+    {
+      "WorldDirectory": "world_04_seed_1258504",
+      "WorldSeed": 1258504,
+      "Audits": {
+        "TCCTCachedEqualsReference": true,
+        "MatchedBatchInvariant": true,
+        "StrongBatchInvariant": true,
+        "WorkloadSignatureCount": 666,
+        "WorkloadProbePredictionCount": 9324,
+        "LongestSequenceLength": 11
+      },
+      "FrozenArtifacts": {
+        "TCCTSHA256": "a4809e172905cdfc4c81f323d058731052c709c8bdbf64a834538087cd55ddda",
+        "MatchedSHA256": "3b91a9d5021b7cfd861ca49de748fcf360b21b1bbd60d31f9c8ada11f40511f0",
+        "StrongSHA256": "cdc732d3709dbe15a1da6e68b2c2c367b590b992f9e815463fa31f4b6467087e",
+        "SummarySHA256": "db6512584a725c7e61f27e915f32600bcf8fe469637866297b6e98f55caf5fa2",
+        "TCCTFileBytes": 3375,
+        "MatchedFileBytes": 364096,
+        "StrongFileBytes": 1383112,
+        "TCCTConditionalCells": 41,
+        "MatchedParameters": 85890,
+        "StrongParameters": 339170,
+        "MatchedParameterBytes": 343560,
+        "StrongParameterBytes": 1356680,
+        "MatchedBlocks": 2,
+        "StrongBlocks": 3,
+        "MatchedModelDimension": 64,
+        "StrongModelDimension": 96,
+        "WLNetVersion": "15.0.2"
+      },
+      "LoadSeconds": {
+        "TCCT": 0.0009439999703317881,
+        "Matched": 0.009230200084857643,
+        "Strong": 0.016199099947698414
+      },
+      "SingleSignatureLatency": {
+        "TCCTReference": {
+          "Samples": 25,
+          "InnerLoops": 100,
+          "MedianMilliseconds": 0.10436899999999999,
+          "P95Milliseconds": 0.12432679999999999,
+          "MinimumMilliseconds": 0.09579599999999999,
+          "MaximumMilliseconds": 0.127178,
+          "Checksum": -8502291624346089373
+        },
+        "TCCTCached": {
+          "Samples": 25,
+          "InnerLoops": 500,
+          "MedianMilliseconds": 0.0099924,
+          "P95Milliseconds": 0.011069919999999999,
+          "MinimumMilliseconds": 0.0087204,
+          "MaximumMilliseconds": 0.012336600000000001,
+          "Checksum": -8502291624346089373
+        },
+        "MatchedKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.7797,
+          "P95Milliseconds": 5.30724,
+          "MinimumMilliseconds": 4.2704,
+          "MaximumMilliseconds": 6.5276,
+          "Checksum": 8993724136398551632
+        },
+        "MatchedEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.7347,
+          "P95Milliseconds": 5.46164,
+          "MinimumMilliseconds": 4.2294,
+          "MaximumMilliseconds": 5.5118,
+          "Checksum": 8993724136398551632
+        },
+        "StrongKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 14.226,
+          "P95Milliseconds": 15.284519999999999,
+          "MinimumMilliseconds": 13.3617,
+          "MaximumMilliseconds": 15.7856,
+          "Checksum": 8993724136398551632
+        },
+        "StrongEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.7063,
+          "P95Milliseconds": 14.690819999999999,
+          "MinimumMilliseconds": 13.0435,
+          "MaximumMilliseconds": 15.1019,
+          "Checksum": 8993724136398551632
+        }
+      },
+      "FullWorkloadThroughput": {
+        "TCCTReference": {
+          "Repeats": 3,
+          "MedianSeconds": 0.045323300058953464,
+          "MinimumSeconds": 0.044505400001071393,
+          "MaximumSeconds": 0.049533799989148974,
+          "SignaturesPerSecond": 14694.428674295837,
+          "ProbePredictionsPerSecond": 205722.00144014173
+        },
+        "TCCTCached": {
+          "Repeats": 3,
+          "MedianSeconds": 0.004648700007237494,
+          "MinimumSeconds": 0.004553000093437731,
+          "MaximumSeconds": 0.005027499981224537,
+          "SignaturesPerSecond": 143265.85904943623,
+          "ProbePredictionsPerSecond": 2005722.0266921073
+        },
+        "MatchedBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 3.0784158000024036,
+            "MinimumSeconds": 3.0784158000024036,
+            "MaximumSeconds": 3.0784158000024036,
+            "SignaturesPerSecond": 216.34504344717826,
+            "ProbePredictionsPerSecond": 3028.8306082604954
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 3.385447100037709,
+            "MinimumSeconds": 3.385447100037709,
+            "MaximumSeconds": 3.385447100037709,
+            "SignaturesPerSecond": 196.72438538253388,
+            "ProbePredictionsPerSecond": 2754.1413953554743
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 3.4738085001008585,
+            "MinimumSeconds": 3.4738085001008585,
+            "MaximumSeconds": 3.4738085001008585,
+            "SignaturesPerSecond": 191.72041290723521,
+            "ProbePredictionsPerSecond": 2684.085780701293
+          }
+        },
+        "StrongBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 9.071067899931222,
+            "MinimumSeconds": 9.071067899931222,
+            "MaximumSeconds": 9.071067899931222,
+            "SignaturesPerSecond": 73.42024195464899,
+            "ProbePredictionsPerSecond": 1027.8833873650858
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 9.94134939997457,
+            "MinimumSeconds": 9.94134939997457,
+            "MaximumSeconds": 9.94134939997457,
+            "SignaturesPerSecond": 66.99291748077013,
+            "ProbePredictionsPerSecond": 937.9008447307818
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 10.073028099955991,
+            "MinimumSeconds": 10.073028099955991,
+            "MaximumSeconds": 10.073028099955991,
+            "SignaturesPerSecond": 66.11715895073397,
+            "ProbePredictionsPerSecond": 925.6402253102755
+          }
+        },
+        "BestMatchedBatch": 1,
+        "BestStrongBatch": 1
+      }
+    },
+    {
+      "WorldDirectory": "world_05_seed_1258505",
+      "WorldSeed": 1258505,
+      "Audits": {
+        "TCCTCachedEqualsReference": true,
+        "MatchedBatchInvariant": true,
+        "StrongBatchInvariant": true,
+        "WorkloadSignatureCount": 666,
+        "WorkloadProbePredictionCount": 9324,
+        "LongestSequenceLength": 11
+      },
+      "FrozenArtifacts": {
+        "TCCTSHA256": "b399ff33e96fd81f0c29967c149978fc7d1112f35a732c67f11ab27938e958a3",
+        "MatchedSHA256": "5982ea7aba341e7cb003ea4c43c1c7a35046d3ea17ebf073427fc3f9b64a304f",
+        "StrongSHA256": "12dde7b246b59afda32213855c7a597690726b115fb5bdfb714b0f1a87c0870d",
+        "SummarySHA256": "bdbeafe8f90eade8245456c62c2f21e8072122294360b903737dd65b613441ff",
+        "TCCTFileBytes": 3378,
+        "MatchedFileBytes": 364096,
+        "StrongFileBytes": 1383112,
+        "TCCTConditionalCells": 41,
+        "MatchedParameters": 85890,
+        "StrongParameters": 339170,
+        "MatchedParameterBytes": 343560,
+        "StrongParameterBytes": 1356680,
+        "MatchedBlocks": 2,
+        "StrongBlocks": 3,
+        "MatchedModelDimension": 64,
+        "StrongModelDimension": 96,
+        "WLNetVersion": "15.0.2"
+      },
+      "LoadSeconds": {
+        "TCCT": 0.0006883000023663044,
+        "Matched": 0.00941130006685853,
+        "Strong": 0.014227599953301251
+      },
+      "SingleSignatureLatency": {
+        "TCCTReference": {
+          "Samples": 25,
+          "InnerLoops": 100,
+          "MedianMilliseconds": 0.112358,
+          "P95Milliseconds": 0.1361146,
+          "MinimumMilliseconds": 0.103422,
+          "MaximumMilliseconds": 0.141449,
+          "Checksum": 6370538916581602693
+        },
+        "TCCTCached": {
+          "Samples": 25,
+          "InnerLoops": 500,
+          "MedianMilliseconds": 0.010944,
+          "P95Milliseconds": 0.01281148,
+          "MinimumMilliseconds": 0.0091702,
+          "MaximumMilliseconds": 0.0137984,
+          "Checksum": 6370538916581602693
+        },
+        "MatchedKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.7338,
+          "P95Milliseconds": 5.780899999999999,
+          "MinimumMilliseconds": 4.0439,
+          "MaximumMilliseconds": 5.8412,
+          "Checksum": -7990194628471394360
+        },
+        "MatchedEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 4.5073,
+          "P95Milliseconds": 5.25024,
+          "MinimumMilliseconds": 4.2668,
+          "MaximumMilliseconds": 5.3246,
+          "Checksum": -7990194628471394360
+        },
+        "StrongKernelOnly": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.3766,
+          "P95Milliseconds": 14.482679999999998,
+          "MinimumMilliseconds": 12.7327,
+          "MaximumMilliseconds": 14.6594,
+          "Checksum": 9139128368867483065
+        },
+        "StrongEndToEnd": {
+          "Samples": 25,
+          "InnerLoops": 1,
+          "MedianMilliseconds": 13.5815,
+          "P95Milliseconds": 14.2431,
+          "MinimumMilliseconds": 13.0068,
+          "MaximumMilliseconds": 14.6965,
+          "Checksum": 9139128368867483065
+        }
+      },
+      "FullWorkloadThroughput": {
+        "TCCTReference": {
+          "Repeats": 3,
+          "MedianSeconds": 0.0460265000583604,
+          "MinimumSeconds": 0.04511390009429306,
+          "MaximumSeconds": 0.05216019996441901,
+          "SignaturesPerSecond": 14469.92491620109,
+          "ProbePredictionsPerSecond": 202578.94882681523
+        },
+        "TCCTCached": {
+          "Repeats": 3,
+          "MedianSeconds": 0.004949700087308884,
+          "MinimumSeconds": 0.004606899921782315,
+          "MaximumSeconds": 0.005202899919822812,
+          "SignaturesPerSecond": 134553.60693623347,
+          "ProbePredictionsPerSecond": 1883750.4971072685
+        },
+        "MatchedBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 3.313470800057985,
+            "MinimumSeconds": 3.313470800057985,
+            "MaximumSeconds": 3.313470800057985,
+            "SignaturesPerSecond": 200.99769703367997,
+            "ProbePredictionsPerSecond": 2813.9677584715196
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 3.3346868000226095,
+            "MinimumSeconds": 3.3346868000226095,
+            "MaximumSeconds": 3.3346868000226095,
+            "SignaturesPerSecond": 199.71890613399867,
+            "ProbePredictionsPerSecond": 2796.0646858759815
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 3.5341655999654904,
+            "MinimumSeconds": 3.5341655999654904,
+            "MaximumSeconds": 3.5341655999654904,
+            "SignaturesPerSecond": 188.44617807566888,
+            "ProbePredictionsPerSecond": 2638.2464930593646
+          }
+        },
+        "StrongBySequenceBatch": {
+          "1": {
+            "Repeats": 1,
+            "MedianSeconds": 9.005944899981841,
+            "MinimumSeconds": 9.005944899981841,
+            "MaximumSeconds": 9.005944899981841,
+            "SignaturesPerSecond": 73.95115197755017,
+            "ProbePredictionsPerSecond": 1035.3161276857024
+          },
+          "32": {
+            "Repeats": 1,
+            "MedianSeconds": 10.033826699946076,
+            "MinimumSeconds": 10.033826699946076,
+            "MaximumSeconds": 10.033826699946076,
+            "SignaturesPerSecond": 66.37547367681557,
+            "ProbePredictionsPerSecond": 929.256631475418
+          },
+          "256": {
+            "Repeats": 1,
+            "MedianSeconds": 10.145350700011477,
+            "MinimumSeconds": 10.145350700011477,
+            "MaximumSeconds": 10.145350700011477,
+            "SignaturesPerSecond": 65.64583321887991,
+            "ProbePredictionsPerSecond": 919.0416650643187
+          }
+        },
+        "BestMatchedBatch": 1,
+        "BestStrongBatch": 1
+      }
+    }
+  ],
+  "Aggregate": {
+    "WorldCount": 5,
+    "AllAuditsPassed": true,
+    "SingleSignatureMedianMillisecondsAcrossWorlds": {
+      "TCCTReference": {
+        "Mean": 0.1062398,
+        "Median": 0.107777,
+        "Minimum": 0.09529299999999999,
+        "Maximum": 0.112358
+      },
+      "TCCTCached": {
+        "Mean": 0.01013168,
+        "Median": 0.009981799999999999,
+        "Minimum": 0.0098356,
+        "Maximum": 0.010944
+      },
+      "MatchedKernelOnly": {
+        "Mean": 4.695,
+        "Median": 4.7338,
+        "Minimum": 4.4961,
+        "Maximum": 4.8553
+      },
+      "MatchedEndToEnd": {
+        "Mean": 4.52454,
+        "Median": 4.5073,
+        "Minimum": 4.4022,
+        "Maximum": 4.7347
+      },
+      "StrongKernelOnly": {
+        "Mean": 13.578300000000002,
+        "Median": 13.3766,
+        "Minimum": 13.0667,
+        "Maximum": 14.226
+      },
+      "StrongEndToEnd": {
+        "Mean": 13.522839999999999,
+        "Median": 13.5815,
+        "Minimum": 13.0932,
+        "Maximum": 14.1137
+      }
+    },
+    "FullWorkloadSignaturesPerSecondAcrossWorlds": {
+      "TCCTReference": {
+        "Mean": 14483.511600546044,
+        "Median": 14469.92491620109,
+        "Minimum": 13542.117824153725,
+        "Maximum": 15633.545952146449
+      },
+      "TCCTCached": {
+        "Mean": 135155.93521008754,
+        "Median": 134553.60693623347,
+        "Minimum": 127850.72642969077,
+        "Maximum": 143265.85904943623
+      },
+      "MatchedBestBatch": {
+        "Mean": 213.561905855757,
+        "Median": 216.34504344717826,
+        "Minimum": 200.99769703367997,
+        "Maximum": 219.54300639801602
+      },
+      "StrongBestBatch": {
+        "Mean": 73.21680851205912,
+        "Median": 73.02577290106836,
+        "Minimum": 72.75664551667236,
+        "Maximum": 73.95115197755017
+      }
+    },
+    "BestMatchedBatches": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "BestStrongBatches": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "SpeedupRatiosUsingCrossWorldMedians": {
+      "MatchedEndToEndLatencyDividedByTCCTReference": 41.82061107657478,
+      "MatchedEndToEndLatencyDividedByTCCTCached": 451.55182432026294,
+      "StrongEndToEndLatencyDividedByTCCTReference": 126.01482691112204,
+      "StrongEndToEndLatencyDividedByTCCTCached": 1360.6263399386885,
+      "TCCTReferenceThroughputDividedByMatchedBest": 66.88355178210493,
+      "TCCTCachedThroughputDividedByMatchedBest": 621.9398641738951,
+      "TCCTReferenceThroughputDividedByStrongBest": 198.1481926361014,
+      "TCCTCachedThroughputDividedByStrongBest": 1842.5495765518278
+    }
+  }
+}

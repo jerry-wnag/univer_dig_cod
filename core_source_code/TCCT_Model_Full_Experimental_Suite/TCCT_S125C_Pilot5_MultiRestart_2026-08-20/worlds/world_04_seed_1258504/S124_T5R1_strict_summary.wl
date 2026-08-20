@@ -1,0 +1,35 @@
+<|"Stage" -> "S124-T5R1", "StrictProspective" -> True, 
+ "FreshWorldSeed" -> 1258504, "SharedPerception" -> True, 
+ "PreWorldProtocolHash" -> 
+  "617486249f59e31d4f5576eba9cdc59fd6ca3b1238d448f6ef566c70ca891bf9", 
+ "PerceptionValidationAccuracy" -> 1., 
+ "TrainingMembershipPerceptionAccuracy" -> 1., 
+ "MaximumTrainingInteractionOrder" -> 2, "TrueJointStates" -> 120, 
+ "HighOrderHoldoutStates" -> 74, "HighOrderTouchedBeforeFreeze" -> 0, 
+ "InferredFactors" -> 4, "LocalStateCounts" -> {3, 4, 5, 2}, 
+ "LearnedInteractionEdges" -> {4 -> 3, 1 -> 2}, 
+ "ConditionalTransitionCells" -> 41, "MembershipQueriesBeforeFreeze" -> 1846, 
+ "ReasonValidationAccuracy" -> 0.8197530864197531, 
+ "ReasonValidationBalancedAccuracy" -> 0.7231028003394351, 
+ "FinalReasonTrainingAccuracy" -> 0.8499458288190682, 
+ "FinalReasonTrainingBalancedAccuracy" -> 0.7345998469347725, 
+ "TCCTHighOrderExactAccuracy" -> 1., "NeuralHighOrderExactAccuracy" -> 0., 
+ "TCCTProbeAccuracy" -> 1., "TCCTProbeBalancedAccuracy" -> 1., 
+ "NeuralProbeAccuracy" -> 0.61003861003861, "NeuralZeroAccuracy" -> 
+  0.7878378378378378, "NeuralOneAccuracy" -> 0.16554054054054054, 
+ "NeuralBalancedAccuracy" -> 0.4766891891891892, 
+ "HighOrderTransitionCases" -> 592, "TCCTTransitionExactAccuracy" -> 1., 
+ "NeuralTransitionExactAccuracy" -> 0., "TCCTTransitionProbeAccuracy" -> 1., 
+ "NeuralTransitionProbeAccuracy" -> 0.6181225868725869, 
+ "NeuralTransitionZeroAccuracy" -> 0.7826013513513513, 
+ "NeuralTransitionOneAccuracy" -> 0.20692567567567569, 
+ "NeuralTransitionBalancedAccuracy" -> 0.4947635135135135, 
+ "TCCTMinusNeuralExact" -> 1., "TCCTMinusNeuralProbe" -> 0.38996138996138996, 
+ "TCCTMinusNeuralTransitionExact" -> 1., "WinnerMargin" -> 0.02, 
+ "StrictProtocolPass" -> True, "GeneralizationDiagnosis" -> 
+  "STRICT_FRESH_WORLD_TCCT_HIGH_ORDER_GENERALIZATION_ADVANTAGE", 
+ "TCCTFreezeHash" -> 
+  "861c8fea08b4afa1f07dbc02cf465d6df73abddfbdeacf69a00b9fea1bfe12d6", 
+ "GlobalFreezeHash" -> 
+  "cf10bcbda35cb3341eacd1cbf19d513157af2ee35334ec532808b9ddeea7c8eb", 
+ "HighOrderOutputsOpenedAfterAllModelsFrozen" -> True|>

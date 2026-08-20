@@ -1,0 +1,41 @@
+<|"Stage" -> "S125-C-Pilot5", "Protocol" -> 
+  "MultiRestartMatchedAndStrongTransformerComparison", 
+ "ProtocolRevision" -> "C1-ThreeSeedMatchedSelectionBeforeHighOrder", 
+ "BaseSourceFile" -> 
+  "TCCT_S124_T5R1_StrictFreshWorldGeneralizationAttribution.ipynb", 
+ "BaseSourceKind" -> "ipynb", "BaseContainerSHA256" -> 
+  "b1fa02300ad5eeea0dc604febb9dce5ded6d93826fa9c5c49d19add5f4c6ef13", 
+ "BaseSourceSHA256" -> 
+  "9a306f0b2e53eb932416e7c02f481ed275a8aa5d6b1870933d36f47b9946d99b", 
+ "CanonicalT5R1WorldSeed" -> 1245501, "PreregisteredWorldSeeds" -> {1258501, 
+  1258502, 1258503, 1258504, 1258505}, "WorldCount" -> 5, 
+ "RequiredPassRate" -> 1., "OnlyPermittedSourceChanges" -> 
+  {"hiddenBenchmarkSeedS119B", "t5sOutputDirectory", 
+   "S125-C provenance prints", 
+   "both fixed 42-cell gates -> structure-derived completeness audit", 
+   "Abort -> tagged Throw in Jupyter mode", "pre-world three-seed \
+matched-reasoner and strong-reasoner specifications in protocol hash", "canon\
+ical single-seed matched training -> preregistered three-seed low-order-only \
+selection", "strong-reasoner training and freeze before high-order", 
+   "strong-reasoner prospective evaluation and pilot summary after opening"}, 
+ "LockedTrainingOrder" -> 2, "LockedHighOrderDefinition" -> 
+  ">=3 nonzero factors", "LockedPerceptionGate" -> 0.98, 
+ "LockedReasonValidationBalancedGate" -> 0.6, 
+ "LockedReasonTrainingBalancedGate" -> 0.7, "LockedWinnerMargin" -> 0.02, 
+ "MatchedRestartSpec" -> <|"SelectionSeeds" -> {1258611, 1258612, 1258613}, 
+   "FinalSeeds" -> {1258621, 1258622, 1258623}, 
+   "SelectionMetric" -> "LowOrderValidationBalancedAccuracy", 
+   "FinalMetric" -> "LowOrderTrainingBalancedAccuracy", 
+   "HighOrderUsedForSelection" -> False, "ArchitectureChanged" -> False|>, 
+ "StrongReasonerSpec" -> <|"DModel" -> 96, "Heads" -> 4, "Layers" -> 3, 
+   "FF" -> 384, "Dropout" -> 0.1, "LearningRate" -> 0.0003, 
+   "BatchSize" -> 64, "Rounds" -> 35, "Patience" -> 6, 
+   "ValidationBalancedGate" -> 0.6, "TrainingBalancedGate" -> 0.7, 
+   "SelectSeed" -> 1258102, "FinalSeed" -> 1258103|>, 
+ "PilotOutcomeDoesNotControlProtocolPass" -> True, 
+ "ExecutionMode" -> 
+  "Activated Jupyter kernel with Global context reset before every world", 
+ "ManifestSHA256" -> 
+  "c987844978c4feebef2bd4c5cbb598595d4aad33c5e773a805376d46db78f540", 
+ "FrozenBeforeFirstWorld" -> True, "CreatedAt" -> 
+  "2026-08-20 17:08:43 TimeZone"|>
