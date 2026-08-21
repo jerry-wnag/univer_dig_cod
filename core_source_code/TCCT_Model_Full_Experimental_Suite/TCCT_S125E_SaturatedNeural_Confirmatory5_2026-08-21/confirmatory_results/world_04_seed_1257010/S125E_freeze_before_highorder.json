@@ -1,0 +1,91 @@
+{
+  "Stage": "S125-E-v1",
+  "WorldSeed": 1257010,
+  "TCCTFreezeFileSHA256": "d166678a12edf42d41d5733f4764cddc2f85b1007d1243a716100469326d1857",
+  "TCCTConditionalCells": 42,
+  "DataSeed": 1259504,
+  "DataAudit": {
+    "LowOrderStates": 46,
+    "TrainSequences": 5888,
+    "ValidationSequences": 1472,
+    "GenerationAttempts": 16781,
+    "MaximumTrainingInteractionOrder": 2,
+    "HighOrderUsedForTrainingOrSelection": false
+  },
+  "CandidateRecords": [
+    {
+      "Seed": 1259301,
+      "ParameterCount": 176270,
+      "BestEpoch": 15,
+      "ElapsedSeconds": 17.26020570000037,
+      "Training": {
+        "BalancedAccuracy": 0.9982761548913044,
+        "BitAccuracy": 0.9981924495341615,
+        "SignatureExactAccuracy": 0.9796195652173914
+      },
+      "Validation": {
+        "BalancedAccuracy": 0.9929857336956521,
+        "BitAccuracy": 0.9938373447204969,
+        "SignatureExactAccuracy": 0.9341032608695652
+      },
+      "PassedSaturationGate": true
+    },
+    {
+      "Seed": 1259302,
+      "ParameterCount": 176270,
+      "BestEpoch": 15,
+      "ElapsedSeconds": 17.51269610000054,
+      "Training": {
+        "BalancedAccuracy": 0.9990106997282608,
+        "BitAccuracy": 0.9987504852484472,
+        "SignatureExactAccuracy": 0.983016304347826
+      },
+      "Validation": {
+        "BalancedAccuracy": 0.9948879076086956,
+        "BitAccuracy": 0.9949534161490683,
+        "SignatureExactAccuracy": 0.9490489130434783
+      },
+      "PassedSaturationGate": true
+    },
+    {
+      "Seed": 1259303,
+      "ParameterCount": 176270,
+      "BestEpoch": 15,
+      "ElapsedSeconds": 17.490652899999986,
+      "Training": {
+        "BalancedAccuracy": 0.9992654551630435,
+        "BitAccuracy": 0.9991872088509317,
+        "SignatureExactAccuracy": 0.9903192934782609
+      },
+      "Validation": {
+        "BalancedAccuracy": 0.9939877717391304,
+        "BitAccuracy": 0.9947593167701864,
+        "SignatureExactAccuracy": 0.9497282608695652
+      },
+      "PassedSaturationGate": true
+    }
+  ],
+  "SelectedCandidateSeed": 1259302,
+  "SelectedMetrics": {
+    "Seed": 1259302,
+    "ParameterCount": 176270,
+    "BestEpoch": 15,
+    "ElapsedSeconds": 17.51269610000054,
+    "Training": {
+      "BalancedAccuracy": 0.9990106997282608,
+      "BitAccuracy": 0.9987504852484472,
+      "SignatureExactAccuracy": 0.983016304347826
+    },
+    "Validation": {
+      "BalancedAccuracy": 0.9948879076086956,
+      "BitAccuracy": 0.9949534161490683,
+      "SignatureExactAccuracy": 0.9490489130434783
+    },
+    "PassedSaturationGate": true
+  },
+  "NeuralParameterCount": 176270,
+  "NeuralFreezeFile": "C:\\Users\\王鑫\\Documents\\Codex\\2026-08-20\\referenced-chatgpt-conversation-this-is-an\\outputs\\S125E_SaturatedNeural_Confirmatory5\\world_04_seed_1257010\\S125E_saturated_gru_seed_1257010.pt",
+  "NeuralFreezeSHA256": "408c26248eb6e4461360b4cbd6a03715677c6ff8887f83338c652f3a7f1730df",
+  "SaturationGatePassed": true,
+  "HighOrderOpened": false
+}

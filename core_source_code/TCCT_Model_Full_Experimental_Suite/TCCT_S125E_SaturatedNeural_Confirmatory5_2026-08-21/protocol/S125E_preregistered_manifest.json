@@ -1,0 +1,84 @@
+{
+  "Stage": "S125-E-v1",
+  "DeclaredDate": "2026-08-21",
+  "Purpose": "Saturated low-order neural baseline followed immediately by a five-world high-order stress test",
+  "EvidenceClass": "Offline randomly selected frozen-world confirmatory stress test; not new fresh-world generation",
+  "Source": {
+    "File": "TCCT_S125E_SaturatedNeuralFiveWorld.py",
+    "SHA256": "be3b13b54af6a63190ead5f0887ff46c574eafa4157ad130104c6932a85457e0"
+  },
+  "DevelopmentAudit": {
+    "WorldSeeds": [1258501, 1258502, 1258503, 1258504, 1258505],
+    "AllWorldsSaturated": true,
+    "HighOrderOpenedByDevelopmentPhase": false,
+    "AggregateSHA256": "42cd1ceea8c3e2f7d64b6357d45b75f2fcd2e41205b26af94ea428cf86e3dbbf"
+  },
+  "NeuralArchitecture": {
+    "Type": "GRU multi-label signature reasoner",
+    "Vocabulary": "8 public actions plus PAD and START",
+    "EmbeddingDimension": 64,
+    "HiddenDimension": 128,
+    "GRULayers": 2,
+    "OutputBits": 14,
+    "ExpectedParameterCount": 176270,
+    "ArchitectureMayChangeAfterFreeze": false
+  },
+  "LowOrderDataPolicy": {
+    "JointStates": 120,
+    "LowOrderStates": 46,
+    "MaximumInteractionOrder": 2,
+    "TrainPathsPerLowOrderState": 128,
+    "ValidationPathsPerLowOrderState": 32,
+    "TrainValidationSequenceOverlapAllowed": false,
+    "EveryPrefixRestrictedToInteractionOrderAtMostTwo": true,
+    "HighOrderUsedForTrainingOrSelection": false
+  },
+  "Training": {
+    "CandidateSeeds": [1259301, 1259302, 1259303],
+    "Optimizer": "AdamW",
+    "LearningRate": 0.002,
+    "WeightDecay": 0.000001,
+    "BatchSize": 256,
+    "MaximumEpochs": 200,
+    "EvaluationIntervalEpochs": 5,
+    "PatienceEpochs": 50,
+    "ClassBalancing": "BCEWithLogitsLoss positive-class weight computed from low-order training labels",
+    "SelectionMetricOrder": [
+      "ValidationBalancedAccuracy",
+      "ValidationSignatureExactAccuracy",
+      "TrainingBalancedAccuracy",
+      "LowerSeed"
+    ]
+  },
+  "SaturationGates": {
+    "TrainingBalancedAccuracyMinimum": 0.99,
+    "ValidationBalancedAccuracyMinimum": 0.98,
+    "ValidationSignatureExactAccuracyMinimum": 0.85,
+    "IfNoCandidatePasses": "Do not open that world's high-order test and do not count a TCCT win"
+  },
+  "ConfirmatoryWorldSelection": {
+    "Pool": "S125A Jupyter R2 frozen strict worlds with seeds 1257001 through 1257020",
+    "SelectionAlgorithm": "Python random.Random(seed).sample(pool, 5)",
+    "SelectionSeed": 1259001,
+    "SelectedWorldSeedsInRunOrder": [1257019, 1257018, 1257007, 1257010, 1257015],
+    "HighOrderLabelsPreviouslyUsedForNeuralDevelopment": false,
+    "NewFreshWorldGeneration": false
+  },
+  "SelectedTCCTFreezeSHA256": {
+    "1257019": "5bc0b1ce11f63e5aa3aa38ab4feed5102efe29880d81839518d46f6af226821e",
+    "1257018": "1ff245c0b53cb79b4bdc68ba583a1193665e2accb5dd947133981a93a2299c63",
+    "1257007": "c09062283bca451cef2bb062c2251ae7ede0075ad41a3e7519d20194332f7b65",
+    "1257010": "d166678a12edf42d41d5733f4764cddc2f85b1007d1243a716100469326d1857",
+    "1257015": "159a7a5b10ac881c3f1b2a6d938a12969e6b02b30dcae16ba3811899d246881e"
+  },
+  "OpeningOrder": [
+    "Load TCCT file that was frozen before its original high-order opening",
+    "Generate only low-order train and held-out validation paths",
+    "Train three preregistered neural candidates",
+    "Apply all saturation gates",
+    "Select and serialize one frozen neural model",
+    "Reload frozen neural model from disk",
+    "Only then evaluate the 74 high-order states and 592 transitions"
+  ],
+  "TCCTCoreChanged": false
+}
