@@ -1,0 +1,112 @@
+{
+  "Stage": "S129-C1 fresh blind confirmation R1",
+  "EvidenceStatus": "LOCAL_PREWORLD_HASH_FROZEN_CONFIRMATORY_AUDIT",
+  "FrozenBeforeWorldMaterialization": true,
+  "CanonicalTCCTModified": false,
+  "S128BModified": false,
+  "B8AAlgorithmModified": false,
+  "GeneratorTruthVisibleToLearner": false,
+  "SolverBasedWorldResamplingAllowed": false,
+  "PriorProgramsAllowed": false,
+  "PerWorldTemplatesAllowed": false,
+  "InBoundWorldSpecifications": [
+    {
+      "WorldID": "C01",
+      "Dimensions": [
+        4,
+        5
+      ],
+      "Seed": 1299401
+    },
+    {
+      "WorldID": "C02",
+      "Dimensions": [
+        5,
+        6
+      ],
+      "Seed": 1299402
+    },
+    {
+      "WorldID": "C03",
+      "Dimensions": [
+        3,
+        4,
+        5
+      ],
+      "Seed": 1299403
+    },
+    {
+      "WorldID": "C04",
+      "Dimensions": [
+        2,
+        5,
+        4
+      ],
+      "Seed": 1299404
+    },
+    {
+      "WorldID": "C05",
+      "Dimensions": [
+        4,
+        3
+      ],
+      "Seed": 1299405
+    }
+  ],
+  "ChallengeWorldSpecifications": [
+    {
+      "WorldID": "X01",
+      "Dimensions": [
+        4,
+        5
+      ],
+      "Seed": 1299411,
+      "Boundary": "AST_COST_ABOVE_7"
+    },
+    {
+      "WorldID": "X02",
+      "Dimensions": [
+        3,
+        4,
+        3
+      ],
+      "Seed": 1299412,
+      "Boundary": "COMPOSED_PREDICATE_OUTSIDE_FROZEN_PREDICATE_DSL"
+    }
+  ],
+  "RandomControlSeeds": [
+    1299491,
+    1299492,
+    1299493,
+    1299494,
+    1299495
+  ],
+  "InBoundGeneratorFamilies": [
+    "Mod(Add(Var,Const),dimension)",
+    "Mod(Add(Add(Var,Var),Const),dimension)",
+    "Mod(Add(Mul(Const,Var),Var),dimension)",
+    "Mod(BitXor(Var,Const),dimension)",
+    "If(Eq_or_Lt(Var,Const),in_bound_leaf,in_bound_leaf)"
+  ],
+  "ReachabilityConstruction": "one independent increment action per coordinate plus one random composite action",
+  "FrozenSearchBoundary": {
+    "MaximumASTNodeCost": 7,
+    "IntermediateAbsoluteValueBound": 512,
+    "CandidateSemanticCapPerTarget": 64,
+    "PredicateSearchCap": 96,
+    "ConditionalDepth": 1,
+    "MembershipQueryBudget": 180,
+    "EquivalenceCounterexampleBudget": 24
+  },
+  "PrimaryDecisionRule": {
+    "InBoundExactRequired": "5/5",
+    "RandomAutomatonFalseExactRequired": 0,
+    "EveryExactClaimRequiresFullTransitionEquivalence": true,
+    "AnyInBoundFallbackCountsAsConfirmatoryFailure": true
+  },
+  "ChallengeDecisionRule": "descriptive only: exact if certified, otherwise safe fallback; no post-result DSL change",
+  "BuilderSHA256": "5cad11705246968b07750f89b7ad5d829949ff5c79be8d2dcf8048ca1121d512",
+  "RunnerSHA256": "94d47b9d99bc02b9b81154508fc37bffad82abca8b03c8360e1504c8db22b031",
+  "VerifierSHA256": "8de5aff651a81a696bed74f1ab746a86fa3f3694b87dd511d2ff693e30e3e89d",
+  "FrozenB8ASourceSHA256": "cd264b8ab988876749bb72b7d36c76a46a2519dfd524f3ff2adc5d28fb2beebc"
+}

@@ -1,0 +1,57 @@
+{
+  "Stage": "S129-B6 TCCT-native online induction R1",
+  "EvidenceStatus": "FRESH_LOCAL_BLIND_PILOT_NOT_EXTERNAL_PREREGISTRATION",
+  "WorldSeeds": [
+    1298601,
+    1298602,
+    1298603,
+    1298604,
+    1298605
+  ],
+  "WorldCount": 5,
+  "PriorBestProgramsAllowed": false,
+  "GeneratorProgramsVisibleToLearner": false,
+  "CompleteTargetVectorVisibleToCandidateGenerator": false,
+  "LearnerInput": [
+    "state coordinates",
+    "coordinate dimensions",
+    "action identifiers",
+    "membership oracle",
+    "equivalence-counterexample oracle"
+  ],
+  "DSL": [
+    "Var",
+    "Const",
+    "Add",
+    "Sub",
+    "Mul",
+    "Mod",
+    "BitXor",
+    "Eq",
+    "Lt",
+    "If"
+  ],
+  "NamedRuleTemplates": [],
+  "BlindArithmeticExpansionRounds": 3,
+  "BlindRoundSemanticCap": 6000,
+  "CandidateSemanticCapPerTarget": 64,
+  "PredicateSearchCap": 96,
+  "ConditionalDepth": 1,
+  "MembershipQueryBudget": 180,
+  "EquivalenceCounterexampleBudget": 24,
+  "CompressionThreshold": null,
+  "RequiredExactRate": null,
+  "Controls": [
+    "passive fixed-order query",
+    "rewrite-disabled ablation",
+    "state-ID relabel",
+    "random reachable automaton",
+    "single-edge near-law"
+  ],
+  "CanonicalTCCTModificationAllowed": false,
+  "S128BModificationAllowed": false,
+  "ProtocolSHA256BeforeWorldMaterialization": "85cb5164fe5b7c14de71e16f8936df227274beb79f8066e94bb46f7f9588e4fa",
+  "PublicInputSHA256": "74517bc6e77e2573e69906a9a1f1fbe8e71292ef306c241319258560eea3c73e",
+  "OracleTablesSHA256": "621c3f5ea3271d7848e2dafb23473ccd69134277760d898624c4da12dc231467",
+  "SealedTruthSHA256": "66540d4ed3d9337e96d18f21dcf6a4f3fe5aad43a2d5962e22ee6d72e12e4687"
+}

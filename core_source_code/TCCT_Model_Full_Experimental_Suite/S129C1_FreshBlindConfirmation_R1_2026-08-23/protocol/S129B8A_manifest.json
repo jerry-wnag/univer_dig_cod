@@ -1,0 +1,35 @@
+{
+  "Stage": "S129-B8A incremental bounded-complete search audit R1",
+  "EvidenceStatus": "RETROSPECTIVE_ENGINEERING_AUDIT_NOT_FRESH_CONFIRMATION",
+  "WorldsChanged": false,
+  "DSLChanged": false,
+  "BoundedCompleteBasisChanged": false,
+  "MaximumASTNodeCost": 7,
+  "TCCTQueryPolicyChanged": false,
+  "TCCTFreezePolicyChanged": false,
+  "ConditionalRewriteRuleChanged": false,
+  "MembershipBudgetChanged": false,
+  "EquivalenceBudgetChanged": false,
+  "Optimization": [
+    "retain the full arithmetic survivor index set for each action-component target",
+    "retain true-branch and false-branch survivor sets for every frozen predicate",
+    "filter only the affected current survivors after each oracle answer",
+    "reconstruct the same conditional panel from the first two surviving leaves per branch",
+    "use the same 64-semantic MDL-ordered panel for disagreement scoring"
+  ],
+  "RequiredBehavioralParityAudit": [
+    "identical active observation sequence to frozen B7",
+    "identical passive observation sequence to frozen B7",
+    "identical active and passive frozen programs to frozen B7"
+  ],
+  "PriorBestProgramsLoaded": false,
+  "GeneratorTruthRead": false,
+  "PerWorldRules": [],
+  "RequiredExactRate": null,
+  "RequiredSpeedup": null,
+  "CanonicalTCCTModificationAllowed": false,
+  "S128BModificationAllowed": false,
+  "FrozenB7ResultSHA256": "d93ce37df7b6cc76edfc436b6692ffa78959b8832868b64098b70dfb4d561366",
+  "PublicInputSHA256": "74517bc6e77e2573e69906a9a1f1fbe8e71292ef306c241319258560eea3c73e",
+  "OracleSHA256": "621c3f5ea3271d7848e2dafb23473ccd69134277760d898624c4da12dc231467"
+}

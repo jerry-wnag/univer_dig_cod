@@ -1,0 +1,27 @@
+[
+	{
+		"WorldID":"C01",
+		"CoordinateDatasetHashInvariant":true,
+		"FrozenProgramStillExact":true
+	},
+	{
+		"WorldID":"C02",
+		"CoordinateDatasetHashInvariant":true,
+		"FrozenProgramStillExact":true
+	},
+	{
+		"WorldID":"C03",
+		"CoordinateDatasetHashInvariant":true,
+		"FrozenProgramStillExact":true
+	},
+	{
+		"WorldID":"C04",
+		"CoordinateDatasetHashInvariant":true,
+		"FrozenProgramStillExact":true
+	},
+	{
+		"WorldID":"C05",
+		"CoordinateDatasetHashInvariant":true,
+		"FrozenProgramStillExact":true
+	}
+]

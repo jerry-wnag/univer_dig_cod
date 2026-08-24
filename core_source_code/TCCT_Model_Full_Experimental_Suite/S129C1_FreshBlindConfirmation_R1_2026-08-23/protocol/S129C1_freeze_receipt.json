@@ -1,0 +1,14 @@
+{
+  "PreWorldManifestSHA256": "0b9f950d25ddb85ab756af0333bfec7c4b08edf2d5ddb25484a59995fd8a64a1",
+  "WorldMaterialized": true,
+  "FreezeChecksAtMaterialization": {
+    "PreWorldManifestSHA256": true,
+    "BuilderSHA256": true,
+    "RunnerSHA256": true,
+    "VerifierSHA256": true,
+    "FrozenB8ASourceSHA256": true
+  },
+  "PublicInputSHA256": "dececa311ce5bfe4930301ed60def423d453dd797225e380270ab95d7723a634",
+  "OracleTablesSHA256": "5b4bf068166c00344409430efd5005e9493f1a39f28c4e7f77c615af0c1064e5",
+  "SealedTruthSHA256": "5beb0f0ebc6cea4c0ac0c79b44722587875d09a57e7a41a268e6eaa7efc74061"
+}
