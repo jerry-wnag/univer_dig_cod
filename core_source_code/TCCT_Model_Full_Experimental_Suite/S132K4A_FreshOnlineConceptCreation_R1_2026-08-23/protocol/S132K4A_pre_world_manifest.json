@@ -1,0 +1,165 @@
+{
+  "Stage": "S132-K4A fresh online bounded concept creation",
+  "EvidenceStatus": "LOCAL_PREWORLD_FROZEN_FRESH_SEQUENTIAL_CONFIRMATION",
+  "FrozenUTC": "2026-08-23T07:44:00.786946+00:00",
+  "FrozenBeforeWorldMaterialization": true,
+  "StartingConceptLibraryCount": 0,
+  "PreloadedK3ASchemasAllowed": false,
+  "ConceptMetaRule": "exact anonymous action-word transformation equivalence",
+  "MaximumConceptWordLength": 4,
+  "WorldSpecifications": [
+    {
+      "WorldID": "Q401",
+      "Dimensions": [
+        4,
+        5
+      ],
+      "Seed": 1324401
+    },
+    {
+      "WorldID": "Q402",
+      "Dimensions": [
+        5,
+        6
+      ],
+      "Seed": 1324402
+    },
+    {
+      "WorldID": "Q403",
+      "Dimensions": [
+        3,
+        4,
+        5
+      ],
+      "Seed": 1324403
+    },
+    {
+      "WorldID": "Q404",
+      "Dimensions": [
+        2,
+        5,
+        4
+      ],
+      "Seed": 1324404
+    },
+    {
+      "WorldID": "Q405",
+      "Dimensions": [
+        4,
+        4,
+        3
+      ],
+      "Seed": 1324405
+    },
+    {
+      "WorldID": "Q406",
+      "Dimensions": [
+        5,
+        4
+      ],
+      "Seed": 1324406
+    },
+    {
+      "WorldID": "Q407",
+      "Dimensions": [
+        6,
+        5
+      ],
+      "Seed": 1324407
+    },
+    {
+      "WorldID": "Q408",
+      "Dimensions": [
+        4,
+        3,
+        5
+      ],
+      "Seed": 1324408
+    },
+    {
+      "WorldID": "Q409",
+      "Dimensions": [
+        5,
+        2,
+        4
+      ],
+      "Seed": 1324409
+    },
+    {
+      "WorldID": "Q410",
+      "Dimensions": [
+        3,
+        4,
+        4
+      ],
+      "Seed": 1324410
+    }
+  ],
+  "QueryOrderSeeds": [
+    1324501,
+    1324502,
+    1324503,
+    1324504,
+    1324505,
+    1324506,
+    1324507,
+    1324508,
+    1324509,
+    1324510
+  ],
+  "ControlQueryOrderSeeds": [
+    1324601,
+    1324602,
+    1324603,
+    1324604,
+    1324605,
+    1324606,
+    1324607,
+    1324608,
+    1324609,
+    1324610
+  ],
+  "RankMatchedControlSeeds": [
+    1324701,
+    1324702,
+    1324703,
+    1324704,
+    1324705,
+    1324706,
+    1324707,
+    1324708,
+    1324709,
+    1324710
+  ],
+  "InitialDirectObservationFraction": 0.5,
+  "DirectQueryBatchFraction": 0.05,
+  "MinimumDirectPositiveWitnessesBeforeInference": 2,
+  "ConceptActivationPolicy": "Every exact anonymous shortening schema discovered after a world is certified is added; no Top-N, support threshold, or future-world filtering",
+  "TemporalRule": "world i may use only concepts created after worlds strictly before i",
+  "ConflictPolicy": "same-target provenance union; all hypotheses in every simultaneous different-target conflict are jointly disabled",
+  "MatchedBaseline": "same query order with concept creation and transfer disabled",
+  "PrimaryGate": {
+    "AllStructuredAndControlFinalModelsExact": true,
+    "UnsafeCommittedInferenceCount": 0,
+    "FinalStructuredLibraryNonempty": true,
+    "AtLeastOneLaterWorldUsesPriorCreatedConcept": true,
+    "PositiveStructuredMembershipSavingsEligibleWorldFractionAtLeast": 0.5,
+    "AggregateStructuredMembershipSavingsStrictlyPositive": true,
+    "AggregateStructuredConcreteSavingsStrictlyPositive": true,
+    "StructuredConcreteSavingsStrictlyExceedControlSavings": true
+  },
+  "Generator": "unchanged frozen S129-C1 in-bound generator",
+  "GeneratorTruthReadableByLearner": false,
+  "FullStateSchemaPrefilterOnCurrentWorldAllowed": false,
+  "CanonicalTCCTModified": false,
+  "B8ASymbolicLearnerIntegrationClaimAllowed": false,
+  "OpenEndedLanguageInventionClaimAllowed": false,
+  "SourceHashes": {
+    "TCCT_S129C1_FreshBlindConfirmationBuilder.py": "5cad11705246968b07750f89b7ad5d829949ff5c79be8d2dcf8048ca1121d512",
+    "TCCT_S132K3B_IndependentVerifier.py": "85fadc5ac9c4663c37ca7a61337712676c2bf8b63091cd06912141c9b70423dd",
+    "TCCT_S132K3B_PartialObservationTransfer.wl": "aa6148907a2311971c45e32d44a1fbe015face97634c3c7f0a3d0008800801e7",
+    "TCCT_S132K4A_FreshOnlineConceptCreation.wl": "ae8585437fca81c4779c2fe02612354b6ef458ec8529968996006c784eff4f0e",
+    "TCCT_S132K4A_FreshOnlineConceptCreationBuilder.py": "af86c14ad3a713b9f7fae1b297c0753de7f7a5b8fe3b2b7f3cf6afdacca114dd",
+    "TCCT_S132K4A_IndependentVerifier.py": "f391abc438b84ccf38d5272ff24e22c2e3c415d57c619aa2d86b93ede4244958"
+  }
+}

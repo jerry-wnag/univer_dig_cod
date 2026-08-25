@@ -1,0 +1,71 @@
+{
+  "Stage": "S132-K4A fresh public sequence",
+  "ForbiddenFieldsAbsent": [
+    "TransitionTable",
+    "GeneratorPrograms",
+    "Seed",
+    "Dimensions"
+  ],
+  "Worlds": [
+    {
+      "WorldID": "Q401",
+      "StateCount": 20,
+      "ActionCount": 3,
+      "StartState": 12
+    },
+    {
+      "WorldID": "Q402",
+      "StateCount": 30,
+      "ActionCount": 3,
+      "StartState": 17
+    },
+    {
+      "WorldID": "Q403",
+      "StateCount": 60,
+      "ActionCount": 4,
+      "StartState": 56
+    },
+    {
+      "WorldID": "Q404",
+      "StateCount": 40,
+      "ActionCount": 4,
+      "StartState": 5
+    },
+    {
+      "WorldID": "Q405",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 26
+    },
+    {
+      "WorldID": "Q406",
+      "StateCount": 20,
+      "ActionCount": 3,
+      "StartState": 3
+    },
+    {
+      "WorldID": "Q407",
+      "StateCount": 30,
+      "ActionCount": 3,
+      "StartState": 30
+    },
+    {
+      "WorldID": "Q408",
+      "StateCount": 60,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "Q409",
+      "StateCount": 40,
+      "ActionCount": 4,
+      "StartState": 21
+    },
+    {
+      "WorldID": "Q410",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 36
+    }
+  ]
+}
