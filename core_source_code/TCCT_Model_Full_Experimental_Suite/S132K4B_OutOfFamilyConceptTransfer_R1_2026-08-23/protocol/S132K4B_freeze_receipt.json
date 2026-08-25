@@ -1,0 +1,26 @@
+{
+  "ManifestSHA256": "b48b45e1ec125b4f43788c11a9005ac55773a125722d82775823fdef3c87a92e",
+  "WorldsMaterialized": true,
+  "RunComplete": true,
+  "MaterializedUTC": "2026-08-23T12:15:57.995215+00:00",
+  "MaterializedAfterManifestFreeze": true,
+  "FreezeChecksAtMaterialization": {
+    "ManifestHash": true,
+    "Sources": true,
+    "NotPreviouslyMaterialized": true
+  },
+  "PublicInputSHA256": "b16556bbf56c136b815a64c6d42b62347c91728a6f4be9f4f0a83f5201ac4fb0",
+  "OracleSHA256": "a872a0b578a6285dc4f73ba8e198806588dd4f48be8854445a4c8acb8ee6eebd",
+  "SealedTruthSHA256": "3ab24d62f87cd62ee3b496aeb2d81ca974427d23632667dcdfdfc6ceb13fda32",
+  "CompletedUTC": "2026-08-23T12:47:41.120269+00:00",
+  "CompletionChecks": {
+    "ManifestHash": true,
+    "Sources": true,
+    "WorldsMaterialized": true,
+    "NotPreviouslyFinalized": true,
+    "IndependentEvidenceIntegrity": true
+  },
+  "ResultSHA256": "52e601324ac8b4cfc1768b529a239438dd3fde06779a51f8042e89a94c1a020e",
+  "IndependentVerificationSHA256": "53d4a9a466663e782391835ef32350e48ff1c65397a5129dad138406448988d8",
+  "FinalConclusion": "VERIFIED_FRESH_OUT_OF_FAMILY_BOUNDED_CONCEPT_TRANSFER_GATE_PASS"
+}

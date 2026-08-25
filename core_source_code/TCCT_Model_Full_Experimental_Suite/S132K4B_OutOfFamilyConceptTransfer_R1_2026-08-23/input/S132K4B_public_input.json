@@ -1,0 +1,83 @@
+{
+  "Stage": "S132-K4B public input",
+  "ForbiddenFieldsAbsent": [
+    "TransitionTable",
+    "GeneratorParameters",
+    "Seed",
+    "Family"
+  ],
+  "Worlds": [
+    {
+      "WorldID": "O401",
+      "StateCount": 21,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O402",
+      "StateCount": 20,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O403",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O404",
+      "StateCount": 37,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O405",
+      "StateCount": 36,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O406",
+      "StateCount": 30,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O407",
+      "StateCount": 64,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O408",
+      "StateCount": 53,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O409",
+      "StateCount": 33,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O410",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O411",
+      "StateCount": 80,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "O412",
+      "StateCount": 71,
+      "ActionCount": 4,
+      "StartState": 1
+    }
+  ]
+}

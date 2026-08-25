@@ -1,0 +1,344 @@
+{
+  "Stage": "S132-K4B independent reconstruction and sealed audit",
+  "SourceHashPass": true,
+  "FreezeMaterializationOrderPass": true,
+  "SequenceShapeAndOrderPass": true,
+  "RankMatchedControlPass": true,
+  "FamilyLabelsPass": true,
+  "StructuredAudits": [
+    {
+      "WorldID": "O401",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O402",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O403",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O404",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O405",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O406",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O407",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O408",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O409",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O410",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O411",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O412",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    }
+  ],
+  "ControlAudits": [
+    {
+      "WorldID": "O401",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O402",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O403",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O404",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O405",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O406",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O407",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O408",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O409",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O410",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O411",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "O412",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "LibraryTrajectoryPass": true
+    }
+  ],
+  "NearLawReconstructionAudits": [
+    {
+      "WorldID": "N421",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "ArithmeticPass": true
+    },
+    {
+      "WorldID": "N422",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "ArithmeticPass": true
+    },
+    {
+      "WorldID": "N423",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "ArithmeticPass": true
+    },
+    {
+      "WorldID": "N424",
+      "TransferReconstructionPass": true,
+      "TransferMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "ArithmeticPass": true
+    }
+  ],
+  "StructuredReconstructionPass": true,
+  "ControlReconstructionPass": true,
+  "NearLawReconstructionPass": true,
+  "FinalLibraryReconstructionPass": true,
+  "StateRelabelAudits": [
+    {
+      "WorldID": "O401",
+      "SchemaCount": 119,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O402",
+      "SchemaCount": 178,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O403",
+      "SchemaCount": 69,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O404",
+      "SchemaCount": 82,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O405",
+      "SchemaCount": 150,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O406",
+      "SchemaCount": 187,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O407",
+      "SchemaCount": 69,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O408",
+      "SchemaCount": 82,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O409",
+      "SchemaCount": 127,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O410",
+      "SchemaCount": 187,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O411",
+      "SchemaCount": 118,
+      "StateRelabelDiscoveryInvariant": true
+    },
+    {
+      "WorldID": "O412",
+      "SchemaCount": 90,
+      "StateRelabelDiscoveryInvariant": true
+    }
+  ],
+  "StateRelabelDiscoveryInvariancePass": true,
+  "NearLawTargetAudits": [
+    {
+      "WorldID": "N421",
+      "Kind": "NEAR_IDEMPOTENT",
+      "TargetRelationActuallyBroken": true,
+      "MismatchCountMatchesSealedConstruction": true,
+      "TargetAnonymousSchemaPresentInStructuredLibrary": true
+    },
+    {
+      "WorldID": "N422",
+      "Kind": "NEAR_INVOLUTION",
+      "TargetRelationActuallyBroken": true,
+      "MismatchCountMatchesSealedConstruction": true,
+      "TargetAnonymousSchemaPresentInStructuredLibrary": true
+    },
+    {
+      "WorldID": "N423",
+      "Kind": "NEAR_INVERSE_PAIR",
+      "TargetRelationActuallyBroken": true,
+      "MismatchCountMatchesSealedConstruction": true,
+      "TargetAnonymousSchemaPresentInStructuredLibrary": true
+    },
+    {
+      "WorldID": "N424",
+      "Kind": "NEAR_ABSORPTION",
+      "TargetRelationActuallyBroken": true,
+      "MismatchCountMatchesSealedConstruction": true,
+      "TargetAnonymousSchemaPresentInStructuredLibrary": true
+    }
+  ],
+  "NearLawTargetsBrokenAndRepresentedPass": true,
+  "AggregateArithmeticPass": true,
+  "ClaimBoundaryPass": true,
+  "ExpectedMainGatePass": true,
+  "MainGateConsistencyPass": true,
+  "IndependentOnlyGatePass": true,
+  "EvidenceIntegrityPass": true,
+  "FinalGatePass": true,
+  "FinalConclusion": "VERIFIED_FRESH_OUT_OF_FAMILY_BOUNDED_CONCEPT_TRANSFER_GATE_PASS"
+}

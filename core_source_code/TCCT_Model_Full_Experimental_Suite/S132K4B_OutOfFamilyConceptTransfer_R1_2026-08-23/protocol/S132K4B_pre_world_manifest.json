@@ -1,0 +1,174 @@
+{
+  "Stage": "S132-K4B fresh out-of-family bounded concept transfer stress test",
+  "EvidenceStatus": "LOCAL_PREWORLD_FROZEN_FRESH_OUT_OF_FAMILY_CONFIRMATION",
+  "FrozenUTC": "2026-08-23T12:15:35.295791+00:00",
+  "FrozenBeforeWorldMaterialization": true,
+  "StartingConceptLibraryCount": 0,
+  "PreloadedK4ASchemasAllowed": false,
+  "MaximumConceptWordLength": 4,
+  "StructuredWorldSpecifications": [
+    {
+      "WorldID": "O401",
+      "Family": "DIHEDRAL_PRODUCT"
+    },
+    {
+      "WorldID": "O402",
+      "Family": "OVERWRITE_GATE"
+    },
+    {
+      "WorldID": "O403",
+      "Family": "BOOLEAN_AFFINE"
+    },
+    {
+      "WorldID": "O404",
+      "Family": "CONJUGATED_SEMIGROUP"
+    },
+    {
+      "WorldID": "O405",
+      "Family": "DIHEDRAL_PRODUCT"
+    },
+    {
+      "WorldID": "O406",
+      "Family": "OVERWRITE_GATE"
+    },
+    {
+      "WorldID": "O407",
+      "Family": "BOOLEAN_AFFINE"
+    },
+    {
+      "WorldID": "O408",
+      "Family": "CONJUGATED_SEMIGROUP"
+    },
+    {
+      "WorldID": "O409",
+      "Family": "DIHEDRAL_PRODUCT"
+    },
+    {
+      "WorldID": "O410",
+      "Family": "OVERWRITE_GATE"
+    },
+    {
+      "WorldID": "O411",
+      "Family": "BOOLEAN_AFFINE"
+    },
+    {
+      "WorldID": "O412",
+      "Family": "CONJUGATED_SEMIGROUP"
+    }
+  ],
+  "GeneratorFamilies": [
+    "BOOLEAN_AFFINE",
+    "CONJUGATED_SEMIGROUP",
+    "DIHEDRAL_PRODUCT",
+    "OVERWRITE_GATE"
+  ],
+  "GeneratorFamilyCount": 4,
+  "NearLawWorldSpecifications": [
+    {
+      "WorldID": "N421",
+      "Kind": "NEAR_IDEMPOTENT"
+    },
+    {
+      "WorldID": "N422",
+      "Kind": "NEAR_INVOLUTION"
+    },
+    {
+      "WorldID": "N423",
+      "Kind": "NEAR_INVERSE_PAIR"
+    },
+    {
+      "WorldID": "N424",
+      "Kind": "NEAR_ABSORPTION"
+    }
+  ],
+  "QueryOrderSeeds": [
+    1325501,
+    1325502,
+    1325503,
+    1325504,
+    1325505,
+    1325506,
+    1325507,
+    1325508,
+    1325509,
+    1325510,
+    1325511,
+    1325512
+  ],
+  "ControlQueryOrderSeeds": [
+    1325601,
+    1325602,
+    1325603,
+    1325604,
+    1325605,
+    1325606,
+    1325607,
+    1325608,
+    1325609,
+    1325610,
+    1325611,
+    1325612
+  ],
+  "RankMatchedControlSeeds": [
+    1325701,
+    1325702,
+    1325703,
+    1325704,
+    1325705,
+    1325706,
+    1325707,
+    1325708,
+    1325709,
+    1325710,
+    1325711,
+    1325712
+  ],
+  "ChallengeQueryOrderSeeds": [
+    1325801,
+    1325802,
+    1325803,
+    1325804
+  ],
+  "InitialDirectObservationFraction": 0.5,
+  "DirectQueryBatchFraction": 0.05,
+  "MinimumDirectPositiveWitnessesBeforeInference": 2,
+  "ConceptMetaRule": "exact anonymous action-word transformation equivalence",
+  "ConceptActivationPolicy": "unchanged K4A policy: add every exact schema after certification; no Top-N, support threshold, or future filtering",
+  "TemporalRule": "structured world i may use only concepts created after earlier structured worlds",
+  "NearLawRule": "near-law challenges use the final structured library but never update it",
+  "MatchedBaseline": "same query order with concept creation and transfer disabled",
+  "PrimaryMainGate": {
+    "AllFinalModelsExact": true,
+    "UnsafeCommittedInferenceCount": 0,
+    "FinalStructuredLibraryNonempty": true,
+    "AtLeastOneLaterWorldUsesPriorCreatedConcept": true,
+    "AggregateStructuredMembershipSavingsStrictlyPositive": true,
+    "AggregateStructuredConcreteSavingsStrictlyPositive": true,
+    "StructuredConcreteSavingsStrictlyExceedRandomControlSavings": true,
+    "PositiveSavingsCoverageAtLeastThreeOfFourFamilies": true,
+    "AllNearLawChallengesExact": true
+  },
+  "IndependentOnlyGate": {
+    "StateRelabelDiscoveryInvariance": "12/12",
+    "NearLawTargetsBrokenAndRepresentedInStructuredLibrary": "4/4",
+    "AllTraceAndLibraryReconstructionsExact": true
+  },
+  "NoArbitraryPercentageSavingsThreshold": true,
+  "Generator": "four new K4B generator families; no S129-C1 generator call",
+  "GeneratorTruthReadableByLearner": false,
+  "FullStateSchemaPrefilterOnCurrentWorldAllowed": false,
+  "CanonicalTCCTModified": false,
+  "FrozenK3BAndK4ALearnerModified": false,
+  "ObservationNoiseIncluded": false,
+  "WorldSizeHiddenFromLearner": false,
+  "OpenEndedLanguageInventionClaimAllowed": false,
+  "SourceHashes": {
+    "TCCT_S132K3B_IndependentVerifier.py": "85fadc5ac9c4663c37ca7a61337712676c2bf8b63091cd06912141c9b70423dd",
+    "TCCT_S132K3B_PartialObservationTransfer.wl": "aa6148907a2311971c45e32d44a1fbe015face97634c3c7f0a3d0008800801e7",
+    "TCCT_S132K4A_FreshOnlineConceptCreation.wl": "ae8585437fca81c4779c2fe02612354b6ef458ec8529968996006c784eff4f0e",
+    "TCCT_S132K4A_IndependentVerifier.py": "f391abc438b84ccf38d5272ff24e22c2e3c415d57c619aa2d86b93ede4244958",
+    "TCCT_S132K4B_IndependentVerifier.py": "2602d026ef89adf9d461e0d2138c1fb6dc2b6a59181e320568259ede4a62b3bf",
+    "TCCT_S132K4B_OutOfFamilyBuilder.py": "55574cc65de921b6cc9558cd46363e58a0c6dd667d1d8921f00618a03e0f40b7",
+    "TCCT_S132K4B_OutOfFamilyConceptTransfer.wl": "3f53fce4efde1ad9f310cb4b71b306c4de6d5803b8b686e829333a5f39b45ec2"
+  }
+}
