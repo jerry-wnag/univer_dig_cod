@@ -1,0 +1,30 @@
+{
+	"Stage":"S132-K6E independent opened-world verification",
+	"NativeWolframExecution":true,
+	"OpenedWorldDevelopmentOnly":true,
+	"FreshWorldClaimAllowed":false,
+	"WorldCountPass":true,
+	"FrozenK6CBehaviorProjectionMatch":true,
+	"K6EK5AFullFieldMatch":true,
+	"FinalLibrariesMatchFrozenK6C":true,
+	"AllFinalModelsExact":true,
+	"UnsafeCommittedInferenceCountZero":true,
+	"CacheAccountingConservationPass":true,
+	"AllBaseAndCacheNumericArraysPacked":true,
+	"ExactWordCacheActuallyExercised":true,
+	"IntegrityPass":true,
+	"AggregateK6ERuntimeSeconds":6.204745223e2,
+	"AggregatePairedK5ARuntimeSeconds":6.249912729e2,
+	"FrozenK6BRuntimeSecondsDiagnostic":6.478300792e2,
+	"PerformancePass":true,
+	"VerificationPass":true,
+	"SourceSHA256":{
+		"TCCT_S132K3B_PartialObservationTransfer.wl":"aa6148907a2311971c45e32d44a1fbe015face97634c3c7f0a3d0008800801e7",
+		"TCCT_S132K4A_FreshOnlineConceptCreation.wl":"ae8585437fca81c4779c2fe02612354b6ef458ec8529968996006c784eff4f0e",
+		"TCCT_S132K5A_ExactIndexedActivation.wl":"997d186585a1cda369949703f5972d602b88e0c15fbccf4f24894bceeb0b5060",
+		"TCCT_S132K6B_PackedWitnessScheduler.wl":"4a2ca3f83c1f2005762d38eba4247475075e07817569d7fb10b1e928da7334dc",
+		"TCCT_S132K6E_ExactWordCachePatch.wl":"c2270c9c4bff93974a4cdadf801e6d351fa081c2bb8d3aece6eaa3632185a6da",
+		"TCCT_S132K6E_WordCacheDevelopment.wl":"0729c1c812fbea38ec3aa152db544ca67b01d08ccf986f69509e6cc648ea3206"
+	},
+	"Conclusion":"INDEPENDENT_OPENED_WORLD_EXACT_WORD_CACHE_GATE_PASS"
+}

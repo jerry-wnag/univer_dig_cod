@@ -1,0 +1,28 @@
+{
+  "ManifestSHA256": "7710c747700ec0c3a93a1184caf5f48a5505778f44e90c5ca9d7671a26066a0d",
+  "WorldsMaterialized": true,
+  "RunComplete": true,
+  "MaterializedUTC": "2026-08-24T04:47:04.951810+00:00",
+  "MaterializedAfterManifestFreeze": true,
+  "FreezeChecksAtMaterialization": {
+    "ManifestHash": true,
+    "Sources": true,
+    "AcceptedInputs": true,
+    "NotPreviouslyMaterialized": true
+  },
+  "PublicInputSHA256": "8c4521b60db37059b750bc3f4ccbd5f68cf3c8c64fd8b43cd3382be2ea0da9ca",
+  "OracleSHA256": "2910acadde3bd94ac87c6bc885ec121adc734b4c54abeba027080f3e0f7fed35",
+  "SealedTruthSHA256": "e40ecd1bc2f8cf3a8a3790ff73844fc69fbd48e70d87a1a55feaf7f26b110f63",
+  "CompletedUTC": "2026-08-24T05:24:41.091209+00:00",
+  "CompletionChecks": {
+    "ManifestHash": true,
+    "Sources": true,
+    "AcceptedInputs": true,
+    "WorldsMaterialized": true,
+    "NotPreviouslyFinalized": true,
+    "IndependentEvidenceIntegrity": true
+  },
+  "ResultSHA256": "cfb2cfeb3e126258e02df47616f6a9ef84bae5bd5b51c352ce8fee09ef1accfb",
+  "IndependentVerificationSHA256": "ca78fec5877ab390d0ac03950be3a1dab4018e867f13a25caff49bff348b29fa",
+  "FinalConclusion": "VERIFIED_FRESH_EXACT_WORD_CACHE_CONFIRMATION_GATE_PASS"
+}

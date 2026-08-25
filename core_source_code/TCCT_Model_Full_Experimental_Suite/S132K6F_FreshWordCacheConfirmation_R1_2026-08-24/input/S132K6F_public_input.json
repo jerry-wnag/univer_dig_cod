@@ -1,0 +1,59 @@
+{
+  "Stage": "S132-K6F public input",
+  "ForbiddenFieldsAbsent": [
+    "TransitionTable",
+    "GeneratorParameters",
+    "Seed",
+    "Family"
+  ],
+  "Worlds": [
+    {
+      "WorldID": "F601",
+      "StateCount": 84,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F602",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F603",
+      "StateCount": 112,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F604",
+      "StateCount": 59,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F605",
+      "StateCount": 48,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F606",
+      "StateCount": 100,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F607",
+      "StateCount": 96,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F608",
+      "StateCount": 101,
+      "ActionCount": 4,
+      "StartState": 1
+    }
+  ]
+}

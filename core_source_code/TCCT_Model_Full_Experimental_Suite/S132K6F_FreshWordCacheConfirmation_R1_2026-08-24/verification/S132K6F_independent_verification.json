@@ -1,0 +1,432 @@
+{
+  "Stage": "S132-K6F independent fresh replay and protocol audit",
+  "SourceHashPass": true,
+  "AcceptedInputHashPass": true,
+  "ManifestHashPass": true,
+  "MaterializationHashPass": true,
+  "FreezeBeforeMaterializationPass": true,
+  "PublicSeparationPass": true,
+  "AcceptedK6ESourceHashPass": true,
+  "RankMatchedControlPass": true,
+  "AllPythonTraceReconstructionsExact": true,
+  "LibraryReconstructionPass": true,
+  "AggregateRecomputationPass": true,
+  "StateRelabelDiscoveryInvariancePass": true,
+  "NearLawScientificAuditPass": true,
+  "RecomputedMainGatePass": true,
+  "EvidenceIntegrityPass": true,
+  "IndependentScientificAuditPass": true,
+  "ScientificGatePass": true,
+  "StructuredReconstructionAudits": [
+    {
+      "WorldID": "F601",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F602",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F603",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F604",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F605",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F606",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F607",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F608",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    }
+  ],
+  "ControlReconstructionAudits": [
+    {
+      "WorldID": "F601",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F602",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F603",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F604",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F605",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F606",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F607",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    },
+    {
+      "WorldID": "F608",
+      "K6EReconstructionPass": true,
+      "K6EMismatchFields": [],
+      "K6BReconstructionPass": true,
+      "K6BMismatchFields": [],
+      "K5AReconstructionPass": true,
+      "K5AMismatchFields": [],
+      "TripleFunctionalMatch": true,
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "LibraryTrajectoryPass": true
+    }
+  ],
+  "NearLawReconstructionAudits": [
+    {
+      "WorldID": "FN621",
+      "TripleFunctionalMatch": true,
+      "K6EMismatchFields": [],
+      "K6BMismatchFields": [],
+      "K5AMismatchFields": [],
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "AvailableLibraryCountPass": true
+    },
+    {
+      "WorldID": "FN622",
+      "TripleFunctionalMatch": true,
+      "K6EMismatchFields": [],
+      "K6BMismatchFields": [],
+      "K5AMismatchFields": [],
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "AvailableLibraryCountPass": true
+    },
+    {
+      "WorldID": "FN623",
+      "TripleFunctionalMatch": true,
+      "K6EMismatchFields": [],
+      "K6BMismatchFields": [],
+      "K5AMismatchFields": [],
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "AvailableLibraryCountPass": true
+    },
+    {
+      "WorldID": "FN624",
+      "TripleFunctionalMatch": true,
+      "K6EMismatchFields": [],
+      "K6BMismatchFields": [],
+      "K5AMismatchFields": [],
+      "ReportedTripleFlagsCorrect": true,
+      "QueryOrdersIdentical": true,
+      "CacheAccountingPass": true,
+      "AvailableLibraryCountPass": true
+    }
+  ],
+  "RankAudits": [
+    {
+      "WorldID": "F601",
+      "Pass": true
+    },
+    {
+      "WorldID": "F602",
+      "Pass": true
+    },
+    {
+      "WorldID": "F603",
+      "Pass": true
+    },
+    {
+      "WorldID": "F604",
+      "Pass": true
+    },
+    {
+      "WorldID": "F605",
+      "Pass": true
+    },
+    {
+      "WorldID": "F606",
+      "Pass": true
+    },
+    {
+      "WorldID": "F607",
+      "Pass": true
+    },
+    {
+      "WorldID": "F608",
+      "Pass": true
+    }
+  ],
+  "StateRelabelAudits": [
+    {
+      "WorldID": "F601",
+      "OriginalSchemaCount": 113,
+      "AlternateSchemaCount": 113,
+      "Pass": true
+    },
+    {
+      "WorldID": "F602",
+      "OriginalSchemaCount": 178,
+      "AlternateSchemaCount": 178,
+      "Pass": true
+    },
+    {
+      "WorldID": "F603",
+      "OriginalSchemaCount": 121,
+      "AlternateSchemaCount": 121,
+      "Pass": true
+    },
+    {
+      "WorldID": "F604",
+      "OriginalSchemaCount": 82,
+      "AlternateSchemaCount": 82,
+      "Pass": true
+    },
+    {
+      "WorldID": "F605",
+      "OriginalSchemaCount": 147,
+      "AlternateSchemaCount": 147,
+      "Pass": true
+    },
+    {
+      "WorldID": "F606",
+      "OriginalSchemaCount": 194,
+      "AlternateSchemaCount": 194,
+      "Pass": true
+    },
+    {
+      "WorldID": "F607",
+      "OriginalSchemaCount": 81,
+      "AlternateSchemaCount": 81,
+      "Pass": true
+    },
+    {
+      "WorldID": "F608",
+      "OriginalSchemaCount": 82,
+      "AlternateSchemaCount": 82,
+      "Pass": true
+    }
+  ],
+  "NearLawTargetAudits": [
+    {
+      "WorldID": "FN621",
+      "TargetBroken": true,
+      "MismatchCountPass": true,
+      "TargetRepresented": true
+    },
+    {
+      "WorldID": "FN622",
+      "TargetBroken": true,
+      "MismatchCountPass": true,
+      "TargetRepresented": true
+    },
+    {
+      "WorldID": "FN623",
+      "TargetBroken": true,
+      "MismatchCountPass": true,
+      "TargetRepresented": true
+    },
+    {
+      "WorldID": "FN624",
+      "TargetBroken": true,
+      "MismatchCountPass": true,
+      "TargetRepresented": true
+    }
+  ],
+  "AggregateChecks": {
+    "AllK6EK6BK5AFieldsExactlyEqual": true,
+    "AllFinalModelsExact": true,
+    "UnsafeCommittedInferenceCount": true,
+    "CacheAccountingConservationPass": true,
+    "LogicalTraceRequestCount": true,
+    "ExactWordCacheHitCount": true,
+    "PhysicalTraceEvaluationCount": true,
+    "LogicalTraceCellLookupCount": true,
+    "PhysicalTraceCellLookupCount": true,
+    "AggregateK6ERuntimeSeconds": true,
+    "AggregateK6BRuntimeSeconds": true,
+    "AggregateK5ARuntimeSeconds": true,
+    "RuntimeGates": true,
+    "FinalLibraries": true,
+    "MainGatePass": true
+  },
+  "RecomputedMetrics": {
+    "AggregateK6ERuntimeSeconds": 684.6175382,
+    "AggregateK6BRuntimeSeconds": 698.9397323000001,
+    "AggregateK5ARuntimeSeconds": 733.6524631,
+    "ExactWordCacheHitCount": 5803541,
+    "LogicalTraceRequestCount": 6350146,
+    "PhysicalTraceCellLookupCount": 1208489,
+    "LogicalTraceCellLookupCount": 11881713
+  },
+  "CanonicalTCCTModified": false,
+  "FinalConclusion": "VERIFIED_FRESH_EXACT_WORD_CACHE_CONFIRMATION_GATE_PASS"
+}
