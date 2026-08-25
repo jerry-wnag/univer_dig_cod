@@ -1,0 +1,297 @@
+{
+  "Stage": "S132-K2 independent fresh-world verification",
+  "SourceHashPass": true,
+  "PreWorldFreezeAndPhaseOrderPass": true,
+  "FreshDiscoveryExactCount": 5,
+  "FreshDiscoveryPass": true,
+  "CertifiedAutomataEqualOraclePass": true,
+  "StructuredAudits": [
+    {
+      "WorldID": "K201",
+      "IndependentSummary": {
+        "EnumeratedWordCount": 1093,
+        "SemanticClassCount": 164,
+        "MultiRealizationClassCount": 127,
+        "ShorteningConceptCount": 91,
+        "RewriteRuleCount": 758,
+        "ExactRewriteRuleCount": 758,
+        "FalseEquivalenceCount": 0
+      },
+      "ReportedSummaryPass": true,
+      "IndependentStateRelabelingPass": true
+    },
+    {
+      "WorldID": "K202",
+      "IndependentSummary": {
+        "EnumeratedWordCount": 1093,
+        "SemanticClassCount": 451,
+        "MultiRealizationClassCount": 246,
+        "ShorteningConceptCount": 4,
+        "RewriteRuleCount": 11,
+        "ExactRewriteRuleCount": 11,
+        "FalseEquivalenceCount": 0
+      },
+      "ReportedSummaryPass": true,
+      "IndependentStateRelabelingPass": true
+    },
+    {
+      "WorldID": "K203",
+      "IndependentSummary": {
+        "EnumeratedWordCount": 5461,
+        "SemanticClassCount": 1624,
+        "MultiRealizationClassCount": 973,
+        "ShorteningConceptCount": 90,
+        "RewriteRuleCount": 777,
+        "ExactRewriteRuleCount": 777,
+        "FalseEquivalenceCount": 0
+      },
+      "ReportedSummaryPass": true,
+      "IndependentStateRelabelingPass": true
+    },
+    {
+      "WorldID": "K204",
+      "IndependentSummary": {
+        "EnumeratedWordCount": 5461,
+        "SemanticClassCount": 387,
+        "MultiRealizationClassCount": 337,
+        "ShorteningConceptCount": 203,
+        "RewriteRuleCount": 4116,
+        "ExactRewriteRuleCount": 4116,
+        "FalseEquivalenceCount": 0
+      },
+      "ReportedSummaryPass": true,
+      "IndependentStateRelabelingPass": true
+    },
+    {
+      "WorldID": "K205",
+      "IndependentSummary": {
+        "EnumeratedWordCount": 5461,
+        "SemanticClassCount": 1708,
+        "MultiRealizationClassCount": 943,
+        "ShorteningConceptCount": 58,
+        "RewriteRuleCount": 782,
+        "ExactRewriteRuleCount": 782,
+        "FalseEquivalenceCount": 0
+      },
+      "ReportedSummaryPass": true,
+      "IndependentStateRelabelingPass": true
+    }
+  ],
+  "IndependentStructuredQuotientPass": true,
+  "RandomControlAudits": [
+    {
+      "Replicate": 1,
+      "WorldID": "K201",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 1,
+      "WorldID": "K202",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 1,
+      "WorldID": "K203",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 1,
+      "WorldID": "K204",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 1,
+      "WorldID": "K205",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 2,
+      "WorldID": "K201",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 2,
+      "WorldID": "K202",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 2,
+      "WorldID": "K203",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 2,
+      "WorldID": "K204",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 2,
+      "WorldID": "K205",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 3,
+      "WorldID": "K201",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 3,
+      "WorldID": "K202",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 3,
+      "WorldID": "K203",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 3,
+      "WorldID": "K204",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 3,
+      "WorldID": "K205",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 4,
+      "WorldID": "K201",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 4,
+      "WorldID": "K202",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 4,
+      "WorldID": "K203",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 4,
+      "WorldID": "K204",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 4,
+      "WorldID": "K205",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 5,
+      "WorldID": "K201",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 5,
+      "WorldID": "K202",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 5,
+      "WorldID": "K203",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 5,
+      "WorldID": "K204",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    },
+    {
+      "Replicate": 5,
+      "WorldID": "K205",
+      "ReportedSummaryPass": true,
+      "RankMatchingPass": true,
+      "IndependentFalseEquivalenceCount": 0
+    }
+  ],
+  "IndependentRandomControlPass": true,
+  "PairedAdvantageChecks": [
+    {
+      "WorldID": "K201",
+      "StructuredReduction": 5447,
+      "FiveControlMean": 955.8,
+      "Pass": true
+    },
+    {
+      "WorldID": "K202",
+      "StructuredReduction": 169,
+      "FiveControlMean": 0.0,
+      "Pass": true
+    },
+    {
+      "WorldID": "K203",
+      "StructuredReduction": 1382,
+      "FiveControlMean": 0.0,
+      "Pass": true
+    },
+    {
+      "WorldID": "K204",
+      "StructuredReduction": 5210,
+      "FiveControlMean": 18.2,
+      "Pass": true
+    },
+    {
+      "WorldID": "K205",
+      "StructuredReduction": 1272,
+      "FiveControlMean": 0.0,
+      "Pass": true
+    }
+  ],
+  "ResultBoundaryPass": true,
+  "IndependentHeldoutRNGReproduction": false,
+  "EvidenceIntegrityPass": true,
+  "FreshKernelTransformationQuotientConfirmed": true,
+  "OpenEndedPrimitiveInventionConfirmed": false,
+  "FinalConclusion": "VERIFIED_FRESH_KERNEL_TRANSFORMATION_QUOTIENT_CONFIRMATION"
+}

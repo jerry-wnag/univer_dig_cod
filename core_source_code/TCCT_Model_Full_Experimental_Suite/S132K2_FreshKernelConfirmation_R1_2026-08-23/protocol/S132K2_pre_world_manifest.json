@@ -1,0 +1,136 @@
+{
+  "Stage": "S132-K2 fresh-world kernel transformation quotient confirmation",
+  "EvidenceStatus": "LOCAL_PREWORLD_FROZEN_FRESH_WORLD_CONFIRMATION",
+  "FrozenUTC": "2026-08-23T04:02:26.399993+00:00",
+  "FrozenBeforeWorldMaterialization": true,
+  "ExploratoryK1ResultUsedOnlyToChooseConfirmatoryGate": true,
+  "WorldGenerator": "unchanged frozen S129-C1 five-family in-bound generator",
+  "WorldSpecifications": [
+    {
+      "WorldID": "K201",
+      "Dimensions": [
+        4,
+        5
+      ],
+      "Seed": 1322101
+    },
+    {
+      "WorldID": "K202",
+      "Dimensions": [
+        5,
+        6
+      ],
+      "Seed": 1322102
+    },
+    {
+      "WorldID": "K203",
+      "Dimensions": [
+        3,
+        4,
+        5
+      ],
+      "Seed": 1322103
+    },
+    {
+      "WorldID": "K204",
+      "Dimensions": [
+        2,
+        5,
+        4
+      ],
+      "Seed": 1322104
+    },
+    {
+      "WorldID": "K205",
+      "Dimensions": [
+        4,
+        4,
+        3
+      ],
+      "Seed": 1322105
+    }
+  ],
+  "MaximumWordLength": 6,
+  "HeldoutProgramCountPerWorld": 100,
+  "HeldoutProgramLength": 60,
+  "HeldoutSeeds": [
+    1322201,
+    1322202,
+    1322203,
+    1322204,
+    1322205
+  ],
+  "StateRelabelSeeds": [
+    1322301,
+    1322302,
+    1322303,
+    1322304,
+    1322305
+  ],
+  "RandomControlSeeds": [
+    [
+      1322500,
+      1322501,
+      1322502,
+      1322503,
+      1322504
+    ],
+    [
+      1322600,
+      1322601,
+      1322602,
+      1322603,
+      1322604
+    ],
+    [
+      1322700,
+      1322701,
+      1322702,
+      1322703,
+      1322704
+    ],
+    [
+      1322800,
+      1322801,
+      1322802,
+      1322803,
+      1322804
+    ],
+    [
+      1322900,
+      1322901,
+      1322902,
+      1322903,
+      1322904
+    ]
+  ],
+  "TCCTDiscoveryAlgorithm": "unchanged frozen S129-B8A incremental bounded-complete search",
+  "DiscoveryExactRequired": "5/5",
+  "ConceptLearnerInput": "certified latent transition automata only",
+  "ProgramASTAllowedForConceptLearner": false,
+  "GeneratorTruthAllowedForDiscoveryOrConceptLearner": false,
+  "CanonicalTCCTModificationAllowed": false,
+  "FrozenPrimaryGate": {
+    "DiscoveryExactRequired": "5/5",
+    "PositiveShorteningConceptsRequired": "5/5",
+    "PositiveHeldoutTokenReductionRequired": "5/5",
+    "AllStructuredAndRandomRewritesExact": true,
+    "StateRelabelingRequired": "5/5",
+    "RewriteDisabledAblationReduction": 0,
+    "StructuredReductionMustExceedFiveControlMean": "5/5 paired worlds"
+  },
+  "NoPostResultSeedWorldRuleOrDepthChange": true,
+  "OpenEndedPrimitiveInventionClaimAllowed": false,
+  "SourceHashes": {
+    "TCCT_S129B6_TCCTNativeOnlineInduction.wl": "6c08e404281369db961de8c0bee53e8d7122c2f4711e6690db05b6c14a8d08cd",
+    "TCCT_S129B7_CostCompleteSearchAudit.wl": "c6b27aaa7a4e38fc2ce69708610042f098225caf80cf1c14fab0bbba49a85551",
+    "TCCT_S129B8A_IncrementalCompleteSearch.wl": "cd264b8ab988876749bb72b7d36c76a46a2519dfd524f3ff2adc5d28fb2beebc",
+    "TCCT_S129C1_FreshBlindConfirmationBuilder.py": "5cad11705246968b07750f89b7ad5d829949ff5c79be8d2dcf8048ca1121d512",
+    "TCCT_S132K1_IndependentVerifier.py": "e8aabd4525737c6d54f7cf59a1943455ddc2a6c8b89e0a08c676f60c3cc2266b",
+    "TCCT_S132K1_KernelTransformationQuotient.wl": "d1012cfde58ba682df2bc333b2b5ee397917c4366056e2ae22cc90ec5ad8fb28",
+    "TCCT_S132K2_FreshDiscovery.wl": "6ffccd304eefb7966469ea7dae6f85f673dae5d79bc7533d0c0a7dc351682357",
+    "TCCT_S132K2_FreshKernelConfirmation.wl": "36b2523263b1b52a8e2555db98027b9bb0a2c650c571fa6b41d454b857a6969d",
+    "TCCT_S132K2_FreshKernelConfirmationBuilder.py": "bf1c5e9206be68577274a7930bbb1f3c43f7dd06a040a5686b98dd691f64aa3a",
+    "TCCT_S132K2_IndependentVerifier.py": "b6023c230c9414cc427b28c294c690b3667c852a0664ede213ab063ddf76f2f0"
+  }
+}

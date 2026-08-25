@@ -1,0 +1,33 @@
+{
+  "Stage": "S129-B7 bounded cost-complete search audit R1",
+  "EvidenceStatus": "RETROSPECTIVE_CAUSAL_AUDIT_AFTER_F02_NOT_FRESH_CONFIRMATION",
+  "PrimaryQuestion": "Was B6 F02 failure caused by capped target-independent expansion coverage?",
+  "WorldsChanged": false,
+  "DSLChanged": false,
+  "TCCTControlLoopChanged": false,
+  "PriorBestProgramsLoaded": false,
+  "GeneratorTruthRead": false,
+  "F02SpecificTemplates": [],
+  "SearchChange": "replace capped three-round frontier with bounded semantic-complete bottom-up enumeration by AST node cost",
+  "TerminalConstants": "integers 0 through maximum coordinate dimension",
+  "MaximumASTNodeCost": 7,
+  "EnumeratedNodeCosts": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "IntermediateAbsoluteValueBound": 512,
+  "CompletenessClaim": "semantic completeness only within frozen terminals, primitives, node cost <=7, and intermediate absolute value <=512",
+  "ConditionalConstructorChanged": false,
+  "CandidateSemanticCapPerTargetChanged": false,
+  "MembershipBudgetChanged": false,
+  "EquivalenceBudgetChanged": false,
+  "CompressionThreshold": null,
+  "RequiredExactRate": null,
+  "CanonicalTCCTModificationAllowed": false,
+  "S128BModificationAllowed": false,
+  "B6PublicInputSHA256": "74517bc6e77e2573e69906a9a1f1fbe8e71292ef306c241319258560eea3c73e",
+  "B6OracleSHA256": "621c3f5ea3271d7848e2dafb23473ccd69134277760d898624c4da12dc231467",
+  "FrozenB6ResultSHA256": "017825e835524fbca3a91498739318471f20df6b090b6b4f37a54f0bdac6c277"
+}
