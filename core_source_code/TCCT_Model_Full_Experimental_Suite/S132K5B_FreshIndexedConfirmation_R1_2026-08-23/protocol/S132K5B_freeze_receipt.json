@@ -1,0 +1,26 @@
+{
+  "ManifestSHA256": "1ed909aff097838f97e9d532544d07f24f0099488ebd54c7cabba165794b51c4",
+  "WorldsMaterialized": true,
+  "RunComplete": true,
+  "MaterializedUTC": "2026-08-23T14:09:17.340624+00:00",
+  "MaterializedAfterManifestFreeze": true,
+  "FreezeChecksAtMaterialization": {
+    "ManifestHash": true,
+    "Sources": true,
+    "NotPreviouslyMaterialized": true
+  },
+  "PublicInputSHA256": "020e773b9a76efadb39da38a77e5850b6279cbafa17ed8770d3ccdd8788bb1fb",
+  "OracleSHA256": "3e2ede78427bed688ccc427f814b69abaff38dc9521fda9348a78762db102653",
+  "SealedTruthSHA256": "e0b17b8931154bd76214e6dc406fb5b6ed4ea2021d06918771c60b9bbf34c551",
+  "CompletedUTC": "2026-08-23T14:45:10.027228+00:00",
+  "CompletionChecks": {
+    "ManifestHash": true,
+    "Sources": true,
+    "WorldsMaterialized": true,
+    "NotPreviouslyFinalized": true,
+    "IndependentEvidenceIntegrity": true
+  },
+  "ResultSHA256": "e607af1ce2480ba5ee895f07ed743dc76ecffcbef503b2efac0c71a25cc594ed",
+  "IndependentVerificationSHA256": "6d9bc61a320dc69a366d7e2fe4a7de0fc1e830a5268f1964aac7ad53d7dda536",
+  "FinalConclusion": "VERIFIED_FRESH_EXACT_INDEXED_CONFIRMATION_GATE_PASS"
+}

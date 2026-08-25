@@ -1,0 +1,156 @@
+{
+  "Stage": "S132-K5B fresh paired exact indexed activation confirmation",
+  "EvidenceStatus": "LOCAL_PREWORLD_FROZEN_FRESH_PAIRED_CONFIRMATION",
+  "Profile": "formal",
+  "FrozenUTC": "2026-08-23T14:09:17.130855+00:00",
+  "FrozenBeforeWorldMaterialization": true,
+  "StartingConceptLibraryCount": 0,
+  "MaximumConceptWordLength": 4,
+  "StructuredWorldSpecifications": [
+    {
+      "WorldID": "F501",
+      "Family": "DIHEDRAL_PRODUCT"
+    },
+    {
+      "WorldID": "F502",
+      "Family": "OVERWRITE_GATE"
+    },
+    {
+      "WorldID": "F503",
+      "Family": "BOOLEAN_AFFINE"
+    },
+    {
+      "WorldID": "F504",
+      "Family": "CONJUGATED_SEMIGROUP"
+    },
+    {
+      "WorldID": "F505",
+      "Family": "DIHEDRAL_PRODUCT"
+    },
+    {
+      "WorldID": "F506",
+      "Family": "OVERWRITE_GATE"
+    },
+    {
+      "WorldID": "F507",
+      "Family": "BOOLEAN_AFFINE"
+    },
+    {
+      "WorldID": "F508",
+      "Family": "CONJUGATED_SEMIGROUP"
+    }
+  ],
+  "GeneratorFamilies": [
+    "BOOLEAN_AFFINE",
+    "CONJUGATED_SEMIGROUP",
+    "DIHEDRAL_PRODUCT",
+    "OVERWRITE_GATE"
+  ],
+  "NearLawWorldSpecifications": [
+    {
+      "WorldID": "FN521",
+      "Kind": "NEAR_IDEMPOTENT"
+    },
+    {
+      "WorldID": "FN522",
+      "Kind": "NEAR_INVOLUTION"
+    },
+    {
+      "WorldID": "FN523",
+      "Kind": "NEAR_INVERSE_PAIR"
+    },
+    {
+      "WorldID": "FN524",
+      "Kind": "NEAR_ABSORPTION"
+    }
+  ],
+  "QueryOrderSeeds": [
+    1326601,
+    1326602,
+    1326603,
+    1326604,
+    1326605,
+    1326606,
+    1326607,
+    1326608
+  ],
+  "ControlQueryOrderSeeds": [
+    1326701,
+    1326702,
+    1326703,
+    1326704,
+    1326705,
+    1326706,
+    1326707,
+    1326708
+  ],
+  "RankMatchedControlSeeds": [
+    1326801,
+    1326802,
+    1326803,
+    1326804,
+    1326805,
+    1326806,
+    1326807,
+    1326808
+  ],
+  "ChallengeQueryOrderSeeds": [
+    1326901,
+    1326902,
+    1326903,
+    1326904
+  ],
+  "InitialDirectObservationFraction": 0.5,
+  "DirectQueryBatchFraction": 0.05,
+  "MinimumDirectPositiveWitnessesBeforeInference": 2,
+  "PairedExecutionOrder": "odd rows indexed-first; even rows full-scan-first",
+  "PairedInputs": "same world, query seed, available library, and frozen learner semantics",
+  "ConceptMetaRule": "exact anonymous action-word transformation equivalence",
+  "ConceptActivationPolicy": "unchanged K4A exhaustive exact schemas with maximum word length 4",
+  "TemporalRule": "world i may use only concepts certified after earlier worlds",
+  "NearLawRule": "near-law worlds use the final structured library and do not update it",
+  "MatchedBaseline": "same query order with concepts disabled, using frozen full-scan learner",
+  "PrimaryMainGate": {
+    "PairedOriginalFieldsExactlyEqual": true,
+    "AllFinalModelsExact": true,
+    "UnsafeCommittedInferenceCount": 0,
+    "ActualIndexedClosureWorkStrictlyLower": true,
+    "AggregateIndexedRuntimeStrictlyLowerInSameProcess": true,
+    "FreshStructuredTransferGatePass": true,
+    "AllNearLawChallengesExact": true
+  },
+  "FreshStructuredTransferGate": {
+    "FinalStructuredLibraryNonempty": true,
+    "AtLeastOneLaterWorldUsesPriorConcept": true,
+    "AggregateStructuredMembershipSavingsStrictlyPositive": true,
+    "AggregateStructuredConcreteSavingsStrictlyPositive": true,
+    "StructuredConcreteSavingsStrictlyExceedControlSavings": true,
+    "PositiveSavingsCoverageAtLeastThreeOfFourFamilies": true
+  },
+  "IndependentOnlyGate": {
+    "AllPythonTraceReconstructionsExact": true,
+    "StateRelabelDiscoveryInvariance": "8/8",
+    "RankMatchedControlsValid": "8/8",
+    "NearLawTargetsBrokenAndRepresented": "4/4"
+  },
+  "NoArbitraryPercentageSpeedOrSavingsThreshold": true,
+  "GeneratorTruthReadableByLearner": false,
+  "CanonicalTCCTModified": false,
+  "FrozenK3BK4AAndK5AMechanismsModified": false,
+  "OnlyExecutionStrategyChanged": true,
+  "ObservationNoiseIncluded": false,
+  "WorldSizeHiddenFromLearner": false,
+  "OpenEndedLanguageInventionClaimAllowed": false,
+  "SourceHashes": {
+    "TCCT_S132K3B_IndependentVerifier.py": "85fadc5ac9c4663c37ca7a61337712676c2bf8b63091cd06912141c9b70423dd",
+    "TCCT_S132K3B_PartialObservationTransfer.wl": "aa6148907a2311971c45e32d44a1fbe015face97634c3c7f0a3d0008800801e7",
+    "TCCT_S132K4A_FreshOnlineConceptCreation.wl": "ae8585437fca81c4779c2fe02612354b6ef458ec8529968996006c784eff4f0e",
+    "TCCT_S132K4A_IndependentVerifier.py": "f391abc438b84ccf38d5272ff24e22c2e3c415d57c619aa2d86b93ede4244958",
+    "TCCT_S132K4B_OutOfFamilyBuilder.py": "55574cc65de921b6cc9558cd46363e58a0c6dd667d1d8921f00618a03e0f40b7",
+    "TCCT_S132K5A_ExactIndexedActivation.wl": "997d186585a1cda369949703f5972d602b88e0c15fbccf4f24894bceeb0b5060",
+    "TCCT_S132K5A_IndependentVerifier.py": "863b4569c6c7f7b2c551ad5c1da53d1500e35025e5c2b43bfd982794cc1afc1e",
+    "TCCT_S132K5B_FreshBuilder.py": "17b241f94d7b1a4f8e10abb1a35afcc09dbca48f2fd8900f74332a47dbec22a6",
+    "TCCT_S132K5B_FreshIndexedConfirmation.wl": "8736a8cf31485a49c901eb8f56657fe9ab3160bc87377374e4ae3f80107cd19c",
+    "TCCT_S132K5B_IndependentVerifier.py": "66d414e6973cdc5ed41f82cb16b7ccef6b103a510c6c6f94ce48f5e78f16b6dc"
+  }
+}

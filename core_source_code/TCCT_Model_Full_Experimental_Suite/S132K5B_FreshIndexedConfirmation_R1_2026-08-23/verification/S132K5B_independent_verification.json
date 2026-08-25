@@ -1,0 +1,556 @@
+{
+  "Stage": "S132-K5B independent paired replay and audit",
+  "Profile": "formal",
+  "SourceHashPass": true,
+  "ManifestHashPass": true,
+  "MaterializationHashPass": true,
+  "FreezeBeforeMaterializationPass": true,
+  "PublicSeparationPass": true,
+  "RankMatchedControlPass": true,
+  "AllPythonTraceReconstructionsExact": true,
+  "LibraryReconstructionPass": true,
+  "AggregateRecomputationPass": true,
+  "StateRelabelDiscoveryInvariancePass": true,
+  "NearLawTargetsBrokenPass": true,
+  "NearLawTargetsRepresentedInStructuredLibraryPass": true,
+  "RecomputedMainGatePass": true,
+  "EvidenceIntegrityPass": true,
+  "IndependentScientificAuditPass": true,
+  "ScientificGatePass": true,
+  "StructuredReconstructionAudits": [
+    {
+      "WorldID": "F501",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F502",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F503",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F504",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F505",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F506",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F507",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F508",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    }
+  ],
+  "ControlReconstructionAudits": [
+    {
+      "WorldID": "F501",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F502",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F503",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F504",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F505",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F506",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F507",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "F508",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "LibraryTrajectoryPass": true,
+      "SavingsArithmeticPass": true
+    }
+  ],
+  "NearLawReconstructionAudits": [
+    {
+      "WorldID": "FN521",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "AvailableLibraryCountPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "FN522",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "AvailableLibraryCountPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "FN523",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "AvailableLibraryCountPass": true,
+      "SavingsArithmeticPass": true
+    },
+    {
+      "WorldID": "FN524",
+      "IndexedReconstructionPass": true,
+      "IndexedMismatchFields": [],
+      "FullScanReconstructionPass": true,
+      "FullScanMismatchFields": [],
+      "BaselineReconstructionPass": true,
+      "BaselineMismatchFields": [],
+      "QueryOrdersIdentical": true,
+      "PairedOriginalFieldsExactlyEqual": true,
+      "ReportedPairFlagCorrect": true,
+      "AvailableLibraryCountPass": true,
+      "SavingsArithmeticPass": true
+    }
+  ],
+  "RankAudits": [
+    {
+      "WorldID": "F501",
+      "TargetRanks": [
+        39,
+        13,
+        39,
+        39
+      ],
+      "ControlRanks": [
+        39,
+        13,
+        39,
+        39
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F502",
+      "TargetRanks": [
+        25,
+        5,
+        30,
+        6
+      ],
+      "ControlRanks": [
+        25,
+        5,
+        30,
+        6
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F503",
+      "TargetRanks": [
+        96,
+        96,
+        48,
+        96
+      ],
+      "ControlRanks": [
+        96,
+        96,
+        48,
+        96
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F504",
+      "TargetRanks": [
+        61,
+        31,
+        61,
+        61
+      ],
+      "ControlRanks": [
+        61,
+        31,
+        61,
+        61
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F505",
+      "TargetRanks": [
+        30,
+        15,
+        30,
+        30
+      ],
+      "ControlRanks": [
+        30,
+        15,
+        30,
+        30
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F506",
+      "TargetRanks": [
+        12,
+        60,
+        20,
+        44
+      ],
+      "ControlRanks": [
+        12,
+        60,
+        20,
+        44
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F507",
+      "TargetRanks": [
+        112,
+        112,
+        112,
+        56
+      ],
+      "ControlRanks": [
+        112,
+        112,
+        112,
+        56
+      ],
+      "Pass": true
+    },
+    {
+      "WorldID": "F508",
+      "TargetRanks": [
+        79,
+        79,
+        40,
+        79
+      ],
+      "ControlRanks": [
+        79,
+        79,
+        40,
+        79
+      ],
+      "Pass": true
+    }
+  ],
+  "StateRelabelAudits": [
+    {
+      "WorldID": "F501",
+      "OriginalSchemaCount": 153,
+      "AlternateSchemaCount": 153,
+      "Pass": true
+    },
+    {
+      "WorldID": "F502",
+      "OriginalSchemaCount": 176,
+      "AlternateSchemaCount": 176,
+      "Pass": true
+    },
+    {
+      "WorldID": "F503",
+      "OriginalSchemaCount": 84,
+      "AlternateSchemaCount": 84,
+      "Pass": true
+    },
+    {
+      "WorldID": "F504",
+      "OriginalSchemaCount": 90,
+      "AlternateSchemaCount": 90,
+      "Pass": true
+    },
+    {
+      "WorldID": "F505",
+      "OriginalSchemaCount": 115,
+      "AlternateSchemaCount": 115,
+      "Pass": true
+    },
+    {
+      "WorldID": "F506",
+      "OriginalSchemaCount": 195,
+      "AlternateSchemaCount": 195,
+      "Pass": true
+    },
+    {
+      "WorldID": "F507",
+      "OriginalSchemaCount": 114,
+      "AlternateSchemaCount": 114,
+      "Pass": true
+    },
+    {
+      "WorldID": "F508",
+      "OriginalSchemaCount": 90,
+      "AlternateSchemaCount": 90,
+      "Pass": true
+    }
+  ],
+  "NearLawTargetAudits": [
+    {
+      "WorldID": "FN521",
+      "TargetBroken": true,
+      "MismatchCount": 1,
+      "ReportedMismatchCountMatch": true,
+      "TargetRepresentedInStructuredLibrary": true
+    },
+    {
+      "WorldID": "FN522",
+      "TargetBroken": true,
+      "MismatchCount": 2,
+      "ReportedMismatchCountMatch": true,
+      "TargetRepresentedInStructuredLibrary": true
+    },
+    {
+      "WorldID": "FN523",
+      "TargetBroken": true,
+      "MismatchCount": 1,
+      "ReportedMismatchCountMatch": true,
+      "TargetRepresentedInStructuredLibrary": true
+    },
+    {
+      "WorldID": "FN524",
+      "TargetBroken": true,
+      "MismatchCount": 1,
+      "ReportedMismatchCountMatch": true,
+      "TargetRepresentedInStructuredLibrary": true
+    }
+  ],
+  "AggregateChecks": {
+    "PairedOriginalFieldsExactlyEqual": true,
+    "AllFinalModelsExact": true,
+    "UnsafeCommittedInferenceCount": true,
+    "ActualIndexedClosureItemEvaluations": true,
+    "FullScanEquivalentClosureItemEvaluations": true,
+    "ActualDirectAuditStateChecks": true,
+    "FullRescanEquivalentDirectAuditStateChecks": true,
+    "DeterministicWorkReduced": true,
+    "AggregateIndexedRuntimeSeconds": true,
+    "AggregateFullScanRuntimeSeconds": true,
+    "AggregateBaselineRuntimeSeconds": true,
+    "IndexedRuntimeStrictlyLower": true,
+    "PositiveSavingsFamilyCoverage": true,
+    "PositiveSavingsFamilyCount": true,
+    "AggregateStructuredMembershipQuerySavings": true,
+    "AggregateStructuredLogicalInteractionCostSavings": true,
+    "AggregateStructuredConcreteOracleCellCostSavings": true,
+    "AggregateControlMembershipQuerySavings": true,
+    "AggregateControlConcreteOracleCellCostSavings": true,
+    "AggregateNearLawMembershipQuerySavings": true,
+    "AggregateNearLawConcreteOracleCellCostSavings": true,
+    "FreshStructuredTransferGatePass": true,
+    "AllNearLawChallengesExact": true,
+    "MainGatePass": true
+  },
+  "RecomputedMetrics": {
+    "ActualIndexedClosureItemEvaluations": 2994040,
+    "FullScanEquivalentClosureItemEvaluations": 5972606,
+    "AggregateIndexedRuntimeSeconds": 583.9808575,
+    "AggregateFullScanRuntimeSeconds": 1397.0810006,
+    "PairedRuntimeSpeedup": 2.39234040406881,
+    "AggregateStructuredMembershipQuerySavings": 252,
+    "AggregateStructuredConcreteOracleCellCostSavings": 145,
+    "AggregateControlConcreteOracleCellCostSavings": 0,
+    "PositiveSavingsFamilyCount": 4
+  },
+  "CanonicalTCCTModified": false,
+  "OpenEndedLanguageInventionProven": false,
+  "FinalConclusion": "VERIFIED_FRESH_EXACT_INDEXED_CONFIRMATION_GATE_PASS"
+}

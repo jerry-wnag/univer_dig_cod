@@ -1,0 +1,59 @@
+{
+  "Stage": "S132-K5B public input",
+  "ForbiddenFieldsAbsent": [
+    "TransitionTable",
+    "GeneratorParameters",
+    "Seed",
+    "Family"
+  ],
+  "Worlds": [
+    {
+      "WorldID": "F501",
+      "StateCount": 39,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F502",
+      "StateCount": 30,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F503",
+      "StateCount": 96,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F504",
+      "StateCount": 61,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F505",
+      "StateCount": 30,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F506",
+      "StateCount": 60,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F507",
+      "StateCount": 112,
+      "ActionCount": 4,
+      "StartState": 1
+    },
+    {
+      "WorldID": "F508",
+      "StateCount": 79,
+      "ActionCount": 4,
+      "StartState": 1
+    }
+  ]
+}
