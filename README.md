@@ -167,7 +167,7 @@ While primarily a cosmological model, the **discrete causal dynamics** demonstra
 
 ## 📂 Source Code & Data
 
-All logic is contained within the Wolfram Language notebooks. The raw data plots and simulation logs are available for independent verification.
+The publicly mirrored core logic in this repository is primarily implemented in Wolfram Language notebooks. Additional source code, experimental iterations, and large research artifacts are preserved in the complete Google Drive archive described below.
 
 
 
@@ -196,10 +196,7 @@ It contains a large number of source files, historical experimental stages, raw 
 Due to GitHub upload, file-count, individual-file-size, and repository-size constraints, the complete local core research archive cannot be fully mirrored in this repository.
 
 The more complete archive of the locally preserved TCCT core code and experimental materials is therefore available through Google Drive:
-
-**Google Drive — Complete TCCT Core Research Archive**
-
-https://drive.google.com/drive/folders/1ZzO_AB2rnZIgWC2IGL9ZPtkp9wpTxxKy?usp=drive_link
+[**Google Drive — Complete TCCT Core Research Archive**](https://drive.google.com/drive/folders/1ZzO_AB2rnZIgWC2IGL9ZPtkp9wpTxxKy?usp=drive_link)
 
 The GitHub repository should therefore be treated as the public-facing code and documentation mirror of the TCCT reasoning branch, while the Google Drive archive preserves the broader sequence of local experimental iterations and supporting research materials.
 
