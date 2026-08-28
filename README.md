@@ -7,9 +7,9 @@
 [![Status: Discovery](https://img.shields.io/badge/Status-Scientific%20Discovery%20%2F%20Open%20Data-purple)](https://github.com/)
 
 > **Abstract / 摘要**
-> This repository documents a "computational accident" discovered by a Computer Science undergraduate. By modeling the universe purely as a path-optimization problem on a causal graph, the system spontaneously generates macroscopic behaviors strikingly analogous to **General Relativity**, **Quantum Mechanics**, **Electromagnetism** and **Holographic Thermodynamics**.
+> This repository documents a "computational accident" discovered by a Computer Science undergraduate. By modeling the universe purely as a path-optimization problem on a causal graph, the system spontaneously generates macroscopic behaviors strikingly analogous to **General Relativity**, **Quantum Mechanics**, **Electromagnetism** and **Holographic Thermodynamics**. During the continued development of the same computational framework, the system also began to exhibit non-trivial reasoning-related capabilities, which motivated a separate experimental reasoning branch of the broader TCCT project. This branch investigates whether the original rewrite–deduplication–freeze dynamics can support **structural reasoning** , **rule induction**, **counterfactual intervention**, **concept formation**, **epistemic control**, and **multi-step planning**.
 >
-> 本项目记录了一名计算机专业本科生的“计算意外”。通过将宇宙建模为因果图上的路径优化问题，系统自发涌现出了与**广义相对论**、**量子力学**、**电磁学**和**全息热力学**惊人相似的宏观行为。
+> 本项目记录了一名计算机专业本科生的“计算意外”。通过将宇宙建模为因果图上的路径优化问题，系统自发涌现出了与**广义相对论**、**量子力学**、**电磁学**和**全息热力学**惊人相似的宏观行为。在同一计算框架的持续演化过程中，系统还逐渐表现出了一些**非平凡的推理相关能力**，由此进一步形成了 TCCT 主项目中的独立实验性推理分支。该分支主要研究原始的“重写—去重—冻结”动力学能否进一步支持**结构推理**、**规则归纳**、**反事实干预**、**概念形成**、**认知不确定性控制**以及**多步规划**。
 
 ---
 
@@ -66,6 +66,72 @@ In simulations tracking the "evaporation" of high-density topological clusters (
 ### 8. NAND Gates
 * **Emergent Classical Computation**: 100% deterministic classical logic spontaneously emerges from the underlying probabilistic wavefronts through macroscopic boundary conditions.
 * **Topological Rupture**: The system executes a flawless NAND gate via spatial rupture and destructive interference
+---
+
+## 🧠 Emergent Reasoning Capabilities
+
+During the continued development of the same computational framework, TCCT began to exhibit several non-trivial **reasoning-related capabilities** in addition to the emergent physical, topological, and logical phenomena documented above.
+
+These observations motivated a dedicated experimental reasoning branch of the broader TCCT project.
+
+The central question of this branch is:
+
+> **Can the same underlying rewrite–deduplication–freeze mechanism that produces structural dynamics and deterministic logical behavior also support higher-level reasoning?**
+
+This line of research extends the original TCCT mechanism from graph evolution toward increasingly structured forms of symbolic and cognitive reasoning.
+
+---
+
+### 9. From Logic Gates to the TCCT Reasoning Branch
+
+The emergence of deterministic logical behavior, including NAND-like computation, motivated a further investigation into whether TCCT could support reasoning beyond fixed logical operations.
+
+This led to the development of a dedicated **TCCT Reasoning Branch**, which is a research branch of the broader TCCT main project.
+
+The primary iterative reasoning code currently mirrored in this GitHub repository is located at:
+
+**`core_source_code/TCCT_Model_Full_Experimental_Suite/`**
+
+Across successive experimental stages, this branch has explored and demonstrated, primarily within controlled finite, symbolic, relational, and synthetic environments, capabilities including:
+
+- structural and compositional reasoning;
+- systematic generalization to unseen combinations;
+- latent predictive-state discovery;
+- counterfactual and intervention-based reasoning;
+- online symbolic rule induction;
+- counterexample-driven hypothesis revision;
+- semantic equivalence detection and program compression;
+- bounded concept formation and cross-task concept transfer;
+- concept rejection, rollback, and safe fallback;
+- narrow-domain algebraic reasoning and finite transformation/group reasoning;
+- active experiment and intervention selection;
+- decision-relevant epistemic control;
+- safe abstention when available evidence is insufficient;
+- non-myopic multi-step planning;
+- adaptive bounded planning depth;
+- concept-guided planning;
+- context-sensitive concept activation and negative-transfer control.
+
+More recent stages increasingly investigate not only whether the system can produce a correct answer, but whether it can explicitly control **how it reasons**:
+
+- what information should be acquired;
+- which remaining hypotheses are decision-relevant;
+- whether the answer is already sufficiently determined;
+- whether further experiments are useful;
+- which previously learned concepts should be activated;
+- how deeply the system should plan;
+- when reasoning should stop;
+- and when the available information or planning budget is insufficient and the system should refuse to commit.
+
+The resulting experimental architecture can therefore be viewed as an extension of the original TCCT computational mechanism:
+
+**Graph Rewrite → Semantic Deduplication → Freeze → Hypothesis Control → Active Induction → Concept Formation → Epistemic Control → Planning**
+
+These results do **not** constitute a claim of AGI, unrestricted theorem proving, or open-world general intelligence.
+
+The strongest current evidence remains concentrated in controlled finite symbolic and relational environments, where the internal reasoning process can be exactly replayed and independently verified.
+
+---
 Pauli Exclusion Principle: No two nodes can share identical topological neighborhoods; any "address collision" triggers an automatic State-Merge (Conflict Resolution) to maintain graph uniqueness.
 
 Topological Uniqueness: The system enforces a fundamental distinguishability where duplicate informational states are compressed, manifesting as the emergent "repulsion" between fermions.
@@ -107,6 +173,35 @@ All logic is contained within the Wolfram Language notebooks. The raw data plots
 
 * **`core_source_code/`**: Contains the primary algorithms implementing the Tri-Chord rule and Freezing mechanism.
 * **`Result_PDF_or_snapshot/`**: **(Must See!)** Contains visualizations of the Page Curve, Gravitational Wave propagation, and detailed PDF derivations.
+## 📂 TCCT Reasoning Code & Complete Research Archive
+
+### GitHub Reasoning Branch
+
+The reasoning materials contained in this repository represent a **research branch of the broader TCCT main project**.
+
+The primary sequence of reasoning-related experimental iterations mirrored on GitHub can be found at:
+
+**`core_source_code/TCCT_Model_Full_Experimental_Suite/`**
+
+This directory contains a substantial portion of the iterative TCCT reasoning experiments, including successive stages involving symbolic induction, latent-state modeling, concept formation, counterfactual intervention, epistemic control, and planning.
+
+### Complete Local Research Archive
+
+**Important repository notice:**
+
+The complete local TCCT research workspace is considerably larger than the version mirrored on GitHub.
+
+It contains a large number of source files, historical experimental stages, raw outputs, frozen protocols, sealed evaluation records, independent verification packages, intermediate artifacts, negative results, diagnostic experiments, and additional local iterations.
+
+Due to GitHub upload, file-count, individual-file-size, and repository-size constraints, the complete local core research archive cannot be fully mirrored in this repository.
+
+The more complete archive of the locally preserved TCCT core code and experimental materials is therefore available through Google Drive:
+
+**Google Drive — Complete TCCT Core Research Archive**
+
+https://drive.google.com/drive/folders/1ZzO_AB2rnZIgWC2IGL9ZPtkp9wpTxxKy?usp=drive_link
+
+The GitHub repository should therefore be treated as the public-facing code and documentation mirror of the TCCT reasoning branch, while the Google Drive archive preserves the broader sequence of local experimental iterations and supporting research materials.
 
 ---
 
