@@ -1,0 +1,53 @@
+{
+  "Stage": "S140-B DIAGNOSTIC R0 C02 HIGH_PREFIX predicate-invention verification",
+  "ProtocolSHA256": "7a09dc12bb4ff21d40ec01492d0fd059d4191845aa2cf2de042772ebf0259486",
+  "InventedAtomicPredicateCount": 63,
+  "SelectedConceptCount": 2,
+  "SelectedConcepts": [
+    {
+      "ConceptID": "KC_f5985bcf11108178",
+      "Conditions": [
+        [
+          "OutcomeBranchCount",
+          "Equal",
+          3
+        ]
+      ],
+      "SupportEventCount": 10,
+      "DistinctSourceTaskSupportCount": 3,
+      "TrainingFalsePositiveCount": 0
+    },
+    {
+      "ConceptID": "KC_ed4b21f1f97412bc",
+      "Conditions": [
+        [
+          "WorstCaseKnownPrefixGain",
+          "Equal",
+          1
+        ]
+      ],
+      "SupportEventCount": 4,
+      "DistinctSourceTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0
+    }
+  ],
+  "Checks": {
+    "FrozenCriticalHashesPass": true,
+    "NoPredeclaredNamedBooleanPredicates": true,
+    "OnlyAllowedRawFeaturesAndGenericOperators": true,
+    "SelectedConditionsWereInventedFromSourceVocabulary": true,
+    "AtLeastOneExactSupportedConcept": true,
+    "NativeAndIndependentConceptBodiesMatch": true,
+    "AllFiveFreshTargetsExact": true,
+    "AdversarialControlSafe": true,
+    "NoReusableConceptFallbackExercised": false,
+    "NoFilteringOrReplacement": true,
+    "BaseIndependentVerificationPass": false,
+    "CoreUnchanged": true,
+    "IndependentLibraryMetadataMatch": true
+  },
+  "PredicateInventionDiagnosticPass": false,
+  "CoreRewriteFreezeDedupModified": false,
+  "OpenEndedLanguageInventionClaimed": false,
+  "Conclusion": "BOUNDED_NUMERIC_PREDICATE_INVENTION_DIAGNOSTIC_FAIL"
+}

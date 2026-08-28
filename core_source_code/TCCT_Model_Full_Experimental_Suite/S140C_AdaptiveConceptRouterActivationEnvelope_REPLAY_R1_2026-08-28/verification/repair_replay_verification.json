@@ -1,0 +1,113 @@
+{
+  "Stage": "S140-C DIAGNOSTIC R1 source-selectivity activation envelope replay independent replay verification",
+  "ProtocolSHA256": "6ef80df675aeda0f9b5c0333499a9abd1663cf9777331a54e2741ab12fec3b83",
+  "OriginalS140BFailureStillValid": true,
+  "RetrospectiveReplayOnly": true,
+  "ActivationEnvelope": {
+    "Rule": "PREFERRED_FRACTION_NOT_ABOVE_MAXIMUM_SOURCE_EVENT_FRACTION",
+    "MaximumSourcePreferredFractionNumerator": 7,
+    "MaximumSourcePreferredFractionDenominator": 30,
+    "SourceEventFractions": [
+      {
+        "TaskID": "SRC001",
+        "Numerator": 7,
+        "Denominator": 30
+      },
+      {
+        "TaskID": "SRC002",
+        "Numerator": 3,
+        "Denominator": 43
+      },
+      {
+        "TaskID": "SRC002",
+        "Numerator": 1,
+        "Denominator": 42
+      },
+      {
+        "TaskID": "SRC003",
+        "Numerator": 1,
+        "Denominator": 20
+      }
+    ]
+  },
+  "TargetComparisons": [
+    {
+      "TaskID": "KT005",
+      "Role": "NO_REUSABLE_CONCEPT_FALLBACK",
+      "Exact": true,
+      "ExpectedDepth": 2,
+      "ObservedDepth": 2,
+      "GuidedWork": 11,
+      "BaselineWork": 11,
+      "OriginalFailedGuidedWork": 6,
+      "EnvelopeRejectedStateCount": 4,
+      "RootFallbackCount": 2
+    },
+    {
+      "TaskID": "KT001",
+      "Role": "SURFACE_PERMUTATION_TRANSFER",
+      "Exact": true,
+      "ExpectedDepth": 1,
+      "ObservedDepth": 1,
+      "GuidedWork": 1,
+      "BaselineWork": 14,
+      "OriginalFailedGuidedWork": 1,
+      "EnvelopeRejectedStateCount": 0,
+      "RootFallbackCount": 0
+    },
+    {
+      "TaskID": "KT003",
+      "Role": "SEQUENTIAL_CONCEPT_COMPOSITION",
+      "Exact": true,
+      "ExpectedDepth": 3,
+      "ObservedDepth": 3,
+      "GuidedWork": 1757,
+      "BaselineWork": 4198,
+      "OriginalFailedGuidedWork": 9344,
+      "EnvelopeRejectedStateCount": 32,
+      "RootFallbackCount": 1
+    },
+    {
+      "TaskID": "KT004",
+      "Role": "ADVERSARIAL_CONCEPT_REJECTION",
+      "Exact": true,
+      "ExpectedDepth": 2,
+      "ObservedDepth": 2,
+      "GuidedWork": 235,
+      "BaselineWork": 235,
+      "OriginalFailedGuidedWork": 626,
+      "EnvelopeRejectedStateCount": 10,
+      "RootFallbackCount": 2
+    },
+    {
+      "TaskID": "KT002",
+      "Role": "COORDINATE_SCALE_TRANSFER",
+      "Exact": true,
+      "ExpectedDepth": 2,
+      "ObservedDepth": 2,
+      "GuidedWork": 45,
+      "BaselineWork": 270,
+      "OriginalFailedGuidedWork": 45,
+      "EnvelopeRejectedStateCount": 0,
+      "RootFallbackCount": 0
+    }
+  ],
+  "Checks": {
+    "RetrospectiveStatusExplicit": true,
+    "OriginalFailureHashesPreserved": true,
+    "TaskBodiesUnchanged": true,
+    "FrozenRepairHashesPass": true,
+    "NativePythonConceptBodiesMatch": true,
+    "SourceDerivedActivationEnvelopeMatch": true,
+    "AllFiveAnswersAndDepthsExact": true,
+    "TransferWorkBelowBaseline": true,
+    "SequentialFailureRepaired": true,
+    "NoReuseControlFallsBack": true,
+    "EnvelopeActuallyExercised": true,
+    "NativePreScorePass": true,
+    "CoreUnchanged": true
+  },
+  "RepairReplayPass": true,
+  "CoreRewriteFreezeDedupModified": false,
+  "Conclusion": "RETROSPECTIVE_HIGH_PREFIX_ROUTER_REPAIR_PASS"
+}
