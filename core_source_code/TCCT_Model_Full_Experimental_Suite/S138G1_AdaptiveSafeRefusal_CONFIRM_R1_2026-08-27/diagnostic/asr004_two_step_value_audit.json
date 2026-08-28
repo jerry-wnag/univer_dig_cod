@@ -1,0 +1,39 @@
+{
+	"Stage":"S138-G1 ASR004 diagnostic-only two-step decision-value audit",
+	"DiagnosticOnly":true,
+	"UsesAlreadySeenFailedWorld":true,
+	"ProspectiveCapabilityPass":false,
+	"ProtocolSHA256":"d5a291b43d548f06301c477c2b87035899b30b84812a3b8ad06dd627f1acd140",
+	"FrozenRunnerSHA256":"2dd18fd51dfc892c33f7cb12f8f9f0ca25bf5f5958c92da6a6bdb5ab6cd1457f",
+	"TaskID":"ASR004",
+	"ReconstructedPostKQ01SemanticClassCount":14,
+	"ReconstructedPostKQ01DecisionClassCount":12,
+	"AllowedInterventionUniverseCount":400,
+	"ActualKQ02InputSHA256":"5e2d9d81a95dac271a56b1daad4f4ffd472834d946dfd93bd5af72c7e6875d19",
+	"ActualKQ02OneStepWorstDecisionClassCount":12,
+	"ActualKQ02ActualBranchDecisionClassCount":12,
+	"ActualKQ02ActualBranchBestOneFurtherQueryWorstDecisionClassCount":12,
+	"ActualKQ02CertifiedTwoStepBridge":false,
+	"ActualKQ02BranchAudit":[
+		{
+			"BranchNumber":1,
+			"SemanticClassCount":12,
+			"DecisionClassCount":12,
+			"BestAtMostOneFurtherQueryWorstDecisionClassCount":12,
+			"MatchesActualOracleBranch":true
+		},
+		{
+			"BranchNumber":2,
+			"SemanticClassCount":2,
+			"DecisionClassCount":1,
+			"BestAtMostOneFurtherQueryWorstDecisionClassCount":1,
+			"MatchesActualOracleBranch":false
+		}
+	],
+	"SemanticSplittingAllowedQueryCountAfterKQ01":84,
+	"NonStrictOneStepQueryCountAfterKQ01":84,
+	"CertifiedTwoStepBridgeQueryCountAfterKQ01":0,
+	"MinimumTwoStepWorstDecisionClassCountAmongNonStrictQueries":12,
+	"CertifiedTwoStepBridgeExamples":[],
+	"Conclusion":"NO_CERTIFIED_TWO_STEP_BRIDGE_IN_ASR004_ONE_STEP_STOP_IS_SUFFICIENT_HERE"
+}
