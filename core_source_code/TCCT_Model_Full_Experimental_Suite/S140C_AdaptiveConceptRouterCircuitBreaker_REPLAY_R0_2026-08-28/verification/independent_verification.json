@@ -1,0 +1,14 @@
+{
+  "Stage": "S140-B DIAGNOSTIC R0 C02 HIGH_PREFIX verification",
+  "FrozenSourceHashesPass": true,
+  "ProtocolBoundaryPass": true,
+  "FreshMaterializationPass": true,
+  "NativeKernelConceptFormationPass": true,
+  "IndependentConceptInductionReplayPass": false,
+  "OracleBoundaryReplayPass": true,
+  "EvidenceIntegrityPass": false,
+  "CapabilityGatePass": false,
+  "CoreRewriteFreezeDedupModified": false,
+  "OpenEndedConceptLanguageClaimed": false,
+  "Conclusion": "KERNEL_NATIVE_RELATIONAL_CONCEPT_FORMATION_VERIFICATION_FAILURE"
+}
