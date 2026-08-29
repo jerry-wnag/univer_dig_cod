@@ -1,0 +1,23 @@
+{
+  "Stage": "S141-D sparse-support representation selection retrospective DEV R0",
+  "EvidenceStatus": "RETROSPECTIVE_DEVELOPMENT_ONLY",
+  "FrozenFailureInput": "S141D_FreshRepresentationRequired_CONFIRMATORY_R1_2026-08-29",
+  "PredecessorStrictFailurePreserved": true,
+  "CandidateProposal": "FULL_INDUCTION_SOURCE_ONLY",
+  "CandidateSourceRequirements": ["support_in_at_least_two_induction_tasks","zero_training_false_positives"],
+  "IndependentQualificationRequirements": ["depth_parity","every_world_utility_nonnegative","total_utility_strictly_positive"],
+  "JointLibraryAdmissionRequired": true,
+  "TargetEventsUnreadUntilLibraryFrozen": true,
+  "NoTargetUtilityUsedForSelection": true,
+  "IdentityOnlyDifficultyCertificateUnchanged": true,
+  "GrammarExpanded": false,
+  "CoreRewriteFreezeDedupModified": false,
+  "DevelopmentGate": {
+    "SelectsNonIdentityRepresentation": true,
+    "SelectedRepresentationWasPreviouslyBlockedOnlyByLOSORegeneration": true,
+    "AllFiveOldFreshDecisionsExact": true,
+    "AllFiveDepthsPreserved": true,
+    "NoOldFreshNegativeTransfer": true,
+    "AtLeastOneQualificationCandidateSafelyRejected": true
+  }
+}

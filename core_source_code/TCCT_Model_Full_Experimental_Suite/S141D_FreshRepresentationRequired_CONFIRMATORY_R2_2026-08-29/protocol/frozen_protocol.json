@@ -1,0 +1,53 @@
+{
+  "Stage": "S141-D Fresh Representation-Required Challenge CONFIRMATORY R2",
+  "EvidenceStatus": "FRESH_FIVE_WORLD_KERNEL_LEVEL_CONFIRMATORY",
+  "R0ConstructorFailurePreserved": true,
+  "R1NegativeTransferFailurePreserved": true,
+  "RetrospectiveDevelopmentPassRequiredAndSatisfied": true,
+  "ProtocolFrozenBeforeConstruction": true,
+  "FreshConstructorSeed": 1414409,
+  "CandidatePoolSize": 800,
+  "InductionWorldCount": 3,
+  "QualificationWorldCount": 5,
+  "FreshTestWorldCount": 5,
+  "MaximumIdentityCandidateCount": 8,
+  "MaximumPlanningDepth": 3,
+  "CandidateProposal": "FULL_INDUCTION_SOURCE_ONLY",
+  "IndependentQualificationRequirements": ["depth_parity","every_world_utility_nonnegative","total_utility_strictly_positive"],
+  "JointLibraryAdmissionRequired": true,
+  "TargetEventsUnreadUntilLibraryFrozen": true,
+  "ConstraintBasedDifficultyConstruction": true,
+  "PostHocLearnerOutcomeFiltering": false,
+  "WorldReplacementAfterLearnerRun": false,
+  "IdentityOnlyClassDefinition": "ALL_NONEMPTY_SUBSETS_OF_ALL_IDENTITY_ONLY_RULES_ADMISSIBLE_UNDER_THE_FROZEN_SUPPORT_AND_ZERO_FALSE_POSITIVE_CONSTRAINTS",
+  "RepresentationRequiredConstraint": {
+    "EveryAcceptedWorldIdentityOnlyBestUtilityAtMost": 0,
+    "EveryAcceptedWorldHasStrictlyPositiveNonIdentityUtility": true
+  },
+  "FrozenRepresentationFacts": ["CurrentModelCount","CurrentDecisionClassCount","WorstCaseRemainingModelCount","WorstCaseRemainingDecisionClassCount","OutcomeBranchCount"],
+  "FrozenExpressionPrimitives": ["Identity","Subtract"],
+  "NoRequiredDerivedPrimitiveOrFormula": true,
+  "GateRequirements": {
+    "DifficultyConstructorFindsTenRequiredWorldsWithinFrozenPool": true,
+    "IdentityOnlyInsufficiencyCertificateValid": true,
+    "PositiveNonIdentityExistenceCertificateValid": true,
+    "LearnerSelectsAtLeastOneNonIdentityRepresentation": true,
+    "AllFiveFreshHiddenDecisionsExact": true,
+    "AllFiveMinimumDepthsMatchBaseline": true,
+    "NoFreshWorldNegativeTransfer": true,
+    "AtLeastOneCandidateSafelyRejected": true,
+    "ExactFallbackPreserved": true,
+    "CoreRewriteFreezeDedupUnchanged": true
+  },
+  "LockedDependencySHA256": {
+    "kernel_concept_dp.py": "7d7fdc7d19c9f9aa38abf2a2ecfe3972416c6edd3515e45aa7b3f5b461406fbd",
+    "robust_representation_selection.py": "17dccec132020cfda3d4879b50d7c7859499c9e1b703f9f74f2bcb8104556421",
+    "shared_solvability_dag.py": "ca6c5f25e15ed4bd87908066d5e91bd475fcf830e8261dc49e0456e1910d117d",
+    "r3_c02_shared_dag_test.py": "22fbfc1b64b39a2664e13dada6f00eafc47e7e1ab7bd2fa0769d0086b888e3d1",
+    "construct_challenge.py": "5ffcb8baafddc4dc4231a6988f725cbb0a006735bad9e3486b1e919eb52fd64a",
+    "run_five_world_test.py": "80e9dcc9546e579349a3a3e739ac2357ab60296190666b1259d2d8adde9d9c16"
+  },
+  "NativeWolframPortRequiredForThisGate": false,
+  "PDFRequested": false,
+  "CoreRewriteFreezeDedupModified": false
+}

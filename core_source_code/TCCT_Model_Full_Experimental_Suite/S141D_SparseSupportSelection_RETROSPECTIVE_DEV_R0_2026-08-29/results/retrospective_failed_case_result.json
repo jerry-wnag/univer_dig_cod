@@ -1,0 +1,5420 @@
+{
+  "Stage": "S141-D sparse-support representation selection retrospective DEV R0",
+  "EvidenceStatus": "RETROSPECTIVE_DEVELOPMENT_ONLY_NOT_CAPABILITY_EVIDENCE",
+  "PredecessorS141DR1StrictFailurePreserved": true,
+  "SynthesisAudit": {
+    "RawExpressionCount": 25,
+    "BehavioralClassCount": 25,
+    "BehavioralClasses": [
+      {
+        "BehavioralSignature": [
+          -6,
+          -7,
+          -7,
+          -7,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -7,
+          -6,
+          -6,
+          -15,
+          -15,
+          -9,
+          -9,
+          -9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -6,
+          -6,
+          -6,
+          -6,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -6,
+          -15,
+          -15,
+          -9,
+          -9,
+          -9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -6,
+          -6,
+          -4,
+          -5,
+          -9,
+          -8,
+          -9,
+          -10,
+          -10,
+          -11,
+          -10,
+          -10,
+          -8,
+          -6,
+          -5,
+          -6,
+          -7,
+          -3,
+          -4,
+          -5,
+          -2,
+          -4,
+          -4,
+          -4,
+          -4,
+          -2,
+          -9,
+          -7,
+          -3,
+          -3,
+          -4
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -5,
+          -5,
+          -7,
+          -6,
+          -16,
+          -16,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -8,
+          -10,
+          -9,
+          -9,
+          -9,
+          -7,
+          -7,
+          -5,
+          -7,
+          -7,
+          -7,
+          -6,
+          -7,
+          -7,
+          -15,
+          -16,
+          -10,
+          -10,
+          -10
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -2,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          3,
+          1,
+          7,
+          8,
+          6,
+          5,
+          5,
+          4,
+          5,
+          5,
+          0,
+          4,
+          4,
+          3,
+          2,
+          4,
+          3,
+          0,
+          5,
+          3,
+          3,
+          2,
+          3,
+          5,
+          6,
+          9,
+          7,
+          7,
+          6
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          -1,
+          -3,
+          -2,
+          -6,
+          -7,
+          -6,
+          -5,
+          -5,
+          -4,
+          -5,
+          -5,
+          -1,
+          -3,
+          -4,
+          -3,
+          -2,
+          -3,
+          -2,
+          -1,
+          -4,
+          -2,
+          -2,
+          -3,
+          -2,
+          -4,
+          -6,
+          -8,
+          -6,
+          -6,
+          -5
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          -2,
+          -1,
+          -6,
+          -7,
+          -6,
+          -5,
+          -5,
+          -4,
+          -5,
+          -5,
+          -1,
+          -3,
+          -4,
+          -3,
+          -2,
+          -3,
+          -2,
+          -1,
+          -4,
+          -2,
+          -2,
+          -2,
+          -2,
+          -4,
+          -6,
+          -8,
+          -6,
+          -6,
+          -5
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          2,
+          1,
+          6,
+          7,
+          6,
+          5,
+          5,
+          4,
+          5,
+          5,
+          1,
+          3,
+          4,
+          3,
+          2,
+          3,
+          2,
+          1,
+          4,
+          2,
+          2,
+          2,
+          2,
+          4,
+          6,
+          8,
+          6,
+          6,
+          5
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          1,
+          3,
+          2,
+          6,
+          7,
+          6,
+          5,
+          5,
+          4,
+          5,
+          5,
+          1,
+          3,
+          4,
+          3,
+          2,
+          3,
+          2,
+          1,
+          4,
+          2,
+          2,
+          3,
+          2,
+          4,
+          6,
+          8,
+          6,
+          6,
+          5
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          -3,
+          -1,
+          -7,
+          -8,
+          -6,
+          -5,
+          -5,
+          -4,
+          -5,
+          -5,
+          0,
+          -4,
+          -4,
+          -3,
+          -2,
+          -4,
+          -3,
+          0,
+          -5,
+          -3,
+          -3,
+          -2,
+          -3,
+          -5,
+          -6,
+          -9,
+          -7,
+          -7,
+          -6
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          2,
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          3,
+          3,
+          5,
+          4,
+          9,
+          10,
+          9,
+          8,
+          8,
+          7,
+          8,
+          8,
+          4,
+          6,
+          7,
+          6,
+          5,
+          6,
+          5,
+          4,
+          7,
+          5,
+          5,
+          5,
+          5,
+          7,
+          9,
+          11,
+          9,
+          9,
+          8
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          4,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          2
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          5,
+          5,
+          7,
+          6,
+          16,
+          16,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          8,
+          10,
+          9,
+          9,
+          9,
+          7,
+          7,
+          5,
+          7,
+          7,
+          7,
+          6,
+          7,
+          7,
+          15,
+          16,
+          10,
+          10,
+          10
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          6,
+          6,
+          4,
+          5,
+          9,
+          8,
+          9,
+          10,
+          10,
+          11,
+          10,
+          10,
+          8,
+          6,
+          5,
+          6,
+          7,
+          3,
+          4,
+          5,
+          2,
+          4,
+          4,
+          4,
+          4,
+          2,
+          9,
+          7,
+          3,
+          3,
+          4
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          6,
+          6,
+          6,
+          6,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          15,
+          15,
+          9,
+          9,
+          9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          6,
+          7,
+          7,
+          7,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          9,
+          9,
+          9,
+          9,
+          9,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7,
+          6,
+          6,
+          15,
+          15,
+          9,
+          9,
+          9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          9,
+          9,
+          9,
+          9,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          12,
+          12,
+          12,
+          12,
+          12,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          18,
+          18,
+          12,
+          12,
+          12
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "CurrentModelCount"
+          ]
+        ]
+      }
+    ],
+    "AtomCountAfterBehavioralQuotient": 432,
+    "CounterexampleCountSeenDuringSingletonRefinement": 2135,
+    "RefinementAttemptCount": 26759,
+    "ExactTrainingCandidateCountBeforeRuleBehavioralQuotient": 1134,
+    "RuleBehavioralClassCount": 38,
+    "RuleBehavioralDuplicateCountRemoved": 1096
+  },
+  "CandidateAudits": [
+    {
+      "Concept": {
+        "ConceptID": "FS_e6cd45566dd803c2",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "GreaterEqual",
+            12
+          ],
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 4,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 83,
+            "BaselineWork": 66,
+            "Utility": -17
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -17,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_fc37319fe3e72496",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "GreaterEqual",
+            12
+          ],
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 4,
+      "TrainingSupportCount": 6,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_6b0fc9e6cb1e6156",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "GreaterEqual",
+            12
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            -4
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 79,
+            "BaselineWork": 66,
+            "Utility": -13
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -13,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_509117771e5f4bfe",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "GreaterEqual",
+            12
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            -5
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 10,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_eedb54e3b01462e5",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "LessEqual",
+            12
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 6,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_9ce8c42b9ffb80ed",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "CurrentModelCount"
+            ],
+            "LessEqual",
+            12
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 4,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 74,
+            "BaselineWork": 66,
+            "Utility": -8
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 28,
+            "BaselineWork": 17,
+            "Utility": -11
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 65,
+            "BaselineWork": 119,
+            "Utility": 54
+          }
+        ],
+        "TotalUtility": 35,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_d3c7be8142321247",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            3
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            5
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 2,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_b32c9217b790395e",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            3
+          ],
+          [
+            [
+              "Subtract",
+              "WorstCaseRemainingDecisionClassCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            -2
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 120,
+            "BaselineWork": 119,
+            "Utility": -1
+          }
+        ],
+        "TotalUtility": -1,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_3f69e8f7c2e61e74",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 16,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_4cbb9d6259a94ab5",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 6,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_af16f3371c34fc16",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            3
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 88,
+            "BaselineWork": 66,
+            "Utility": -22
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -16,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_c54519f5954c7185",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            3
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 101,
+            "BaselineWork": 66,
+            "Utility": -35
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 35,
+            "BaselineWork": 22,
+            "Utility": -13
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -48,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_d611c42888a92531",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 2,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_4fd2524a15b2d5f6",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            5
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 19,
+            "BaselineWork": 17,
+            "Utility": -2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 120,
+            "BaselineWork": 119,
+            "Utility": -1
+          }
+        ],
+        "TotalUtility": -3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ca73db8e648e1b20",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            4
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 10,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ad6f4cf0a3ccf62d",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            5
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 4,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ebf929c2bc07dc0b",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            6
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 68,
+            "BaselineWork": 66,
+            "Utility": -2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 28,
+            "BaselineWork": 17,
+            "Utility": -11
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -13,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_00d8fc8fd6eac6f6",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            10
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 50,
+            "BaselineWork": 36,
+            "Utility": -14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -14,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_54b872bd28dc8885",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            9
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 5,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_8b8767a6a51138bb",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 7,
+      "TrainingDistinctTaskSupportCount": 3,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_b7224101a3f4724e",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_18902cb96689d2a8",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_74655d417443209c",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 5,
+      "TrainingDistinctTaskSupportCount": 3,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 74,
+            "BaselineWork": 66,
+            "Utility": -8
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 28,
+            "BaselineWork": 17,
+            "Utility": -11
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 65,
+            "BaselineWork": 119,
+            "Utility": 54
+          }
+        ],
+        "TotalUtility": 35,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_c3e4c58b9dc16b29",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            8
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 11,
+      "TrainingDistinctTaskSupportCount": 3,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_9d8ceb87c5db0dda",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            8
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            7
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 7,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_17b4c898b608048f",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            8
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 6,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 35,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_a10a309f3d286070",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            8
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 6,
+      "TrainingSupportCount": 9,
+      "TrainingDistinctTaskSupportCount": 3,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 83,
+            "BaselineWork": 66,
+            "Utility": -17
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 24,
+            "BaselineWork": 22,
+            "Utility": -2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 31,
+            "BaselineWork": 17,
+            "Utility": -14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 36,
+            "Utility": -9
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 73,
+            "BaselineWork": 119,
+            "Utility": 46
+          }
+        ],
+        "TotalUtility": 4,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_384acf219f9134e8",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            10
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            -5
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 6,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 96,
+            "BaselineWork": 66,
+            "Utility": -30
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 50,
+            "BaselineWork": 36,
+            "Utility": -14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 130,
+            "BaselineWork": 119,
+            "Utility": -11
+          }
+        ],
+        "TotalUtility": -55,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_c8b9b33169f63416",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "GreaterEqual",
+            9
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            -5
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 9,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_8e9356c800272207",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "OutcomeBranchCount"
+            ],
+            "LessEqual",
+            9
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 5,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 3,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_910b76297b6ab74a",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 101,
+            "BaselineWork": 66,
+            "Utility": -35
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -19,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_169ca396d367aa8f",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            -3
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 88,
+            "BaselineWork": 66,
+            "Utility": -22
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 19,
+            "BaselineWork": 17,
+            "Utility": -2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 50,
+            "BaselineWork": 36,
+            "Utility": -14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -38,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_d2235f4d592d677e",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "WorstCaseRemainingDecisionClassCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            -2
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 4,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 10,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_63ac3ce36491c15f",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            6
+          ]
+        ]
+      },
+      "ASTComplexity": 4,
+      "TrainingSupportCount": 4,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 101,
+            "BaselineWork": 66,
+            "Utility": -35
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -32,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ddf2ce6465708971",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            8
+          ]
+        ]
+      },
+      "ASTComplexity": 4,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_40bdf10ee19a7394",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            6
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            1
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 35,
+            "BaselineWork": 22,
+            "Utility": -13
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -13,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_e8dc30dadb31e229",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            5
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 2,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ac92f6cdd9ec2656",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            6
+          ],
+          [
+            [
+              "Subtract",
+              "OutcomeBranchCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "Equal",
+            0
+          ]
+        ]
+      },
+      "ASTComplexity": 8,
+      "TrainingSupportCount": 3,
+      "TrainingDistinctTaskSupportCount": 2,
+      "TrainingFalsePositiveCount": 0,
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 90,
+            "BaselineWork": 66,
+            "Utility": -24
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 28,
+            "BaselineWork": 17,
+            "Utility": -11
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": -35,
+        "QualificationPass": false
+      }
+    }
+  ],
+  "JointLibraryAdmissionAudits": [
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_d3c7be8142321247",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 2,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_3f69e8f7c2e61e74",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 16,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_4cbb9d6259a94ab5",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 6,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_d611c42888a92531",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 2,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_ca73db8e648e1b20",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 10,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_17b4c898b608048f",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 35,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_d2235f4d592d677e",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 10,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_d3c7be8142321247",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 37,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_3f69e8f7c2e61e74",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 123,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_4cbb9d6259a94ab5",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 25,
+            "BaselineWork": 22,
+            "Utility": -3
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 110,
+        "QualificationPass": false
+      },
+      "AdmittedForRanking": false
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_d611c42888a92531",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 20,
+            "BaselineWork": 22,
+            "Utility": 2
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 37,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_ca73db8e648e1b20",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 45,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f"
+      ],
+      "ProposedConceptID": "FS_d2235f4d592d677e",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 17,
+            "BaselineWork": 17,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 58,
+            "BaselineWork": 119,
+            "Utility": 61
+          }
+        ],
+        "TotalUtility": 71,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f",
+        "FS_3f69e8f7c2e61e74"
+      ],
+      "ProposedConceptID": "FS_d3c7be8142321247",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 123,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f",
+        "FS_3f69e8f7c2e61e74"
+      ],
+      "ProposedConceptID": "FS_4cbb9d6259a94ab5",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 123,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f",
+        "FS_3f69e8f7c2e61e74"
+      ],
+      "ProposedConceptID": "FS_d611c42888a92531",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 123,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f",
+        "FS_3f69e8f7c2e61e74"
+      ],
+      "ProposedConceptID": "FS_ca73db8e648e1b20",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 45,
+            "BaselineWork": 66,
+            "Utility": 21
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 36,
+            "Utility": 14
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 47,
+            "BaselineWork": 119,
+            "Utility": 72
+          }
+        ],
+        "TotalUtility": 123,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_17b4c898b608048f",
+        "FS_3f69e8f7c2e61e74"
+      ],
+      "ProposedConceptID": "FS_d2235f4d592d677e",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_007",
+            "DepthParity": true,
+            "GuidedWork": 66,
+            "BaselineWork": 66,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_008",
+            "DepthParity": true,
+            "GuidedWork": 12,
+            "BaselineWork": 22,
+            "Utility": 10
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_011",
+            "DepthParity": true,
+            "GuidedWork": 11,
+            "BaselineWork": 17,
+            "Utility": 6
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_012",
+            "DepthParity": true,
+            "GuidedWork": 36,
+            "BaselineWork": 36,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_013",
+            "DepthParity": true,
+            "GuidedWork": 119,
+            "BaselineWork": 119,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 16,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    }
+  ],
+  "SelectedLibrary": {
+    "LibraryType": "FULL_SOURCE_PROPOSAL_INDEPENDENT_QUALIFICATION_RETROSPECTIVE_DEV",
+    "ConceptCount": 2,
+    "Concepts": [
+      {
+        "ConceptID": "FS_17b4c898b608048f",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            8
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ]
+      },
+      {
+        "ConceptID": "FS_3f69e8f7c2e61e74",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingDecisionClassCount"
+            ],
+            "GreaterEqual",
+            7
+          ]
+        ]
+      }
+    ],
+    "RouterActivationCalibration": {
+      "Rule": "PREFERRED_FRACTION_NOT_ABOVE_MAXIMUM_SOURCE_EVENT_FRACTION",
+      "MaximumSourcePreferredFractionNumerator": 5,
+      "MaximumSourcePreferredFractionDenominator": 10,
+      "SourceEventFractions": [
+        {
+          "TaskID": "D141_004",
+          "Numerator": 1,
+          "Denominator": 13
+        },
+        {
+          "TaskID": "D141_005",
+          "Numerator": 5,
+          "Denominator": 10
+        },
+        {
+          "TaskID": "D141_006",
+          "Numerator": 1,
+          "Denominator": 8
+        }
+      ]
+    },
+    "ExactDynamicProgrammingFallbackRequired": true
+  },
+  "SelectedQualificationUtility": 123,
+  "RescuedPreviouslyLOSOBlockedConcepts": [
+    {
+      "ConceptID": "FS_17b4c898b608048f",
+      "Conditions": [
+        [
+          [
+            "Identity",
+            "WorstCaseRemainingModelCount"
+          ],
+          "LessEqual",
+          8
+        ],
+        [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingModelCount"
+          ],
+          "GreaterEqual",
+          8
+        ]
+      ]
+    },
+    {
+      "ConceptID": "FS_3f69e8f7c2e61e74",
+      "Conditions": [
+        [
+          [
+            "Identity",
+            "OutcomeBranchCount"
+          ],
+          "Equal",
+          4
+        ],
+        [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ],
+          "GreaterEqual",
+          7
+        ]
+      ]
+    }
+  ],
+  "OldFreshTargetRows": [
+    {
+      "TaskID": "D141_014",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 38,
+      "BaselineWork": 94,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_015",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 17,
+      "BaselineWork": 30,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_017",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 19,
+      "BaselineWork": 31,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_018",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 20,
+      "BaselineWork": 72,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_020",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 16,
+      "BaselineWork": 26,
+      "NoNegativeTransfer": true
+    }
+  ],
+  "Checks": {
+    "RetrospectiveStatusExplicit": true,
+    "SelectsNonIdentityRepresentation": true,
+    "SelectedRepresentationWasPreviouslyBlockedOnlyByLOSORegeneration": true,
+    "AllFiveOldFreshDecisionsExact": true,
+    "AllFiveDepthsPreserved": true,
+    "NoOldFreshNegativeTransfer": true,
+    "AtLeastOneQualificationCandidateSafelyRejected": true,
+    "NoGrammarExpansion": true,
+    "CoreUnchanged": true
+  },
+  "DevelopmentPass": true,
+  "CoreRewriteFreezeDedupModified": false,
+  "Conclusion": "SPARSE_SUPPORT_SELECTION_RETROSPECTIVE_PASS"
+}

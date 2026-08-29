@@ -1,0 +1,121 @@
+{
+  "ProtocolSHA256": "ef43579c98c5935df1d2e92591f7c828b17c1d964c29fbdbe3e15231e7c8a938",
+  "CandidatePoolMaterializedCount": 800,
+  "InductionTaskIDs": [
+    "D141_004",
+    "D141_005",
+    "D141_006"
+  ],
+  "QualificationTaskIDs": [
+    "D141_014",
+    "D141_015",
+    "D141_053",
+    "D141_078",
+    "D141_116"
+  ],
+  "FreshTestTaskIDs": [
+    "D141_121",
+    "D141_127",
+    "D141_175",
+    "D141_198",
+    "D141_199"
+  ],
+  "IdentityCandidateCount": 1,
+  "IdentityLibraryCountExhaustivelyAudited": 1,
+  "NonIdentityCandidateCount": 2,
+  "AcceptedWorldAudits": [
+    {
+      "TaskID": "D141_014",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 58,
+      "PlanningDepth": 3
+    },
+    {
+      "TaskID": "D141_015",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 173,
+      "PlanningDepth": 3
+    },
+    {
+      "TaskID": "D141_053",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 41,
+      "PlanningDepth": 3
+    },
+    {
+      "TaskID": "D141_078",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 62,
+      "PlanningDepth": 3
+    },
+    {
+      "TaskID": "D141_116",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 9,
+      "PlanningDepth": 2
+    },
+    {
+      "TaskID": "D141_121",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 54,
+      "PlanningDepth": 2
+    },
+    {
+      "TaskID": "D141_127",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 10,
+      "PlanningDepth": 2
+    },
+    {
+      "TaskID": "D141_175",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": -13,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 20,
+      "PlanningDepth": 2
+    },
+    {
+      "TaskID": "D141_198",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 14,
+      "PlanningDepth": 2
+    },
+    {
+      "TaskID": "D141_199",
+      "IdentityCandidateCount": 1,
+      "IdentityLibraryCountExhaustivelyAudited": 1,
+      "IdentityBestUtility": 0,
+      "NonIdentityCandidateCount": 2,
+      "NonIdentityBestUtility": 246,
+      "PlanningDepth": 3
+    }
+  ],
+  "ConstraintBasedDifficultyConstruction": true,
+  "PostHocLearnerOutcomeFiltering": false,
+  "WorldReplacementAfterLearnerRun": false
+}

@@ -1,0 +1,41 @@
+{
+  "Stage": "S141-D Fresh Representation-Required Challenge CONFIRMATORY R2",
+  "EvidenceStatus": "FRESH_FIVE_WORLD_KERNEL_LEVEL_CONFIRMATORY_PASS",
+  "ProtocolSHA256": "ef43579c98c5935df1d2e92591f7c828b17c1d964c29fbdbe3e15231e7c8a938",
+  "FreshConstructorSeed": 1414409,
+  "StrictPass": true,
+  "IdentityOnlyDifficulty": {
+    "IdentityLibraryCountExhaustivelyAudited": 1,
+    "AllTenAcceptedWorldIdentityBestUtilitiesNonPositive": true,
+    "AllTenAcceptedWorldsHavePositiveNonIdentityUtility": true
+  },
+  "SelectedRepresentation": {
+    "ConceptID": "FS_18902cb96689d2a8",
+    "Conditions": [
+      [["Identity", "WorstCaseRemainingModelCount"], "LessEqual", 7],
+      [["Subtract", "CurrentModelCount", "WorstCaseRemainingModelCount"], "GreaterEqual", 8]
+    ],
+    "FormulaPredeclaredByBenchmark": false,
+    "QualificationUtilities": [58, 173, 41, 0, 9],
+    "QualificationTotalUtility": 281
+  },
+  "FreshFiveWorldResult": {
+    "ExactHiddenDecisions": "5/5",
+    "MinimumDepthParity": "5/5",
+    "NegativeTransferCount": 0,
+    "GuidedWork": 290,
+    "BaselineWork": 614
+  },
+  "Controls": {
+    "AtLeastOneCandidateSafelyRejected": true,
+    "ExactFallbackPreserved": true,
+    "PostHocLearnerOutcomeFiltering": false,
+    "WorldReplacementAfterLearnerRun": false,
+    "CoreRewriteFreezeDedupModified": false
+  },
+  "PredecessorFailuresPreserved": {
+    "R0ConstructorInsufficient": true,
+    "R1FreshNegativeTransfer": true
+  },
+  "Conclusion": "FRESH_AUTONOMOUS_NONIDENTITY_REPRESENTATION_FORMATION_AND_SELECTION_ESTABLISHED_AT_KERNEL_LEVEL"
+}

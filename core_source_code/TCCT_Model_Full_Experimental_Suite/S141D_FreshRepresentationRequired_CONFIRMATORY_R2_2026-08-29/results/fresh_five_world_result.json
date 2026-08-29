@@ -1,0 +1,1924 @@
+{
+  "Stage": "S141-D Fresh Representation-Required Challenge CONFIRMATORY R2",
+  "EvidenceStatus": "FRESH_FIVE_WORLD_KERNEL_LEVEL_CONFIRMATORY",
+  "ProtocolSHA256": "ef43579c98c5935df1d2e92591f7c828b17c1d964c29fbdbe3e15231e7c8a938",
+  "FreshConstructorSeed": 1414409,
+  "DifficultyCertificate": {
+    "ProtocolSHA256": "ef43579c98c5935df1d2e92591f7c828b17c1d964c29fbdbe3e15231e7c8a938",
+    "CandidatePoolMaterializedCount": 800,
+    "InductionTaskIDs": [
+      "D141_004",
+      "D141_005",
+      "D141_006"
+    ],
+    "QualificationTaskIDs": [
+      "D141_014",
+      "D141_015",
+      "D141_053",
+      "D141_078",
+      "D141_116"
+    ],
+    "FreshTestTaskIDs": [
+      "D141_121",
+      "D141_127",
+      "D141_175",
+      "D141_198",
+      "D141_199"
+    ],
+    "IdentityCandidateCount": 1,
+    "IdentityLibraryCountExhaustivelyAudited": 1,
+    "NonIdentityCandidateCount": 2,
+    "AcceptedWorldAudits": [
+      {
+        "TaskID": "D141_014",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 58,
+        "PlanningDepth": 3
+      },
+      {
+        "TaskID": "D141_015",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 173,
+        "PlanningDepth": 3
+      },
+      {
+        "TaskID": "D141_053",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 41,
+        "PlanningDepth": 3
+      },
+      {
+        "TaskID": "D141_078",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 62,
+        "PlanningDepth": 3
+      },
+      {
+        "TaskID": "D141_116",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 9,
+        "PlanningDepth": 2
+      },
+      {
+        "TaskID": "D141_121",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 54,
+        "PlanningDepth": 2
+      },
+      {
+        "TaskID": "D141_127",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 10,
+        "PlanningDepth": 2
+      },
+      {
+        "TaskID": "D141_175",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": -13,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 20,
+        "PlanningDepth": 2
+      },
+      {
+        "TaskID": "D141_198",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 14,
+        "PlanningDepth": 2
+      },
+      {
+        "TaskID": "D141_199",
+        "IdentityCandidateCount": 1,
+        "IdentityLibraryCountExhaustivelyAudited": 1,
+        "IdentityBestUtility": 0,
+        "NonIdentityCandidateCount": 2,
+        "NonIdentityBestUtility": 246,
+        "PlanningDepth": 3
+      }
+    ],
+    "ConstraintBasedDifficultyConstruction": true,
+    "PostHocLearnerOutcomeFiltering": false,
+    "WorldReplacementAfterLearnerRun": false
+  },
+  "SynthesisAudit": {
+    "RawExpressionCount": 25,
+    "BehavioralClassCount": 25,
+    "BehavioralClasses": [
+      {
+        "BehavioralSignature": [
+          -9,
+          -9,
+          -9,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -9,
+          -10,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -9,
+          -9,
+          -9,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -8,
+          -8,
+          -8,
+          -14,
+          -15,
+          -15,
+          -15,
+          -15,
+          -16,
+          -10,
+          -9,
+          -9,
+          -9,
+          -10,
+          -10,
+          -10,
+          -10,
+          -10,
+          -10,
+          -9,
+          -16,
+          -16,
+          -15,
+          -16,
+          -14,
+          -15,
+          -16,
+          -16,
+          -16,
+          -16,
+          -16
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -8,
+          -8,
+          -8,
+          -12,
+          -9,
+          -11,
+          -10,
+          -9,
+          -8,
+          -4,
+          -6,
+          -7,
+          -6,
+          -4,
+          -4,
+          -6,
+          -6,
+          -5,
+          -3,
+          -4,
+          -9,
+          -7,
+          -7,
+          -4,
+          -10,
+          -6,
+          -4,
+          -7,
+          -9,
+          -9,
+          -6
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "CurrentModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          -1,
+          -3,
+          -6,
+          -4,
+          -5,
+          -6,
+          -7,
+          -5,
+          -4,
+          -2,
+          -3,
+          -5,
+          -5,
+          -3,
+          -3,
+          -4,
+          -6,
+          -5,
+          -6,
+          -8,
+          -8,
+          -11,
+          -5,
+          -9,
+          -11,
+          -8,
+          -6,
+          -6,
+          -9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          -1,
+          -3,
+          -6,
+          -4,
+          -5,
+          -6,
+          -7,
+          -5,
+          -3,
+          -2,
+          -3,
+          -5,
+          -5,
+          -3,
+          -3,
+          -4,
+          -6,
+          -5,
+          -6,
+          -8,
+          -8,
+          -11,
+          -5,
+          -9,
+          -11,
+          -8,
+          -6,
+          -6,
+          -9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          0,
+          -2,
+          -6,
+          -4,
+          -5,
+          -6,
+          -8,
+          -6,
+          -3,
+          -2,
+          -3,
+          -6,
+          -6,
+          -4,
+          -4,
+          -5,
+          -7,
+          -5,
+          -7,
+          -9,
+          -8,
+          -12,
+          -4,
+          -9,
+          -12,
+          -9,
+          -7,
+          -7,
+          -10
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingDecisionClassCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingDecisionClassCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentDecisionClassCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentDecisionClassCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          0,
+          0,
+          0,
+          2,
+          6,
+          4,
+          5,
+          6,
+          8,
+          6,
+          3,
+          2,
+          3,
+          6,
+          6,
+          4,
+          4,
+          5,
+          7,
+          5,
+          7,
+          9,
+          8,
+          12,
+          4,
+          9,
+          12,
+          9,
+          7,
+          7,
+          10
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "OutcomeBranchCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "OutcomeBranchCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          1,
+          3,
+          6,
+          4,
+          5,
+          6,
+          7,
+          5,
+          3,
+          2,
+          3,
+          5,
+          5,
+          3,
+          3,
+          4,
+          6,
+          5,
+          6,
+          8,
+          8,
+          11,
+          5,
+          9,
+          11,
+          8,
+          6,
+          6,
+          9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          1,
+          1,
+          1,
+          3,
+          6,
+          4,
+          5,
+          6,
+          7,
+          5,
+          4,
+          2,
+          3,
+          5,
+          5,
+          3,
+          3,
+          4,
+          6,
+          5,
+          6,
+          8,
+          8,
+          11,
+          5,
+          9,
+          11,
+          8,
+          6,
+          6,
+          9
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "WorstCaseRemainingModelCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "WorstCaseRemainingModelCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          2,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          4,
+          4,
+          4,
+          6,
+          9,
+          7,
+          8,
+          9,
+          10,
+          8,
+          6,
+          5,
+          6,
+          8,
+          8,
+          6,
+          6,
+          7,
+          9,
+          8,
+          9,
+          11,
+          11,
+          14,
+          8,
+          12,
+          14,
+          11,
+          9,
+          9,
+          12
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          8,
+          8,
+          8,
+          12,
+          9,
+          11,
+          10,
+          9,
+          8,
+          4,
+          6,
+          7,
+          6,
+          4,
+          4,
+          6,
+          6,
+          5,
+          3,
+          4,
+          9,
+          7,
+          7,
+          4,
+          10,
+          6,
+          4,
+          7,
+          9,
+          9,
+          6
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "WorstCaseRemainingModelCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingModelCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          8,
+          8,
+          8,
+          14,
+          15,
+          15,
+          15,
+          15,
+          16,
+          10,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          9,
+          16,
+          16,
+          15,
+          16,
+          14,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "OutcomeBranchCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "OutcomeBranchCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          9,
+          9,
+          9,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "CurrentDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "CurrentDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          9,
+          9,
+          9,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          9,
+          10,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Subtract",
+          "CurrentModelCount",
+          "WorstCaseRemainingDecisionClassCount"
+        ],
+        "Members": [
+          [
+            "Subtract",
+            "CurrentModelCount",
+            "WorstCaseRemainingDecisionClassCount"
+          ]
+        ]
+      },
+      {
+        "BehavioralSignature": [
+          12,
+          12,
+          12,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ],
+        "MemberCount": 1,
+        "Representative": [
+          "Identity",
+          "CurrentModelCount"
+        ],
+        "Members": [
+          [
+            "Identity",
+            "CurrentModelCount"
+          ]
+        ]
+      }
+    ],
+    "AtomCountAfterBehavioralQuotient": 414,
+    "CounterexampleCountSeenDuringSingletonRefinement": 3001,
+    "RefinementAttemptCount": 16687,
+    "ExactTrainingCandidateCountBeforeRuleBehavioralQuotient": 284,
+    "RuleBehavioralClassCount": 3,
+    "RuleBehavioralDuplicateCountRemoved": 281
+  },
+  "CandidateAudits": [
+    {
+      "Concept": {
+        "ConceptID": "FS_65765cc520dd8b7e",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            6
+          ]
+        ]
+      },
+      "Candidate": {
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "OutcomeBranchCount"
+            ],
+            "Equal",
+            4
+          ],
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            6
+          ]
+        ],
+        "TrainingPositiveMask": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "TrainingSupportCount": 4,
+        "TrainingDistinctTaskSupportCount": 2,
+        "TrainingFalsePositiveCount": 0,
+        "RefinedFromCounterexample": true,
+        "ASTComplexity": 4
+      },
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 318,
+            "BaselineWork": 318,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 339,
+            "BaselineWork": 339,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 150,
+            "BaselineWork": 150,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 222,
+            "BaselineWork": 222,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 0,
+        "QualificationPass": false
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_18902cb96689d2a8",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ]
+      },
+      "Candidate": {
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ],
+        "TrainingPositiveMask": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "TrainingSupportCount": 5,
+        "TrainingDistinctTaskSupportCount": 2,
+        "TrainingFalsePositiveCount": 0,
+        "RefinedFromCounterexample": true,
+        "ASTComplexity": 6
+      },
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 260,
+            "BaselineWork": 318,
+            "Utility": 58
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 166,
+            "BaselineWork": 339,
+            "Utility": 173
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 109,
+            "BaselineWork": 150,
+            "Utility": 41
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 222,
+            "BaselineWork": 222,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 13,
+            "BaselineWork": 22,
+            "Utility": 9
+          }
+        ],
+        "TotalUtility": 281,
+        "QualificationPass": true
+      }
+    },
+    {
+      "Concept": {
+        "ConceptID": "FS_ddf2ce6465708971",
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            8
+          ]
+        ]
+      },
+      "Candidate": {
+        "Conditions": [
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "Equal",
+            8
+          ]
+        ],
+        "TrainingPositiveMask": [
+          0,
+          1,
+          2,
+          8
+        ],
+        "TrainingSupportCount": 4,
+        "TrainingDistinctTaskSupportCount": 2,
+        "TrainingFalsePositiveCount": 0,
+        "RefinedFromCounterexample": false,
+        "ASTComplexity": 4
+      },
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 318,
+            "BaselineWork": 318,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 339,
+            "BaselineWork": 339,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 109,
+            "BaselineWork": 150,
+            "Utility": 41
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 160,
+            "BaselineWork": 222,
+            "Utility": 62
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 103,
+        "QualificationPass": true
+      }
+    }
+  ],
+  "JointLibraryAdmissionAudits": [
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_18902cb96689d2a8",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 260,
+            "BaselineWork": 318,
+            "Utility": 58
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 166,
+            "BaselineWork": 339,
+            "Utility": 173
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 109,
+            "BaselineWork": 150,
+            "Utility": 41
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 222,
+            "BaselineWork": 222,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 13,
+            "BaselineWork": 22,
+            "Utility": 9
+          }
+        ],
+        "TotalUtility": 281,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [],
+      "ProposedConceptID": "FS_ddf2ce6465708971",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 318,
+            "BaselineWork": 318,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 339,
+            "BaselineWork": 339,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 109,
+            "BaselineWork": 150,
+            "Utility": 41
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 160,
+            "BaselineWork": 222,
+            "Utility": 62
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 22,
+            "BaselineWork": 22,
+            "Utility": 0
+          }
+        ],
+        "TotalUtility": 103,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": true
+    },
+    {
+      "ExistingConceptIDs": [
+        "FS_18902cb96689d2a8"
+      ],
+      "ProposedConceptID": "FS_ddf2ce6465708971",
+      "Qualification": {
+        "UtilityRows": [
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_014",
+            "DepthParity": true,
+            "GuidedWork": 318,
+            "BaselineWork": 318,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_015",
+            "DepthParity": true,
+            "GuidedWork": 339,
+            "BaselineWork": 339,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_053",
+            "DepthParity": true,
+            "GuidedWork": 109,
+            "BaselineWork": 150,
+            "Utility": 41
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_078",
+            "DepthParity": true,
+            "GuidedWork": 222,
+            "BaselineWork": 222,
+            "Utility": 0
+          },
+          {
+            "SourceCohortID": null,
+            "QualificationRole": null,
+            "TaskID": "D141_116",
+            "DepthParity": true,
+            "GuidedWork": 13,
+            "BaselineWork": 22,
+            "Utility": 9
+          }
+        ],
+        "TotalUtility": 50,
+        "QualificationPass": true
+      },
+      "AdmittedForRanking": false
+    }
+  ],
+  "SelectedLibrary": {
+    "LibraryType": "FULL_SOURCE_PROPOSAL_INDEPENDENT_QUALIFICATION_FROZEN_R2",
+    "ConceptCount": 1,
+    "Concepts": [
+      {
+        "ConceptID": "FS_18902cb96689d2a8",
+        "Conditions": [
+          [
+            [
+              "Identity",
+              "WorstCaseRemainingModelCount"
+            ],
+            "LessEqual",
+            7
+          ],
+          [
+            [
+              "Subtract",
+              "CurrentModelCount",
+              "WorstCaseRemainingModelCount"
+            ],
+            "GreaterEqual",
+            8
+          ]
+        ]
+      }
+    ],
+    "RouterActivationCalibration": {
+      "Rule": "PREFERRED_FRACTION_NOT_ABOVE_MAXIMUM_SOURCE_EVENT_FRACTION",
+      "MaximumSourcePreferredFractionNumerator": 2,
+      "MaximumSourcePreferredFractionDenominator": 9,
+      "SourceEventFractions": [
+        {
+          "TaskID": "D141_004",
+          "Numerator": 3,
+          "Denominator": 14
+        },
+        {
+          "TaskID": "D141_005",
+          "Numerator": 2,
+          "Denominator": 9
+        },
+        {
+          "TaskID": "D141_006",
+          "Numerator": 0,
+          "Denominator": 8
+        }
+      ]
+    },
+    "ExactDynamicProgrammingFallbackRequired": true
+  },
+  "SelectedQualificationUtility": 281,
+  "FreshTargetRows": [
+    {
+      "TaskID": "D141_121",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 28,
+      "BaselineWork": 82,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_127",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 29,
+      "BaselineWork": 39,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_175",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 45,
+      "BaselineWork": 45,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_198",
+      "Exact": true,
+      "GuidedMinimumDepth": 2,
+      "BaselineMinimumDepth": 2,
+      "GuidedWork": 23,
+      "BaselineWork": 37,
+      "NoNegativeTransfer": true
+    },
+    {
+      "TaskID": "D141_199",
+      "Exact": true,
+      "GuidedMinimumDepth": 3,
+      "BaselineMinimumDepth": 3,
+      "GuidedWork": 165,
+      "BaselineWork": 411,
+      "NoNegativeTransfer": true
+    }
+  ],
+  "Checks": {
+    "DifficultyConstructorFindsTenRequiredWorldsWithinFrozenPool": true,
+    "IdentityOnlyInsufficiencyCertificateValid": true,
+    "PositiveNonIdentityExistenceCertificateValid": true,
+    "LearnerSelectsAtLeastOneNonIdentityRepresentation": true,
+    "AllFiveFreshHiddenDecisionsExact": true,
+    "AllFiveMinimumDepthsMatchBaseline": true,
+    "NoFreshWorldNegativeTransfer": true,
+    "AtLeastOneCandidateSafelyRejected": true,
+    "ExactFallbackPreserved": true,
+    "CoreRewriteFreezeDedupUnchanged": true
+  },
+  "StrictPass": true,
+  "PostHocLearnerOutcomeFiltering": false,
+  "WorldReplacementAfterLearnerRun": false,
+  "NativeWolframPortUsed": false,
+  "CoreRewriteFreezeDedupModified": false,
+  "Conclusion": "FRESH_SPARSE_SUPPORT_REPRESENTATION_SELECTION_PASS"
+}
