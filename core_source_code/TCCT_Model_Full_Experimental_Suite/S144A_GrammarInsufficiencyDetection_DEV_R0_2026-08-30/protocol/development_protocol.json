@@ -1,0 +1,44 @@
+{
+  "Stage": "S144-A Grammar Insufficiency Detection DEV R0",
+  "EvidenceStatus": "BOUNDED_GRAMMAR_INSUFFICIENCY_DETECTION_DEVELOPMENT_ONLY",
+  "CaseCount": 5,
+  "ExpectedStatuses": [
+    "EXACT_IN_LANGUAGE",
+    "AMBIGUOUS_IN_LANGUAGE",
+    "LANGUAGE_INSUFFICIENT",
+    "LANGUAGE_INSUFFICIENT",
+    "INCONSISTENT_OR_NOISY_OBSERVATIONS"
+  ],
+  "FrozenGrammarCandidateCount": 11250,
+  "FrozenGrammar": {
+    "Variables": ["CurrentPartition", "OtherPartition", "DecisionPartition"],
+    "TermConstructors": ["PartitionMeet"],
+    "Relations": ["Equal", "PartitionRefines", "StrictPartitionRefines"],
+    "BooleanConstructors": ["Not", "And"],
+    "MaximumConjunctCount": 2,
+    "DisjunctionEnabled": false,
+    "NewPrimitiveFormationEnabled": false
+  },
+  "FrozenGrammarRunnerSHA256": "7ab5ba24246c8a451c5765c9d91ae93f8528c88b01a044c806acb5c49b63a39b",
+  "DiagnosticRules": {
+    "ContradictoryRepeatedInput": "INCONSISTENT_OR_NOISY_OBSERVATIONS",
+    "DeterministicAndNoExactGrammarCandidate": "LANGUAGE_INSUFFICIENT",
+    "ExactCandidatesInOneSemanticClass": "EXACT_IN_LANGUAGE",
+    "ExactCandidatesInMultipleSemanticClasses": "AMBIGUOUS_IN_LANGUAGE",
+    "SearchTimeoutCannotImplyInsufficiency": true,
+    "SemanticEquivalenceDomain": "all 3375 ordered triples of partitions of a four-element set"
+  },
+  "RequiredChecks": {
+    "FiveOfFiveStatusesCorrect": true,
+    "EveryInsufficiencyCaseHasCompleteCandidateEliminationCertificate": true,
+    "InconsistentCaseDetectedBeforeGrammarSelection": true,
+    "NoApproximateOrCanonicalFreeze": true,
+    "DeterministicRandomBehaviorDoesNotFreeze": true,
+    "NearLawDoesNotFreeze": true,
+    "PythonWolframParity": true
+  },
+  "CoreRewriteFreezeDedupModified": false,
+  "FreshCapabilityClaimAllowed": false,
+  "LanguageExtensionClaimAllowed": false,
+  "PDFRequested": false
+}

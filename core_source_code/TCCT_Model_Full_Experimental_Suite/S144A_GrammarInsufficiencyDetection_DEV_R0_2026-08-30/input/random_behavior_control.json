@@ -1,0 +1,3160 @@
+{
+  "Observations": [
+    {
+      "ApplicationID": "662f4c49bb910ced348d51ef400ce18bfe4cfd5eedf978744fa743b544c52601",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "a596fba1afaa4830f56aa0a5dbf92da27ed4beb36c8d41b1855cb02ba61621e3",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "7bffa3159f7089a7659986019faa2c20e1c13a2fc460f2e87d0bf48c7b2cd02d",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "371305c8069c19e7daf6a618c4950b0e174ba6e911793c1e734fb2f82fae8a60",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "b06b762d7070160a0fdfdaf62a7e16f435c2324c73d63eddb38cc26be90a10d2",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "9efda9543e4009a068669d8feb6558362d6ec8927c11e7e099318122e33e1d76",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "6fb5cededba9f5406f110e46f72068c1e6c34289cc6287480d65d011409605cc",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "dea50ca2b470ed7ac21da1be372206af00786a00a100d1a99f7029a095c97509",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "02d8f97afcc1c3bcc9dc7e6d298e9cd4b59d6b32e761b28d41cfd2ae5a3ca751",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "8dce9744d6524803d067998e4102569c8df80e449de9ad4a9b1cc1d9a5b3396b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "e18fbd0d45c226b865ace21c3b0fd37b4a9f94d8df1f599eba992d13a748a933",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "0411d93ff16d9ceae86d6d3efce99166f0bf4b8bbeaa7a31cc61f21d018121c2",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "76151ec090c789c5e2536e2bb36577adb47528b22416aae8cc2cfab32a6b232b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "2f788b2ffcde96fc5a8e8f60e1eaa969849c7b9cf1c8ed45d344665125e74db1",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "1760614562349571a1b5e1ef10c7a7dc1695de9b84de55284ea608809f9b5e61",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "f0bfec6e2bd28e67a4817c5b0ad415efbf9e81e084d240f3c56ac362924454e9",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "c121d0636eff81d1380a2707fc3cef0eafdd65a9f0eaa4195b65b08bdffa3e89",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "ce77bc66c08af3b7c56a9b3bb891ddc982d44368b7eb2bcad6253dc228acda4f",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "51eddacf605ef417907b784d93a2e52dd6b98fd7c75acc35c0a6a93c8e4e979e",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "76c189345803543b0c35b5a0467704b7a41919dd3a6979103daa21ba393786d3",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "38604df9d9977a0f940b31b73880eade53b7fd28c323d136e1feb15148fb7751",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "524ef32531d188c0eb056fbadafd7b1498792c592c976360bd19ab621856df5a",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "d451b2ea98d53de3fbe31a2eb44afed75e015653388c119a8d321f5de720e390",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "346428caab17923ce12b2bd64d03e58d40a648957ba2db92bf67c8edc5257a1b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "61f87afd3bf521c9b6ff81b677853860be80acdd9c06961188c5ff333953966e",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "32fc75397d026913ad1128aa007ded9109261667c18a07fa5acf461ccdc8aecf",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "7baf7c313c83692bc3a0a4a60a4fddcffe7682715e413e49de621ce4cc9939ee",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "c576e3ea332e5d605fcc0ce5f723356a763c733284c4427985d0bee1f6e2175d",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "f23b04527cf4f8ea1328af4bd16552afc276484329074988fe5f989f407bcb63",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "d7005719bda5d22c417ee2911b8b2a6e93847d7f17a371de372267ea6ae4d6c7",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "6f5f8d0303a18b632a37518fba94026729f826868338d75d35cfcf9147744362",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "21d6b08bf79b8901ff24334a522f634bfd135f42bcd1f79985cd9753503c371f",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "6109035ea1e114bab4418992c91dd2b941157c639441973babf5b4b190104cec",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "d5e4759ba814ee28dfadf1f15bfd85461f9202b5703659f6832ed5c03f5e4f99",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "d30ea26708b71b96de7e82c8f84dd48d7b01578a9a7f1ce6eff0577a7c432ed8",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "a5e8c643f0882adcaa1d62b6707434b539781124f5154ea9f987e90a2651d4f9",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "2b5f2a213d3cc79d6bd080f05858bc7713b2497e04d6036b7a13918476095721",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "d98b64496e9c6e98a73ab0ac21bb29f9535a477775bb38887112540ceb6180ac",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "3beda94e52220f36160de45ed514469142b84340d67a3d670842ddf672565d51",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "2b8d22e0b35c066564d50060028201d45ccc1b4c22b68c88c559475d40accb99",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "be270011c3ba1e00ae41d4bd5740a04d8992a9fab83a4e945103d8ae05fbb816",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "c812ce294baca7bb55042659981760f4326638fdfabc16b81368c051fa25dcd1",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "f8d9eb73251db792853996f80024472cea65b06a781d4095cda19d90924e355d",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "5207c0dd884fad0bc7ebb119d06305b0708b0edef3bbdeb4ab1f4c56aae05ef7",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "3e9aeba6bcdf8cd1adec8da4bfe83c266046c14ce7dd42731f8494e03864a3ce",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "132ff97302e1430691c20ab9105837f14208e6c4338a249827b155c367d9c608",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "f2450eeb83945c11f5263bbaed4ac8df02ee773ff3da908fe911ddd53046badc",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "12a5c581e2003e6e25e6ee49d048cdd8587f05ba509e30c0474db434e224b550",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "c31c416dfcc570c85b3db2c396a82cc5a15d776bb50c86e5287c1bd31d7d184f",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "51e16e05bd22d1279cc66a91ad63eb28bf83912064d20f031b73f3e135e5b61e",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "462b3af75e042eae68c014b0f8e8e5aefea50ee87cbc0165413583110d7f11ff",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "4cc32eb8bd9a2e6ca82e8d48cce2543318e81fe5c288be3222a47acb0ecd6324",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "4a02a7dc27c85f973cafd6139611220e961a0fd1648ace7fecd9aa7ce3d23226",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "ec3b07d9d7e326679a7ed6914890ff3030c6dc5d68378061e8abb2c5e1135c1b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "d9d0728913cc15ad22846f566e6c8ea850ce4f7bb072d22712d5bc453096d626",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "03c7bc85ac9fae48ad9accab903c85e06a0d439794a9cec855ff06a870bcb5d4",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "f68f052b88be87189c0ce4c64ca9c5d95707baf28bd78972cd2dd652556a7de6",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "3194d63af91ae10260a6baa7a993a9664145567d51fe4da0c6d4a11440c3e153",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "2215641ba4c2e963cd945126a3bacd49f33a6224ec5cffd2c05706b64e4de073",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "a04be052d400dbc2680711de284af34633dc744091234784f7a0d6b18fd7843e",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "a5271b260424d096717a4c6142ff8fbf56f33ca85a73ed2eabff9e749be93259",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "9e31f5688b3dd946af812d7e6ca1ab73a3c2f249e2174949eb2a41d81a9f180c",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "4f699b09750d7ea315ef2da0ccf5ba1e5bcdd43a84ef21a25f54ec27e701a207",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "1749c5e7384f32978e004163fb7cdc517a8ac7fd8e076119937b97d8b0e25beb",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "271e8812578e1d82293071224793d03fe2c7498fba1e6c6a5e28aad2cfe6af32",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "dc20860b4460dcde6d4c90d70d17ae1b1e919f1aa9788af98739cf2416bd9cc3",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "3dcec81a2838d1e910a8ea85c670e4ba45cc58c5fdd98197c534175f69ee38e7",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "161f468cb36e6918bbddc4be751140b5a97b76f782e8930c52fa398e3a3bed9b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "f05e71f49eb3527a52a97a3fc195b3949d24d9f77ee97c27fc2911e1317472ae",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "66ffea6624a2fd16d153d807da6699546bcc2d3d730b997dcf85e3f7b8593f65",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "7ad0e6bc4a35faf5981fcfbca2551025489008924ca5e16c64350d081492504e",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "faa3ff7739a70f52e69f901d5aaac711b29b36d2fd92a80f2f6297da88a7b920",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "274c5a8c7870a6b5d69c5b6870f62cd092d45c32fb045f91ff67b94df138fdaa",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "3814d7cba401a9faac0a5784dab9a71d48d2ccb908cc46300e2389f92a4f24d2",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "c1df687b8ccfb2ce18c3fd444cea531a513f41dcfab60807ee53a935ca3bdcbd",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "b02658ef9f8605181c68de20ecb55a5c825c2a2b9c17465cd906c2c9026a0ff8",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "2f0dfff7d5a176266131675fadeb0e502fdbcc277d68cb87683c24fc408e58ba",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "5396136ce6fa18b7df73cfbb4a139778280067efb838b04b35f2426cc14868d9",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "cff7dd816b282bb1a558c4827ff1aca5addb5f0ee8d72d28bc7d32191c86f019",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "7889719b4fc5b8602fc7eaf04b115c110cc48abfd50ed39dfd4ed7ee2b09e79b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "608acfbd8838d75020ee6ae19de9f6f5bfdad0d489399c25c849d734b9f5314b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "44c8b763853eaa84f38031603698b20c8615dc5b05cbe03b032394f317f154e6",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "12c63b0e3bfd0d6d647c44be7bbb06c50ec61191b329a5de776983f8e2ea6e66",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "2661930416b95a68b03688b3b9bcfaa567142b8f9f1fbfb743be4bc26a9259f5",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "084738071a16f86ef6c37f7b0de72f9abf123c639ce53e31be5496225385cd49",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "e35d2ea840dc2d2169de381184708356c41ef639562408562d2aade3bf0c529b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "bdd22dbdc0ec00b05fd112a91a5bdc2529e96d8d176bf17b63af40a878748782",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "c25c1df44ea6b7329156a8a91c31fa7c06f21405347d42b781e23bf947a9160a",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "cb0c420f91875589984adb10c118e4d5ebe119ba515e83998bf0f73e30e30bac",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "41707f661be088d77a736e53e30fdb1ad3a1ce44f63cbc9838808bf4e21837b1",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "990dacfaad6f607bbea37de125f68da0fb9579f9835c418cc5bcc13ebedcf5e3",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "078880268bebb9f9f0d29b5e19e4e2ee8a94059470a7a2d3e8095a5537cfb386",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "9992f1add84100dfc346ce838714bb9e135bba8f7d95a96efc97985985835bfb",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1",
+          "3"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "aa046784233b35ba1a57fe8cf7896ead37393bba0df29ee55754ad5f3212a680",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "3"
+        ]
+      ],
+      "Output": true
+    },
+    {
+      "ApplicationID": "4fbca47f969abf49c1ba75366e9ba51552dd8c3b8b47ec41bcf189b2c1ffc5be",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "Output": false
+    },
+    {
+      "ApplicationID": "e4479e396bd2c3911f84f237aac8977514258f8f88a9fb92c6fc8db3eea8294b",
+      "CurrentPartition": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      "OtherPartition": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "DecisionPartition": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "Output": true
+    }
+  ]
+}

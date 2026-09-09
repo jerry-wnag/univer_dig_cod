@@ -1,0 +1,70 @@
+{
+  "Stage": "S144-A Grammar Insufficiency Detection DEV R0",
+  "StrictFiveCaseDevelopmentPass": true,
+  "Statuses": [
+    "EXACT_IN_LANGUAGE",
+    "AMBIGUOUS_IN_LANGUAGE",
+    "LANGUAGE_INSUFFICIENT",
+    "LANGUAGE_INSUFFICIENT",
+    "INCONSISTENT_OR_NOISY_OBSERVATIONS"
+  ],
+  "ExactCandidateCounts": [
+    12,
+    20,
+    0,
+    0,
+    null
+  ],
+  "SemanticClassCounts": [
+    1,
+    4,
+    0,
+    0,
+    null
+  ],
+  "ObservationCounts": {
+    "S144A_CASE_00": 46,
+    "S144A_CASE_01": 44,
+    "S144A_CASE_02": 9,
+    "S144A_CASE_03": 9,
+    "S144A_CASE_04": 47
+  },
+  "GrammarCandidateCount": 11250,
+  "RandomBehaviorStatus": "LANGUAGE_INSUFFICIENT",
+  "Checks": {
+    "ConstructorPass": true,
+    "PythonDevelopmentPass": true,
+    "WolframDevelopmentAuditPass": true,
+    "PythonWolframStatusParity": true,
+    "PythonWolframCandidateAndSemanticCountParity": true,
+    "FiveOfFiveDiagnosticStatusesCorrect": true,
+    "ExactCaseFreezesOnlyAfterOneSemanticClass": true,
+    "AmbiguousCaseRetainsFourClassesAndDoesNotFreeze": true,
+    "BothLanguageInsufficiencyCasesEliminateAll11250Candidates": true,
+    "InconsistentCaseStopsBeforeGrammarSearch": true,
+    "DeterministicRandomBehaviorDoesNotFreeze": true,
+    "NearLawDoesNotFreeze": true,
+    "NoLanguageExtensionClaim": true,
+    "CoreMechanismUnchanged": true
+  },
+  "Conclusion": "S144A_BOUNDED_GRAMMAR_INSUFFICIENCY_DETECTION_DEV_PASS",
+  "PermittedClaim": "bounded development evidence that TCCT distinguishes exact, ambiguous, out-of-language, and inconsistent behavior under a frozen complete finite grammar",
+  "ScopeBoundary": [
+    "language insufficiency is relative to the frozen 11250-candidate grammar",
+    "deterministic consistent out-of-grammar behavior is classified as language insufficient",
+    "contradictory repeated observations are classified separately as inconsistent or noisy",
+    "no new primitive or grammar extension is attempted in S144-A",
+    "fresh and multi-seed confirmation remain untested"
+  ],
+  "ArtifactSHA256": {
+    "protocol/development_protocol.json": "751663e1e524baecbed0c2c82ffe2b4a6d0eee88d87412e073090caa345253a1",
+    "source/construct_five_diagnostic_cases.py": "ca83b711c9c0ed98b734e16b3eba60609deaf015a9ef2d2c284974e935d7abda",
+    "source/run_python_grammar_diagnostics.py": "994fae34b29b65beb7857f7513d3cd51def69a56d6a1e3a83c9835426fe7f43a",
+    "source/run_wolfram_grammar_diagnostics_audit.wl": "e1c3c8aea9b871f393f78aae4941f19db443a24968af577083260c435d979a95",
+    "input/five_diagnostic_cases.json": "2f21f82a1396239b5aba668f7b7a1ea8815c30e3830ad9dee71941cb237e04d7",
+    "input/random_behavior_control.json": "fafb55d68540fb7c634728ec900162ff6917996e850d6928b9149ffc0c52adec",
+    "results/candidate_elimination_certificates.json": "c765b787b420c7bfa6d3d9e9af98c05c323d37c8bbc589319415a4a7e4e3ac2d",
+    "results/python_grammar_diagnostics_result.json": "73d44433c22e850ee39dfafabafae70318b835c1a1477ce0b38b5386481097ed",
+    "results/wolfram_grammar_diagnostics_audit.json": "108c76e1b30f6ce32b8aa23818e43341fe3f26730cce3f971b8963b1681b39e3"
+  }
+}

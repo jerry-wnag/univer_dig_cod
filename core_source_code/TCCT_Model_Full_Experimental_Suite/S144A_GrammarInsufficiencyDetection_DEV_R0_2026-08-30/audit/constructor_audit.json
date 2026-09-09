@@ -1,0 +1,31 @@
+{
+  "CaseObservationCounts": {
+    "S144A_CASE_00": 46,
+    "S144A_CASE_01": 44,
+    "S144A_CASE_02": 9,
+    "S144A_CASE_03": 9,
+    "S144A_CASE_04": 47
+  },
+  "ExpectedStatuses": {
+    "S144A_CASE_00": "EXACT_IN_LANGUAGE",
+    "S144A_CASE_01": "AMBIGUOUS_IN_LANGUAGE",
+    "S144A_CASE_02": "LANGUAGE_INSUFFICIENT",
+    "S144A_CASE_03": "LANGUAGE_INSUFFICIENT",
+    "S144A_CASE_04": "INCONSISTENT_OR_NOISY_OBSERVATIONS"
+  },
+  "NearLawCandidateEliminationCount": 11250,
+  "XorLawCandidateEliminationCount": 11250,
+  "NearLawExceptionApplicationID": "662f4c49bb910ced348d51ef400ce18bfe4cfd5eedf978744fa743b544c52601",
+  "Checks": {
+    "FrozenGrammarCandidateCount": true,
+    "ExactCaseOneSemanticClass": true,
+    "AmbiguousCaseMultipleSemanticClasses": true,
+    "NearLawEliminatesEveryGrammarCandidate": true,
+    "XorLawEliminatesEveryGrammarCandidate": true,
+    "NearAndXorCertificatesNonempty": true,
+    "InconsistentCaseContainsContradictoryRepeat": true,
+    "NoTargetASTInLearnerCases": true,
+    "CoreUnchanged": true
+  },
+  "ConstructorPass": true
+}

@@ -1,0 +1,125 @@
+{
+  "Stage": "S144-A Grammar Insufficiency Detection DEV R0",
+  "EvidenceStatus": "BOUNDED_GRAMMAR_INSUFFICIENCY_DETECTION_DEVELOPMENT_ONLY",
+  "GrammarCandidateCount": 11250,
+  "CaseRows": [
+    {
+      "CaseID": "S144A_CASE_00",
+      "Status": "EXACT_IN_LANGUAGE",
+      "ObservationCount": 46,
+      "UniqueInputCount": 46,
+      "ContradictionCount": 0,
+      "GrammarSearchExecuted": true,
+      "GrammarCandidateCount": 11250,
+      "ExactCandidateCount": 12,
+      "SemanticClassCount": 1,
+      "EliminatedCandidateCount": 11238,
+      "CompleteEliminationCertificate": null,
+      "Frozen": true
+    },
+    {
+      "CaseID": "S144A_CASE_01",
+      "Status": "AMBIGUOUS_IN_LANGUAGE",
+      "ObservationCount": 44,
+      "UniqueInputCount": 44,
+      "ContradictionCount": 0,
+      "GrammarSearchExecuted": true,
+      "GrammarCandidateCount": 11250,
+      "ExactCandidateCount": 20,
+      "SemanticClassCount": 4,
+      "EliminatedCandidateCount": 11230,
+      "CompleteEliminationCertificate": null,
+      "Frozen": false
+    },
+    {
+      "CaseID": "S144A_CASE_02",
+      "Status": "LANGUAGE_INSUFFICIENT",
+      "ObservationCount": 9,
+      "UniqueInputCount": 9,
+      "ContradictionCount": 0,
+      "GrammarSearchExecuted": true,
+      "GrammarCandidateCount": 11250,
+      "ExactCandidateCount": 0,
+      "SemanticClassCount": 0,
+      "EliminatedCandidateCount": 11250,
+      "CompleteEliminationCertificate": true,
+      "Frozen": false
+    },
+    {
+      "CaseID": "S144A_CASE_03",
+      "Status": "LANGUAGE_INSUFFICIENT",
+      "ObservationCount": 9,
+      "UniqueInputCount": 9,
+      "ContradictionCount": 0,
+      "GrammarSearchExecuted": true,
+      "GrammarCandidateCount": 11250,
+      "ExactCandidateCount": 0,
+      "SemanticClassCount": 0,
+      "EliminatedCandidateCount": 11250,
+      "CompleteEliminationCertificate": true,
+      "Frozen": false
+    },
+    {
+      "CaseID": "S144A_CASE_04",
+      "Status": "INCONSISTENT_OR_NOISY_OBSERVATIONS",
+      "ObservationCount": 47,
+      "UniqueInputCount": 46,
+      "ContradictionCount": 1,
+      "Contradictions": [
+        {
+          "InputSHA256": "54bd728ad1d509861f7e169f1f81ebdd8b47caddbdde890cfeefc5b280a4563e",
+          "Outputs": [
+            false,
+            true
+          ],
+          "ApplicationIDs": [
+            "d6e614d275d2d82f5a167264b9bc8f94c475b6e88116ada49b3193f1ebb96068",
+            "d6e614d275d2d82f5a167264b9bc8f94c475b6e88116ada49b3193f1ebb96068"
+          ]
+        }
+      ],
+      "GrammarSearchExecuted": false,
+      "ExactCandidateCount": null,
+      "SemanticClassCount": null,
+      "Frozen": false
+    }
+  ],
+  "RandomBehaviorControl": {
+    "CaseID": "S144A_RANDOM_CONTROL",
+    "Status": "LANGUAGE_INSUFFICIENT",
+    "ObservationCount": 96,
+    "UniqueInputCount": 96,
+    "ContradictionCount": 0,
+    "GrammarSearchExecuted": true,
+    "GrammarCandidateCount": 11250,
+    "ExactCandidateCount": 0,
+    "SemanticClassCount": 0,
+    "EliminatedCandidateCount": 11250,
+    "CompleteEliminationCertificate": true,
+    "Frozen": false
+  },
+  "EliminationCertificateSHA256": {
+    "S144A_CASE_00": "a2826dec8d15fddfe88a874525f17b04a12f6354dac797a36925860a84eebccc",
+    "S144A_CASE_01": "b6262d90e63845056dfcd224cd66dd0fe5031433f3cf63482f505591001e6b2f",
+    "S144A_CASE_02": "a73131a9feef0843d32600cbfaf788b257553549554f034c537f6327e4b2e497",
+    "S144A_CASE_03": "dd04db0a54ec8ea57d62f7fd1200eedbc7144e025531e6d6add5f6d951e87f40",
+    "S144A_RANDOM_CONTROL": "a09e2aa5d04bab8173efb45c4a08d6ade4d6899b6e21ce8affac3a601c1d4174"
+  },
+  "Checks": {
+    "ConstructorPass": true,
+    "FrozenGrammarHashMatches": true,
+    "CostCompleteGrammarCandidateCount": true,
+    "FiveOfFiveStatusesCorrect": true,
+    "ExactCaseFreezesOneSemanticClass": true,
+    "AmbiguousCaseDoesNotFreeze": true,
+    "BothInsufficiencyCasesHaveCompleteEliminationCertificates": true,
+    "InconsistentCaseDetectedBeforeGrammarSearch": true,
+    "NoApproximateOrCanonicalFreeze": true,
+    "NearLawDoesNotFreeze": true,
+    "DeterministicRandomBehaviorDoesNotFreeze": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "DevelopmentOnlyNoLanguageExtensionClaim": true
+  },
+  "PythonDevelopmentPass": true,
+  "Conclusion": "BOUNDED_GRAMMAR_INSUFFICIENCY_DETECTION_DEV_PASS"
+}
