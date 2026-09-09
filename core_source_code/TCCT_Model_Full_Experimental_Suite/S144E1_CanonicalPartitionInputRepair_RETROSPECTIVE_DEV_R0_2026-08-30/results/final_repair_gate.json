@@ -1,0 +1,36 @@
+{
+  "Stage": "S144-E1 Canonical Partition Input Repair Retrospective DEV R0",
+  "Checks": {
+    "PythonRepairAuditPass": true,
+    "WolframRepairAuditPass": true,
+    "HistoricalCountsParity": true,
+    "TrainingUnchangedParity": true,
+    "AdversarialAuditsPassInBothEngines": true,
+    "HistoricalFailNotReclassified": true,
+    "NoFreshClaim": true,
+    "TCCTCoreUnchanged": true
+  },
+  "RetrospectiveRepairPass": true,
+  "FreezeReady": true,
+  "HistoricalOriginalHoldoutExact": "10/15",
+  "HistoricalCanonicalizedHoldoutExact": "15/15",
+  "OriginallyFailedRecovered": "5/5",
+  "TrainingDomainsUnchanged": "5/5",
+  "AdversarialTransformationAudits": "25/25",
+  "FrozenRepairDefinition": {
+    "CanonicalizeEachPartitionBeforeAnyRelation": true,
+    "SortElementsInsideEveryBlock": true,
+    "SortBlocksLexicographically": true,
+    "RejectEmptyOrOverlappingBlocks": true
+  },
+  "CodeSHA256": {
+    "Protocol": "3f5313bfcfcc6ae3f1e92bafd48eca5211ea93cbcb5a4c4a3d6126c522ed7f7a",
+    "Canonicalizer": "799eda1a7d364834db3e06dec73b873dabc2daf74cfb3984ca75fdee33e4e56b",
+    "PythonAudit": "a8cf2b60baf7f56f9c1f3651ab5cc6067350bec5bd0165914ab364e59c651828",
+    "WolframAudit": "6062763e1fc45ac8d96e11fdd222d7f10ec698d706dcce6c96825846eead060f",
+    "Finalizer": "08deba4d7df97199597929e2be9e4481f055d7e3ab11ef0f2a6e095a7a2e7851"
+  },
+  "AllowedClaim": "retrospective evidence that general canonical partition input repair removes the S144-D relabeling serialization defect without changing training semantics or selected operators",
+  "FreshReplicationRequired": true,
+  "Conclusion": "S144E1_CANONICAL_PARTITION_REPAIR_FREEZE_READY"
+}

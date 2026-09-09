@@ -1,0 +1,38 @@
+{
+  "Stage": "S144-E1 Canonical Partition Input Repair Retrospective DEV R0",
+  "EvidenceStatus": "RETROSPECTIVE_INPUT_LAYER_REPAIR_ONLY",
+  "HistoricalSource": "S144-D R0 strict replication failure",
+  "AllowedChange": "canonicalize every partition block and the block list before relational evaluation",
+  "ForbiddenChanges": [
+    "NAND meta-language",
+    "candidate generation",
+    "MDL",
+    "semantic class logic",
+    "freeze/abstain rules",
+    "TCCT rewrite/freeze/dedup",
+    "historical worlds or selected proposals"
+  ],
+  "Canonicalization": {
+    "SortElementsInsideEveryBlock": true,
+    "SortBlocksLexicographically": true,
+    "Idempotent": true,
+    "RejectEmptyBlocks": true,
+    "RejectOverlappingBlocks": true
+  },
+  "HistoricalGate": {
+    "All15HoldoutsExactAfterCanonicalInput": true,
+    "PreviouslyFailed5HoldoutsRecovered": true,
+    "TrainingDomainSignalSemanticsUnchanged": true,
+    "SelectedOperatorASTsUnchanged": true
+  },
+  "AdversarialGate": {
+    "BlockOrderInvariant": true,
+    "WithinBlockOrderInvariant": true,
+    "ElementRelabelingInvariant": true,
+    "CombinedTransformationInvariant": true,
+    "PythonWolframParity": true
+  },
+  "FreshCapabilityClaimAllowed": false,
+  "HistoricalFailMayBeReclassified": false,
+  "PDFRequested": false
+}
