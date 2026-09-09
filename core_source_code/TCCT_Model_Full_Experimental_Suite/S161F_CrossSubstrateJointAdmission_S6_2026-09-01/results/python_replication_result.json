@@ -1,0 +1,1723 @@
+{
+  "CarrierSize": 6,
+  "Checks": {
+    "AllCausalReducedBlockPromotion": true,
+    "AllCohortsJointActive": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "FiveDistinctNonAuditOrbits": true,
+    "FiveOfFiveCohortsPass": true,
+    "ThirtyFiveCasesExecuted": true,
+    "ZeroFalsePromotionControls": true
+  },
+  "Cohorts": [
+    {
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "CausalFullPromotes": true,
+        "CausalReducedBlocksPromotion": true,
+        "EveryJointQueryStrictlyReduces": true,
+        "InsufficiencyRejects": true,
+        "JointActivePromotesAfterQueries": true,
+        "JointActiveStartsMixed": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugacy": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C01",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 17
+      },
+      "Rows": [
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 1,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 1,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 5,
+            "5": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "UNIQUE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "2": 1,
+            "3": 0,
+            "4": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            4,
+            0,
+            2,
+            3,
+            5
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "JOINT_ACTIVE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 0,
+            "2": 5
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            4,
+            5,
+            1,
+            2
+          ],
+          "Queries": [
+            {
+              "Input": 0,
+              "TaskOutput": 0
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 1,
+              "BeforeJointDecisionClasses": 2,
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 0,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CaseID": "CURRENT_COMPATIBLE_CAUSAL",
+          "Full": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 0,
+            "FinalJointDecisionClassCount": 1,
+            "FullExactCertificatePassed": true,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 0,
+            "InitialJointDecisionClassCount": 1,
+            "Observations": {
+              "1": 3,
+              "3": 0,
+              "4": 2
+            },
+            "Promoted": true,
+            "ProposedConstructor": [
+              1,
+              4,
+              0,
+              2,
+              3,
+              5
+            ],
+            "Queries": [],
+            "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 0,
+                "JointDecisionClasses": 1,
+                "Step": 0
+              }
+            ]
+          },
+          "Reduced": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 1,
+            "FinalJointDecisionClassCount": 2,
+            "FullExactCertificatePassed": false,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 1,
+            "InitialJointDecisionClassCount": 2,
+            "Observations": {
+              "3": 0,
+              "4": 2
+            },
+            "Promoted": false,
+            "ProposedConstructor": null,
+            "Queries": [],
+            "Status": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 1,
+                "JointDecisionClasses": 2,
+                "Step": 0
+              }
+            ]
+          },
+          "RemovedInput": 1
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "AMBIGUOUS",
+          "FinalConstructorClassCount": 2,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "3": 3,
+            "4": 5,
+            "5": 4
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "INSUFFICIENT",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 0,
+          "Observations": {
+            "0": 4,
+            "1": 3,
+            "2": 0,
+            "3": 5,
+            "4": 1,
+            "5": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 17,
+          "CaseID": "RELABEL",
+          "ExpectedConstructor": [
+            0,
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "3": 2,
+            "4": 1,
+            "5": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "CausalFullPromotes": true,
+        "CausalReducedBlocksPromotion": true,
+        "EveryJointQueryStrictlyReduces": true,
+        "InsufficiencyRejects": true,
+        "JointActivePromotesAfterQueries": true,
+        "JointActiveStartsMixed": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugacy": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C02",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 18
+      },
+      "Rows": [
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 1,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 1,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 5,
+            "5": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "UNIQUE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 0,
+            "1": 4,
+            "4": 2,
+            "5": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            4,
+            5,
+            1,
+            2
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "JOINT_ACTIVE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 3,
+          "InitialCurrentGrammarCandidateCount": 3,
+          "InitialJointDecisionClassCount": 4,
+          "Observations": {
+            "0": 0,
+            "1": 4,
+            "2": 5
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            4,
+            5,
+            1,
+            2
+          ],
+          "Queries": [
+            {
+              "Input": 1,
+              "TaskOutput": 4
+            },
+            {
+              "Input": 2,
+              "TaskOutput": 5
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 3,
+              "CurrentGrammarSemanticCandidates": 3,
+              "JointDecisionClasses": 4,
+              "Step": 0
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 2,
+              "BeforeJointDecisionClasses": 4,
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 1,
+              "Step": 1
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 1,
+              "BeforeJointDecisionClasses": 2,
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 2,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CaseID": "CURRENT_COMPATIBLE_CAUSAL",
+          "Full": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 0,
+            "FinalJointDecisionClassCount": 1,
+            "FullExactCertificatePassed": true,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 0,
+            "InitialJointDecisionClassCount": 1,
+            "Observations": {
+              "3": 4,
+              "4": 0,
+              "5": 1
+            },
+            "Promoted": true,
+            "ProposedConstructor": [
+              4,
+              5,
+              1,
+              0,
+              3,
+              2
+            ],
+            "Queries": [],
+            "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 0,
+                "JointDecisionClasses": 1,
+                "Step": 0
+              }
+            ]
+          },
+          "Reduced": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 1,
+            "FinalJointDecisionClassCount": 2,
+            "FullExactCertificatePassed": false,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 1,
+            "InitialJointDecisionClassCount": 2,
+            "Observations": {
+              "3": 4,
+              "5": 1
+            },
+            "Promoted": false,
+            "ProposedConstructor": null,
+            "Queries": [],
+            "Status": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 1,
+                "JointDecisionClasses": 2,
+                "Step": 0
+              }
+            ]
+          },
+          "RemovedInput": 4
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "AMBIGUOUS",
+          "FinalConstructorClassCount": 2,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 5,
+            "1": 1,
+            "2": 2,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "INSUFFICIENT",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 0,
+          "Observations": {
+            "0": 2,
+            "1": 1,
+            "2": 0,
+            "3": 4,
+            "4": 3,
+            "5": 5
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "RELABEL",
+          "ExpectedConstructor": [
+            3,
+            1,
+            4,
+            5,
+            0,
+            2
+          ],
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 4,
+            "1": 1,
+            "2": 5,
+            "5": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            3,
+            1,
+            4,
+            5,
+            0,
+            2
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "CausalFullPromotes": true,
+        "CausalReducedBlocksPromotion": true,
+        "EveryJointQueryStrictlyReduces": true,
+        "InsufficiencyRejects": true,
+        "JointActivePromotesAfterQueries": true,
+        "JointActiveStartsMixed": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugacy": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C03",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 3,
+        "CurrentGrammar": 6,
+        "Entries": 11
+      },
+      "Rows": [
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 1,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 1,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "2": 3,
+            "3": 4,
+            "4": 5,
+            "5": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "UNIQUE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "1": 3,
+            "3": 2,
+            "4": 0
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            4,
+            2,
+            3,
+            1,
+            5,
+            0
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "JOINT_ACTIVE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 1,
+            "2": 5
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3
+          ],
+          "Queries": [
+            {
+              "Input": 2,
+              "TaskOutput": 5
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 1,
+              "BeforeJointDecisionClasses": 2,
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 2,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CaseID": "CURRENT_COMPATIBLE_CAUSAL",
+          "Full": {
+            "CandidateConstructorsGeneratedAtRuntime": 3,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 0,
+            "FinalJointDecisionClassCount": 1,
+            "FullExactCertificatePassed": true,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 0,
+            "InitialJointDecisionClassCount": 1,
+            "Observations": {
+              "0": 1,
+              "5": 4
+            },
+            "Promoted": true,
+            "ProposedConstructor": [
+              0,
+              1,
+              4,
+              5,
+              2,
+              3
+            ],
+            "Queries": [],
+            "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 0,
+                "JointDecisionClasses": 1,
+                "Step": 0
+              }
+            ]
+          },
+          "Reduced": {
+            "CandidateConstructorsGeneratedAtRuntime": 3,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 1,
+            "FinalJointDecisionClassCount": 2,
+            "FullExactCertificatePassed": false,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 1,
+            "InitialJointDecisionClassCount": 2,
+            "Observations": {
+              "0": 1
+            },
+            "Promoted": false,
+            "ProposedConstructor": null,
+            "Queries": [],
+            "Status": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 1,
+                "JointDecisionClasses": 2,
+                "Step": 0
+              }
+            ]
+          },
+          "RemovedInput": 5
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "AMBIGUOUS",
+          "FinalConstructorClassCount": 2,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 3,
+            "1": 5,
+            "2": 4,
+            "3": 1,
+            "4": 2,
+            "5": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "INSUFFICIENT",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 0,
+          "Observations": {
+            "0": 2,
+            "1": 4,
+            "2": 0,
+            "3": 1,
+            "4": 3,
+            "5": 5
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "RELABEL",
+          "ExpectedConstructor": [
+            1,
+            5,
+            3,
+            4,
+            2,
+            0
+          ],
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "2": 4,
+            "4": 3,
+            "5": 1
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            5,
+            3,
+            4,
+            2,
+            0
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "CausalFullPromotes": true,
+        "CausalReducedBlocksPromotion": true,
+        "EveryJointQueryStrictlyReduces": true,
+        "InsufficiencyRejects": true,
+        "JointActivePromotesAfterQueries": true,
+        "JointActiveStartsMixed": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugacy": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C04",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 18
+      },
+      "Rows": [
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 1,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 1,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 1,
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 5,
+            "5": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "UNIQUE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 0,
+            "2": 4,
+            "4": 5
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            1,
+            5,
+            2,
+            4
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "JOINT_ACTIVE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 2,
+          "InitialJointDecisionClassCount": 3,
+          "Observations": {
+            "1": 5,
+            "3": 4
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            1,
+            5,
+            2,
+            4
+          ],
+          "Queries": [
+            {
+              "Input": 3,
+              "TaskOutput": 4
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 2,
+              "JointDecisionClasses": 3,
+              "Step": 0
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 1,
+              "BeforeJointDecisionClasses": 3,
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 3,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CaseID": "CURRENT_COMPATIBLE_CAUSAL",
+          "Full": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 0,
+            "FinalJointDecisionClassCount": 1,
+            "FullExactCertificatePassed": true,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 0,
+            "InitialJointDecisionClassCount": 1,
+            "Observations": {
+              "0": 0,
+              "5": 2
+            },
+            "Promoted": true,
+            "ProposedConstructor": [
+              0,
+              3,
+              1,
+              5,
+              2,
+              4
+            ],
+            "Queries": [],
+            "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 0,
+                "JointDecisionClasses": 1,
+                "Step": 0
+              }
+            ]
+          },
+          "Reduced": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+            "FinalConstructorClassCount": 2,
+            "FinalCurrentGrammarCandidateCount": 1,
+            "FinalJointDecisionClassCount": 3,
+            "FullExactCertificatePassed": false,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 2,
+            "InitialCurrentGrammarCandidateCount": 1,
+            "InitialJointDecisionClassCount": 3,
+            "Observations": {
+              "5": 2
+            },
+            "Promoted": false,
+            "ProposedConstructor": null,
+            "Queries": [],
+            "Status": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 2,
+                "CurrentGrammarSemanticCandidates": 1,
+                "JointDecisionClasses": 3,
+                "Step": 0
+              }
+            ]
+          },
+          "RemovedInput": 0
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "AMBIGUOUS",
+          "FinalConstructorClassCount": 2,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 3,
+            "1": 1,
+            "2": 5,
+            "3": 2,
+            "4": 4,
+            "5": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "INSUFFICIENT",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 0,
+          "Observations": {
+            "0": 2,
+            "1": 1,
+            "2": 0,
+            "3": 5,
+            "4": 3,
+            "5": 4
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "RELABEL",
+          "ExpectedConstructor": [
+            5,
+            1,
+            4,
+            2,
+            0,
+            3
+          ],
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "1": 1,
+            "3": 5,
+            "5": 0
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            5,
+            1,
+            4,
+            2,
+            0,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "CausalFullPromotes": true,
+        "CausalReducedBlocksPromotion": true,
+        "EveryJointQueryStrictlyReduces": true,
+        "InsufficiencyRejects": true,
+        "JointActivePromotesAfterQueries": true,
+        "JointActiveStartsMixed": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugacy": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C05",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 15
+      },
+      "Rows": [
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 1,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 1,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "2": 3,
+            "3": 4,
+            "4": 5,
+            "5": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "UNIQUE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 0,
+            "2": 3,
+            "3": 4,
+            "5": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            1,
+            5,
+            2,
+            4
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "JOINT_ACTIVE",
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 1,
+          "InitialJointDecisionClassCount": 3,
+          "Observations": {
+            "0": 0,
+            "2": 3,
+            "5": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            3,
+            1,
+            5,
+            2,
+            4
+          ],
+          "Queries": [
+            {
+              "Input": 0,
+              "TaskOutput": 0
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 1,
+              "JointDecisionClasses": 3,
+              "Step": 0
+            },
+            {
+              "Action": "JOINT_TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterJointDecisionClasses": 1,
+              "BeforeJointDecisionClasses": 3,
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "Input": 0,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CaseID": "CURRENT_COMPATIBLE_CAUSAL",
+          "Full": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+            "FinalConstructorClassCount": 1,
+            "FinalCurrentGrammarCandidateCount": 0,
+            "FinalJointDecisionClassCount": 1,
+            "FullExactCertificatePassed": true,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 1,
+            "InitialCurrentGrammarCandidateCount": 0,
+            "InitialJointDecisionClassCount": 1,
+            "Observations": {
+              "2": 3,
+              "4": 1,
+              "5": 2
+            },
+            "Promoted": true,
+            "ProposedConstructor": [
+              0,
+              3,
+              1,
+              5,
+              2,
+              4
+            ],
+            "Queries": [],
+            "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 1,
+                "CurrentGrammarSemanticCandidates": 0,
+                "JointDecisionClasses": 1,
+                "Step": 0
+              }
+            ]
+          },
+          "Reduced": {
+            "CandidateConstructorsGeneratedAtRuntime": 4,
+            "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+            "FinalConstructorClassCount": 2,
+            "FinalCurrentGrammarCandidateCount": 1,
+            "FinalJointDecisionClassCount": 3,
+            "FullExactCertificatePassed": false,
+            "FullExactConstructorClassCount": 1,
+            "FullExactCurrentGrammarCount": 0,
+            "InitialConstructorClassCount": 2,
+            "InitialCurrentGrammarCandidateCount": 1,
+            "InitialJointDecisionClassCount": 3,
+            "Observations": {
+              "2": 3,
+              "5": 2
+            },
+            "Promoted": false,
+            "ProposedConstructor": null,
+            "Queries": [],
+            "Status": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+            "Trace": [
+              {
+                "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+                "ConstructorClasses": 2,
+                "CurrentGrammarSemanticCandidates": 1,
+                "JointDecisionClasses": 3,
+                "Step": 0
+              }
+            ]
+          },
+          "RemovedInput": 4
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "AMBIGUOUS",
+          "FinalConstructorClassCount": 2,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 2,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 2,
+          "Observations": {
+            "0": 1,
+            "1": 2,
+            "2": 5,
+            "3": 3,
+            "4": 0,
+            "5": 4
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 2,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "INSUFFICIENT",
+          "FinalConstructorClassCount": 0,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 0,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 0,
+          "Observations": {
+            "0": 5,
+            "1": 4,
+            "2": 0,
+            "3": 2,
+            "4": 3,
+            "5": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 0,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 15,
+          "CaseID": "RELABEL",
+          "ExpectedConstructor": [
+            5,
+            1,
+            4,
+            2,
+            0,
+            3
+          ],
+          "FinalConstructorClassCount": 1,
+          "FinalCurrentGrammarCandidateCount": 0,
+          "FinalJointDecisionClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "FullExactCurrentGrammarCount": 0,
+          "InitialConstructorClassCount": 1,
+          "InitialCurrentGrammarCandidateCount": 0,
+          "InitialJointDecisionClassCount": 1,
+          "Observations": {
+            "0": 3,
+            "1": 1,
+            "3": 4,
+            "4": 5
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            5,
+            1,
+            4,
+            2,
+            0,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_JOINT_RESIDUAL_VERSION_SPACE",
+              "ConstructorClasses": 1,
+              "CurrentGrammarSemanticCandidates": 0,
+              "JointDecisionClasses": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Conclusion": "S161F_CROSS_SUBSTRATE_REPLICATED_EVIDENCE_GATED_RESIDUAL_CONSTRUCTOR_FORMATION_PASS",
+  "EvidenceLevel": "CROSS_SUBSTRATE_FROZEN_MULTI_SEED_REPLICATION",
+  "PythonReplicationPass": true,
+  "Stage": "S161-F"
+}

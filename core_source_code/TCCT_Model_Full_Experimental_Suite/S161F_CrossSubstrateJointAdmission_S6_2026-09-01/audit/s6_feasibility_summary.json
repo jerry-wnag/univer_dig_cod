@@ -1,0 +1,24 @@
+{
+  "AuditSeed": "S161F-S6-FEASIBILITY-AUDIT-ONLY-20260901",
+  "AuditType": "PRE_FREEZE_S6_FEASIBILITY_SAMPLE",
+  "AuditWorldsExcludedFromFutureCohorts": true,
+  "CarrierSize": 6,
+  "CurrentGrammarSemanticCountRange": [
+    4,
+    7
+  ],
+  "DistinctNonIsomorphicWorldsAudited": 300,
+  "ElapsedSeconds": 2.1820875000048545,
+  "ExplanationEntryCountRange": [
+    0,
+    18
+  ],
+  "FiveCohortsFeasibleInAuditSample": true,
+  "FutureCohortSeedsMaterialized": false,
+  "QualificationRate": 0.9566666666666667,
+  "QualifyingSevenCaseWorlds": 287,
+  "RuntimeConstructorCountRange": [
+    1,
+    4
+  ]
+}

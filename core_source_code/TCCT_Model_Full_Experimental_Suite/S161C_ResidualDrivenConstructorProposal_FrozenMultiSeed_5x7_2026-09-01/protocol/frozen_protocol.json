@@ -1,0 +1,101 @@
+{
+  "Stage": "S161-C",
+  "Title": "Frozen Multi-Seed Residual-Driven Grammar-Constructor Proposal Replication",
+  "EvidenceLevel": "FROZEN_MULTI_SEED_REPLICATION",
+  "ProtocolFrozenBeforeWorldMaterialization": true,
+  "FailedWorldReplacementAllowed": false,
+  "MechanismChangeFromS161AAndS161B": "NONE",
+  "CohortCount": 5,
+  "CasesPerCohort": 7,
+  "CohortSeeds": [
+    {"World": "S161C-C01-WORLD-20260901-104729", "Tasks": "S161C-C01-TASKS-20260901-510931"},
+    {"World": "S161C-C02-WORLD-20260901-208387", "Tasks": "S161C-C02-TASKS-20260901-620113"},
+    {"World": "S161C-C03-WORLD-20260901-319081", "Tasks": "S161C-C03-TASKS-20260901-730607"},
+    {"World": "S161C-C04-WORLD-20260901-421663", "Tasks": "S161C-C04-TASKS-20260901-840229"},
+    {"World": "S161C-C05-WORLD-20260901-533219", "Tasks": "S161C-C05-TASKS-20260901-950743"}
+  ],
+  "Coverage": {
+    "HistoricalOrbitCountExcluded": 56,
+    "RemainingUnseenOrbitCount": 27,
+    "QualifyingFreshSevenCaseOrbitCount": 5,
+    "RequiredCohortCount": 5,
+    "AllQualifyingWorldsMustBeUsed": true,
+    "CurrentGrammarSemanticCountRange": [6, 7],
+    "RuntimeConstructorCountRange": [3, 4],
+    "ExplanationEntryCountRange": [11, 18],
+    "AuditDidNotSelectWorldsOrTasks": true
+  },
+  "Freshness": {
+    "ExcludeAllS159ThroughS161BAtomPairOrbits": true,
+    "CohortWorldsSelectedWithoutReplacement": true,
+    "ChangeFailedWorldAllowed": false,
+    "AllFiveQualifyingFreshWorldsUsed": true
+  },
+  "FrozenMechanism": {
+    "ConstructorCandidates": "runtime cost-2 semantic classes from current A/B grammar",
+    "TaskExplanationGrammar": "A, B, anonymous R; word budget 2; explanation must use R",
+    "ProposalEvidence": "task residual observations only",
+    "QueryAdmission": "strict worst-case constructor-class reduction",
+    "Promotion": "one semantic constructor class plus full exact task certificate",
+    "Ambiguity": "abstain",
+    "Insufficiency": "reject",
+    "RewriteChanged": false,
+    "FreezeChanged": false,
+    "DedupChanged": false
+  },
+  "CasesPerCohortList": [
+    "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+    "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+    "ACTIVE_DISAMBIGUATION_TO_UNIQUE",
+    "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+    "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+    "RESIDUAL_CAUSAL_REMOVAL",
+    "RELABEL_INVARIANCE"
+  ],
+  "StrictReplicationGates": {
+    "CohortsPassing": "5/5",
+    "CasesExecuted": 35,
+    "DistinctFreshOrbits": 5,
+    "EveryCohortUsesActiveDisambiguation": true,
+    "EveryActiveQueryStrictlyReducesConstructorClasses": true,
+    "EveryCohortUniqueResidualPromotes": true,
+    "EveryCohortAmbiguityAbstains": true,
+    "EveryCohortInsufficiencyRejects": true,
+    "EveryCohortResidualCausalControlPasses": true,
+    "EveryCohortRelabelInvariancePasses": true,
+    "FalsePromotion": 0,
+    "PythonWolframIndependentParity": true
+  },
+  "HistoricalBaseProtocol": "work/S161B_ResidualDrivenConstructorProposal_FrozenFresh_7Cases_2026-09-01/protocol/frozen_protocol.json",
+  "HistoricalEvidenceFiles": {
+    "s161b_protocol": "work/S161B_ResidualDrivenConstructorProposal_FrozenFresh_7Cases_2026-09-01/protocol/frozen_protocol.json",
+    "s161b": "work/S161B_ResidualDrivenConstructorProposal_FrozenFresh_7Cases_2026-09-01/oracle/sealed_exact_holdout.json"
+  },
+  "HistoricalEvidenceHashes": {
+    "s161b_protocol": "63c61e135b74f8e8e1c6bf9e7914399f99b7011c43d22cd7fd5ce970a182b567",
+    "s161b": "b7a279e74a1053113f2e622c080511b4f2abb59cb57e04e0a29353e888bd3830"
+  },
+  "FrozenExternalFiles": {
+    "s161b_runner_and_analysis": "work/S161B_ResidualDrivenConstructorProposal_FrozenFresh_7Cases_2026-09-01/source/run_s161b_python.py",
+    "s161a_residual_proposal_engine": "work/S161A_ResidualDrivenConstructorProposal_DEV_7Cases_2026-09-01/source/residual_proposal_engine.py",
+    "s160_constructor_engine": "work/S160A_AdaptiveDepthGrammarConstructorBootstrapping_DEV_5Cases_2026-08-31/source/constructor_bootstrap_engine.py",
+    "s160_orbit_helper": "work/S160A_AdaptiveDepthGrammarConstructorBootstrapping_DEV_5Cases_2026-08-31/source/run_s160a_python.py"
+  },
+  "FrozenExternalHashes": {
+    "s161b_runner_and_analysis": "e7dc57f0c5c04d3f5beca855bca2fa04d8b5ad334e5fb6bfdd08a0a444ba7c5b",
+    "s161a_residual_proposal_engine": "65cc08f7a4533c8bc65b8c48b586c062ae46ff8c7e0565a1145ee33f108ec31d",
+    "s160_constructor_engine": "3de575768c7f70335300e03beba3ea5e2023b3d892e96ebde00be0087cf29401",
+    "s160_orbit_helper": "294450c7a1cfc7dc90fa1b43196f2869078248745249fccfbde6a70dd6f9989c"
+  },
+  "FrozenSourceFiles": {
+    "python_runner": "source/run_s161c_python.py",
+    "wolfram_verifier": "source/verify_s161c.wl",
+    "finalizer": "source/finalize_s161c.py"
+  },
+  "FrozenSourceHashes": {
+    "python_runner": "992738b1eecdf100c2d17c39177fb12f8ab426a0e834e697c8b200f88d5e0a3e",
+    "wolfram_verifier": "197711bd12ff4c032b4a04619d599f64a6d8f01811db36ce723d598d9445405b",
+    "finalizer": "9c4877877f7e439044fd118952857fc0b816c3a2af3ab9fbfb4e421388bdb435"
+  },
+  "ClaimBoundary": "Five frozen fresh unseen S5 permutation cohorts testing bounded residual-driven constructor proposal. Not open-ended primitive invention, meta-substrate invention, or unrestricted domain generality."
+}

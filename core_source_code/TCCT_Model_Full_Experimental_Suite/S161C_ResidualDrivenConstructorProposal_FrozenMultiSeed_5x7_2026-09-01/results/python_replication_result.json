@@ -1,0 +1,1660 @@
+{
+  "Checks": {
+    "AllCohortsUseActiveDisambiguation": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "FiveDistinctFreshOrbits": true,
+    "FiveOfFiveCohortsPass": false,
+    "FrozenS161AProposalEngineReused": true,
+    "NoHiddenConstructorTargetOracle": true,
+    "ThirtyFiveCasesExecuted": true,
+    "ZeroFalsePromotionOnAmbiguousOrInsufficient": true
+  },
+  "Cohorts": [
+    {
+      "Checks": {
+        "ActiveStartsAtLeastThreeAndEndsUnique": true,
+        "EveryActiveQueryStrictlyReduces": true,
+        "InsufficientRejects": true,
+        "IrreducibleAbstains": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugatesProposal": true,
+        "ResidualRemovalChangesProposal": false,
+        "UniquePromoted": true
+      },
+      "CohortID": "C01",
+      "CohortPass": false,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 16
+      },
+      "Rows": [
+        {
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": true,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 0,
+            "1": 1,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 1,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "UNIQUE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "0": 3,
+            "1": 2,
+            "2": 0,
+            "3": 4
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            3,
+            4,
+            2,
+            0
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "ACTIVE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 4,
+          "Observations": {
+            "0": 3,
+            "1": 2,
+            "2": 0
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            3,
+            4,
+            2,
+            0
+          ],
+          "Queries": [
+            {
+              "Input": 0,
+              "TaskOutput": 3
+            },
+            {
+              "Input": 1,
+              "TaskOutput": 2
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 4,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 8,
+              "Step": 0
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 2,
+              "BeforeConstructorClasses": 4,
+              "Input": 0,
+              "Step": 1
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 1,
+              "BeforeConstructorClasses": 2,
+              "Input": 1,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "IRREDUCIBLE",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "InitialConstructorClassCount": 2,
+          "Observations": {
+            "0": 3,
+            "1": 4,
+            "2": 2,
+            "3": 0,
+            "4": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 2,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "INSUFFICIENT",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 0,
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CaseID": "RESIDUAL_CAUSAL",
+          "FullProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "FullProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "ReducedProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "ReducedProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "RemovedInput": 2,
+          "Status": "CAUSAL_FAIL"
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "RELABEL",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "ExpectedConstructor": [
+            1,
+            2,
+            4,
+            0,
+            3
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "1": 4,
+            "2": 3,
+            "3": 1,
+            "4": 0
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            2,
+            4,
+            0,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ],
+      "SelectedOrbitFresh": true
+    },
+    {
+      "Checks": {
+        "ActiveStartsAtLeastThreeAndEndsUnique": true,
+        "EveryActiveQueryStrictlyReduces": true,
+        "InsufficientRejects": true,
+        "IrreducibleAbstains": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugatesProposal": true,
+        "ResidualRemovalChangesProposal": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C02",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 3,
+        "CurrentGrammar": 6,
+        "Entries": 11
+      },
+      "Rows": [
+        {
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": true,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 0,
+            "1": 2,
+            "2": 1,
+            "3": 4,
+            "4": 3
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 1,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "UNIQUE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "1": 3,
+            "2": 2,
+            "4": 1
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            2,
+            4,
+            0,
+            1,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "ACTIVE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 3,
+          "Observations": {
+            "0": 2,
+            "1": 0,
+            "2": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            3,
+            2,
+            1,
+            0,
+            4
+          ],
+          "Queries": [
+            {
+              "Input": 2,
+              "TaskOutput": 3
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 3,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 3,
+              "Step": 0
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 1,
+              "BeforeConstructorClasses": 3,
+              "Input": 2,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "IRREDUCIBLE",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "InitialConstructorClassCount": 2,
+          "Observations": {
+            "0": 4,
+            "1": 1,
+            "2": 2,
+            "3": 0,
+            "4": 3
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 2,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "INSUFFICIENT",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 3,
+            "1": 4,
+            "2": 2,
+            "3": 0,
+            "4": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CaseID": "RESIDUAL_CAUSAL",
+          "FullProposal": [
+            3,
+            2,
+            1,
+            0,
+            4
+          ],
+          "FullProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "ReducedProposal": null,
+          "ReducedProposalStatus": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "RemovedInput": 4,
+          "Status": "RESIDUAL_CAUSAL_SHIFT"
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 3,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 11,
+          "CaseID": "RELABEL",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "ExpectedConstructor": [
+            4,
+            3,
+            0,
+            1,
+            2
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "0": 2,
+            "2": 4,
+            "3": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            4,
+            3,
+            0,
+            1,
+            2
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ],
+      "SelectedOrbitFresh": true
+    },
+    {
+      "Checks": {
+        "ActiveStartsAtLeastThreeAndEndsUnique": true,
+        "EveryActiveQueryStrictlyReduces": true,
+        "InsufficientRejects": true,
+        "IrreducibleAbstains": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugatesProposal": true,
+        "ResidualRemovalChangesProposal": false,
+        "UniquePromoted": true
+      },
+      "CohortID": "C03",
+      "CohortPass": false,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 16
+      },
+      "Rows": [
+        {
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": true,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 1,
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 1,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "UNIQUE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "0": 4,
+            "1": 3,
+            "2": 0,
+            "3": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            2,
+            4,
+            3,
+            1,
+            0
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "ACTIVE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 4,
+          "Observations": {
+            "0": 3,
+            "1": 4,
+            "4": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "Queries": [
+            {
+              "Input": 1,
+              "TaskOutput": 4
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 4,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 4,
+              "Step": 0
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 1,
+              "BeforeConstructorClasses": 4,
+              "Input": 1,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "IRREDUCIBLE",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "InitialConstructorClassCount": 2,
+          "Observations": {
+            "0": 4,
+            "1": 0,
+            "2": 3,
+            "3": 1,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 2,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "INSUFFICIENT",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 0,
+            "1": 1,
+            "2": 4,
+            "3": 3,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CaseID": "RESIDUAL_CAUSAL",
+          "FullProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "FullProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "ReducedProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "ReducedProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "RemovedInput": 0,
+          "Status": "CAUSAL_FAIL"
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 16,
+          "CaseID": "RELABEL",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "ExpectedConstructor": [
+            1,
+            3,
+            0,
+            4,
+            2
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "1": 0,
+            "2": 4,
+            "3": 1,
+            "4": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            3,
+            0,
+            4,
+            2
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ],
+      "SelectedOrbitFresh": true
+    },
+    {
+      "Checks": {
+        "ActiveStartsAtLeastThreeAndEndsUnique": true,
+        "EveryActiveQueryStrictlyReduces": true,
+        "InsufficientRejects": true,
+        "IrreducibleAbstains": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugatesProposal": true,
+        "ResidualRemovalChangesProposal": true,
+        "UniquePromoted": true
+      },
+      "CohortID": "C04",
+      "CohortPass": true,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 18
+      },
+      "Rows": [
+        {
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": true,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 1,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "UNIQUE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "3": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "ACTIVE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 3,
+          "Observations": {
+            "0": 1,
+            "1": 0,
+            "4": 4
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "Queries": [
+            {
+              "Input": 1,
+              "TaskOutput": 0
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 3,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 3,
+              "Step": 0
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 1,
+              "BeforeConstructorClasses": 3,
+              "Input": 1,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "IRREDUCIBLE",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "InitialConstructorClassCount": 2,
+          "Observations": {
+            "0": 4,
+            "1": 2,
+            "2": 0,
+            "3": 3,
+            "4": 1
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 2,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "INSUFFICIENT",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 1,
+            "1": 4,
+            "2": 3,
+            "3": 0,
+            "4": 2
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CaseID": "RESIDUAL_CAUSAL",
+          "FullProposal": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "FullProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "ReducedProposal": null,
+          "ReducedProposalStatus": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "RemovedInput": 0,
+          "Status": "RESIDUAL_CAUSAL_SHIFT"
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "RELABEL",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "ExpectedConstructor": [
+            4,
+            1,
+            2,
+            0,
+            3
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "1": 2,
+            "2": 1,
+            "4": 4
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            4,
+            1,
+            2,
+            0,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ],
+      "SelectedOrbitFresh": true
+    },
+    {
+      "Checks": {
+        "ActiveStartsAtLeastThreeAndEndsUnique": true,
+        "EveryActiveQueryStrictlyReduces": true,
+        "InsufficientRejects": true,
+        "IrreducibleAbstains": true,
+        "NoExtensionNoProposal": true,
+        "RelabelConjugatesProposal": true,
+        "ResidualRemovalChangesProposal": false,
+        "UniquePromoted": true
+      },
+      "CohortID": "C05",
+      "CohortPass": false,
+      "Counts": {
+        "Constructors": 4,
+        "CurrentGrammar": 7,
+        "Entries": 18
+      },
+      "Rows": [
+        {
+          "CaseID": "NO_EXTENSION",
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": true,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 1,
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CURRENT_GRAMMAR_SUFFICIENT_NO_PROPOSAL",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 1,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "UNIQUE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "2": 4,
+            "3": 1,
+            "4": 3
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            3,
+            4,
+            1,
+            2,
+            0
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "ACTIVE",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 4,
+          "Observations": {
+            "0": 4,
+            "2": 1
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "Queries": [
+            {
+              "Input": 2,
+              "TaskOutput": 1
+            }
+          ],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 4,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 8,
+              "Step": 0
+            },
+            {
+              "Action": "TASK_OUTPUT_DISAGREEMENT_QUERY",
+              "AfterConstructorClasses": 1,
+              "BeforeConstructorClasses": 4,
+              "Input": 2,
+              "Step": 1
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "IRREDUCIBLE",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 2,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 2,
+          "InitialConstructorClassCount": 2,
+          "Observations": {
+            "0": 4,
+            "1": 1,
+            "2": 2,
+            "3": 0,
+            "4": 3
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "IRREDUCIBLE_CONSTRUCTOR_AMBIGUITY_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 2,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 2,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "INSUFFICIENT",
+          "ExactCertificateRows": [],
+          "FinalConstructorClassCount": 0,
+          "FullExactCertificatePassed": false,
+          "FullExactConstructorClassCount": 0,
+          "InitialConstructorClassCount": 0,
+          "Observations": {
+            "0": 4,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 0
+          },
+          "Promoted": false,
+          "ProposedConstructor": null,
+          "Queries": [],
+          "Status": "CONSTRUCTOR_SUBSTRATE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 0,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 0,
+              "Step": 0
+            }
+          ]
+        },
+        {
+          "CaseID": "RESIDUAL_CAUSAL",
+          "FullProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "FullProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "ReducedProposal": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "ReducedProposalStatus": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "RemovedInput": 0,
+          "Status": "CAUSAL_FAIL"
+        },
+        {
+          "CandidateConstructorsGeneratedAtRuntime": 4,
+          "CandidateExplanationEntriesGeneratedAtRuntime": 18,
+          "CaseID": "RELABEL",
+          "ExactCertificateRows": [
+            {
+              "Input": 0,
+              "ObservedTaskOutput": 4,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 1,
+              "ObservedTaskOutput": 3,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 2,
+              "ObservedTaskOutput": 1,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 3,
+              "ObservedTaskOutput": 0,
+              "SelectedConstructorHasExactExplanation": true
+            },
+            {
+              "Input": 4,
+              "ObservedTaskOutput": 2,
+              "SelectedConstructorHasExactExplanation": true
+            }
+          ],
+          "ExpectedConstructor": [
+            1,
+            4,
+            0,
+            2,
+            3
+          ],
+          "FinalConstructorClassCount": 1,
+          "FullExactCertificatePassed": true,
+          "FullExactConstructorClassCount": 1,
+          "InitialConstructorClassCount": 1,
+          "Observations": {
+            "0": 4,
+            "3": 0,
+            "4": 2
+          },
+          "Promoted": true,
+          "ProposedConstructor": [
+            1,
+            4,
+            0,
+            2,
+            3
+          ],
+          "Queries": [],
+          "Status": "UNIQUE_RESIDUAL_CONSTRUCTOR_PROMOTED",
+          "Trace": [
+            {
+              "Action": "ANALYZE_TASK_RESIDUAL",
+              "ConstructorClasses": 1,
+              "CurrentGrammarMatches": 0,
+              "EntryCount": 1,
+              "Step": 0
+            }
+          ]
+        }
+      ],
+      "SelectedOrbitFresh": true
+    }
+  ],
+  "Conclusion": "S161C_FROZEN_MULTI_SEED_REPLICATION_FAIL",
+  "EvidenceLevel": "FROZEN_MULTI_SEED_REPLICATION",
+  "PythonReplicationPass": false,
+  "Stage": "S161-C"
+}

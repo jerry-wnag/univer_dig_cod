@@ -1,0 +1,29 @@
+{
+  "AllSelectedOrbitsFresh": true,
+  "CohortSeeds": [
+    {
+      "Tasks": "S161C-C01-TASKS-20260901-510931",
+      "World": "S161C-C01-WORLD-20260901-104729"
+    },
+    {
+      "Tasks": "S161C-C02-TASKS-20260901-620113",
+      "World": "S161C-C02-WORLD-20260901-208387"
+    },
+    {
+      "Tasks": "S161C-C03-TASKS-20260901-730607",
+      "World": "S161C-C03-WORLD-20260901-319081"
+    },
+    {
+      "Tasks": "S161C-C04-TASKS-20260901-840229",
+      "World": "S161C-C04-WORLD-20260901-421663"
+    },
+    {
+      "Tasks": "S161C-C05-TASKS-20260901-950743",
+      "World": "S161C-C05-WORLD-20260901-533219"
+    }
+  ],
+  "FailedWorldReplacementAllowed": false,
+  "ProtocolFrozenBeforeMaterialization": true,
+  "QualifiedFreshPoolSize": 5,
+  "SelectedDistinctOrbitCount": 5
+}

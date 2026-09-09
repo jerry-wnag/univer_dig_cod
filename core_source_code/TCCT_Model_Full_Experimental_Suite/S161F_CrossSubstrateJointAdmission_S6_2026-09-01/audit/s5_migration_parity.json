@@ -1,0 +1,15 @@
+{
+  "AllTrajectoriesParity": true,
+  "AuditType": "PRE_FREEZE_S5_GENERIC_ENGINE_MIGRATION_PARITY",
+  "Comparisons": {
+    "AMBIGUOUS": true,
+    "CAUSAL_FULL": true,
+    "CAUSAL_REDUCED": true,
+    "INSUFFICIENT": true,
+    "JOINT_ACTIVE": true,
+    "NO_EXTENSION": true,
+    "RELABEL": true,
+    "UNIQUE": true
+  },
+  "S6FutureSeedsMaterialized": false
+}

@@ -1,0 +1,549 @@
+{
+  "Stage": "S161-C",
+  "Worlds": [
+    {
+      "ActiveInputs": [
+        2
+      ],
+      "ActiveTarget": [
+        3,
+        2,
+        0,
+        4,
+        1
+      ],
+      "AmbiguousTarget": [
+        3,
+        4,
+        2,
+        0,
+        1
+      ],
+      "BaseAtoms": {
+        "A": [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ]
+      },
+      "CausalInputs": [
+        2,
+        4
+      ],
+      "CausalRemovedInput": 2,
+      "CausalTarget": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      "CohortID": "C01",
+      "ExplanationEntryCount": 16,
+      "InsufficientInputs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "InsufficientTarget": [
+        0,
+        1,
+        4,
+        3,
+        2
+      ],
+      "NoExtensionTarget": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "RelabelPermutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RuntimeConstructorCount": 4,
+      "SelectedOrbitKey": [
+        [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          0
+        ]
+      ],
+      "SelectedOrbitWasHistorical": false,
+      "UniqueInputs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "UniqueTarget": [
+        3,
+        2,
+        0,
+        4,
+        1
+      ]
+    },
+    {
+      "ActiveInputs": [
+        0,
+        1
+      ],
+      "ActiveTarget": [
+        2,
+        0,
+        3,
+        1,
+        4
+      ],
+      "AmbiguousTarget": [
+        4,
+        1,
+        2,
+        0,
+        3
+      ],
+      "BaseAtoms": {
+        "A": [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        "B": [
+          1,
+          3,
+          0,
+          2,
+          4
+        ]
+      },
+      "CausalInputs": [
+        0,
+        1,
+        4
+      ],
+      "CausalRemovedInput": 4,
+      "CausalTarget": [
+        2,
+        0,
+        3,
+        1,
+        4
+      ],
+      "CohortID": "C02",
+      "ExplanationEntryCount": 11,
+      "InsufficientInputs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "InsufficientTarget": [
+        3,
+        4,
+        2,
+        0,
+        1
+      ],
+      "NoExtensionTarget": [
+        0,
+        2,
+        1,
+        4,
+        3
+      ],
+      "RelabelPermutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RuntimeConstructorCount": 3,
+      "SelectedOrbitKey": [
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          3,
+          0,
+          2,
+          4
+        ]
+      ],
+      "SelectedOrbitWasHistorical": false,
+      "UniqueInputs": [
+        1,
+        2,
+        4
+      ],
+      "UniqueTarget": [
+        0,
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "ActiveInputs": [
+        0,
+        4
+      ],
+      "ActiveTarget": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      "AmbiguousTarget": [
+        4,
+        0,
+        3,
+        1,
+        2
+      ],
+      "BaseAtoms": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "B": [
+          1,
+          2,
+          4,
+          0,
+          3
+        ]
+      },
+      "CausalInputs": [
+        0,
+        1,
+        2
+      ],
+      "CausalRemovedInput": 0,
+      "CausalTarget": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      "CohortID": "C03",
+      "ExplanationEntryCount": 16,
+      "InsufficientInputs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "InsufficientTarget": [
+        0,
+        1,
+        4,
+        3,
+        2
+      ],
+      "NoExtensionTarget": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RelabelPermutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RuntimeConstructorCount": 4,
+      "SelectedOrbitKey": [
+        [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          0,
+          3
+        ]
+      ],
+      "SelectedOrbitWasHistorical": false,
+      "UniqueInputs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "UniqueTarget": [
+        4,
+        3,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "ActiveInputs": [
+        0,
+        4
+      ],
+      "ActiveTarget": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ],
+      "AmbiguousTarget": [
+        4,
+        2,
+        0,
+        3,
+        1
+      ],
+      "BaseAtoms": {
+        "A": [
+          1,
+          0,
+          3,
+          4,
+          2
+        ],
+        "B": [
+          2,
+          3,
+          0,
+          4,
+          1
+        ]
+      },
+      "CausalInputs": [
+        0,
+        2,
+        4
+      ],
+      "CausalRemovedInput": 0,
+      "CausalTarget": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "CohortID": "C04",
+      "ExplanationEntryCount": 18,
+      "InsufficientInputs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "InsufficientTarget": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "NoExtensionTarget": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
+      "RelabelPermutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RuntimeConstructorCount": 4,
+      "SelectedOrbitKey": [
+        [
+          1,
+          0,
+          3,
+          4,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          4,
+          1
+        ]
+      ],
+      "SelectedOrbitWasHistorical": false,
+      "UniqueInputs": [
+        0,
+        1,
+        3
+      ],
+      "UniqueTarget": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "ActiveInputs": [
+        0
+      ],
+      "ActiveTarget": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      "AmbiguousTarget": [
+        4,
+        1,
+        2,
+        0,
+        3
+      ],
+      "BaseAtoms": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "B": [
+          1,
+          3,
+          0,
+          4,
+          2
+        ]
+      },
+      "CausalInputs": [
+        0,
+        1,
+        3
+      ],
+      "CausalRemovedInput": 0,
+      "CausalTarget": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      "CohortID": "C05",
+      "ExplanationEntryCount": 18,
+      "InsufficientInputs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "InsufficientTarget": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "NoExtensionTarget": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RelabelPermutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "RuntimeConstructorCount": 4,
+      "SelectedOrbitKey": [
+        [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          4,
+          2
+        ]
+      ],
+      "SelectedOrbitWasHistorical": false,
+      "UniqueInputs": [
+        2,
+        3,
+        4
+      ],
+      "UniqueTarget": [
+        2,
+        0,
+        4,
+        1,
+        3
+      ]
+    }
+  ]
+}

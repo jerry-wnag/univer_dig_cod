@@ -1,0 +1,103 @@
+{
+  "Stage": "S161-F",
+  "Title": "Cross-Substrate Frozen Replication of Joint Residual Admission",
+  "EvidenceLevel": "CROSS_SUBSTRATE_FROZEN_MULTI_SEED_REPLICATION",
+  "CarrierSize": 6,
+  "ProtocolFrozenBeforeWorldMaterialization": true,
+  "FailedWorldReplacementAllowed": false,
+  "MechanismChangeFromS161E": "CARRIER_PARAMETERIZATION_ONLY",
+  "S5MigrationParityRequired": true,
+  "CohortCount": 5,
+  "CasesPerCohort": 7,
+  "AuditExclusion": {
+    "Seed": "S161F-S6-FEASIBILITY-AUDIT-ONLY-20260901",
+    "DistinctOrbitCount": 300,
+    "AllAuditOrbitsExcludedFromFormalCohorts": true
+  },
+  "CohortSeeds": [
+    {"World": "S161F-S6-C01-WORLD-20260901-118021", "Tasks": "S161F-S6-C01-TASKS-20260901-611903"},
+    {"World": "S161F-S6-C02-WORLD-20260901-227039", "Tasks": "S161F-S6-C02-TASKS-20260901-722113"},
+    {"World": "S161F-S6-C03-WORLD-20260901-331063", "Tasks": "S161F-S6-C03-TASKS-20260901-833341"},
+    {"World": "S161F-S6-C04-WORLD-20260901-449087", "Tasks": "S161F-S6-C04-TASKS-20260901-944579"},
+    {"World": "S161F-S6-C05-WORLD-20260901-557109", "Tasks": "S161F-S6-C05-TASKS-20260901-155807"}
+  ],
+  "MaterializationPolicy": {
+    "CandidateStream": "SHA256 counter stream over ordered nonidentity S6 permutation pairs",
+    "SimultaneousRelabelCanonicalization": true,
+    "SelectFirstDifficultyQualifiedNonAuditNonDuplicateOrbit": true,
+    "MaximumCandidateAttemptsPerCohort": 1000,
+    "ChangeWorldAfterExecutionFailureAllowed": false
+  },
+  "FrozenJointAdmission": {
+    "CurrentGrammarAtoms": ["A", "B"],
+    "MaximumWordCost": 2,
+    "DecisionClasses": ["CURRENT_GRAMMAR", "CONSTRUCTOR_SEMANTIC_CLASS"],
+    "QueryAdmission": "strict worst-case joint-decision-class reduction",
+    "Promotion": "current grammar eliminated, one constructor semantic class, full exact task certificate",
+    "CurrentGrammarCompatible": "RESIDUAL_NOT_ESTABLISHED_NO_PROPOSAL",
+    "Ambiguous": "ABSTAIN",
+    "Insufficient": "REJECT",
+    "WorldSpecificRules": false
+  },
+  "CasesPerCohortList": [
+    "NO_EXTENSION",
+    "UNIQUE_EXTENSION",
+    "JOINT_ACTIVE_CURRENT_PLUS_CONSTRUCTOR",
+    "CURRENT_COMPATIBLE_CAUSAL_REMOVAL",
+    "AMBIGUOUS",
+    "INSUFFICIENT",
+    "RELABEL"
+  ],
+  "StrictReplicationGates": {
+    "CohortsPassing": "5/5",
+    "CasesExecuted": 35,
+    "DistinctNonAuditS6Orbits": 5,
+    "EveryCohortJointActiveInitiallyMixed": true,
+    "EveryJointQueryStrictlyReduces": true,
+    "EveryCohortCausalFullPromotes": true,
+    "EveryCohortCausalReducedBlocksPromotion": true,
+    "EveryCohortAmbiguityAbstains": true,
+    "EveryCohortInsufficiencyRejects": true,
+    "EveryCohortRelabelConjugacy": true,
+    "FalsePromotion": 0,
+    "PythonWolframIndependentParity": true
+  },
+  "CorePolicy": {
+    "RewriteChanged": false,
+    "FreezeChanged": false,
+    "DedupChanged": false,
+    "AdmissionLogicChanged": false,
+    "OnlyCarrierChangedFrom5To6": true
+  },
+  "HistoricalEvidenceFiles": {
+    "s5_migration_parity": "work/S161F_CrossSubstrateJointAdmission_S6_2026-09-01/audit/s5_migration_parity.json",
+    "s6_feasibility": "work/S161F_CrossSubstrateJointAdmission_S6_2026-09-01/audit/s6_feasibility_summary.json",
+    "s161c_failure": "work/S161C_ResidualDrivenConstructorProposal_FrozenMultiSeed_5x7_2026-09-01/results/final_gate.json",
+    "s161d_repair": "work/S161D_JointResidualAdmission_RetrospectiveRepair_5x7_2026-09-01/results/final_gate.json",
+    "s161e_fresh": "work/S161E_JointResidualAdmission_FrozenFresh_2026-09-01/results/final_gate.json"
+  },
+  "HistoricalEvidenceHashes": {
+    "s5_migration_parity": "41a0a8de78b20824d7a0faa21ca6f712248a2317c04c3a46262d9feb3384415c",
+    "s6_feasibility": "a16108b1d6f0b1ee808a8ad90834d9fb4870fbbef1531050ec6091c2394676ea",
+    "s161c_failure": "fb54f05629d8b54958ec0123c41974174425f592d3beb8f540ec82c147002b5e",
+    "s161d_repair": "b457c51b299c2c6b6aa80d13d06b00bbc0dfd7a7338f0b7ddc10171554b73785",
+    "s161e_fresh": "d4ddd4c1961fcf712a9519436dc9b01862fc6682909b5d5e8b5fbd094e2abba8"
+  },
+  "FrozenExternalFiles": {
+    "generic_joint_admission_engine": "work/S161F_CrossSubstrateJointAdmission_S6_2026-09-01/source/generic_joint_admission_engine.py"
+  },
+  "FrozenExternalHashes": {
+    "generic_joint_admission_engine": "7354308674692d3f15727e06d3dde48f54787aaf20e23178c6f8d0e93a4a5f16"
+  },
+  "FrozenSourceFiles": {
+    "python_runner": "source/run_s161f_python.py",
+    "wolfram_verifier": "source/verify_s161f.wl",
+    "finalizer": "source/finalize_s161f.py"
+  },
+  "FrozenSourceHashes": {
+    "python_runner": "e03638f295ca4c3af336145a64832f9537504b082a14e88370daeb9b524dedf8",
+    "wolfram_verifier": "f561cba1e32b868aafa735241f7beeb320d985c457777b8de2370de8257c7973",
+    "finalizer": "2a5fb33bf1eb5402af69e80a7600fca93d563e94e1fccc0cd02c47a642ef2c06"
+  },
+  "ClaimBoundary": "Five frozen fresh S6 permutation cohorts under a fixed bounded constructor grammar. Passing supports cross-substrate replicated evidence-gated residual constructor formation, not unbounded or open-ended invention."
+}

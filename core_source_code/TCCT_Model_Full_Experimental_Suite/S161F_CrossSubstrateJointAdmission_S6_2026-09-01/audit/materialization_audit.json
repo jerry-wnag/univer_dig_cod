@@ -1,0 +1,36 @@
+{
+  "AttemptsPerCohort": [
+    1,
+    1,
+    1,
+    2,
+    1
+  ],
+  "AuditOrbitCountExcluded": 300,
+  "CohortSeeds": [
+    {
+      "Tasks": "S161F-S6-C01-TASKS-20260901-611903",
+      "World": "S161F-S6-C01-WORLD-20260901-118021"
+    },
+    {
+      "Tasks": "S161F-S6-C02-TASKS-20260901-722113",
+      "World": "S161F-S6-C02-WORLD-20260901-227039"
+    },
+    {
+      "Tasks": "S161F-S6-C03-TASKS-20260901-833341",
+      "World": "S161F-S6-C03-WORLD-20260901-331063"
+    },
+    {
+      "Tasks": "S161F-S6-C04-TASKS-20260901-944579",
+      "World": "S161F-S6-C04-WORLD-20260901-449087"
+    },
+    {
+      "Tasks": "S161F-S6-C05-TASKS-20260901-155807",
+      "World": "S161F-S6-C05-WORLD-20260901-557109"
+    }
+  ],
+  "FailedWorldReplacementAllowed": false,
+  "ProtocolFrozenBeforeMaterialization": true,
+  "SelectedAuditOverlap": 0,
+  "SelectedDistinctOrbitCount": 5
+}

@@ -1,0 +1,22 @@
+{
+  "CarrierSize": 6,
+  "Checks": {
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "FiveDistinctNonAuditOrbits": true,
+    "FiveOfFiveCohortsPass": true,
+    "FrozenGenericJointMechanismIntact": true,
+    "FrozenLocalSourcesIntact": true,
+    "HistoricalEvidenceIntact": true,
+    "NoWorldReplacement": true,
+    "ProtocolFrozenBeforeMaterialization": true,
+    "PythonReplicationPass": true,
+    "ThirtyFiveCasesExecuted": true,
+    "WolframIndependentPass": true
+  },
+  "ClaimBoundary": "Five frozen fresh S6 permutation cohorts under a fixed bounded constructor grammar. Not unbounded or open-ended primitive invention.",
+  "Conclusion": "S161F_CROSS_SUBSTRATE_REPLICATED_EVIDENCE_GATED_RESIDUAL_CONSTRUCTOR_FORMATION_PASS",
+  "EvidenceLevel": "CROSS_SUBSTRATE_FROZEN_MULTI_SEED_REPLICATION",
+  "S161CDisposition": "PRESERVED_STRICT_S5_MULTI_SEED_REPLICATION_FAIL",
+  "Stage": "S161-F",
+  "StrictReplicationPass": true
+}

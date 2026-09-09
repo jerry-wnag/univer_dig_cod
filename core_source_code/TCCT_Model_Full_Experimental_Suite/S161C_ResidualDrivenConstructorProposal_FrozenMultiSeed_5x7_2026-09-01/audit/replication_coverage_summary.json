@@ -1,0 +1,22 @@
+{
+  "AuditDidNotSelectWorldsOrTasks": true,
+  "AuditType": "READ_ONLY_PRE_FREEZE_S161C_MULTI_SEED_COVERAGE",
+  "CurrentGrammarSemanticCountRange": [
+    6,
+    7
+  ],
+  "ExplanationEntryCountRange": [
+    11,
+    18
+  ],
+  "FiveDistinctCohortsFeasible": true,
+  "FutureSeedsMaterialized": false,
+  "HistoricalOrbitCountExcluded": 56,
+  "QualifyingFreshSevenCaseOrbitCount": 5,
+  "RemainingUnseenOrbitCount": 27,
+  "RequiredCohortCount": 5,
+  "RuntimeConstructorCountRange": [
+    3,
+    4
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "ArtifactHashes": {
+    "holdout": "b35b000738b82020bd6fd3d31a9ff5d39e03d5e0b9eea3a750399fc8906795bc",
+    "python": "4c10b8d4cd6dac32b7d7649ecf35f1264d8005b3cacb519287ea7a6dd7d32ff5",
+    "wolfram": "47168ec796aa2efb6b0dbe45d48ef6bf57952c44978509b2b92383746d383b68"
+  },
+  "Checks": {
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "FiveDistinctFreshOrbits": true,
+    "FiveOfFiveCohortsPass": false,
+    "FrozenLocalSourcesIntact": true,
+    "FrozenS161MechanismIntact": true,
+    "HistoricalEvidenceIntact": true,
+    "NoHiddenConstructorTargetOracle": true,
+    "NoWorldReplacement": true,
+    "ProtocolFrozenBeforeMaterialization": true,
+    "PythonReplicationPass": false,
+    "ThirtyFiveCasesExecuted": true,
+    "WolframIndependentPass": false
+  },
+  "ClaimBoundary": "Five frozen fresh unseen S5 permutation cohorts. Bounded fixed substrate; not open-ended primitive or substrate invention.",
+  "Conclusion": "S161C_STRICT_MULTI_SEED_REPLICATION_FAIL",
+  "EvidenceLevel": "FROZEN_MULTI_SEED_REPLICATION",
+  "Stage": "S161-C",
+  "StrictReplicationPass": false
+}
