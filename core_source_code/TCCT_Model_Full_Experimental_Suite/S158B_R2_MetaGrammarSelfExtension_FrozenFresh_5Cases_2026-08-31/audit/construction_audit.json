@@ -1,0 +1,12 @@
+{
+  "CaseCount": 5,
+  "EligibleFreshRuleCount": 2,
+  "EvidenceClass": "NEW_SEED_FROZEN_FRESH_SINGLE_COHORT",
+  "FormationTargetAbsentFromG0": true,
+  "FreshRuleNoHistoricalSemanticCollision": true,
+  "MaterializedAfterProtocolAndRepairedVerifierFreeze": true,
+  "NestedReuseTargetAbsentFromG0": true,
+  "NoHiddenRuleASTInPublicInput": true,
+  "NoWorldReplacementAfterFailure": true,
+  "Stage": "S158-B-R2"
+}

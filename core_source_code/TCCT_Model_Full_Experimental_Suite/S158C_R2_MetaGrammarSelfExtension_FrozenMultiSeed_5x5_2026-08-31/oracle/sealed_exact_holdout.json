@@ -1,0 +1,859 @@
+{
+  "Cohorts": [
+    {
+      "CandidateRuleSemanticClassCount": 10,
+      "CohortID": "S158C_C01",
+      "CohortSeed": 20260831528103,
+      "FormationSourceSemantics": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "FormationTargetSemantics": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "FreshTargetRuleActionSignature": "111100102102002222102102102111000222",
+      "FreshTargetRuleActionSignatureSHA256": "6d98720b73a70b5c491ff4db358dfa2eaffa259c5694505efa163e6fff921d60",
+      "FreshTargetRuleFullAction": [
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      ],
+      "FullRuleCertificateCellCount": 36,
+      "G0SemanticClassCount": 4,
+      "HistoricalTargetRuleActionSignatureSHA256": [
+        "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+        "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+        "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+      ],
+      "HistoricalTargetRuleActionSignatures": [
+        "111122120120220000111222000120120120",
+        "111122120120220000120120120111222000",
+        "222200201201001111222000111201201201"
+      ],
+      "NegativeControlCoefficients": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "NestedReuseMinimumCost": 3,
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetSemantics": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "NestedReuseWitnessAST": [
+        "MIN",
+        [
+          "RULE",
+          "RNEW_576ac1517870b214",
+          [
+            "VAR",
+            "A"
+          ]
+        ],
+        [
+          "RULE",
+          "RNEW_576ac1517870b214",
+          [
+            "VAR",
+            "B"
+          ]
+        ]
+      ],
+      "OrderedG0Semantics": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "CandidateRuleSemanticClassCount": 10,
+      "CohortID": "S158C_C02",
+      "CohortSeed": 20260831528217,
+      "FormationSourceSemantics": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "FormationTargetSemantics": [
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "FreshTargetRuleActionSignature": "222200201201001111201201201222000111",
+      "FreshTargetRuleActionSignatureSHA256": "abc94614a15fa5dbb496fb2eefc9cd33d9e7cbd1e13a762db0043d9966acee16",
+      "FreshTargetRuleFullAction": [
+        [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "FullRuleCertificateCellCount": 36,
+      "G0SemanticClassCount": 4,
+      "HistoricalTargetRuleActionSignatureSHA256": [
+        "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+        "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+        "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+      ],
+      "HistoricalTargetRuleActionSignatures": [
+        "111122120120220000111222000120120120",
+        "111122120120220000120120120111222000",
+        "222200201201001111222000111201201201"
+      ],
+      "NegativeControlCoefficients": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "NestedReuseMinimumCost": 3,
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetSemantics": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "NestedReuseWitnessAST": [
+        "RULE",
+        "RNEW_4d2649c01aed36df",
+        [
+          "RULE",
+          "RNEW_4d2649c01aed36df",
+          [
+            "MAX",
+            [
+              "VAR",
+              "A"
+            ],
+            [
+              "VAR",
+              "B"
+            ]
+          ]
+        ]
+      ],
+      "OrderedG0Semantics": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "CandidateRuleSemanticClassCount": 10,
+      "CohortID": "S158C_C03",
+      "CohortSeed": 20260831528329,
+      "FormationSourceSemantics": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "FormationTargetSemantics": [
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        1
+      ],
+      "FreshTargetRuleActionSignature": "000022021021221111000222111021021021",
+      "FreshTargetRuleActionSignatureSHA256": "b1196f98dfbdf0efb6fbf1efda10afb5d0da66604e2b5897388ffecc53b00af6",
+      "FreshTargetRuleFullAction": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          1
+        ]
+      ],
+      "FullRuleCertificateCellCount": 36,
+      "G0SemanticClassCount": 4,
+      "HistoricalTargetRuleActionSignatureSHA256": [
+        "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+        "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+        "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+      ],
+      "HistoricalTargetRuleActionSignatures": [
+        "111122120120220000111222000120120120",
+        "111122120120220000120120120111222000",
+        "222200201201001111222000111201201201"
+      ],
+      "NegativeControlCoefficients": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "NestedReuseMinimumCost": 3,
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetSemantics": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "NestedReuseWitnessAST": [
+        "RULE",
+        "RNEW_9f88646ac5d52d1e",
+        [
+          "MAX",
+          [
+            "RULE",
+            "RNEW_9f88646ac5d52d1e",
+            [
+              "VAR",
+              "A"
+            ]
+          ],
+          [
+            "VAR",
+            "B"
+          ]
+        ]
+      ],
+      "OrderedG0Semantics": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "CandidateRuleSemanticClassCount": 10,
+      "CohortID": "S158C_C04",
+      "CohortSeed": 20260831528441,
+      "FormationSourceSemantics": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "FormationTargetSemantics": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        2
+      ],
+      "FreshTargetRuleActionSignature": "111100102102002222111000222102102102",
+      "FreshTargetRuleActionSignatureSHA256": "8de15b54af2cb6f9c62d74acd425fb11eb062a38e563beaf56c08af67358a041",
+      "FreshTargetRuleFullAction": [
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ]
+      ],
+      "FullRuleCertificateCellCount": 36,
+      "G0SemanticClassCount": 4,
+      "HistoricalTargetRuleActionSignatureSHA256": [
+        "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+        "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+        "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+      ],
+      "HistoricalTargetRuleActionSignatures": [
+        "111122120120220000111222000120120120",
+        "111122120120220000120120120111222000",
+        "222200201201001111222000111201201201"
+      ],
+      "NegativeControlCoefficients": [
+        2,
+        0,
+        1,
+        2
+      ],
+      "NestedReuseMinimumCost": 3,
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetSemantics": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        2
+      ],
+      "NestedReuseWitnessAST": [
+        "RULE",
+        "RNEW_937911f65778df38",
+        [
+          "MIN",
+          [
+            "RULE",
+            "RNEW_937911f65778df38",
+            [
+              "VAR",
+              "A"
+            ]
+          ],
+          [
+            "VAR",
+            "B"
+          ]
+        ]
+      ],
+      "OrderedG0Semantics": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "CandidateRuleSemanticClassCount": 10,
+      "CohortID": "S158C_C05",
+      "CohortSeed": 20260831528557,
+      "FormationSourceSemantics": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "FormationTargetSemantics": [
+        0,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "FreshTargetRuleActionSignature": "000022021021221111021021021000222111",
+      "FreshTargetRuleActionSignatureSHA256": "d2814c9211e288cffaead20b0f74e549849e5f484e95a28f62601d43d51c24af",
+      "FreshTargetRuleFullAction": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "FullRuleCertificateCellCount": 36,
+      "G0SemanticClassCount": 4,
+      "HistoricalTargetRuleActionSignatureSHA256": [
+        "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+        "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+        "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+      ],
+      "HistoricalTargetRuleActionSignatures": [
+        "111122120120220000111222000120120120",
+        "111122120120220000120120120111222000",
+        "222200201201001111222000111201201201"
+      ],
+      "NegativeControlCoefficients": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "NestedReuseMinimumCost": 3,
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetSemantics": [
+        0,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "NestedReuseWitnessAST": [
+        "MAX",
+        [
+          "RULE",
+          "RNEW_01c1e6eab95af9f0",
+          [
+            "VAR",
+            "A"
+          ]
+        ],
+        [
+          "RULE",
+          "RNEW_01c1e6eab95af9f0",
+          [
+            "VAR",
+            "B"
+          ]
+        ]
+      ],
+      "OrderedG0Semantics": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "Cohorts": [
+    {
+      "Cases": [
+        {
+          "CaseID": "S158C_C01_G0_EXACT",
+          "CaseType": "G0_EXACT_CONTROL",
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C01_FORM_RULE",
+          "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C01_REUSE_NESTED",
+          "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+          "MaximumProgramNodes": 3,
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C01_AMBIGUOUS",
+          "CaseType": "AMBIGUOUS_RULE_CONTROL",
+          "MaximumRuleQueries": 1,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C01_NO_EXTENSION",
+          "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        }
+      ],
+      "CohortID": "S158C_C01"
+    },
+    {
+      "Cases": [
+        {
+          "CaseID": "S158C_C02_G0_EXACT",
+          "CaseType": "G0_EXACT_CONTROL",
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C02_FORM_RULE",
+          "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C02_REUSE_NESTED",
+          "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+          "MaximumProgramNodes": 3,
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            1,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "CaseID": "S158C_C02_AMBIGUOUS",
+          "CaseType": "AMBIGUOUS_RULE_CONTROL",
+          "MaximumRuleQueries": 1,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C02_NO_EXTENSION",
+          "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        }
+      ],
+      "CohortID": "S158C_C02"
+    },
+    {
+      "Cases": [
+        {
+          "CaseID": "S158C_C03_G0_EXACT",
+          "CaseType": "G0_EXACT_CONTROL",
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C03_FORM_RULE",
+          "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C03_REUSE_NESTED",
+          "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+          "MaximumProgramNodes": 3,
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "CaseID": "S158C_C03_AMBIGUOUS",
+          "CaseType": "AMBIGUOUS_RULE_CONTROL",
+          "MaximumRuleQueries": 1,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C03_NO_EXTENSION",
+          "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        }
+      ],
+      "CohortID": "S158C_C03"
+    },
+    {
+      "Cases": [
+        {
+          "CaseID": "S158C_C04_G0_EXACT",
+          "CaseType": "G0_EXACT_CONTROL",
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C04_FORM_RULE",
+          "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C04_REUSE_NESTED",
+          "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+          "MaximumProgramNodes": 3,
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C04_AMBIGUOUS",
+          "CaseType": "AMBIGUOUS_RULE_CONTROL",
+          "MaximumRuleQueries": 1,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C04_NO_EXTENSION",
+          "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        }
+      ],
+      "CohortID": "S158C_C04"
+    },
+    {
+      "Cases": [
+        {
+          "CaseID": "S158C_C05_G0_EXACT",
+          "CaseType": "G0_EXACT_CONTROL",
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "CaseID": "S158C_C05_FORM_RULE",
+          "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C05_REUSE_NESTED",
+          "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+          "MaximumProgramNodes": 3,
+          "RuleInventionAllowed": false,
+          "TargetSemantics": [
+            0,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "CaseID": "S158C_C05_AMBIGUOUS",
+          "CaseType": "AMBIGUOUS_RULE_CONTROL",
+          "MaximumRuleQueries": 1,
+          "RuleInventionAllowed": true
+        },
+        {
+          "CaseID": "S158C_C05_NO_EXTENSION",
+          "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+          "MaximumRuleQueries": 36,
+          "RuleInventionAllowed": true
+        }
+      ],
+      "CohortID": "S158C_C05"
+    }
+  ]
+}

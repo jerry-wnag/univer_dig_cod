@@ -1,0 +1,45 @@
+{
+	"Stage":"S158-B-R2",
+	"Engine":"15.0.0 for Microsoft Windows (64-bit) (May 26, 2026)",
+	"AuditType":"NEW_SEED_FROZEN_PRE_MATERIALIZATION_INDEPENDENT_NATIVE_WOLFRAM",
+	"Recomputed":{
+		"G0SemanticClassCount":4,
+		"RawRuleSchemaCount":12,
+		"ExpressiveRuleSchemaCount":10,
+		"CandidateRuleSemanticClassCount":10,
+		"FormationVersionSpaceTrajectory":[
+			10,
+			4,
+			2,
+			1
+		],
+		"AmbiguityVersionSpaceTrajectory":[
+			10,
+			4
+		],
+		"InsufficiencyVersionSpaceTrajectory":[
+			10,
+			2,
+			0
+		]
+	},
+	"Checks":{
+		"NativeG0ClosureHasFourClasses":true,
+		"OrderedG0IsExactlyNativeClosure":true,
+		"IndependentCandidateRuleClassCount":true,
+		"FreshRuleExistsInFixedSubstrate":true,
+		"FreshRuleHasNoHistoricalSemanticCollision":true,
+		"FormationTargetAbsentFromG0":true,
+		"NestedTargetAbsentFromG0":true,
+		"ActiveFormationReplayUnique":true,
+		"Full36CellRuleActionCertificate":true,
+		"FreshFullActionMatchesHoldout":true,
+		"NestedReuseASTExact":true,
+		"AmbiguityReplayRemainsNonUnique":true,
+		"InsufficiencyReplayEliminatesAll":true,
+		"PythonChecksAllTrue":true,
+		"PythonFreshPass":true
+	},
+	"WolframIndependentPass":true,
+	"Conclusion":"S158B_R2_WOLFRAM_NEW_SEED_FROZEN_FRESH_AUDIT_PASS"
+}

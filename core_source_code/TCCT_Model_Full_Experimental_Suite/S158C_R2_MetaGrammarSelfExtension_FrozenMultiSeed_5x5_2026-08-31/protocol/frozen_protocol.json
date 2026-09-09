@@ -1,0 +1,113 @@
+{
+  "Stage": "S158-C-R2",
+  "Title": "New-Seed Frozen 5x5 Replication after Verifier Repair",
+  "EvidenceClass": "NEW_SEEDS_FROZEN_MULTI_SEED_5x5",
+  "ProtocolFrozenBeforeCaseMaterialization": true,
+  "RepairedVerifierFrozenBeforeCaseMaterialization": true,
+  "NoCohortReplacementAfterFailure": true,
+  "Freshness": {
+    "MasterSeed": 20260831528001,
+    "CohortSeeds": [
+      20260831528103,
+      20260831528217,
+      20260831528329,
+      20260831528441,
+      20260831528557
+    ],
+    "AllSeedsPreviouslyMaterialized": false,
+    "RuleAssignment": "Unchanged hash-ranked assignment of all five qualifying nonhistorical rules without replacement",
+    "TargetAssignment": "Unchanged hash-ranked target assignment under each new cohort seed",
+    "FullWorldFingerprintExcludesSeed": true,
+    "FullWorldSemanticCollisionWithS158C_R0Allowed": false,
+    "ExcludedHistoricalActionSignatureSHA256": [
+      "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+      "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152",
+      "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a"
+    ],
+    "FailureReplacementAllowed": false
+  },
+  "DifficultyContract": {
+    "ExpectedQualifyingFreshRuleCount": 5,
+    "ExpectedStructurallyIneligibleRemainingRuleCount": 2,
+    "QualifyingRuleDefinition": [
+      "nonhistorical action signature",
+      "formation image outside exhaustive G0 closure",
+      "depth-3 target outside G0",
+      "minimum-cost exact reuse requires at least two promoted-rule calls"
+    ],
+    "SearchDepthMayNotBeRaisedToMakeARuleEligible": true
+  },
+  "SemanticDomain": {"Inputs": "Z3 x Z3", "Outputs": "Z3", "FullBehaviorCells": 9},
+  "G0Productions": ["VAR_A", "VAR_B", "MIN", "MAX"],
+  "G0ExpressivityCertificate": {
+    "Method": "EXHAUSTIVE_FIXED_POINT_SEMANTIC_CLOSURE",
+    "ExpectedSemanticClassCount": 4,
+    "CostBoundUsedForUnexpressibility": false
+  },
+  "RuleConstructionSubstrate": {
+    "Status": "UNCHANGED",
+    "Schemas": "Optional input-coordinate swap followed by a permutation of the three output labels",
+    "SyntacticCandidatesBeforeExpressivityFilter": 12,
+    "ExpectedSemanticRuleClassesAfterFilterAndQuotient": 10
+  },
+  "ActiveInduction": {
+    "RuleVersionSpaceExplicit": true,
+    "WitnessPolicy": "DETERMINISTIC_MINIMAX_SEMANTIC_SPLIT",
+    "HiddenRuleASTReadableByLearner": false,
+    "FreezeRequiresUniqueSemanticRuleClass": true,
+    "FreezeRequiresFull36CellRuleActionCertificate": true
+  },
+  "ProgramSearch": {
+    "MaximumInternalNodesG0": 3,
+    "MaximumInternalNodesReuse": 3,
+    "NestedReuseMinimumPromotedRuleCalls": 2
+  },
+  "StrictMultiSeedGate": {
+    "FiveOfFiveCohortsPass": true,
+    "TwentyFiveOfTwentyFiveCasesCorrect": true,
+    "FiveDistinctRuleSemantics": true,
+    "FiveDistinctFullWorldSemanticFingerprints": true,
+    "NoFullWorldCollisionWithS158C_R0": true,
+    "FiveFull36CellFormationCertificates": true,
+    "FiveFull36CellInsufficiencyCertificates": true,
+    "FiveInventionOffNestedReuseExact": true,
+    "FiveAmbiguityControlsAbstain": true,
+    "FiveSubstrateInsufficiencyControlsReject": true,
+    "ZeroFalseFreezes": true,
+    "PythonWolframIndependentParity": true
+  },
+  "LookupRuleAllowed": false,
+  "ExceptionPatchAllowed": false,
+  "TCCTCoreRewriteFreezeDedupModified": false,
+  "FrozenSourceFiles": {
+    "python_wrapper": "source/run_s158c_r2_python.py",
+    "wolfram_verifier": "source/verify_s158c_r2.wl",
+    "finalizer": "source/finalize_s158c_r2.py"
+  },
+  "FrozenSourceHashes": {
+    "python_wrapper": "8480e532a4deab3994952369f77b2e7aaacde20887b9cc04b89b51739a402b24",
+    "wolfram_verifier": "0802a7c4ba756d8e51834f5a8b6a1bb30acf4b8dff6ff01ec0bb0ac545eee8f9",
+    "finalizer": "6074024af3daefed13c6354d5da9b83b0f23298c7ed627636778cb35df340000"
+  },
+  "FrozenExternalFiles": {
+    "exact_base_multiseed_runner": "work/S158C_MetaGrammarSelfExtension_FrozenMultiSeed_5x5_2026-08-31/source/run_s158c_python.py",
+    "s158c_r0_holdout_for_world_collision": "work/S158C_MetaGrammarSelfExtension_FrozenMultiSeed_5x5_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158a_engine": "work/S158A_MetaGrammarSelfExtension_DEV_5Cases_2026-08-31/source/meta_grammar_engine.py",
+    "s158a_holdout": "work/S158A_MetaGrammarSelfExtension_DEV_5Cases_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158b_r0_holdout": "work/S158B_MetaGrammarSelfExtension_FrozenFresh_5Cases_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158b_r2_holdout": "work/S158B_R2_MetaGrammarSelfExtension_FrozenFresh_5Cases_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158c_r1_repaired_verifier": "work/S158C_R1_MetaGrammarSelfExtension_RETROSPECTIVE_VerifierRepair_2026-08-31/source/verify_s158c_r1.wl",
+    "s158c_r1_final_gate": "work/S158C_R1_MetaGrammarSelfExtension_RETROSPECTIVE_VerifierRepair_2026-08-31/results/final_gate.json"
+  },
+  "FrozenExternalHashes": {
+    "exact_base_multiseed_runner": "2f8f065c3de4b4d7a80db45c9fa0475ebb6681b55a3a018a05a631aece2553af",
+    "s158c_r0_holdout_for_world_collision": "49b082ff3e6c0c78ca8b6f02315b331452c12c3517d9e107f63dea5aacd905fc",
+    "s158a_engine": "796e05f8cc3125fd0d3617aba35570b6075693a2e55371c627358af756e60163",
+    "s158a_holdout": "f3abc17acfec5915f0833f2b94bbd857ff485176d0a2daaa5819525deed87c80",
+    "s158b_r0_holdout": "572eb76b76fef4b8241b27652bf0c5aee13dbd273e0763d558a3c8d6c1b0f161",
+    "s158b_r2_holdout": "1aef526bd26b0129cb5d7896a290254a3f09d4704e0db1073615893e7f1cd5a8",
+    "s158c_r1_repaired_verifier": "bc839ecf0880b4a0f9da762a793152843af3ae4484f3fddf1e8f3b28c0a5ff37",
+    "s158c_r1_final_gate": "ab567c6e1c6b5a945fdbaa8e86bdf0472ed5b0fca8d006789b664a3afd47aacf"
+  },
+  "InterpretationRule": "A strict PASS supports replicated bounded meta-grammar self-extension on five new full-world instances after an independently frozen verifier repair."
+}

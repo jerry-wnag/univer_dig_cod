@@ -1,0 +1,74 @@
+{
+  "CaseCount": 25,
+  "CohortCount": 5,
+  "Cohorts": [
+    {
+      "CohortID": "S158C_C01",
+      "FormationSourceCandidateCount": 4,
+      "FormationTargetAbsentFromG0": true,
+      "FreshRuleActionSignatureSHA256": "6d98720b73a70b5c491ff4db358dfa2eaffa259c5694505efa163e6fff921d60",
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetAbsentFromG0": true,
+      "NestedReuseTargetCandidateCount": 6,
+      "RuleNoHistoricalCollision": true
+    },
+    {
+      "CohortID": "S158C_C02",
+      "FormationSourceCandidateCount": 4,
+      "FormationTargetAbsentFromG0": true,
+      "FreshRuleActionSignatureSHA256": "abc94614a15fa5dbb496fb2eefc9cd33d9e7cbd1e13a762db0043d9966acee16",
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetAbsentFromG0": true,
+      "NestedReuseTargetCandidateCount": 22,
+      "RuleNoHistoricalCollision": true
+    },
+    {
+      "CohortID": "S158C_C03",
+      "FormationSourceCandidateCount": 4,
+      "FormationTargetAbsentFromG0": true,
+      "FreshRuleActionSignatureSHA256": "b1196f98dfbdf0efb6fbf1efda10afb5d0da66604e2b5897388ffecc53b00af6",
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetAbsentFromG0": true,
+      "NestedReuseTargetCandidateCount": 6,
+      "RuleNoHistoricalCollision": true
+    },
+    {
+      "CohortID": "S158C_C04",
+      "FormationSourceCandidateCount": 4,
+      "FormationTargetAbsentFromG0": true,
+      "FreshRuleActionSignatureSHA256": "8de15b54af2cb6f9c62d74acd425fb11eb062a38e563beaf56c08af67358a041",
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetAbsentFromG0": true,
+      "NestedReuseTargetCandidateCount": 6,
+      "RuleNoHistoricalCollision": true
+    },
+    {
+      "CohortID": "S158C_C05",
+      "FormationSourceCandidateCount": 4,
+      "FormationTargetAbsentFromG0": true,
+      "FreshRuleActionSignatureSHA256": "d2814c9211e288cffaead20b0f74e549849e5f484e95a28f62601d43d51c24af",
+      "NestedReuseMinimumRuleUses": 2,
+      "NestedReuseTargetAbsentFromG0": true,
+      "NestedReuseTargetCandidateCount": 6,
+      "RuleNoHistoricalCollision": true
+    }
+  ],
+  "EligibleNegativeFormulaCount": 79,
+  "NoCohortReplacementAfterFailure": true,
+  "NoFullWorldSemanticCollisionWithS158C_R0": true,
+  "ProtocolFrozenBeforeMaterialization": true,
+  "QualifyingFreshRuleCount": 5,
+  "Stage": "S158-C-R2",
+  "StructurallyIneligibleActionSignatureSHA256": [
+    "af5cf961ba0cb06543202222cb4fe6bba7361506f7dba403ff2ccf5e6e2ece11",
+    "df0ff71d82d02bf5465c00fbb4b871d7258eadf785ccd214683daf9062a24eb1"
+  ],
+  "StructurallyIneligibleRemainingRuleCount": 2,
+  "WorldSemanticFingerprints": [
+    "3b498cc9f3723e72217ecea14a86dbf05cf7cf11065f13c54eefad4aa6d8dc4c",
+    "4e5dff6b580676155f8eb24084013d15494f71a17048b126560e2e634aeb245d",
+    "8f8dcc942d577224ac23931d61706647954574ad29f0a2ecfa160227fc9cb9e9",
+    "d2b6db962614040dff8693d99344aa77f6df6d3dfd10ffe3d9aa6d2b67a3138b",
+    "a9bc1fad0fb0beaf64197c5847b09fc585d0added47b1e89343e65d99fd0c102"
+  ]
+}

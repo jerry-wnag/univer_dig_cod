@@ -1,0 +1,16 @@
+{
+  "ArtifactHashes": {
+    "python": "5691aae7c3e22eb05d1942b461cefb154781fe35b2858466bbb3b973f9bb92ba",
+    "wolfram": "24ef5a61f2f1a6e9e3a31266c0babed6cf3371a6b08b845518916bff489953bf"
+  },
+  "ClaimBoundary": "Single-cohort frozen-fresh bounded meta-grammar self-extension; not replicated and not open-ended substrate invention.",
+  "Conclusion": "S158B_R2_SINGLE_COHORT_FROZEN_FRESH_BOUNDED_META_GRAMMAR_SELF_EXTENSION_PASS",
+  "EvidenceLevel": "NEW_SEED_SINGLE_COHORT_FROZEN_FRESH",
+  "NextIfPass": "S158-C_5x5_FROZEN_MULTI_SEED_REPLICATION",
+  "PreservedHistory": {
+    "S158B_R0": "INFRASTRUCTURE_VERIFIER_FAIL",
+    "S158B_R1": "RETROSPECTIVE_VERIFIER_REPAIR_PASS_NOT_FRESH"
+  },
+  "Stage": "S158-B-R2",
+  "StrictFreshPass": true
+}

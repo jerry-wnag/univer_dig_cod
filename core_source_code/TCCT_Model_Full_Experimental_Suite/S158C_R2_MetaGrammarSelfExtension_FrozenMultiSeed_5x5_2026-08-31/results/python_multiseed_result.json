@@ -1,0 +1,2246 @@
+{
+  "Checks": {
+    "AllFiveCohortsStrictPythonPass": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "FiveDistinctFreshRuleSemantics": true,
+    "FiveDistinctFullWorldSemanticFingerprints": true,
+    "FiveFrozenFreshCohorts": true,
+    "NoFreshRuleCollidesWithHistory": true,
+    "NoFullWorldSemanticCollisionWithS158C_R0": true,
+    "NoLookupOrExceptionPatch": true,
+    "TwentyFiveCases": true
+  },
+  "ClaimBoundary": "Five fresh cohorts inside a fixed finite transformation meta-meta-language; not open-ended substrate invention.",
+  "Cohorts": [
+    {
+      "CaseRows": [
+        {
+          "CaseID": "S158C_C01_G0_EXACT",
+          "ExactProgramCount": 43,
+          "GrammarChanged": false,
+          "RuleInventionCalls": 0,
+          "Status": "G0_EXACT_NO_EXTENSION"
+        },
+        {
+          "CaseID": "S158C_C01_FORM_RULE",
+          "ExactCertificateRows": [
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_08"
+            }
+          ],
+          "FinalVersionSpaceSize": 1,
+          "FrozenRule": true,
+          "FullExactCertificatePassed": true,
+          "GrammarChanged": true,
+          "GrammarHashAfter": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d",
+          "GrammarHashBefore": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": {
+            "ActionSignatureSHA256": "6d98720b73a70b5c491ff4db358dfa2eaffa259c5694505efa163e6fff921d60",
+            "AnonymousRuleID": "RNEW_576ac1517870b214",
+            "InputCoordinateSwap": true,
+            "OutputPermutation": [
+              1,
+              0,
+              2
+            ]
+          },
+          "Status": "META_GRAMMAR_RULE_PROMOTED",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 4,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "FULL_RULE_ACTION_CERTIFIED",
+              "AfterSemanticClasses": 1,
+              "CertificateCellCount": 36,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C01_REUSE_NESTED",
+          "ExactProgramCount": 1,
+          "G0ExactSemanticClassCount": 0,
+          "GrammarChangedDuringReuse": false,
+          "PromotedRuleCallCount": 2,
+          "RuleInventionCalls": 0,
+          "SelectedProgramAST": [
+            "MIN",
+            [
+              "RULE",
+              "RNEW_576ac1517870b214",
+              [
+                "VAR",
+                "A"
+              ]
+            ],
+            [
+              "RULE",
+              "RNEW_576ac1517870b214",
+              [
+                "VAR",
+                "B"
+              ]
+            ]
+          ],
+          "SelectedProgramCost": 3,
+          "Status": "PROMOTED_RULE_NESTED_REUSE_EXACT"
+        },
+        {
+          "CaseID": "S158C_C01_AMBIGUOUS",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 4,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_GRAMMAR_RULE_AMBIGUOUS_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C01_NO_EXTENSION",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 0,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_META_LANGUAGE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 0,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        }
+      ],
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "FiveCases": true,
+        "FormationTargetAbsentFromG0": true,
+        "FullRuleActionCertificateExact": true,
+        "GrammarChangedOnlyAtPromotion": true,
+        "InventionOffNestedReuseExact": true,
+        "NestedReuseRequiresAtLeastTwoRuleCalls": true,
+        "NestedTargetAbsentFromG0": true,
+        "RuleNoHistoricalCollision": true,
+        "StrictVersionSpaceReduction": true,
+        "SubstrateInsufficiencyRejects": true,
+        "UniqueRuleFormedAndPromoted": true
+      },
+      "CohortID": "S158C_C01",
+      "CohortPass": true
+    },
+    {
+      "CaseRows": [
+        {
+          "CaseID": "S158C_C02_G0_EXACT",
+          "ExactProgramCount": 43,
+          "GrammarChanged": false,
+          "RuleInventionCalls": 0,
+          "Status": "G0_EXACT_NO_EXTENSION"
+        },
+        {
+          "CaseID": "S158C_C02_FORM_RULE",
+          "ExactCertificateRows": [
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_08"
+            }
+          ],
+          "FinalVersionSpaceSize": 1,
+          "FrozenRule": true,
+          "FullExactCertificatePassed": true,
+          "GrammarChanged": true,
+          "GrammarHashAfter": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d",
+          "GrammarHashBefore": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 2,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": {
+            "ActionSignatureSHA256": "abc94614a15fa5dbb496fb2eefc9cd33d9e7cbd1e13a762db0043d9966acee16",
+            "AnonymousRuleID": "RNEW_4d2649c01aed36df",
+            "InputCoordinateSwap": true,
+            "OutputPermutation": [
+              2,
+              0,
+              1
+            ]
+          },
+          "Status": "META_GRAMMAR_RULE_PROMOTED",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 2,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 4,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "FULL_RULE_ACTION_CERTIFIED",
+              "AfterSemanticClasses": 1,
+              "CertificateCellCount": 36,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C02_REUSE_NESTED",
+          "ExactProgramCount": 1,
+          "G0ExactSemanticClassCount": 0,
+          "GrammarChangedDuringReuse": false,
+          "PromotedRuleCallCount": 2,
+          "RuleInventionCalls": 0,
+          "SelectedProgramAST": [
+            "RULE",
+            "RNEW_4d2649c01aed36df",
+            [
+              "RULE",
+              "RNEW_4d2649c01aed36df",
+              [
+                "MAX",
+                [
+                  "VAR",
+                  "A"
+                ],
+                [
+                  "VAR",
+                  "B"
+                ]
+              ]
+            ]
+          ],
+          "SelectedProgramCost": 3,
+          "Status": "PROMOTED_RULE_NESTED_REUSE_EXACT"
+        },
+        {
+          "CaseID": "S158C_C02_AMBIGUOUS",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 4,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 2,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_GRAMMAR_RULE_AMBIGUOUS_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 2,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C02_NO_EXTENSION",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 0,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_META_LANGUAGE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 0,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        }
+      ],
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "FiveCases": true,
+        "FormationTargetAbsentFromG0": true,
+        "FullRuleActionCertificateExact": true,
+        "GrammarChangedOnlyAtPromotion": true,
+        "InventionOffNestedReuseExact": true,
+        "NestedReuseRequiresAtLeastTwoRuleCalls": true,
+        "NestedTargetAbsentFromG0": true,
+        "RuleNoHistoricalCollision": true,
+        "StrictVersionSpaceReduction": true,
+        "SubstrateInsufficiencyRejects": true,
+        "UniqueRuleFormedAndPromoted": true
+      },
+      "CohortID": "S158C_C02",
+      "CohortPass": true
+    },
+    {
+      "CaseRows": [
+        {
+          "CaseID": "S158C_C03_G0_EXACT",
+          "ExactProgramCount": 43,
+          "GrammarChanged": false,
+          "RuleInventionCalls": 0,
+          "Status": "G0_EXACT_NO_EXTENSION"
+        },
+        {
+          "CaseID": "S158C_C03_FORM_RULE",
+          "ExactCertificateRows": [
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_08"
+            }
+          ],
+          "FinalVersionSpaceSize": 1,
+          "FrozenRule": true,
+          "FullExactCertificatePassed": true,
+          "GrammarChanged": true,
+          "GrammarHashAfter": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d",
+          "GrammarHashBefore": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": {
+            "ActionSignatureSHA256": "b1196f98dfbdf0efb6fbf1efda10afb5d0da66604e2b5897388ffecc53b00af6",
+            "AnonymousRuleID": "RNEW_9f88646ac5d52d1e",
+            "InputCoordinateSwap": false,
+            "OutputPermutation": [
+              0,
+              2,
+              1
+            ]
+          },
+          "Status": "META_GRAMMAR_RULE_PROMOTED",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 0,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "FULL_RULE_ACTION_CERTIFIED",
+              "AfterSemanticClasses": 1,
+              "CertificateCellCount": 36,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C03_REUSE_NESTED",
+          "ExactProgramCount": 1,
+          "G0ExactSemanticClassCount": 0,
+          "GrammarChangedDuringReuse": false,
+          "PromotedRuleCallCount": 2,
+          "RuleInventionCalls": 0,
+          "SelectedProgramAST": [
+            "RULE",
+            "RNEW_9f88646ac5d52d1e",
+            [
+              "MAX",
+              [
+                "RULE",
+                "RNEW_9f88646ac5d52d1e",
+                [
+                  "VAR",
+                  "A"
+                ]
+              ],
+              [
+                "VAR",
+                "B"
+              ]
+            ]
+          ],
+          "SelectedProgramCost": 3,
+          "Status": "PROMOTED_RULE_NESTED_REUSE_EXACT"
+        },
+        {
+          "CaseID": "S158C_C03_AMBIGUOUS",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 2,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_GRAMMAR_RULE_AMBIGUOUS_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C03_NO_EXTENSION",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 0,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_META_LANGUAGE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 0,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        }
+      ],
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "FiveCases": true,
+        "FormationTargetAbsentFromG0": true,
+        "FullRuleActionCertificateExact": true,
+        "GrammarChangedOnlyAtPromotion": true,
+        "InventionOffNestedReuseExact": true,
+        "NestedReuseRequiresAtLeastTwoRuleCalls": true,
+        "NestedTargetAbsentFromG0": true,
+        "RuleNoHistoricalCollision": true,
+        "StrictVersionSpaceReduction": true,
+        "SubstrateInsufficiencyRejects": true,
+        "UniqueRuleFormedAndPromoted": true
+      },
+      "CohortID": "S158C_C03",
+      "CohortPass": true
+    },
+    {
+      "CaseRows": [
+        {
+          "CaseID": "S158C_C04_G0_EXACT",
+          "ExactProgramCount": 42,
+          "GrammarChanged": false,
+          "RuleInventionCalls": 0,
+          "Status": "G0_EXACT_NO_EXTENSION"
+        },
+        {
+          "CaseID": "S158C_C04_FORM_RULE",
+          "ExactCertificateRows": [
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_08"
+            }
+          ],
+          "FinalVersionSpaceSize": 1,
+          "FrozenRule": true,
+          "FullExactCertificatePassed": true,
+          "GrammarChanged": true,
+          "GrammarHashAfter": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d",
+          "GrammarHashBefore": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            },
+            {
+              "Arguments": [
+                1,
+                1
+              ],
+              "InputIndex": 4,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_04",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": {
+            "ActionSignatureSHA256": "8de15b54af2cb6f9c62d74acd425fb11eb062a38e563beaf56c08af67358a041",
+            "AnonymousRuleID": "RNEW_937911f65778df38",
+            "InputCoordinateSwap": false,
+            "OutputPermutation": [
+              1,
+              0,
+              2
+            ]
+          },
+          "Status": "META_GRAMMAR_RULE_PROMOTED",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 4,
+              "ObservedOutput": 1,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_04",
+              "Step": 3,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "FULL_RULE_ACTION_CERTIFIED",
+              "AfterSemanticClasses": 1,
+              "CertificateCellCount": 36,
+              "Step": 3
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C04_REUSE_NESTED",
+          "ExactProgramCount": 1,
+          "G0ExactSemanticClassCount": 0,
+          "GrammarChangedDuringReuse": false,
+          "PromotedRuleCallCount": 2,
+          "RuleInventionCalls": 0,
+          "SelectedProgramAST": [
+            "RULE",
+            "RNEW_937911f65778df38",
+            [
+              "MIN",
+              [
+                "RULE",
+                "RNEW_937911f65778df38",
+                [
+                  "VAR",
+                  "A"
+                ]
+              ],
+              [
+                "VAR",
+                "B"
+              ]
+            ]
+          ],
+          "SelectedProgramCost": 3,
+          "Status": "PROMOTED_RULE_NESTED_REUSE_EXACT"
+        },
+        {
+          "CaseID": "S158C_C04_AMBIGUOUS",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 4,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_GRAMMAR_RULE_AMBIGUOUS_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 4,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 1,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C04_NO_EXTENSION",
+          "ExactCertificateRows": [
+            {
+              "Match": false,
+              "ObservedOutput": 1,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_01"
+            }
+          ],
+          "FinalVersionSpaceSize": 0,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_META_LANGUAGE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "EXACT_CERTIFICATE_COUNTEREXAMPLE",
+              "AfterSemanticClasses": 0,
+              "QueryID": "Q00_01",
+              "Step": 2
+            }
+          ]
+        }
+      ],
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "FiveCases": true,
+        "FormationTargetAbsentFromG0": true,
+        "FullRuleActionCertificateExact": true,
+        "GrammarChangedOnlyAtPromotion": true,
+        "InventionOffNestedReuseExact": true,
+        "NestedReuseRequiresAtLeastTwoRuleCalls": true,
+        "NestedTargetAbsentFromG0": true,
+        "RuleNoHistoricalCollision": true,
+        "StrictVersionSpaceReduction": true,
+        "SubstrateInsufficiencyRejects": true,
+        "UniqueRuleFormedAndPromoted": true
+      },
+      "CohortID": "S158C_C04",
+      "CohortPass": true
+    },
+    {
+      "CaseRows": [
+        {
+          "CaseID": "S158C_C05_G0_EXACT",
+          "ExactProgramCount": 42,
+          "GrammarChanged": false,
+          "RuleInventionCalls": 0,
+          "Status": "G0_EXACT_NO_EXTENSION"
+        },
+        {
+          "CaseID": "S158C_C05_FORM_RULE",
+          "ExactCertificateRows": [
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q00_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q00_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q01_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q01_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q01_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q02_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q02_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q02_08"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_00"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_01"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 0,
+              "PredictedOutput": 0,
+              "QueryID": "Q03_02"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_03"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_04"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 2,
+              "PredictedOutput": 2,
+              "QueryID": "Q03_05"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_06"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_07"
+            },
+            {
+              "Match": true,
+              "ObservedOutput": 1,
+              "PredictedOutput": 1,
+              "QueryID": "Q03_08"
+            }
+          ],
+          "FinalVersionSpaceSize": 1,
+          "FrozenRule": true,
+          "FullExactCertificatePassed": true,
+          "GrammarChanged": true,
+          "GrammarHashAfter": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d",
+          "GrammarHashBefore": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": {
+            "ActionSignatureSHA256": "d2814c9211e288cffaead20b0f74e549849e5f484e95a28f62601d43d51c24af",
+            "AnonymousRuleID": "RNEW_01c1e6eab95af9f0",
+            "InputCoordinateSwap": true,
+            "OutputPermutation": [
+              0,
+              2,
+              1
+            ]
+          },
+          "Status": "META_GRAMMAR_RULE_PROMOTED",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "FULL_RULE_ACTION_CERTIFIED",
+              "AfterSemanticClasses": 1,
+              "CertificateCellCount": 36,
+              "Step": 2
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C05_REUSE_NESTED",
+          "ExactProgramCount": 1,
+          "G0ExactSemanticClassCount": 0,
+          "GrammarChangedDuringReuse": false,
+          "PromotedRuleCallCount": 2,
+          "RuleInventionCalls": 0,
+          "SelectedProgramAST": [
+            "MAX",
+            [
+              "RULE",
+              "RNEW_01c1e6eab95af9f0",
+              [
+                "VAR",
+                "A"
+              ]
+            ],
+            [
+              "RULE",
+              "RNEW_01c1e6eab95af9f0",
+              [
+                "VAR",
+                "B"
+              ]
+            ]
+          ],
+          "SelectedProgramCost": 3,
+          "Status": "PROMOTED_RULE_NESTED_REUSE_EXACT"
+        },
+        {
+          "CaseID": "S158C_C05_AMBIGUOUS",
+          "ExactCertificateRows": [],
+          "FinalVersionSpaceSize": 2,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_GRAMMAR_RULE_AMBIGUOUS_ABSTAIN",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            }
+          ]
+        },
+        {
+          "CaseID": "S158C_C05_NO_EXTENSION",
+          "ExactCertificateRows": [
+            {
+              "Match": false,
+              "ObservedOutput": 1,
+              "PredictedOutput": 0,
+              "QueryID": "Q00_01"
+            }
+          ],
+          "FinalVersionSpaceSize": 0,
+          "FrozenRule": false,
+          "FullExactCertificatePassed": false,
+          "GrammarChanged": false,
+          "Observations": [
+            {
+              "Arguments": [
+                0,
+                0
+              ],
+              "InputIndex": 0,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "SourceIndex": 0
+            },
+            {
+              "Arguments": [
+                0,
+                1
+              ],
+              "InputIndex": 1,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "SourceIndex": 2
+            }
+          ],
+          "RuleInventionCalls": 1,
+          "SelectedRule": null,
+          "Status": "META_META_LANGUAGE_INSUFFICIENT_REJECT",
+          "Trace": [
+            {
+              "Action": "DETECT_AMBIGUITY",
+              "SemanticClassCount": 10,
+              "Step": 0,
+              "VersionSpaceSize": 10
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 2,
+              "BeforeSemanticClasses": 10,
+              "ObservedOutput": 0,
+              "QueryID": "Q00_00",
+              "Step": 1,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "UPDATE_RULE_VERSION_SPACE",
+              "AfterSemanticClasses": 1,
+              "BeforeSemanticClasses": 2,
+              "ObservedOutput": 2,
+              "QueryID": "Q02_01",
+              "Step": 2,
+              "WorstCaseStrictReduction": true
+            },
+            {
+              "Action": "EXACT_CERTIFICATE_COUNTEREXAMPLE",
+              "AfterSemanticClasses": 0,
+              "QueryID": "Q00_01",
+              "Step": 2
+            }
+          ]
+        }
+      ],
+      "Checks": {
+        "AmbiguityAbstains": true,
+        "FiveCases": true,
+        "FormationTargetAbsentFromG0": true,
+        "FullRuleActionCertificateExact": true,
+        "GrammarChangedOnlyAtPromotion": true,
+        "InventionOffNestedReuseExact": true,
+        "NestedReuseRequiresAtLeastTwoRuleCalls": true,
+        "NestedTargetAbsentFromG0": true,
+        "RuleNoHistoricalCollision": true,
+        "StrictVersionSpaceReduction": true,
+        "SubstrateInsufficiencyRejects": true,
+        "UniqueRuleFormedAndPromoted": true
+      },
+      "CohortID": "S158C_C05",
+      "CohortPass": true
+    }
+  ],
+  "Conclusion": "S158C_R2_NEW_SEEDS_FROZEN_MULTI_SEED_5X5_PYTHON_PASS",
+  "EvidenceLevel": "NEW_SEEDS_FROZEN_MULTI_SEED_5x5",
+  "PythonMultiSeedPass": true,
+  "Stage": "S158-C-R2",
+  "WorldSemanticFingerprints": [
+    "3b498cc9f3723e72217ecea14a86dbf05cf7cf11065f13c54eefad4aa6d8dc4c",
+    "4e5dff6b580676155f8eb24084013d15494f71a17048b126560e2e634aeb245d",
+    "8f8dcc942d577224ac23931d61706647954574ad29f0a2ecfa160227fc9cb9e9",
+    "d2b6db962614040dff8693d99344aa77f6df6d3dfd10ffe3d9aa6d2b67a3138b",
+    "a9bc1fad0fb0beaf64197c5847b09fc585d0added47b1e89343e65d99fd0c102"
+  ]
+}

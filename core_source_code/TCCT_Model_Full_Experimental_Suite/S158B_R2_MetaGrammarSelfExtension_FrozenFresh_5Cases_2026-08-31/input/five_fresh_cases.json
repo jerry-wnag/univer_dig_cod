@@ -1,0 +1,55 @@
+{
+  "Cases": [
+    {
+      "CaseID": "S158B_R2_G0_EXACT",
+      "CaseType": "G0_EXACT_CONTROL",
+      "RuleInventionAllowed": false,
+      "TargetSemantics": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "CaseID": "S158B_R2_FORM_RULE",
+      "CaseType": "UNIQUE_META_GRAMMAR_EXTENSION",
+      "MaximumRuleQueries": 36,
+      "RuleInventionAllowed": true
+    },
+    {
+      "CaseID": "S158B_R2_REUSE_NESTED",
+      "CaseType": "SYNTHESIS_OFF_NESTED_REUSE",
+      "MaximumProgramNodes": 3,
+      "RuleInventionAllowed": false,
+      "TargetSemantics": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "CaseID": "S158B_R2_AMBIGUOUS",
+      "CaseType": "AMBIGUOUS_RULE_CONTROL",
+      "MaximumRuleQueries": 1,
+      "RuleInventionAllowed": true
+    },
+    {
+      "CaseID": "S158B_R2_NO_EXTENSION",
+      "CaseType": "NO_RULE_IN_SUBSTRATE_CONTROL",
+      "MaximumRuleQueries": 36,
+      "RuleInventionAllowed": true
+    }
+  ]
+}

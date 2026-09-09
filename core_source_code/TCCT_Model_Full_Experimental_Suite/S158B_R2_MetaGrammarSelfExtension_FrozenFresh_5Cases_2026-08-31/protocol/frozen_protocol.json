@@ -1,0 +1,99 @@
+{
+  "Stage": "S158-B-R2",
+  "Title": "New-Seed Frozen-Fresh Bounded Meta-Grammar Self-Extension",
+  "EvidenceClass": "NEW_SEED_SINGLE_COHORT_FROZEN_FRESH",
+  "ProtocolFrozenBeforeCaseMaterialization": true,
+  "RepairedVerifierFrozenBeforeCaseMaterialization": true,
+  "NoWorldReplacementAfterFailure": true,
+  "Freshness": {
+    "MaterializationSeed": 202608312134527,
+    "SeedPreviouslyMaterialized": false,
+    "SelectionAlgorithm": "SHA256(seed:S158B_R2_RULE) modulo pre-registered eligible rules sorted by action signature",
+    "ExcludedHistoricalActionSignatureSHA256": [
+      "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+      "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152"
+    ],
+    "EligibilityContract": [
+      "action signature is absent from both historical S158-A and S158-B-R0 targets",
+      "fresh formation of R(MAX(A,B)) is outside exhaustive G0 closure",
+      "fresh nested reuse R(R(MIN(A,B))) is outside exhaustive G0 closure",
+      "minimum-cost nested reuse requires at least two promoted-rule calls"
+    ],
+    "FailureReplacementAllowed": false
+  },
+  "SemanticDomain": {"Inputs": "Z3 x Z3", "Outputs": "Z3", "FullBehaviorCells": 9},
+  "G0Productions": ["VAR_A", "VAR_B", "MIN", "MAX"],
+  "G0ExpressivityCertificate": {
+    "Method": "EXHAUSTIVE_FIXED_POINT_SEMANTIC_CLOSURE",
+    "ExpectedSemanticClassCount": 4,
+    "CostBoundUsedForUnexpressibility": false
+  },
+  "RuleConstructionSubstrate": {
+    "Status": "UNCHANGED_FROM_S158_A_R2",
+    "Schemas": "Optional input-coordinate swap followed by a permutation of the three output labels",
+    "SyntacticCandidatesBeforeExpressivityFilter": 12,
+    "ExpectedSemanticRuleClassesAfterFilterAndQuotient": 10,
+    "TruthTableLookupRuleAllowed": false,
+    "ExceptionPatchAllowed": false
+  },
+  "ActiveInduction": {
+    "RuleVersionSpaceExplicit": true,
+    "WitnessPolicy": "DETERMINISTIC_MINIMAX_SEMANTIC_SPLIT",
+    "HiddenRuleASTReadableByLearner": false,
+    "FreezeRequiresUniqueSemanticRuleClass": true,
+    "FreezeRequiresFull36CellRuleActionCertificate": true
+  },
+  "ProgramSearch": {
+    "MaximumInternalNodesG0": 3,
+    "MaximumInternalNodesReuse": 3,
+    "NestedReuseMinimumPromotedRuleCalls": 2
+  },
+  "CaseSchedule": [
+    {"CaseID": "S158B_R2_G0_EXACT", "Type": "G0_EXACT_NO_EXTENSION"},
+    {"CaseID": "S158B_R2_FORM_RULE", "Type": "UNIQUE_RULE_FORMATION_AND_PROMOTION"},
+    {"CaseID": "S158B_R2_REUSE_NESTED", "Type": "INVENTION_OFF_NESTED_REUSE"},
+    {"CaseID": "S158B_R2_AMBIGUOUS", "Type": "AMBIGUOUS_ABSTAIN"},
+    {"CaseID": "S158B_R2_NO_EXTENSION", "Type": "META_META_LANGUAGE_INSUFFICIENT_REJECT"}
+  ],
+  "StrictFreshGate": {
+    "FiveCasesNoReplacement": true,
+    "FreshRuleNoCollisionWithTwoHistoricalTargets": true,
+    "G0NotEntailsFreshFormationTarget": true,
+    "G0NotEntailsFreshNestedReuseTarget": true,
+    "UniqueRuleFullExactCertificate": true,
+    "GrammarStateChangesOnlyAtPromotion": true,
+    "InventionOffNestedReuseExact": true,
+    "NestedReuseRequiresAtLeastTwoPromotedRuleCalls": true,
+    "FreshAmbiguityAbstainsWithoutFreeze": true,
+    "FreshSubstrateInsufficiencyRejectsWithoutPatch": true,
+    "PythonWolframIndependentParity": true
+  },
+  "LookupRuleAllowed": false,
+  "ExceptionPatchAllowed": false,
+  "TCCTCoreRewriteFreezeDedupModified": false,
+  "FrozenSourceFiles": {
+    "python_materializer_and_runner": "source/run_s158b_r2_python.py",
+    "wolfram_verifier": "source/verify_s158b_r2.wl",
+    "finalizer": "source/finalize_s158b_r2.py"
+  },
+  "FrozenSourceHashes": {
+    "python_materializer_and_runner": "5ef3fb6a44cb21c2378e1f1d295a6c05f81d473c27a89ceb80178d5733683de0",
+    "wolfram_verifier": "f4da575f1b91cf0a82192cba6d77e09c65bc46b799b1020263f7f02c46eedccf",
+    "finalizer": "4010d2356c950652a92b9cdb9dfe27c9d72199f32d60d16269c69c6574e38621"
+  },
+  "FrozenExternalFiles": {
+    "s158a_engine": "work/S158A_MetaGrammarSelfExtension_DEV_5Cases_2026-08-31/source/meta_grammar_engine.py",
+    "s158a_holdout": "work/S158A_MetaGrammarSelfExtension_DEV_5Cases_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158b_r0_holdout": "work/S158B_MetaGrammarSelfExtension_FrozenFresh_5Cases_2026-08-31/oracle/sealed_exact_holdout.json",
+    "s158b_r1_repaired_verifier": "work/S158B_R1_MetaGrammarSelfExtension_RETROSPECTIVE_VerifierRepair_2026-08-31/source/verify_s158b_r1.wl",
+    "s158b_r1_final_gate": "work/S158B_R1_MetaGrammarSelfExtension_RETROSPECTIVE_VerifierRepair_2026-08-31/results/final_gate.json"
+  },
+  "FrozenExternalHashes": {
+    "s158a_engine": "796e05f8cc3125fd0d3617aba35570b6075693a2e55371c627358af756e60163",
+    "s158a_holdout": "f3abc17acfec5915f0833f2b94bbd857ff485176d0a2daaa5819525deed87c80",
+    "s158b_r0_holdout": "572eb76b76fef4b8241b27652bf0c5aee13dbd273e0763d558a3c8d6c1b0f161",
+    "s158b_r1_repaired_verifier": "6452575cb4608d85274813389d4c4aa1aafe0a5e889d717473248260d23bebee",
+    "s158b_r1_final_gate": "b2635b565ee4498260e9f808940a30961d1bdc6ec54ceacdcf4debf8227ba9dd"
+  },
+  "InterpretationRule": "A strict PASS is new-seed single-cohort frozen-fresh evidence for bounded meta-grammar self-extension. It is not multi-seed replication, open-ended primitive invention, or substrate self-modification."
+}

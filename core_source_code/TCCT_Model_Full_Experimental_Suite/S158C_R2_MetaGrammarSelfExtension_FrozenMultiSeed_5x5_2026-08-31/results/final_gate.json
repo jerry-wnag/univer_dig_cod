@@ -1,0 +1,18 @@
+{
+  "ArtifactHashes": {
+    "python": "8e9a3c438ce9012ae27e5bfe1f6fa8c5e000fada8cfe347292978c5453f8a712",
+    "wolfram": "15756fd743da5aa55e3d72cb0e9ea6e485f3ecdb62099abd03eeb5007456f94a"
+  },
+  "Claim": "Replicated bounded meta-grammar self-extension",
+  "ClaimBoundary": "Five new full-world instances cover the five distinct nonhistorical rule semantics satisfying the unchanged depth-3 contract. The finite meta-meta-language remains fixed and human supplied.",
+  "Conclusion": "S158C_R2_REPLICATED_BOUNDED_META_GRAMMAR_SELF_EXTENSION_PASS",
+  "EvidenceLevel": "NEW_SEEDS_FROZEN_MULTI_SEED_5x5",
+  "NextIfPass": "GRAMMAR_CONSTRUCTOR_BOOTSTRAPPING",
+  "PreservedHistory": {
+    "S158B_R2": "SINGLE_COHORT_FROZEN_FRESH_PASS",
+    "S158C_R0": "INFRASTRUCTURE_VERIFIER_FAIL",
+    "S158C_R1": "RETROSPECTIVE_VERIFIER_REPAIR_ONLY"
+  },
+  "Stage": "S158-C-R2",
+  "StrictMultiSeedPass": true
+}

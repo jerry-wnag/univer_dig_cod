@@ -1,0 +1,9 @@
+{
+  "ExactBaseLearnerAndRunnerReused": true,
+  "HistoricalFailuresPreserved": true,
+  "NewSeedsAfterRetrospectiveRepair": true,
+  "NoCohortReplacementAfterFailure": true,
+  "ProtocolFrozenBeforeMaterialization": true,
+  "Result": "S158C_R2_REPLICATED_BOUNDED_META_GRAMMAR_SELF_EXTENSION_PASS",
+  "Stage": "S158-C-R2"
+}

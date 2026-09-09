@@ -1,0 +1,131 @@
+{
+  "CandidateRuleSemanticClassCount": 10,
+  "EligibleFreshRuleCount": 2,
+  "FormationTargetSemantics": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "FreshTargetRuleActionSignature": "222200201201001111222000111201201201",
+  "FreshTargetRuleActionSignatureSHA256": "9cb760bfd624263f56ca309ea4d3eb9f5c22fbd9c99fba2224e6ee60ff2ac27a",
+  "FreshTargetRuleFullAction": [
+    [
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1
+    ]
+  ],
+  "FullRuleCertificateCellCount": 36,
+  "G0SemanticClassCount": 4,
+  "HistoricalTargetRuleActionSignatureSHA256": [
+    "73860944468d90ecffc7fea54603db898e993a7b6aeffc3a360f6481c0cb7fc6",
+    "837c5b471578b23558ec922849d7bcbac1c3d4e1978e69513f9ca5a6d675e152"
+  ],
+  "HistoricalTargetRuleActionSignatures": [
+    "111122120120220000111222000120120120",
+    "111122120120220000120120120111222000"
+  ],
+  "MaterializationSeed": 202608312134527,
+  "NestedReuseTargetSemantics": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    2,
+    0
+  ],
+  "OrderedG0Semantics": [
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ]
+  ]
+}

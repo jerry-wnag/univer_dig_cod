@@ -1,0 +1,12 @@
+{
+  "CandidateSubstrateChangedFromS158A": false,
+  "LearnerChangedFromS158A": false,
+  "NewSeedAfterRetrospectiveRepair": true,
+  "NoWorldReplacementAfterFailure": true,
+  "ProtocolFrozenBeforeMaterialization": true,
+  "RepairedVerifierFrozenBeforeMaterialization": true,
+  "Result": "S158B_R2_SINGLE_COHORT_FROZEN_FRESH_BOUNDED_META_GRAMMAR_SELF_EXTENSION_PASS",
+  "S158B_R0_RemainsInfrastructureFail": true,
+  "S158B_R1_RemainsRetrospectiveOnly": true,
+  "Stage": "S158-B-R2"
+}
