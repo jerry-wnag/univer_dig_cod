@@ -1,0 +1,2242 @@
+{
+  "Stage": "S144-C Frozen Fresh Language Extension 5 Cases R0",
+  "EvidenceStatus": "FROZEN_FRESH_BOUNDED_LANGUAGE_EXTENSION_CONFIRMATORY",
+  "CaseRows": [
+    {
+      "CaseID": "S144C_CASE_00",
+      "CurrentGrammarExactCandidateCount": 0,
+      "CurrentGrammarCompleteEliminationCertificate": true,
+      "Status": "EXACT_EXTENSION_PROPOSED",
+      "Reason": "UNIQUE_SEMANTICS_AND_STRICT_MDL_GAIN",
+      "ObservationCount": 3375,
+      "FormationTaskCount": 4,
+      "RawContradictionCount": 0,
+      "MetaFeatureTripleCount": 220,
+      "MetaTruthFunctionCount": 256,
+      "ExactMetaProgramCount": 16,
+      "SemanticClassCount": 1,
+      "BestExactDescriptionLengthBits": 65,
+      "RawResidualBits": 3375,
+      "SelectedProposal": {
+        "Signals": [
+          "FSIG00",
+          "FSIG02",
+          "FSIG04"
+        ],
+        "SignalIndices": [
+          0,
+          2,
+          4
+        ],
+        "TruthTable": 176,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19",
+        "AnonymousOperatorID": "OPX_4c02b545337da9fe"
+      },
+      "Frozen": true
+    },
+    {
+      "CaseID": "S144C_CASE_01",
+      "CurrentGrammarExactCandidateCount": 0,
+      "CurrentGrammarCompleteEliminationCertificate": true,
+      "Status": "EXACT_EXTENSION_PROPOSED",
+      "Reason": "UNIQUE_SEMANTICS_AND_STRICT_MDL_GAIN",
+      "ObservationCount": 3375,
+      "FormationTaskCount": 4,
+      "RawContradictionCount": 0,
+      "MetaFeatureTripleCount": 220,
+      "MetaTruthFunctionCount": 256,
+      "ExactMetaProgramCount": 36,
+      "SemanticClassCount": 1,
+      "BestExactDescriptionLengthBits": 61,
+      "RawResidualBits": 3375,
+      "SelectedProposal": {
+        "Signals": [
+          "FSIG02",
+          "FSIG05",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          2,
+          5,
+          6
+        ],
+        "TruthTable": 248,
+        "NANDCount": 3,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 2
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 61,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3314,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923",
+        "AnonymousOperatorID": "OPX_485b5e841ad80a0b"
+      },
+      "Frozen": true
+    },
+    {
+      "CaseID": "S144C_CASE_02",
+      "CurrentGrammarExactCandidateCount": 0,
+      "CurrentGrammarCompleteEliminationCertificate": true,
+      "Status": "EXACT_EXTENSION_PROPOSED",
+      "Reason": "UNIQUE_SEMANTICS_AND_STRICT_MDL_GAIN",
+      "ObservationCount": 3375,
+      "FormationTaskCount": 4,
+      "RawContradictionCount": 0,
+      "MetaFeatureTripleCount": 220,
+      "MetaTruthFunctionCount": 256,
+      "ExactMetaProgramCount": 4,
+      "SemanticClassCount": 1,
+      "BestExactDescriptionLengthBits": 77,
+      "RawResidualBits": 3375,
+      "SelectedProposal": {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG11"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          11
+        ],
+        "TruthTable": 152,
+        "NANDCount": 7,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            }
+                          ]
+                        },
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 77,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3298,
+        "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c",
+        "AnonymousOperatorID": "OPX_20b1e31c771323ca"
+      },
+      "Frozen": true
+    },
+    {
+      "CaseID": "S144C_CASE_03",
+      "CurrentGrammarExactCandidateCount": 0,
+      "CurrentGrammarCompleteEliminationCertificate": true,
+      "Status": "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+      "Reason": "SEMANTIC_VERSION_SPACE_GT_ONE",
+      "ObservationCount": 3081,
+      "FormationTaskCount": 4,
+      "RawContradictionCount": 0,
+      "MetaFeatureTripleCount": 220,
+      "MetaTruthFunctionCount": 256,
+      "ExactMetaProgramCount": 24,
+      "SemanticClassCount": 2,
+      "BestExactDescriptionLengthBits": 65,
+      "RawResidualBits": 3081,
+      "SelectedProposal": null,
+      "Frozen": false
+    },
+    {
+      "CaseID": "S144C_CASE_04",
+      "CurrentGrammarExactCandidateCount": 0,
+      "CurrentGrammarCompleteEliminationCertificate": true,
+      "Status": "NO_COMPRESSIVE_EXTENSION",
+      "Reason": "NO_EXACT_META_PROGRAM",
+      "ObservationCount": 3375,
+      "FormationTaskCount": 4,
+      "RawContradictionCount": 0,
+      "MetaFeatureTripleCount": 220,
+      "MetaTruthFunctionCount": 256,
+      "ExactMetaProgramCount": 0,
+      "SemanticClassCount": 0,
+      "BestExactDescriptionLengthBits": null,
+      "RawResidualBits": 3375,
+      "SelectedProposal": null,
+      "Frozen": false
+    }
+  ],
+  "AuxiliaryRandomControl": {
+    "CaseID": "S144C_AUX_RANDOM",
+    "CurrentGrammarExactCandidateCount": 0,
+    "CurrentGrammarCompleteEliminationCertificate": true,
+    "Status": "NO_COMPRESSIVE_EXTENSION",
+    "Reason": "NO_EXACT_META_PROGRAM",
+    "ObservationCount": 512,
+    "FormationTaskCount": 4,
+    "RawContradictionCount": 0,
+    "MetaFeatureTripleCount": 220,
+    "MetaTruthFunctionCount": 256,
+    "ExactMetaProgramCount": 0,
+    "SemanticClassCount": 0,
+    "BestExactDescriptionLengthBits": null,
+    "RawResidualBits": 512,
+    "SelectedProposal": null,
+    "Frozen": false
+  },
+  "CandidateSamples": {
+    "S144C_CASE_00": [
+      {
+        "Signals": [
+          "FSIG00",
+          "FSIG02",
+          "FSIG04"
+        ],
+        "SignalIndices": [
+          0,
+          2,
+          4
+        ],
+        "TruthTable": 176,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG00",
+          "FSIG02",
+          "FSIG04"
+        ],
+        "SignalIndices": [
+          0,
+          2,
+          4
+        ],
+        "TruthTable": 184,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          10
+        ],
+        "TruthTable": 196,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 1
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          10
+        ],
+        "TruthTable": 228,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG05"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          5
+        ],
+        "TruthTable": 76,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3306,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG05"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          5
+        ],
+        "TruthTable": 78,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3306,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG05"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          5
+        ],
+        "TruthTable": 92,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3306,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG04",
+          "FSIG05"
+        ],
+        "SignalIndices": [
+          2,
+          4,
+          5
+        ],
+        "TruthTable": 110,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3306,
+        "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19"
+      }
+    ],
+    "S144C_CASE_01": [
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG05",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          2,
+          5,
+          6
+        ],
+        "TruthTable": 248,
+        "NANDCount": 3,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 2
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 61,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3314,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG00",
+          "FSIG02",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          0,
+          2,
+          6
+        ],
+        "TruthTable": 228,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG00",
+          "FSIG02",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          0,
+          2,
+          6
+        ],
+        "TruthTable": 244,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 2
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG03",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          2,
+          3,
+          10
+        ],
+        "TruthTable": 202,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 1
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG05",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          2,
+          5,
+          6
+        ],
+        "TruthTable": 184,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG05",
+          "FSIG06"
+        ],
+        "SignalIndices": [
+          2,
+          5,
+          6
+        ],
+        "TruthTable": 216,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          10
+        ],
+        "TruthTable": 202,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 1
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          10
+        ],
+        "TruthTable": 206,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 1
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3310,
+        "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923"
+      }
+    ],
+    "S144C_CASE_02": [
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG11"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          11
+        ],
+        "TruthTable": 152,
+        "NANDCount": 7,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            }
+                          ]
+                        },
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 0
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 77,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3298,
+        "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG11"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          11
+        ],
+        "TruthTable": 16,
+        "NANDCount": 8,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            }
+                          ]
+                        },
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 81,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3294,
+        "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG11"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          11
+        ],
+        "TruthTable": 24,
+        "NANDCount": 9,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            }
+                          ]
+                        },
+                        {
+                          "Op": "Var",
+                          "Index": 2
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "Var",
+                          "Index": 0
+                        },
+                        {
+                          "Op": "Var",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 85,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3290,
+        "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c"
+      },
+      {
+        "Signals": [
+          "FSIG02",
+          "FSIG06",
+          "FSIG11"
+        ],
+        "SignalIndices": [
+          2,
+          6,
+          11
+        ],
+        "TruthTable": 144,
+        "NANDCount": 9,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 0
+                            }
+                          ]
+                        },
+                        {
+                          "Op": "NAND",
+                          "Args": [
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            },
+                            {
+                              "Op": "Var",
+                              "Index": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "Var",
+                          "Index": 0
+                        },
+                        {
+                          "Op": "Var",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 0
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 85,
+        "RawResidualBits": 3375,
+        "CompressionGainBits": 3290,
+        "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c"
+      }
+    ],
+    "S144C_CASE_03": [
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG06",
+          "FSIG09"
+        ],
+        "SignalIndices": [
+          5,
+          6,
+          9
+        ],
+        "TruthTable": 220,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 1
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3016,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG09",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          5,
+          9,
+          10
+        ],
+        "TruthTable": 244,
+        "NANDCount": 4,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "Var",
+                  "Index": 2
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 65,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3016,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG06",
+          "FSIG09"
+        ],
+        "SignalIndices": [
+          5,
+          6,
+          9
+        ],
+        "TruthTable": 84,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3012,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG06",
+          "FSIG09"
+        ],
+        "SignalIndices": [
+          5,
+          6,
+          9
+        ],
+        "TruthTable": 92,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 2
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3012,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG09",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          5,
+          9,
+          10
+        ],
+        "TruthTable": 84,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3012,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG09",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          5,
+          9,
+          10
+        ],
+        "TruthTable": 116,
+        "NANDCount": 5,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 1
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 69,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3012,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG06",
+          "FSIG09"
+        ],
+        "SignalIndices": [
+          5,
+          6,
+          9
+        ],
+        "TruthTable": 212,
+        "NANDCount": 6,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "Var",
+                          "Index": 0
+                        },
+                        {
+                          "Op": "Var",
+                          "Index": 1
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 73,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3008,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      },
+      {
+        "Signals": [
+          "FSIG05",
+          "FSIG09",
+          "FSIG10"
+        ],
+        "SignalIndices": [
+          5,
+          9,
+          10
+        ],
+        "TruthTable": 212,
+        "NANDCount": 6,
+        "NANDAST": {
+          "Op": "NAND",
+          "Args": [
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "NAND",
+                      "Args": [
+                        {
+                          "Op": "Var",
+                          "Index": 0
+                        },
+                        {
+                          "Op": "Var",
+                          "Index": 1
+                        }
+                      ]
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 2
+                }
+              ]
+            },
+            {
+              "Op": "NAND",
+              "Args": [
+                {
+                  "Op": "NAND",
+                  "Args": [
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    },
+                    {
+                      "Op": "Var",
+                      "Index": 0
+                    }
+                  ]
+                },
+                {
+                  "Op": "Var",
+                  "Index": 1
+                }
+              ]
+            }
+          ]
+        },
+        "DescriptionLengthBits": 73,
+        "RawResidualBits": 3081,
+        "CompressionGainBits": 3008,
+        "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7"
+      }
+    ],
+    "S144C_CASE_04": [],
+    "S144C_AUX_RANDOM": []
+  },
+  "SealedFreshHoldoutRows": [
+    {
+      "CaseID": "S144C_CASE_00",
+      "Evaluated": true,
+      "ApplicationCount": 384,
+      "ExactApplicationCount": 384,
+      "Exact": true,
+      "DistinctHoldoutTaskCount": 3,
+      "OperatorCalledOnEveryApplication": true
+    },
+    {
+      "CaseID": "S144C_CASE_01",
+      "Evaluated": true,
+      "ApplicationCount": 384,
+      "ExactApplicationCount": 384,
+      "Exact": true,
+      "DistinctHoldoutTaskCount": 3,
+      "OperatorCalledOnEveryApplication": true
+    },
+    {
+      "CaseID": "S144C_CASE_02",
+      "Evaluated": true,
+      "ApplicationCount": 384,
+      "ExactApplicationCount": 384,
+      "Exact": true,
+      "DistinctHoldoutTaskCount": 3,
+      "OperatorCalledOnEveryApplication": true
+    }
+  ],
+  "Checks": {
+    "ConstructorPass": true,
+    "S144BFrozenPythonRunnerHashMatches": true,
+    "CurrentGrammarRunnerHashMatches": true,
+    "FiveOfFiveFreshStatusesCorrect": true,
+    "AllOfficialCurrentGrammarCandidatesEliminated": true,
+    "ThreeFreshExtensionsFrozen": true,
+    "ThreeFreshExtensionsStrictlyCompressive": true,
+    "ThreeSealedFreshHoldoutsExact": true,
+    "FreshAmbiguitySafelyAbstains": true,
+    "FreshNearLawHasNoExceptionPrimitive": true,
+    "AuxiliaryRandomControlDoesNotFreeze": true,
+    "NoFailureWorldReplacement": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "NoOpenPrimitiveInventionClaim": true
+  },
+  "PythonFrozenFreshPass": true,
+  "OpenPrimitiveInventionClaimAllowed": false,
+  "Conclusion": "S144C_FROZEN_FRESH_BOUNDED_LANGUAGE_EXTENSION_PASS"
+}

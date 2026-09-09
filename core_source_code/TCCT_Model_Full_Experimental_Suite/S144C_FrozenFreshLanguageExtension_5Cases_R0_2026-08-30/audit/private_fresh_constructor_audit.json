@@ -1,0 +1,362 @@
+{
+  "SignalDefinitions": {
+    "FSIG00": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        }
+      ]
+    },
+    "FSIG01": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        }
+      ]
+    },
+    "FSIG02": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        },
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        }
+      ]
+    },
+    "FSIG03": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG04": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG05": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG06": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG07": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        }
+      ]
+    },
+    "FSIG08": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG09": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG10": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "FSIG11": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        },
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        }
+      ]
+    }
+  },
+  "StructuredFamilies": [
+    {
+      "Triple": [
+        0,
+        2,
+        4
+      ],
+      "TruthTable": 176,
+      "SemanticSHA256": "58b7dd37f9c812f9e32370516091c2a443eda4b97d450004f58888be73c77d19",
+      "NANDCount": 4
+    },
+    {
+      "Triple": [
+        0,
+        2,
+        6
+      ],
+      "TruthTable": 116,
+      "SemanticSHA256": "5e078fe5bb569fa4c768201309b190433a85e4927f9194c1fa15a22895ec8923",
+      "NANDCount": 5
+    },
+    {
+      "Triple": [
+        2,
+        6,
+        11
+      ],
+      "TruthTable": 152,
+      "SemanticSHA256": "9aece6a6df9fbdb009639c7f6644c94658566bf442541189bdb635c605a9ff7c",
+      "NANDCount": 7
+    },
+    {
+      "Triple": [
+        5,
+        6,
+        9
+      ],
+      "TruthTable": 156,
+      "SemanticSHA256": "f1d542dd123da23681c07376ae38eadcb4a096ca60aac16e45f8cb5fa365fba7",
+      "NANDCount": 8
+    }
+  ],
+  "AmbiguousWithheldSignature": 1,
+  "NearLawFlippedApplicationID": "c0a467615a9ea8c279502bb2f1959d3d733c333129b053b8c4bf7048fa12f100",
+  "OfficialCurrentGrammarExactCounts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "AuxiliaryRandomCurrentGrammarExactCount": 0,
+  "Checks": {
+    "SeedFrozen": true,
+    "FiveCasesMaterializedOnce": true,
+    "FreshBankHasTwelveUniqueSemanticSignals": true,
+    "ThreePositiveTruthTablesExcludedFromS144B": true,
+    "FourStructuredSemanticFamiliesDistinct": true,
+    "AllOfficialCasesOutsideCurrentGrammar": true,
+    "AuxiliaryRandomOutsideCurrentGrammar": true,
+    "NearLawExactlyOneException": true,
+    "CoreUnchanged": true
+  },
+  "ConstructorPass": true
+}

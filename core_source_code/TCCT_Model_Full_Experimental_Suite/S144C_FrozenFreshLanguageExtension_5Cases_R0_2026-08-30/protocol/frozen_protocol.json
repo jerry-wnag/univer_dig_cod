@@ -1,0 +1,49 @@
+{
+  "Stage": "S144-C Frozen Fresh Language Extension 5 Cases R0",
+  "EvidenceStatus": "FROZEN_FRESH_BOUNDED_LANGUAGE_EXTENSION_CONFIRMATORY",
+  "CaseCount": 5,
+  "ExpectedStatuses": [
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+    "NO_COMPRESSIVE_EXTENSION"
+  ],
+  "FrozenMechanism": {
+    "S144BPythonRunnerSHA256": "d660fc078cd6c01a95d7c6972f2b53da35fd46c90bb4797a81f71e5163ab7e02",
+    "CurrentGrammarRunnerSHA256": "7ab5ba24246c8a451c5765c9d91ae93f8528c88b01a044c806acb5c49b63a39b",
+    "ObservableBankSize": 12,
+    "InputArity": 3,
+    "OnlyConstructor": "NAND",
+    "MaximumNANDFormulaCost": 14,
+    "ExceptionPatches": false,
+    "ApplicationIDAccess": false,
+    "TruthTableLookupPrimitive": false,
+    "MDLRule": "identical to S144-B"
+  },
+  "Freshness": {
+    "Seed": "S144C_FRESH_R0_20260830_9F74C1",
+    "SeedFrozenBeforeMaterialization": true,
+    "FailureWorldReplacementAllowed": false,
+    "S144BTargetTruthTablesExcluded": true,
+    "FreshAnonymousSignalBank": true
+  },
+  "IndependentDifficultyContract": {
+    "EveryOfficialCaseOutsideCurrent11250Grammar": true,
+    "ThreePositiveCasesHaveExactBoundedMetaPrograms": true,
+    "AmbiguousCaseHasMoreThanOneFullDomainSemanticClass": true,
+    "NearLawHasNoExactMetaProgram": true
+  },
+  "RequiredChecks": {
+    "ThreeFreshExtensionsFreeze": true,
+    "ThreeSealedRelabelingHoldoutsExact": true,
+    "AmbiguousCaseAbstains": true,
+    "NearLawDoesNotFreeze": true,
+    "AuxiliaryDeterministicRandomControlDoesNotFreeze": true,
+    "PythonWolframParity": true
+  },
+  "CoreRewriteFreezeDedupModified": false,
+  "DevelopmentWorldsReopenedByLearner": false,
+  "OpenPrimitiveInventionClaimAllowed": false,
+  "PDFRequested": false
+}

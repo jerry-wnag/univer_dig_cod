@@ -1,0 +1,318 @@
+{
+  "SignalDefinitions": {
+    "SIG00": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        }
+      ]
+    },
+    "SIG01": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "SIG02": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "SIG03": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "SIG04": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        }
+      ]
+    },
+    "SIG05": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        },
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        }
+      ]
+    },
+    "SIG06": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        },
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        }
+      ]
+    },
+    "SIG07": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        },
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        }
+      ]
+    },
+    "SIG08": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "DecisionPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        }
+      ]
+    },
+    "SIG09": {
+      "Op": "Relation",
+      "Name": "StrictPartitionRefines",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        }
+      ]
+    },
+    "SIG10": {
+      "Op": "Relation",
+      "Name": "PartitionRefines",
+      "Args": [
+        {
+          "Op": "Var",
+          "Name": "OtherPartition"
+        },
+        {
+          "Op": "Var",
+          "Name": "DecisionPartition"
+        }
+      ]
+    },
+    "SIG11": {
+      "Op": "Relation",
+      "Name": "Equal",
+      "Args": [
+        {
+          "Op": "PartitionMeet",
+          "Args": [
+            {
+              "Op": "Var",
+              "Name": "CurrentPartition"
+            },
+            {
+              "Op": "Var",
+              "Name": "OtherPartition"
+            }
+          ]
+        },
+        {
+          "Op": "Var",
+          "Name": "CurrentPartition"
+        }
+      ]
+    }
+  },
+  "StructuredCaseHiddenSignalIDs": {
+    "S144B_CASE_00": [
+      "SIG00",
+      "SIG10",
+      "SIG07"
+    ],
+    "S144B_CASE_01": [
+      "SIG02",
+      "SIG05",
+      "SIG10"
+    ]
+  },
+  "StructuredCaseHiddenTruthTables": {
+    "S144B_CASE_00": 150,
+    "S144B_CASE_01": 232
+  },
+  "AmbiguousWithheldSignature": 3,
+  "NearLawFlippedApplicationID": "dc2ac7daf31729e8c86322e14c4ced1918daaff631d8a60a5938c116ca7ff54d",
+  "OldGrammarExactCandidateCounts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "Checks": {
+    "CurrentGrammarCandidateCountFrozen": true,
+    "TwelveAnonymousSignals": true,
+    "SignalsHaveUniqueFullDomainSemantics": true,
+    "AllFiveCasesOutsideCurrentGrammar": true,
+    "TwoStructuredFamiliesDiffer": true,
+    "AmbiguityWithholdsNonemptySignature": true,
+    "NearLawHasExactlyOneRawException": true,
+    "RandomControlHasBothLabels": true,
+    "NoTargetNamesInLearnerSignalIDs": true,
+    "CoreUnchanged": true
+  },
+  "ConstructorPass": true
+}

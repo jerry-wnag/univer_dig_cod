@@ -1,0 +1,97 @@
+{
+  "Stage": "S144-C Frozen Fresh Language Extension 5 Cases R0",
+  "EvidenceStatus": "FROZEN_FRESH_BOUNDED_LANGUAGE_EXTENSION_CONFIRMATORY",
+  "Checks": {
+    "FrozenSeedMaterializationPass": true,
+    "PythonFrozenFreshPass": true,
+    "WolframFrozenFreshAuditPass": true,
+    "FiveStatusParity": true,
+    "CandidateAndSemanticCountParity": true,
+    "ThreePositiveCasesFreeze": true,
+    "ThreePositiveHoldoutsExact": true,
+    "AmbiguousNearAndRandomSafe": true,
+    "AllCurrentGrammarCandidatesEliminatedInBothEngines": true,
+    "NoWorldReplacement": true,
+    "CoreUnchanged": true,
+    "ClaimBoundaryPreserved": true
+  },
+  "StrictFreshPass": true,
+  "CaseStatuses": [
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+    "NO_COMPRESSIVE_EXTENSION"
+  ],
+  "MetaExactProgramCounts": [
+    16,
+    36,
+    4,
+    24,
+    0
+  ],
+  "FullDomainSemanticClassCounts": [
+    1,
+    1,
+    1,
+    2,
+    0
+  ],
+  "SelectedFreshExtensionMetrics": [
+    {
+      "CaseID": "S144C_CASE_00",
+      "AnonymousOperatorID": "OPX_4c02b545337da9fe",
+      "NANDCount": 4,
+      "DescriptionLengthBits": 65,
+      "RawResidualBits": 3375,
+      "CompressionGainBits": 3310
+    },
+    {
+      "CaseID": "S144C_CASE_01",
+      "AnonymousOperatorID": "OPX_485b5e841ad80a0b",
+      "NANDCount": 3,
+      "DescriptionLengthBits": 61,
+      "RawResidualBits": 3375,
+      "CompressionGainBits": 3314
+    },
+    {
+      "CaseID": "S144C_CASE_02",
+      "AnonymousOperatorID": "OPX_20b1e31c771323ca",
+      "NANDCount": 7,
+      "DescriptionLengthBits": 77,
+      "RawResidualBits": 3375,
+      "CompressionGainBits": 3298
+    }
+  ],
+  "SealedFreshHoldoutExactCounts": [
+    {
+      "CaseID": "S144C_CASE_00",
+      "Exact": "384/384"
+    },
+    {
+      "CaseID": "S144C_CASE_01",
+      "Exact": "384/384"
+    },
+    {
+      "CaseID": "S144C_CASE_02",
+      "Exact": "384/384"
+    }
+  ],
+  "AuxiliaryRandomStatus": "NO_COMPRESSIVE_EXTENSION",
+  "CodeSHA256": {
+    "FrozenProtocol": "624df9ea6a84ba782486c2825eb6ae46d59c8356602d411884c85db33ea2ce33",
+    "Materializer": "b80a2491539cd69f45ddf9c403b36d263140fc549591361ff0e6b0cd0b120042",
+    "PythonRunner": "bcba34795a3bac719ae7aa886d2103b705c7c377972306b6cb99edabfacf2588",
+    "WolframAudit": "b73ac1681074c73ba1210fe629cf8f567b2b43b590c05ab596700940a70362c4",
+    "Finalizer": "450703dd85e2f14fdef5201d6682103c256275e9d3d370d75ce18ae1e648d7c8"
+  },
+  "AllowedClaim": "frozen fresh evidence for bounded residual-driven language extension proposal and safe abstention under a fixed NAND meta-language",
+  "DisallowedClaims": [
+    "replicated multi-seed language extension",
+    "open-ended primitive invention",
+    "language-independent invention",
+    "unbounded self-modifying cognition",
+    "ARC-AGI capability"
+  ],
+  "Conclusion": "S144C_FROZEN_FRESH_LANGUAGE_EXTENSION_PASS"
+}

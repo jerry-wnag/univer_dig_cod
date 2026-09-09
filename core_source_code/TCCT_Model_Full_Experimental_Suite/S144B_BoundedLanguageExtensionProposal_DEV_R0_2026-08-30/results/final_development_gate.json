@@ -1,0 +1,90 @@
+{
+  "Stage": "S144-B Bounded Language-Extension Proposal DEV R0",
+  "EvidenceStatus": "BOUNDED_RESIDUAL_DRIVEN_LANGUAGE_EXTENSION_DEVELOPMENT_ONLY",
+  "Checks": {
+    "ConstructorPass": true,
+    "PythonDevelopmentPass": true,
+    "WolframDevelopmentAuditPass": true,
+    "FiveStatusParity": true,
+    "FiveMetaCandidateCountParity": true,
+    "FiveSemanticClassCountParity": true,
+    "AllFiveOutsideCurrentGrammar": true,
+    "TwoFrozenExtensionsPassSealedHoldout": true,
+    "AmbiguityAndNegativeControlsDoNotFreeze": true,
+    "CoreRewriteFreezeDedupUnchanged": true,
+    "DevelopmentOnlyClaimBoundaryPreserved": true
+  },
+  "StrictDevelopmentPass": true,
+  "CaseStatuses": [
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+    "NO_COMPRESSIVE_EXTENSION",
+    "NO_COMPRESSIVE_EXTENSION"
+  ],
+  "CurrentGrammarExactCandidateCounts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "MetaExactProgramCounts": [
+    8,
+    5,
+    16,
+    0,
+    0
+  ],
+  "FullDomainSemanticClassCounts": [
+    1,
+    1,
+    2,
+    0,
+    0
+  ],
+  "SelectedExtensionMetrics": [
+    {
+      "CaseID": "S144B_CASE_00",
+      "AnonymousOperatorID": "OPX_16c82eec769f3002",
+      "NANDCount": 7,
+      "DescriptionLengthBits": 69,
+      "RawResidualBits": 3375,
+      "CompressionGainBits": 3306
+    },
+    {
+      "CaseID": "S144B_CASE_01",
+      "AnonymousOperatorID": "OPX_75be1a2c975ac1f3",
+      "NANDCount": 3,
+      "DescriptionLengthBits": 53,
+      "RawResidualBits": 3375,
+      "CompressionGainBits": 3322
+    }
+  ],
+  "SealedHoldoutExactCounts": [
+    {
+      "CaseID": "S144B_CASE_00",
+      "Exact": "512/512"
+    },
+    {
+      "CaseID": "S144B_CASE_01",
+      "Exact": "512/512"
+    }
+  ],
+  "CodeSHA256": {
+    "Protocol": "977e59e34fa49ceb6b7b5f505a689906edc29ed0ed8bd4fca23bcb937fb4e31d",
+    "Constructor": "1a73a5ecbcdf0bd6f5311a788eb50fba9e67cb3e9f0413cfb70645bfbc769e3f",
+    "PythonRunner": "d660fc078cd6c01a95d7c6972f2b53da35fd46c90bb4797a81f71e5163ab7e02",
+    "WolframAudit": "6f584771983250e6b41e8ea1685bcb341de375fac253244db116406097be1fa6",
+    "Finalizer": "21d0f20905d6e8ee14be611d7b88ec935fc532cf3daf3064922a89d412a341e9"
+  },
+  "AuditInfrastructureNote": "The first Wolfram audit used cross-language list indices for old-grammar certificates. That nonsemantic order assumption was removed; the passing audit independently exhausts all 11250 Wolfram candidates.",
+  "AllowedClaim": "bounded residual-driven language extension proposal under a frozen NAND meta-language, development evidence",
+  "DisallowedClaims": [
+    "open-ended primitive invention",
+    "fresh-world language-extension capability",
+    "unbounded grammar growth",
+    "ARC-AGI capability"
+  ],
+  "Conclusion": "S144B_BOUNDED_LANGUAGE_EXTENSION_DEV_PASS"
+}

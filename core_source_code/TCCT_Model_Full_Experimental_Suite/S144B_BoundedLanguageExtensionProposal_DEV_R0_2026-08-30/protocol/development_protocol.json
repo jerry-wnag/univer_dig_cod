@@ -1,0 +1,55 @@
+{
+  "Stage": "S144-B Bounded Language-Extension Proposal DEV R0",
+  "EvidenceStatus": "BOUNDED_RESIDUAL_DRIVEN_LANGUAGE_EXTENSION_DEVELOPMENT_ONLY",
+  "CaseCount": 5,
+  "ExpectedStatuses": [
+    "EXACT_EXTENSION_PROPOSED",
+    "EXACT_EXTENSION_PROPOSED",
+    "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+    "NO_COMPRESSIVE_EXTENSION",
+    "NO_COMPRESSIVE_EXTENSION"
+  ],
+  "FrozenCurrentGrammarCandidateCount": 11250,
+  "FrozenObservableBankSize": 12,
+  "FrozenMetaLanguage": {
+    "InputArity": 3,
+    "InputSelection": "choose three distinct anonymous learner-visible Boolean signals",
+    "OnlyConstructor": "NAND",
+    "MaximumNANDFormulaCost": 14,
+    "Constants": false,
+    "DisjunctionTemplate": false,
+    "XORTemplate": false,
+    "MajorityTemplate": false,
+    "ApplicationIDAccess": false,
+    "ExceptionPatches": false,
+    "TruthTableLookupPrimitive": false
+  },
+  "FrozenMDL": {
+    "RawResidualBits": "one bit per formation observation",
+    "FeatureSelectionBits": 12,
+    "ArityHeaderBits": 2,
+    "NANDFormulaBits": "4*NANDCount+3",
+    "PerFormationTaskCallBits": 8,
+    "StrictCompressionRequired": true
+  },
+  "StatusRules": {
+    "OneFullDomainSemanticClassAndStrictMDLGain": "EXACT_EXTENSION_PROPOSED",
+    "MoreThanOneFullDomainSemanticClass": "MULTIPLE_EXTENSIONS_AMBIGUOUS",
+    "NoExactMetaProgramOrNoStrictMDLGain": "NO_COMPRESSIVE_EXTENSION",
+    "ContradictoryRepeatedRawInput": "INCONSISTENT_OBSERVATIONS"
+  },
+  "RequiredChecks": {
+    "CurrentGrammarEliminatedInAllFiveCases": true,
+    "TwoStructuredCasesProposeExactExtensions": true,
+    "EveryFrozenExtensionExactOnSealedRelabelingHoldout": true,
+    "AmbiguousCaseDoesNotFreeze": true,
+    "NearLawDoesNotCreateExceptionPrimitive": true,
+    "DeterministicRandomBehaviorDoesNotCreateLookupPrimitive": true,
+    "PythonWolframParity": true
+  },
+  "ConstructorSeed": "S144B_DEV_R0_FIXED_20260830",
+  "CoreRewriteFreezeDedupModified": false,
+  "FreshCapabilityClaimAllowed": false,
+  "OpenPrimitiveInventionClaimAllowed": false,
+  "PDFRequested": false
+}
