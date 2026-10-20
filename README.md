@@ -12,6 +12,9 @@
 > 本项目记录了一名计算机专业本科生的“计算意外”。通过将宇宙建模为因果图上的路径优化问题，系统自发涌现出了与**广义相对论**、**量子力学**、**电磁学**和**全息热力学**惊人相似的宏观行为。在同一计算框架的持续演化过程中，系统还逐渐表现出了一些**非平凡的推理相关能力**，由此进一步形成了 TCCT 主项目中的独立实验性推理分支。该分支主要研究原始的“重写—去重—冻结”动力学能否进一步支持**结构推理**、**规则归纳**、**反事实干预**、**概念形成**、**认知不确定性控制**以及**多步规划**。
 
 ---
+> **Research preview update (2026-10-20).** The reasoning branch now includes a documented preview of a **research prototype integrating multiple reasoning and learning mechanisms**, with a unified task entry and auditable execution records for selected S-series workflows. The [research preview](TCCT_Reasoning_Research_Preview/README.md) brings together the architecture, validation scope, and current limitations. The linked R1 package is a fixed-Windows, limited-scope repair delivery, not a stable or portable release.
+>
+> **研究预览补充（2026-10-20）。** 推理分支现补充了一个**集成多种推理与学习机制的研究原型**的预览说明，为部分 S 系列工作流提供统一任务入口和可审计的执行记录。[研究预览](TCCT_Reasoning_Research_Preview/README.md)集中介绍架构、验证范围与当前限制。所链接的 R1 包是固定 Windows 环境下的有限范围修复交付，并非稳定版或可移植发行版。
 
 ## 📖 The "Accident": Philosophy & Code
 
@@ -132,6 +135,22 @@ These results do **not** constitute a claim of AGI, unrestricted theorem proving
 The strongest current evidence remains concentrated in controlled finite symbolic and relational environments, where the internal reasoning process can be exactly replayed and independently verified.
 
 ---
+#### S-series Research Preview and Unified Entry / S 系列研究预览与统一入口
+
+The S-series records successive reasoning and learning experiments within this branch. A later engineering track organizes selected workflows through a unified task entry, while keeping the original reasoning/model functions, execution adapters, and audit records distinct. State updates, semantic deduplication, and semantic stopping remain in the relevant model functions; the entry and audit layers do not replace those decisions.
+
+The [research preview](TCCT_Reasoning_Research_Preview/README.md) provides the original **R518 architecture diagram** as a historical guide and links the **2026-10-20 R1 scoped repair package**. R1 retains the earlier S160/S161 constructor repair and adds bounded read-supervision checks. Its documented evidence covers specified inputs and historical profiles, not arbitrary inputs, every S-series path, or general intelligence. See [validation and limitations](TCCT_Reasoning_Research_Preview/VALIDATION_AND_LIMITATIONS.md) for the distinction between core tests, native execution, and result readback.
+
+S 系列记录了这一分支中逐步推进的推理与学习实验。后续工程工作通过统一任务入口组织部分工作流，同时区分原始推理／模型函数、执行适配层和审计记录。状态更新、语义去重与语义停止仍由相应模型函数完成，入口与审计层不代替这些判断。
+
+[研究预览](TCCT_Reasoning_Research_Preview/README.md)保留原始 **R518 架构图**作为历史导览，并链接 **2026-10-20 R1 有限范围修复包**。R1 沿用此前的 S160/S161 构造器修复，增加有时限的读取监管检查。其记录证据覆盖指定输入和历史配置，不代表任意输入、全部 S 系列路径或通用智能均已验证。核心测试、原生执行与结果回读的区别见[验证范围与限制](TCCT_Reasoning_Research_Preview/VALIDATION_AND_LIMITATIONS.md)。
+
+#### Mechanism Continuity and Generalization / 机制延续与推广
+
+The reasoning kernels in this release retain the organizing principles of **rewriting, deduplication, and freezing**, but do **not retain the original hypergraph rewrite rules**. They should therefore be viewed as a **higher-level generalization of these reasoning principles**, rather than an unchanged implementation of the original hypergraph-rewriting system. Here, “generalization” refers to the scope of the mechanism design, not a demonstrated improvement in out-of-distribution generalization or a proof of universal computational capability.
+
+本次发布的推理内核保留了**重写、去重与冻结**这三项组织原则，但**没有沿用原来的超图重写规则**。因此，可以将其视为这些推理原则的**更高层次推广版本**，而不是原始超图重写系统的原样实现。这里的“推广”指机制设计层面的扩展，并不表示已经验证了更强的分布外泛化性能，也不构成通用计算能力的证明。
+
 Pauli Exclusion Principle: No two nodes can share identical topological neighborhoods; any "address collision" triggers an automatic State-Merge (Conflict Resolution) to maintain graph uniqueness.
 
 Topological Uniqueness: The system enforces a fundamental distinguishability where duplicate informational states are compressed, manifesting as the emergent "repulsion" between fermions.
